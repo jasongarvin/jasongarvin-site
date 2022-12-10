@@ -104,6 +104,35 @@ aside {
 
 /*
   ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid slateblue;
+  padding: 10px 30px;
+}
+
+/*
+  ========================================
+  Lists
+  ========================================
+*/
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 5px;
+}
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -122,21 +151,4 @@ h1 {
 .tooltip {
   color: blanchedalmond;
   background-color: darkslateblue;
-}
-
-/*
-  ========================================
-  Buttons
-  ========================================
-*/
-
-.btn {
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-}
-
-.btn-alt {
-  border: 1px solid slateblue;
-  padding: 10px 30px;
 }
