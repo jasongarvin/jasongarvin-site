@@ -2,48 +2,135 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-  list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-  quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*
@@ -52,54 +139,53 @@ table {
   ========================================
 */
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 960px;
-}
-
-header {
-  border: 6px solid gainsboro;
-  fill: gray;
-  height: 120px;
-  padding: 20px;
-}
-
-section {
-  border: 6px solid gainsboro;
-  fill: gray;
-  padding: 20px;
-}
-
 article {
-  border: 4px solid gainsboro;
-  border-radius: 10px;
-  fill: gray;
-  padding: 15px;
-  width: 890px;
-}
-
-footer {
-  border: 6px solid gainsboro;
-  fill: gray;
-  height: 110px;
-  padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #DCDCDC;
+    border: 4px solid #e7e7e7;
+    border-radius: 10px;
+    opacity: 0.8;
+    padding: 15px;
+    width: 890px;
 }
 
 aside {
-  border: 4px dotted gainsboro;
-  fill: gray;
-  margin: 10px;
-  padding: 5px;
+    background-color: #e7e7e7;
+    border: 4px dotted #DCDCDC;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #e7e7e7;
+    border: 6px solid #DCDCDC;
+    height: 110px;
+    padding: 20px;
+}
+
+header {
+    background-color: #e7e7e7;
+    border: 6px solid #DCDCDC;
+    height: 120px;
+    padding: 20px;
+}
+
+section {
+    background-color: #e7e7e7;
+    border: 6px solid #DCDCDC;
+    padding: 20px;
+}
+
+.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
 }
 
 /*
@@ -109,14 +195,22 @@ aside {
 */
 
 .btn {
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
+    background-color: #008CBA;
+    border-radius: 5px;
+    color: #F8F8FF;
+    display: inline-block;
+    margin: 0;
 }
 
 .btn-alt {
-  border: 1px solid slateblue;
-  padding: 10px 30px;
+    border: 1px solid #6A5ACD;
+    padding: 10px 30px;
+    transition-duration: 0.4s;
+}
+
+.btn-alt:hover {
+    background-color: #7CB9E8;
+    color: #F8F8FF;
 }
 
 /*
@@ -126,9 +220,9 @@ aside {
 */
 
 ul {
-  list-style-position: inside;
-  list-style-type: square;
-  margin: 5px;
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 5px;
 }
 
 /*
@@ -137,18 +231,32 @@ ul {
   ========================================
 */
 
-h1, h2, h4, h5, p {
-  margin-bottom: 22px;
+a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+a[href*="tutsplus"] {
+    /* Use their signature Envato green */
+    color: #83b348;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+    margin-bottom: 22px;
 }
 
 h1 {
-  border-bottom: 4px solid gainsboro;
+    border-bottom: 4px solid #555555;
 }
 
 .social {
-  color: slateblue;
+    color: #6A5ACD;
 }
+
 .tooltip {
-  color: blanchedalmond;
-  background-color: darkslateblue;
+    color: #FFEBCD;
+    background-color: #6A5ACD;
 }
