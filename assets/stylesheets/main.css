@@ -168,7 +168,7 @@ footer {
 header {
     background-color: #e7e7e7;
     border: 6px solid #DCDCDC;
-    height: 120px;
+    height: 80px;
     padding: 20px;
 }
 
@@ -179,13 +179,38 @@ section {
 }
 
 .container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container,
+.grid {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
     width: 960px;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-20,
+.col-60 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-20,
+.col-60 {
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 /*
@@ -199,12 +224,11 @@ section {
     border-radius: 5px;
     color: #F8F8FF;
     display: inline-block;
-    margin: 0;
 }
 
 .btn-alt {
     border: 1px solid #6A5ACD;
-    padding: 10px 30px;
+    padding: 10px;
     transition-duration: 0.4s;
 }
 
@@ -223,6 +247,37 @@ ul {
     list-style-position: inside;
     list-style-type: square;
     margin: 5px;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+    /* TODO Add more formatting to standalone logo in header */
+    box-sizing: border-box;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.links {
+    box-sizing: border-box;
+    display: inline-block;
+    left: 20px;
+    position: relative;
+    top: -10px;
+}
+
+.logo,
+.links {
+    margin: 0 1.5%;
+}
+
+.options {
+    left: 420px;
+    position: relative;
 }
 
 /*
@@ -246,10 +301,6 @@ h4,
 h5,
 p {
     margin-bottom: 22px;
-}
-
-h1 {
-    border-bottom: 4px solid #555555;
 }
 
 .social {
