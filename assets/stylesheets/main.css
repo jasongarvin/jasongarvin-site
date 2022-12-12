@@ -172,6 +172,11 @@ header {
     padding: 20px;
 }
 
+iframe {
+  margin:auto;
+  display:block;
+}
+
 section {
     background-color: #e7e7e7;
     border: 6px solid #DCDCDC;
