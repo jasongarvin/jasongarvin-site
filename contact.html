@@ -5,7 +5,8 @@
     <title>Jason Garvin - Contact Me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Contact information and a fillable form to reach Jason Garvin with questions about software development, UX design, and/or business.">
+    <meta name="description"
+        content="Contact information and a fillable form to reach Jason Garvin with questions about software development, UX design, and/or business.">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
@@ -14,7 +15,12 @@
         <h1 class="logo">
             <a href="home.html">Jason Garvin <br> A Website</a>
         </h1>
-        
+
+        <form class="searchbar">
+            <label for="mysearch">Search:</label>
+            <input type="search" id="mysearch">
+        </form>
+
         <nav class="links">
             <a class="btn btn-alt" href="about.html">About</a>
             <a class="btn btn-alt" href="contact.html">Contact</a>
@@ -27,7 +33,7 @@
         <h2>Contact Me</h2>
         <form>
             <label>Name: <input type="text"></label>
-            <label>Email: <input type="email"></label>
+            <label>Email: <input type="email" required></label>
             <textarea cols="60" rows="5">What would you like to talk with me about?</textarea>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
