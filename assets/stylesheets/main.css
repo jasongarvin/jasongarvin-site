@@ -144,7 +144,7 @@ article {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #DCDCDC;
-    border: 4px solid #e7e7e7;
+    border: 2px solid #e7e7e7;
     border-radius: 10px;
     opacity: 0.8;
     padding: 15px;
@@ -153,33 +153,30 @@ article {
 
 aside {
     background-color: #e7e7e7;
-    border: 4px dotted #DCDCDC;
+    border: 2px dotted #DCDCDC;
     margin: 10px;
     padding: 5px;
 }
 
 footer {
-    background-color: #e7e7e7;
-    border: 6px solid #DCDCDC;
     height: 110px;
     padding: 20px;
 }
 
 header {
-    background-color: #e7e7e7;
-    border: 6px solid #DCDCDC;
-    height: 80px;
-    padding: 20px;
+    height: 120px;
+    padding: 10px;
 }
 
 iframe {
-  margin:auto;
-  display:block;
+    margin: auto;
+    display: block;
 }
 
 section {
     background-color: #e7e7e7;
-    border: 6px solid #DCDCDC;
+    border-right: 4px solid #DCDCDC;
+    border-left: 4px solid #DCDCDC;
     padding: 20px;
 }
 
@@ -220,20 +217,165 @@ section {
 
 /*
   ========================================
+  Typography
+  ========================================
+*/
+
+body {
+    color: #666666;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+a[href*="tutsplus"] {
+    /* Use their signature Envato green */
+    color: #83b348;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #6A5ACD;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite,
+em {
+    font-style: italic;
+}
+
+.tooltip {
+    color: #F8F8FF;
+    background-color: #6A5ACD;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+    color: #6A5ACD;
+}
+
+a {
+    color: #130088;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+    box-sizing: border-box;
+    color: #F8F8FF;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.searchbar {
+    box-sizing: border-box;
+    color: #F8F8FF;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    width: 250px
+}
+
+.links {
+    box-sizing: border-box;
+    display: inline-block;
+    left: 50px;
+    position: relative;
+    top: -10px;
+}
+
+.logo,
+.links {
+    margin: 0 1.5%;
+}
+
+.primary-header {
+    background-color: #42444e;
+}
+
+#site-logo {
+    color: #F8F8FF;
+}
+
+/*
+  ========================================
+  Primary Footer
+  ========================================
+*/
+
+.primary-footer {
+    background-color: #42444e;
+    height: 200px;
+}
+
+.primary-footer small {
+    color: #F8F8FF;
+    font-weight: 400;
+}
+
+/*
+  ========================================
   Buttons
   ========================================
 */
 
 .btn {
     background-color: #008CBA;
-    border-radius: 5px;
+    border-radius: 2px;
     color: #F8F8FF;
     display: inline-block;
 }
 
 .btn-alt {
-    border: 1px solid #6A5ACD;
-    padding: 10px;
+    border: 1px solid #F8F8FF;
+    padding: 8px;
     transition-duration: 0.4s;
 }
 
@@ -252,71 +394,4 @@ ul {
     list-style-position: inside;
     list-style-type: square;
     margin: 5px;
-}
-
-/*
-  ========================================
-  Primary header
-  ========================================
-*/
-
-.logo {
-    /* TODO Add more formatting to standalone logo in header */
-    box-sizing: border-box;
-    display: inline-block;
-    padding-top: 10px;
-    padding-right: 80px;
-}
-
-.searchbar {
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    top: -10px;
-    width: 300px
-}
-
-.links {
-    box-sizing: border-box;
-    display: inline-block;
-    left: 60px;
-    position: relative;
-    top: -10px;
-}
-
-.logo,
-.links {
-    margin: 0 1.5%;
-}
-
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-
-a:hover {
-    border-bottom: 1px solid #000000;
-}
-
-a[href*="tutsplus"] {
-    /* Use their signature Envato green */
-    color: #83b348;
-}
-
-h1,
-h2,
-h4,
-h5,
-p {
-    margin-bottom: 22px;
-}
-
-.social {
-    color: #6A5ACD;
-}
-
-.tooltip {
-    color: #FFEBCD;
-    background-color: #6A5ACD;
 }
