@@ -146,6 +146,7 @@ article {
     background-color: #DCDCDC;
     border: 2px solid #e7e7e7;
     border-radius: 10px;
+    box-shadow: 0px 4px 2px #130088;
     opacity: 0.8;
     padding: 15px;
     width: 890px;
@@ -161,6 +162,10 @@ aside {
 footer {
     height: 110px;
     padding: 20px;
+}
+
+footer p {
+    padding-top: 10px;
 }
 
 header {
@@ -223,7 +228,7 @@ section {
 
 body {
     color: #666666;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
@@ -271,6 +276,7 @@ h5 {
     color: #a9b2b9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 strong {
@@ -297,8 +303,18 @@ a:hover {
     color: #6A5ACD;
 }
 
+a#site-logo:hover {
+    color: #7CB9E8;
+    transition-duration: 0.4s;
+}
+
 a {
     color: #130088;
+    text-decoration: none;
+}
+
+p a {
+    border-bottom: 1px solid #130088;
 }
 
 /*
@@ -311,33 +327,41 @@ a {
     box-sizing: border-box;
     color: #F8F8FF;
     display: inline-block;
-    padding-right: 40px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    padding-right: 35px;
 }
 
-.searchbar {
-    box-sizing: border-box;
-    color: #F8F8FF;
-    display: inline-block;
-    position: relative;
-    top: -10px;
-    width: 250px
-}
-
-.links {
+.main-nav {
     box-sizing: border-box;
     display: inline-block;
-    left: 50px;
+    left: 35px;
     position: relative;
+    text-transform: uppercase;
     top: -10px;
-}
-
-.logo,
-.links {
-    margin: 0 1.5%;
 }
 
 .primary-header {
     background-color: #42444e;
+}
+
+.searchbar {
+    box-sizing: border-box;
+    border: 1px solid #F8F8FF;
+    border-radius: 2px;
+    background-color: #666666;
+    color: #F8F8FF;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    text-transform: uppercase;
+    top: -10px;
+    width: 230px
+}
+
+.logo,
+.main-nav {
+    margin: 0 1.5%;
 }
 
 #site-logo {
@@ -381,7 +405,10 @@ a {
 
 .btn-alt:hover {
     background-color: #7CB9E8;
-    color: #F8F8FF;
+}
+
+.btn.current-page {
+    background-color: #7CB9E8;
 }
 
 /*
