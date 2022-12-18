@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# v0.1 12/17/2022
+
+CACHE:
+
+# pages
+home.html
+ 
+# styles & scripts
+assets/stylesheets/main.css
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /offline.html
+
+# Add in later for elements that REQUIRE a network connection 
+NETWORK:
+assets/scripts/contact.js

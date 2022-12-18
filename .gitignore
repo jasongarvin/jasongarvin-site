@@ -1,6 +1,5 @@
 # custom directories to ignore during alpha development
 scripts/
-CACHE MANIFEST.txt
 
 # ignore all files starting with . or ~
 .*

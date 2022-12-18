@@ -329,13 +329,13 @@ p a {
     display: inline-block;
     font-weight: 100;
     letter-spacing: .5px;
-    padding-right: 35px;
+    padding-right: 25px;
 }
 
 .main-nav {
     box-sizing: border-box;
     display: inline-block;
-    left: 35px;
+    left: 25px;
     position: relative;
     text-transform: uppercase;
     top: -10px;
@@ -356,7 +356,7 @@ p a {
     position: relative;
     text-transform: uppercase;
     top: -10px;
-    width: 230px
+    width: 260px
 }
 
 .logo,
