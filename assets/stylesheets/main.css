@@ -1,5 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+/*
+  ========================================
+  CSS Reset
+  http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
+  ========================================
 */
 
 html,
@@ -135,7 +139,7 @@ table {
 
 /*
   ========================================
-  Grid
+  HTML5
   ========================================
 */
 
@@ -184,6 +188,12 @@ section {
     border-left: 4px solid #DCDCDC;
     padding: 20px;
 }
+
+/*
+  ========================================
+  Containers & Grid
+  ========================================
+*/
 
 .container {
     padding-left: 30px;
@@ -295,6 +305,33 @@ em {
 
 /*
   ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+    background-color: #008CBA;
+    border-radius: 2px;
+    color: #F8F8FF;
+    display: inline-block;
+}
+
+.btn-alt {
+    border: 1px solid #F8F8FF;
+    padding: 8px;
+    transition-duration: 0.4s;
+}
+
+.btn-alt:hover {
+    background-color: #7CB9E8;
+}
+
+.btn.current-page {
+    background-color: #7CB9E8;
+}
+
+/*
+  ========================================
   Links
   ========================================
 */
@@ -315,6 +352,18 @@ a {
 
 p a {
     border-bottom: 1px solid #130088;
+}
+
+/*
+  ========================================
+  Lists
+  ========================================
+*/
+
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 5px;
 }
 
 /*
@@ -386,39 +435,23 @@ p a {
 
 /*
   ========================================
-  Buttons
+  Miscellaneous Style
   ========================================
 */
 
-.btn {
-    background-color: #008CBA;
-    border-radius: 2px;
-    color: #F8F8FF;
+.artwork {
+    border: 2px solid #DCDCDC;
+    box-shadow: 0px 2px 2px #130088;
     display: inline-block;
+    width: 46%;
+    height: 550px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
-.btn-alt {
-    border: 1px solid #F8F8FF;
-    padding: 8px;
-    transition-duration: 0.4s;
-}
-
-.btn-alt:hover {
-    background-color: #7CB9E8;
-}
-
-.btn.current-page {
-    background-color: #7CB9E8;
-}
-
-/*
-  ========================================
-  Lists
-  ========================================
-*/
-
-ul {
-    list-style-position: inside;
-    list-style-type: square;
-    margin: 5px;
+.contact {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 90%;
+    margin-top: 10px;
 }
