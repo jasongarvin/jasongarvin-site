@@ -144,8 +144,6 @@ table {
 */
 
 article {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #DCDCDC;
     border: 2px solid #e7e7e7;
@@ -164,8 +162,8 @@ aside {
 }
 
 footer {
-    height: 110px;
-    padding: 20px;
+    height: 120px;
+    padding: 30px;
 }
 
 footer p {
@@ -174,7 +172,9 @@ footer p {
 
 header {
     height: 120px;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
 }
 
 iframe {
@@ -237,10 +237,11 @@ section {
 */
 
 body {
+    background-color: #F8F8FF;
     color: #666666;
     font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 a[href*="tutsplus"] {
@@ -265,26 +266,26 @@ h5 {
 }
 
 h1 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.25em;
+    line-height: 1.25em;
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 1.5em;
+    line-height: 1.25em;
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 1.3em;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 h5 {
     color: #a9b2b9;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -354,6 +355,11 @@ p a {
     border-bottom: 1px solid #130088;
 }
 
+p a:hover {
+    border-bottom: 1px solid #6A5ACD;
+    transition-duration: 0.4s;
+}
+
 /*
   ========================================
   Lists
@@ -373,44 +379,36 @@ ul {
 */
 
 .logo {
-    box-sizing: border-box;
     color: #F8F8FF;
-    display: inline-block;
     font-weight: 100;
-    letter-spacing: .5px;
-    padding-right: 25px;
-}
-
-.main-nav {
-    box-sizing: border-box;
-    display: inline-block;
-    left: 25px;
-    position: relative;
-    text-transform: uppercase;
-    top: -10px;
 }
 
 .primary-header {
     background-color: #42444e;
+    width: 100%;
 }
 
 .searchbar {
-    box-sizing: border-box;
     border: 1px solid #F8F8FF;
     border-radius: 2px;
     background-color: #666666;
     color: #F8F8FF;
-    display: inline-block;
     padding: 8px;
-    position: relative;
-    text-transform: uppercase;
-    top: -10px;
-    width: 260px
+    width: 28%;
+}
+
+.main-nav,
+.searchbar {
+    margin: 0 4% auto;
+    top: -20px;
 }
 
 .logo,
-.main-nav {
-    margin: 0 1.5%;
+.main-nav,
+.searchbar {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
 }
 
 #site-logo {
@@ -425,7 +423,7 @@ ul {
 
 .primary-footer {
     background-color: #42444e;
-    height: 200px;
+    width: 100%;
 }
 
 .primary-footer small {
