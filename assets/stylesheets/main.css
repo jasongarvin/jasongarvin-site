@@ -157,12 +157,12 @@ article {
 aside {
     background-color: #e7e7e7;
     border: 2px dotted #DCDCDC;
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
 }
 
 footer {
-    height: 120px;
+    min-height: 120px;
     padding: 30px;
 }
 
@@ -171,10 +171,8 @@ footer p {
 }
 
 header {
-    height: 120px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
+    min-height: 120px;
+    padding: 10px;
 }
 
 iframe {
@@ -267,12 +265,12 @@ h5 {
 
 h1 {
     font-size: 2.25em;
-    line-height: 1.25em;
+    line-height: 140%;
 }
 
 h2 {
     font-size: 1.5em;
-    line-height: 1.25em;
+    line-height: 140%;
 }
 
 h3 {
@@ -352,11 +350,11 @@ a {
 }
 
 p a {
-    border-bottom: 1px solid #130088;
+    border-bottom: 1px dotted #130088;
 }
 
 p a:hover {
-    border-bottom: 1px solid #6A5ACD;
+    border-bottom: 1px dotted #6A5ACD;
     transition-duration: 0.4s;
 }
 
@@ -385,6 +383,7 @@ ul {
 
 .primary-header {
     background-color: #42444e;
+    padding: 10px 30px 0px;
     width: 100%;
 }
 
