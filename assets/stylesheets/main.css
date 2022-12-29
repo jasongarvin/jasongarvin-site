@@ -395,6 +395,7 @@ ul {
 }
 
 .main-nav {
+    font-variant: small-caps;
     margin-left: 5%;
 }
 
@@ -443,6 +444,23 @@ ul {
   ========================================
 */
 
+label,
+input.contact {
+    font-variant: small-caps;
+}
+
+.contact {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 5px;
+    margin-left: 4%;
+}
+
+.contact:active,
+.contact:focus {
+    outline: 2px solid #7CB9E8;
+}
+
 .artwork {
     border: 2px solid #DCDCDC;
     box-shadow: 0px 2px 2px #130088;
@@ -451,16 +469,4 @@ ul {
     height: 550px;
     margin: 0 auto;
     padding: 5px;
-}
-
-.contact {
-    box-sizing: border-box;
-    display: inline-block;
-    margin-right: 90%;
-    margin-top: 10px;
-}
-
-.contact:active,
-.contact:focus {
-    outline: 2px solid #7CB9E8;
 }
