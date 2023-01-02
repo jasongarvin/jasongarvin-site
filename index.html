@@ -2,78 +2,85 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-    <title>Jason Garvin - Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="The home page of a website about Jason Garvin detailing his journey through software development, UX design, and business.">
-    <link rel="stylesheet" media="screen" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" media="print" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  <title>Jason Garvin - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The home page of a website about Jason Garvin detailing his journey through software development, UX design, and business.">
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/main.css">
+  <link rel="stylesheet" media="print" href="assets/stylesheets/print.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
 </head>
 
 <body id="top">
-    <header class="primary-header">
-        <div class="container">
-            <h1 class="logo">
-                <a id="site-logo" href="index.html">Jason Garvin <br> A Website</a>
-            </h1>
+  <header class="primary-header">
+    <div class="container">
+      <h1 class="logo">
+        <a id="site-logo" href="index.html">Jason Garvin <br> A Website</a>
+      </h1>
 
-            <form class="searchbar">
-                <label for="mysearch">Search:</label>
-                <input type="search" id="mysearch">
-            </form>
+      <form class="searchbar">
+        <label for="mysearch">Search</label>
+        <input type="search" id="mysearch">
+      </form>
 
-            <nav class="main-nav">
-                <a class="btn btn-alt gradient" href="about.html">About</a>
-                <a class="btn btn-alt gradient" href="art.html">Art</a>
-                <a class="btn btn-alt gradient" href="contact.html">Contact</a>
-                <a class="btn btn-alt gradient" href="resources.html">Resources</a>
-            </nav>
+      <nav class="main-nav">
+        <a class="btn btn-alt gradient" href="about.html">About</a>
+        <a class="btn btn-alt gradient" href="art.html">Art</a>
+        <a class="btn btn-alt gradient" href="contact.html">Contact</a>
+        <a class="btn btn-alt gradient" href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="grid">
+    <h2>Jason's Test Website</h2>
+
+    <p>Welcome to a <em>quick</em> web dev demo!</p>
+
+    <p>This website is dedicated to my <strong>journey</strong> 
+      through web development.</p>
+
+    <article>
+      <div class="col-60">
+        <h2>Practice Content</h2>
+
+        <p>Below you'll find some experimentation 
+          by me using different HTML tags.</p>
+
+        <div>
+          <p>This is an example of div for social media</p>
+          
+          <p>I have profiles at the following places:
+            <a href="https://facebook.com"
+              target="_blank" rel="noreferrer noopener">Facebook</a>
+          </p>
+
+          <p>You can also reach me through the methods below:
+            <a href="mailto:wearesilence@gmail.com?subject=Reaching%20Out%20From%20Your%20Website">Email Me</a>
+          </p>
         </div>
-    </header>
 
-    <section class="container">
-        <h2>Jason's Test Website</h2>
-        <p>Welcome to a <em>quick</em> web dev demo!</p>
-        <p>This website is dedicated to my <strong>journey</strong> through web development.</p>
+        <!-- Span -->
+        <p>This is an example of <span class="tooltip">span in HTML</span>.</p>
+      </div>
 
-        <article>
-            <h3>Practice Content</h3>
-            <aside>Table of Contents</aside>
-            <p>Below you'll find some experimentation by my using different HTML tags.</p>
+      <aside class="col-20">Table of Contents</aside>
+    </article>
+  </section>
 
-            <!-- Division -->
-            <div>
-                <p>This is an example of div for social media</p>
-                <p>I have profiles at the following places:
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer noopener">Facebook</a>
-                </p>
-                <p>You can also reach me through the methods below:
-                    <a href="mailto:wearesilence@gmail.com?subject=Reaching%20Out%20From%20Your%20Website">Email Me</a>
-                </p>
-            </div>
+  <footer class="primary-footer">
+    <div class="container">
+      <a class="btn btn-alt" href="#top">Back to top</a>
 
-            <!-- Span -->
-            <p>This is an example of <span class="tooltip">span in HTML</span>.</p>
-        </article>
-    </section>
+      <p><small>&copy; Jason Garvin 2022</small></p>
+      
+      <p><a href="mailto:wearesilence@gmail.com?subject=Contact%20Form">Send Email</a></p>
+    </div>
+  </footer>
 
-    <footer class="primary-footer">
-        <div class="container">
-            <a class="btn btn-alt" href="#top">Back to top</a>
-            <p>
-                <small>&copy; Jason Garvin 2022</small>
-            </p>
-            <p>
-                <a href="mailto:wearesilence@gmail.com?subject=Contact%20Form">Send Email</a>
-            </p>
-        </div>
-    </footer>
-
-    <noscript>
-        <p>Oops! This website requires a JavaScript-enabled browser.</p>
-    </noscript>
+  <noscript>
+    <p>Oops! This website requires a JavaScript-enabled browser.</p>
+  </noscript>
 </body>
 
 </html>
