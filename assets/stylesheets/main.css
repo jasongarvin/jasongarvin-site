@@ -326,6 +326,18 @@ em {
     background-color: #7CB9E8;
 }
 
+.btn.gradient:hover {
+    /* Fallback for browsers that don't support gradients */
+    background: #7CB9E8;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#7CB9E8, #6A5ACD);
+    /* For Internet Explorer 10 */
+    background: -ms-linear-gradient(#7CB9E8, #6A5ACD);
+    /* Standard syntax */
+    background: linear-gradient(#7CB9E8, #6A5ACD);
+    color: #F8F8FF;
+}
+
 /*
   ========================================
   Links
@@ -439,7 +451,22 @@ ul {
 
 /*
   ========================================
-  Miscellaneous Style
+  Art / Images
+  ========================================
+*/
+
+.artwork {
+    border: 2px solid #DCDCDC;
+    box-shadow: 0px 4px 5px #999999;
+    display: inline-block;
+    width: 46%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/*
+  ========================================
+  Forms
   ========================================
 */
 
@@ -467,15 +494,11 @@ input[type="reset"] {
     outline: 2px solid #7CB9E8;
 }
 
-.artwork {
-    border: 2px solid #DCDCDC;
-    box-shadow: 0px 2px 2px #130088;
-    display: inline-block;
-    width: 46%;
-    height: 550px;
-    margin: 0 auto;
-    padding: 5px;
-}
+/*
+  ========================================
+  Embellishment Options
+  ========================================
+*/
 
 .gradient {
     /* Fallback for browsers that don't support gradients */
@@ -486,4 +509,33 @@ input[type="reset"] {
     background: -ms-linear-gradient(#130088, #6A5ACD);
     /* Standard syntax */
     background: linear-gradient(#130088, #6A5ACD);
+}
+
+.interactive-wiggle {
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: shakeit;
+    -webkit-animation-duration: 1s;
+    /* Standard syntax */
+    animation-name: shakeit;
+    animation-duration: 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes shakeit {
+    12.5% {left: -40px;}
+    25% {left: 40px;}
+    37.5% {left: -20px;}
+    50% {left: 20px;}
+    62.5% {left: -10px;}
+    75% {left: 10px;}
+}
+ 
+/* Standard syntax */
+@keyframes shakeit {
+    12.5% {left: -40px;}
+    25% {left: 40px;}
+    37.5% {left: -20px;}
+    50% {left: 20px;}
+    62.5% {left: -10px;}
+    75% {left: 10px;}
 }
