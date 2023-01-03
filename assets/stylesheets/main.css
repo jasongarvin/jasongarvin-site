@@ -315,11 +315,11 @@ em {
 .btn-alt {
     border: 1px solid #F8F8FF;
     padding: 8px;
-    transition-duration: 0.4s;
 }
 
 .btn-alt:hover {
     background-color: #7CB9E8;
+    color: #F8F8FF;
 }
 
 .btn.current-page {
@@ -327,6 +327,18 @@ em {
 }
 
 .btn.gradient:hover {
+    /* Fallback for browsers that don't support gradients */
+    background: #7CB9E8;
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#7CB9E8, #6A5ACD);
+    /* For Internet Explorer 10 */
+    background: -ms-linear-gradient(#7CB9E8, #6A5ACD);
+    /* Standard syntax */
+    background: linear-gradient(#7CB9E8, #6A5ACD);
+    color: #F8F8FF;
+}
+
+.btn.current-page.gradient {
     /* Fallback for browsers that don't support gradients */
     background: #7CB9E8;
     /* For Safari 5.1 to 6.0 */
