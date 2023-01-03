@@ -34,25 +34,41 @@
 
   <section class="container">
     <h2>Contact Me</h2>
-    <article>
 
       <!-- Form details below -->
-      <form>
-        <label>Name
-          <input class="contact" type="text">
+      <form class="contact-me">
+        <label>
+          Name
+          <input class="contact" type="text" name="name"
+            placeholder="Name" required>
         </label>
-        <label>Email
-          <input class="contact" type="email" required>
-        </label>
-        <label>Body
-          <textarea class="contact" cols="60" rows="8">
-            What would you like to talk with me about?</textarea>
-        </label>
-        <input class="contact" type="submit" value="Submit">
-        <input class="contact" type="reset" value="Reset">
-      </form>
 
-    </article>
+        <label>
+          Email
+          <input class="contact" type="email" name="email"
+            placeholder="name@domain.com" required>
+        </label>
+
+        <label>
+          What is your topic?
+          <select class="contact" name="question">
+            <option value="general" selected>General</option>
+            <option value="business">Business</option>
+            <option value="consulting">Consulting</option>
+            <option value="marketing">Marketing</option>
+            <option value="software">Software</option>
+            <option value="design">Design</option>
+          </select>
+        </label>
+
+        <textarea class="contact" cols="60" rows="8" name="content"
+          placeholder="What do you want to talk about?"></textarea>
+
+        <div>
+          <input class="contact" type="submit" value="Send">
+          <input class="contact" type="reset" value="Reset">
+        </div>
+      </form>
   </section>
 
   <footer class="primary-footer">

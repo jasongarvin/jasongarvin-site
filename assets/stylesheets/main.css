@@ -233,7 +233,7 @@ section {
 
 body {
   background-color: #F8F8FF;
-  color: #666666;
+  color: #333333;
   font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -500,18 +500,19 @@ input[type="submit"],
 input[type="reset"] {
   box-sizing: border-box;
   padding: 5px;
+  margin: 8px 8px 4px 0px;
   width: 80px;
 }
 
-textarea {
-  resize: none;
+.contact-me label {
+  display: block;
+  font-weight: bold;
+  padding: 8px 0px;
 }
 
-.contact {
+.contact-me {
   box-sizing: border-box;
-  display: block;
-  margin-top: 5px;
-  margin-left: 4%;
+  overflow: hidden;
 }
 
 .contact:active,
