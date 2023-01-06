@@ -401,6 +401,8 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   color: #42444e;
+  margin: 0 auto;
+  width: 90%;
 }
 
 th,
