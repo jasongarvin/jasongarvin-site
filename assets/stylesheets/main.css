@@ -400,34 +400,84 @@ ul {
 table {
   border-collapse: separate;
   border-spacing: 0;
-  box-sizing: border-box;
-}
-
-thead {
-  background-color: #666666;
-  color: #F8F8FF
+  color: #42444e;
 }
 
 th,
 td {
-  border-bottom: 1px solid #666666;
   padding: 10px 15px;
+  vertical-align: middle;
 }
 
-td {
-  border-bottom: 1px solid #666666;
-  border-right: 1px solid #666666;
+thead {
+  background: #42444e;
+  background: linear-gradient(#6A5ACD, #130088);
+  color: #f8f8ff;
+  font-size: 14px;
+  text-transform: uppercase;
 }
-td:first-child {
-  border-left: 1px solid #666666;
+
+th:first-child {
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+
+th:last-child {
+  border-top-right-radius: 5px;
 }
 
 tbody tr:nth-child(even) {
-  background: #e7e7e7;
+  background: #f0f0f2;
 }
 
-tfoot tr:last-child td {
-  border-bottom: 0;
+td {
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+}
+
+td:first-child {
+  border-left: 1px solid #e7e7e7;
+}
+
+.book-title {
+  color: #395870;
+  display: block;
+}
+
+.text-offset {
+  color: #7c7c80;
+  font-size: 14px;
+}
+
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+
+.item-price {
+  text-align: right;
+}
+
+.item-multiple {
+  display: block;
+}
+
+tfoot {
+  text-align: right;
+}
+
+tfoot tr:last-child {
+  background: #f0f0f2;
+  color: #395870;
+  font-weight: bold;
+}
+
+tfoot tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+tfoot tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
 }
 
 /*
