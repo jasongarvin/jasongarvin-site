@@ -532,13 +532,13 @@ tfoot tr:last-child td:last-child {
 
 .primary-header {
   background-color: #42444e;
-  padding-top: 10px;
   width: 100%;
 }
 
 .primary-header div {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .searchbar {
