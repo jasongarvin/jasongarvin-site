@@ -143,35 +143,38 @@ table {
   ========================================
 */
 
+/* TODO Set up responsive layout */
+
 article {
   box-sizing: border-box;
   background-color: #DCDCDC;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
-  box-shadow: 0px 4px 5px #999999;
-  margin: 10px 5px;
+  box-shadow: 0 0.25rem 0.25rem #999999;
+  margin: 0.5rem 0.25rem;
   opacity: 0.9;
-  padding: 15px;
-  width: 890px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 56rem;
 }
 
 aside {
   background-color: #e7e7e7;
   border: 2px dotted #DCDCDC;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.25rem;
+  padding: 0.25rem;
 }
 
 footer {
-  min-height: 120px;
+  min-height: 7rem;
 }
 
 footer p {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 header {
-  min-height: 120px;
+  min-height: 7rem;
 }
 
 iframe {
@@ -183,8 +186,10 @@ section {
   background-color: #e7e7e7;
   border-right: 2px solid #DCDCDC;
   border-left: 2px solid #DCDCDC;
-  margin: 10px 5px;
-  padding: 20px;
+  margin: 0.8rem 0.25rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 60rem;
 }
 
 /*
@@ -203,13 +208,12 @@ section {
 .grid {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 100%;
-  width: 960px;
+  width: 100%;
+  max-width: 60rem;
 }
 
 .container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 1% 3%;
 }
 
 .col-20 {
@@ -313,7 +317,7 @@ strong {
 
 .btn-alt {
     border: 1px solid #F8F8FF;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .btn-alt:hover {
@@ -406,12 +410,13 @@ table {
   border-spacing: 0;
   color: #42444e;
   margin: 0 auto;
+  max-width: 60rem;
   width: 90%;
 }
 
 th,
 td {
-  padding: 10px 15px;
+  padding: 1% 3%;
   vertical-align: middle;
 }
 
@@ -419,7 +424,7 @@ thead {
   background: #42444e;
   background: linear-gradient(#6A5ACD, #130088);
   color: #f8f8ff;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -452,7 +457,7 @@ td:first-child {
 
 .text-offset {
   color: #7c7c80;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .item-stock,
@@ -502,27 +507,38 @@ tfoot tr:last-child td:last-child {
 
 .main-nav,
 .searchbar {
-  margin: 0 auto;
-  bottom: 20px;
+  margin: 2rem 0;
+}
+
+.hidden {
+  clip: rect(1ppx, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .logo {
   color: #F8F8FF;
   font-weight: 100;
   font-size: 2.25rem;
-  margin-right: 5%;
 }
 
 .main-nav {
   font-variant: small-caps;
-  margin-left: 5%;
+  width: 30%;
+  min-width: 18rem;
 }
 
 .primary-header {
   background-color: #42444e;
-  margin: 0px;
   padding-top: 10px;
   width: 100%;
+}
+
+.primary-header div {
+  display: flex;
+  justify-content: space-around;
 }
 
 .searchbar {
@@ -530,9 +546,10 @@ tfoot tr:last-child td:last-child {
   border-radius: 2px;
   background-color: #666666;
   color: #F8F8FF;
-  margin: 0% 4.3%;
-  padding: 8px;
-  width: 28%;
+  max-height: 2.8rem;
+  padding: 0.5rem;
+  width: 25%;
+  min-width: 15rem;
 }
 
 #site-logo {
@@ -603,14 +620,14 @@ input[type="submit"],
 input[type="reset"] {
   box-sizing: border-box;
   padding: 5px;
-  margin: 8px 8px 4px 0px;
-  width: 80px;
+  margin: 0.5rem 0.5rem 0.25rem 0;
+  width: 5rem;
 }
 
 .contact-me label {
   display: block;
   font-weight: bold;
-  padding: 8px 0px;
+  padding: 0.5rem 0;
 }
 
 .contact-me {
