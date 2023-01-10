@@ -198,8 +198,8 @@ section {
   ========================================
 */
 
-.col-20,
-.col-60 {
+.col-25,
+.col-65 {
   display: inline-block;
   vertical-align: top;
 }
@@ -216,14 +216,16 @@ section {
   padding: 1% 3%;
 }
 
-.col-20 {
-  width: 25%;
+.col-25 {
   padding-left: 3.5%;
+  width: 25%;
+  min-width: 8rem;
 }
 
-.col-60 {
-  width: 65%;
+.col-65 {
   padding-right: 3.5%;
+  width: 65%;
+  min-width: 21rem;
 }
 
 /*
@@ -505,9 +507,40 @@ tfoot tr:last-child td:last-child {
   position: relative;
 }
 
+.primary-header {
+  background-color: #42444e;
+  width: 100%;
+}
+
+.primary-header div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
 .main-nav,
 .searchbar {
   margin: 2rem 0;
+}
+
+/* For mobile */
+@media only screen and (max-width: 780px) {
+  .primary-header div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .main-nav,
+  .searchbar {
+    margin: 0.5rem auto;
+  }
+
+  .logo {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .hidden {
@@ -527,18 +560,8 @@ tfoot tr:last-child td:last-child {
 .main-nav {
   font-variant: small-caps;
   width: 30%;
-  min-width: 18rem;
-}
-
-.primary-header {
-  background-color: #42444e;
-  width: 100%;
-}
-
-.primary-header div {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  min-width: 17rem;
+  text-align: center;
 }
 
 .searchbar {
