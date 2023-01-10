@@ -523,26 +523,6 @@ tfoot tr:last-child td:last-child {
   margin: 2rem 0;
 }
 
-/* For mobile */
-@media only screen and (max-width: 780px) {
-  .primary-header div {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  .main-nav,
-  .searchbar {
-    margin: 0.5rem auto;
-  }
-
-  .logo {
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 .hidden {
   clip: rect(1ppx, 1px, 1px, 1px);
   position: absolute !important;
@@ -707,4 +687,34 @@ input[type="reset"] {
   50% {left: 20px;}
   62.5% {left: -10px;}
   75% {left: 10px;}
+}
+
+/*
+  ========================================
+  Mobile Design
+  ========================================
+*/
+
+@media only screen and (max-width: 780px) {
+  .container,
+  .grid {
+    text-align: center;
+  }
+  
+  .primary-header div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .main-nav,
+  .searchbar {
+    margin: 0.5rem auto;
+  }
+
+  .logo {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
