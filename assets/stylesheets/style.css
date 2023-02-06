@@ -3,3 +3,251 @@ and visual flair. Must be simple and elegant.
 
 Note that this will be a full reset from the original CSS and
 thus requires an overhaul in full force. */
+
+
+/* ==========
+  Base Styles
+========== */
+
+article,
+aside,
+div,
+footer,
+form,
+header,
+iframe,
+nav,
+section,
+ul,
+ol,
+dl {
+  box-sizing: border-box;
+}
+
+article {
+  background: #eee;
+}
+
+aside {
+  background: #ccc;
+}
+
+div {
+  break-inside: avoid;
+}
+
+header,
+footer {
+  padding: 1rem;
+  background: #aaa;
+}
+
+header nav {
+  box-sizing: border-box;
+
+  background-color: #bbb;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+  margin-top: 0.5rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%
+}
+
+nav {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+section {
+  background: #fff;
+}
+
+
+
+/* --- Body & Typography --- */
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  color: #222;
+
+  font-family: "Lato", 
+        "Tahoma", 
+        "Arial", 
+        "Helvetica", 
+        "sans-serif";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-header-color, #333333);
+  margin-bottom: 21px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+}
+
+a {
+  color: #2d5b96;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #303ef5;
+  border-bottom: 1px dotted;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* ==========
+  Layout Styles
+========== */
+
+
+/* --- General layout --- */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- Lists Layout --- */
+
+.list-hor {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.list-hor li a {
+  display: block;
+  padding: 1rem;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+/* ==========
+  Module Styles
+========== */
+
+/* --- Search styles --- */
+
+.search-logo {
+  display: block;
+
+  align-items: center;
+}
+
+.search-field {
+  display: none;
+}
+
+/* --- Social media styles --- */
+
+.social-media {
+  text-decoration: none;
+}
+
+.social-media:hover,
+.nav-item:hover {
+  border: none;
+}
+
+.facebook-icon,
+.github-icon,
+.linkedin-icon,
+.instagram-icon,
+.mastodon-icon {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+}
+
+#main-header {
+  text-align: center;
+}
+
+#main-nav {
+  padding: 0.5rem 0;
+}
