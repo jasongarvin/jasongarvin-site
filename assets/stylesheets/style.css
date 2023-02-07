@@ -39,13 +39,13 @@ div {
 header,
 footer {
   padding: 1rem;
-  background: #aaa;
+  background: #eee;
 }
 
 header nav {
   box-sizing: border-box;
 
-  background-color: #bbb;
+  background-color: #ddd;
 }
 
 footer {
@@ -100,10 +100,11 @@ body {
   color: #222;
 
   font-family: "Lato", 
-        "Tahoma", 
-        "Arial", 
-        "Helvetica", 
-        "sans-serif";
+               "Open Sans", 
+               "Helvetica Neue", 
+               Helvetica, 
+               Arial, 
+               sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -184,6 +185,7 @@ p {
 }
 
 .flex-container {
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
 }
@@ -191,6 +193,7 @@ p {
 /* --- Lists Layout --- */
 
 .list-hor {
+  display: -webkit-flex;
   display: flex;
   margin: 0;
   padding: 0;
@@ -215,8 +218,6 @@ p {
 /* --- Search styles --- */
 
 .search-logo {
-  display: block;
-
   align-items: center;
 }
 
@@ -235,6 +236,7 @@ p {
   border: none;
 }
 
+.email-icon,
 .facebook-icon,
 .github-icon,
 .linkedin-icon,
@@ -250,4 +252,64 @@ p {
 
 #main-nav {
   padding: 0.5rem 0;
+}
+
+/* --- Art styles --- */
+
+.artwork {
+  box-shadow: 0px 4px 5px #999999;
+  display: inline-block;
+  margin: 5px;
+  min-width: 0;
+  padding: 5px;
+}
+
+/* --- Gradient styles --- */
+
+.gradient {
+  /* Fallback for browsers that don't support gradients */
+  background: #130088;
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(#130088, #6A5ACD);
+  /* For Internet Explorer 10 */
+  background: -ms-linear-gradient(#130088, #6A5ACD);
+  /* Standard syntax */
+  background: linear-gradient(#130088, #6A5ACD);
+}
+
+/* --- Form styles --- */
+
+input,
+select,
+textarea {
+  font: 300 16px/21px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label,
+input.contact {
+  font-variant: small-caps;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0.5rem 0.5rem 0.25rem 0;
+  width: 5rem;
+}
+
+.contact-me label {
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.contact-me {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contact:active,
+.contact:focus {
+  outline: 2px solid #7CB9E8;
 }
