@@ -4,10 +4,32 @@ and visual flair. Must be simple and elegant.
 Note that this will be a full reset from the original CSS and
 thus requires an overhaul in full force. */
 
+/* ================
+  Color Variables
+================ */
 
-/* ==========
+:root {
+  --main-header: #fdfdfd;
+  --main-bg: #fff;
+  --content-bg: #eee;
+  --main-footer: #ced1d3;
+  --border-color: #999999;
+
+  --header-text: #333;
+  --link-color: #2d5b96;
+  --link-active-color: #303ef5;
+
+  --shadow-light: #d3d3d3;
+  --shadow-normal: #b3b3b3;
+  --shadow-dark: #939393;
+  --form-border: #7CB9E8;
+}
+
+
+
+/* ================
   Base Styles
-========== */
+================ */
 
 article,
 aside,
@@ -24,31 +46,33 @@ dl {
   box-sizing: border-box;
 }
 
-article {
-  background: #eee;
-}
-
+article,
 aside {
-  background: #ccc;
+  background: var(--content-bg, #eee);
 }
 
 div {
   break-inside: avoid;
 }
 
-header,
-footer {
+header {
   padding: 1rem;
-  background: #eee;
+
+  background: var(--main-header, #fdfdfd);
+  box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
 }
 
 header nav {
   box-sizing: border-box;
 
-  background-color: #ddd;
+  background-color: #f5fafc;
 }
 
 footer {
+  padding: 1rem;
+
+  background: var(--main-footer, #ced1d3);
+  
   text-align: center;
   font-size: 0.75rem;
 }
@@ -73,10 +97,8 @@ img {
 nav {
   padding: 1rem;
   margin-top: 1rem;
-}
 
-section {
-  background: #fff;
+  box-shadow: 0 3px 5px var(--shadow-light, #d3d3d3);
 }
 
 
@@ -98,6 +120,7 @@ body {
   margin: 0;
 
   color: #222;
+  background-color: var(--main-bg, #fff);
 
   font-family: "Lato", 
                "Open Sans", 
@@ -114,7 +137,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--main-header-color, #333333);
+  color: var(--header-text, #333333);
   margin-bottom: 21px;
 }
 
@@ -157,12 +180,12 @@ h6 {
 }
 
 a {
-  color: #2d5b96;
+  color: var(--link-color, #2d5b96);
   text-decoration: none;
 }
 
 a:hover {
-  color: #303ef5;
+  color: var(--link-active-color, #303ef5);
   border-bottom: 1px dotted;
 }
 
@@ -172,10 +195,9 @@ p {
 
 
 
-/* ==========
+/* ================
   Layout Styles
-========== */
-
+================ */
 
 /* --- General layout --- */
 
@@ -211,9 +233,9 @@ p {
 
 
 
-/* ==========
+/* ================
   Module Styles
-========== */
+================ */
 
 /* --- Search styles --- */
 
@@ -257,7 +279,7 @@ p {
 /* --- Art styles --- */
 
 .artwork {
-  box-shadow: 0px 4px 5px #999999;
+  box-shadow: 0px 4px 5px var(--border-color, #999999);
   display: inline-block;
   margin: 5px;
   min-width: 0;
@@ -268,13 +290,13 @@ p {
 
 .gradient {
   /* Fallback for browsers that don't support gradients */
-  background: #130088;
+  color: #130088;
   /* For Safari 5.1 to 6.0 */
-  background: -webkit-linear-gradient(#130088, #6A5ACD);
+  color: -webkit-linear-gradient(#130088, #6A5ACD);
   /* For Internet Explorer 10 */
-  background: -ms-linear-gradient(#130088, #6A5ACD);
+  color: -ms-linear-gradient(#130088, #6A5ACD);
   /* Standard syntax */
-  background: linear-gradient(#130088, #6A5ACD);
+  color: linear-gradient(#130088, #6A5ACD);
 }
 
 /* --- Form styles --- */
@@ -311,5 +333,5 @@ input[type="reset"] {
 
 .contact:active,
 .contact:focus {
-  outline: 2px solid #7CB9E8;
+  outline: 2px solid var(--form-border, #7CB9E8);
 }
