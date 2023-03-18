@@ -15,11 +15,20 @@
   <link rel="stylesheet" media="print" href="assets/stylesheets/print.css" />
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400" />
 </head>
 
 <body id="top">
+
+  <!-- Optional Banner with CTA -->
+
+  <div class="hero banner">
+    <div class="hero-content">
+      <p>Check out my portfolio</p>
+    </div>
+
+    <button class="hero-button grow_box">here</button>
+  </div>
 
   <!-- Main Header -->
 
@@ -28,29 +37,31 @@
       <h1>
         <a class="nav-item gradient" href="index.html">Jason Garvin</a>
       </h1>
-
-      <nav id="main-nav flex-container">
-        <ul class="list-hor flex-container">
-          <li>
-            <a class="nav-item" href="about.html">About</a>
-          </li>
-          <li>
-            <a class="nav-item" href="art.html">Art</a>
-          </li>
-          <li>
-            <a class="nav-item" href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="nav-item" href="contact.html">Contact</a>
-          </li>
-        </ul>
-
-        <form class="search-bar">
-          <label class="search-logo material-symbols-outlined" for="mysearch">search</label>
-          <input class="search-field" type="search" id="mysearch">
-        </form>
-      </nav>
     </div>
+
+    <nav id="main-nav flex-container">
+      <ul class="list-hor flex-container">
+        <li>
+          <a class="nav-item" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-item" href="art.html">Art</a>
+        </li>
+        <li>
+          <a class="nav-item" href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a class="nav-item" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <form class="site-search">
+        <label class="search-field" for="mysearch">
+          <img class="search-icon" src="assets/img/search.png" alt="Search icon" />
+        </label>
+        <input class="search-bar" type="search" id="mysearch">
+      </form>
+    </nav>
   </header>
 
   <!-- Main Content-->

@@ -23,6 +23,8 @@ thus requires an overhaul in full force. */
   --shadow-normal: #b3b3b3;
   --shadow-dark: #939393;
   --form-border: #7CB9E8;
+
+  --hero-color: #8990ee;
 }
 
 
@@ -56,8 +58,6 @@ div {
 }
 
 header {
-  padding: 1rem;
-
   background: var(--main-header, #fdfdfd);
   box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
 }
@@ -95,10 +95,7 @@ img {
 }
 
 nav {
-  padding: 1rem;
   margin-top: 1rem;
-
-  box-shadow: 0 3px 5px var(--shadow-light, #d3d3d3);
 }
 
 
@@ -231,31 +228,117 @@ p {
   text-decoration: none;
 }
 
+/* --- Buttons --- */
 
+button {
+  position: relative;
+  overflow: hidden;
+  padding: 0.1rem 0.2rem;
+  z-index: 1;
+
+  border: 2px solid #346edb;
+  background: #346edb;
+  color: #fff;
+}
+
+button:hover {
+  color: #346edb;
+}
+
+button::after {
+  content: "";
+  display: block;
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  /* Set z-index to -1 so this style can 
+  slide behind text in buttons with z-index 1*/
+  z-index: -1;
+
+  background: #ecf0f1;
+}
+
+button.grow_box {
+  transition: all 0.3s ease;
+}
+
+button.grow_box:hover::after {
+  transition: all 0.3s ease-out;
+}
+
+button.grow_box::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Make it SUPER TINY first so you can't see it */
+  transform: scale(0, 0);
+}
+
+button.grow_box:hover::after {
+  /* Grow it back to a full size to fill the button */
+  transform: scale(1, 1);
+}
+
+.hero-button {
+  margin: 1rem 0;
+}
 
 /* ================
   Module Styles
 ================ */
 
-/* --- Search styles --- */
-
-.search-logo {
-  align-items: center;
+.hero {
+  background: var(--hero-color, #8990ee);
 }
 
-.search-field {
+.hero-content {
+  position: relative;
+  top: 6px;
+  margin-right: 1rem;
+}
+
+/* --- Banner --- */
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* --- Search styles --- */
+
+.search-bar {
   display: none;
+}
+
+.search-icon {
+  margin: auto;
+  max-height: 1rem;
+  max-width: 1rem;
+}
+
+.search-icon:hover {
+  cursor: pointer;
 }
 
 /* --- Social media styles --- */
 
 .social-media {
+  position: relative;
   text-decoration: none;
+
+  transition: transform 200ms;
 }
 
 .social-media:hover,
 .nav-item:hover {
   border: none;
+}
+
+.social-media:hover {
+  transform: translateY(-2px);
 }
 
 .email-icon,
@@ -269,6 +352,8 @@ p {
 }
 
 #main-header {
+  padding-bottom: 0;
+
   text-align: center;
 }
 
