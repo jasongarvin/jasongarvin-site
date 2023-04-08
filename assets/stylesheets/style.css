@@ -53,18 +53,12 @@ aside {
   background: var(--content-bg, #eee);
 }
 
-div {
-  break-inside: avoid;
-}
-
 header {
   background: var(--main-header, #fdfdfd);
   box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
 }
 
 header nav {
-  box-sizing: border-box;
-
   background-color: #f5fafc;
 }
 
@@ -92,10 +86,6 @@ footer p {
 
 img {
   max-width: 100%
-}
-
-nav {
-  margin-top: 1rem;
 }
 
 
@@ -186,15 +176,62 @@ a:hover {
   border-bottom: 1px dotted;
 }
 
-p {
-  margin-bottom: 1.5rem;
-}
-
 
 
 /* ================
   Layout Styles
 ================ */
+
+/* ================
+  Header Styles
+================ */
+
+.top-bar {
+  display: flex;
+  min-height: 100px;
+  max-width: 1200px;
+  padding: 0 3rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.title {
+  margin: auto 0.5rem;
+  line-height: 2.618rem;
+}
+
+#main-header {
+  padding-bottom: 0;
+
+  text-align: center;
+}
+
+#main-nav {
+  padding: 0.5rem 0;
+  margin-top: 0.75rem;
+}
+
+/* --- Search styles --- */
+
+.site-search {
+  display: block;
+  padding: 1rem;
+}
+
+.search-bar {
+  display: none;
+}
+
+.search-icon {
+  margin: auto;
+  height: calc(15px + 0.390625vw);
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
+
 
 /* --- General layout --- */
 
@@ -281,7 +318,7 @@ button.grow_box:hover::after {
 }
 
 .hero-button {
-  margin: 1rem 0;
+  margin: 0.618rem 0;
 }
 
 /* ================
@@ -293,34 +330,18 @@ button.grow_box:hover::after {
 }
 
 .hero-content {
-  position: relative;
-  top: 6px;
-  margin-right: 1rem;
-}
-
-/* --- Banner --- */
-
-.banner {
   display: flex;
-  justify-content: center;
+  max-width: 1200px;
+  padding: 0 3rem;
+  margin: 0 auto;
+  justify-content: right;
 }
 
-
-
-/* --- Search styles --- */
-
-.search-bar {
-  display: none;
-}
-
-.search-icon {
-  margin: auto;
-  max-height: 1rem;
-  max-width: 1rem;
-}
-
-.search-icon:hover {
-  cursor: pointer;
+.call-to-action {
+  display: block;
+  padding: 0.15rem 0.2rem;
+  margin: 0.618rem 1.5rem 0.618rem 0;
+  color: #fff;
 }
 
 /* --- Social media styles --- */
@@ -349,16 +370,6 @@ button.grow_box:hover::after {
 .mastodon-icon {
   max-height: 1.5rem;
   max-width: 1.5rem;
-}
-
-#main-header {
-  padding-bottom: 0;
-
-  text-align: center;
-}
-
-#main-nav {
-  padding: 0.5rem 0;
 }
 
 /* --- Art styles --- */
