@@ -16,6 +16,8 @@
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="top">
@@ -26,7 +28,9 @@
     <div class="hero-content">
       <p class="call-to-action">Come take a look at my projects</p>
 
-      <button class="hero-button grow_box">Portfolio</button>
+      <button class="hero-button grow_box">
+        <a class="button-link" href="#">Portfolio</a>
+      </button>
     </div>
   </div>
 
@@ -38,31 +42,51 @@
         <a class="nav-item gradient" href="index.html">Jason Garvin</a>
       </h1>
 
-      <nav id="main-nav">
-        <ul class="list-hor">
-          <li>
-            <a class="nav-item" href="about.html">About</a>
-          </li>
-          <li>
-            <a class="nav-item" href="art.html">Art</a>
-          </li>
-          <li>
-            <a class="nav-item" href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a class="nav-item" href="contact.html">Contact</a>
-          </li>
-          <li>
-            <form class="site-search">
-              <label class="search-field" for="mysearch">
-                <img class="search-icon" src="assets/img/search.png" alt="Search icon" />
-              </label>
-              <input class="search-bar" type="search" id="mysearch">
-            </form>
-          </li>
-        </ul>
-      </nav>
+      <div class="nav-wrapper">
+        <input type="checkbox" id="open_menu" class="open_menu">
+        <label for="open_menu" class="burger">
+          <i class="fa fa-bars"></i>
+          Open Menu
+        </label>
+    
+        <nav id="main-nav">
+          <div class="menu_item">
+            <a href="about.html">
+              <i class="fa fa-paint-brush"></i>
+              <span>About</span>
+            </a>
+          </div>
+      
+          <div class="menu_item">
+            <a href="art.html">
+              <i class="fa fa-code"></i>
+              <span>Art</span>
+            </a>
+          </div>
+      
+          <div class="menu_item">
+            <a href="blog.html">
+              <i class="fa fa-credit-card"></i>
+              <span>Blog</span>
+            </a>
+          </div>
+      
+          <div class="menu_item">
+            <a href="contact.html">
+              <i class="fa fa-bullhorn"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </nav>
+      </div>
     </div>
+
+    <form class="site-search">
+      <label class="search-field" for="mysearch">
+        <img class="search-icon" src="assets/img/search.png" alt="Search icon" />
+      </label>
+      <input class="search-bar" type="search" id="mysearch">
+    </form>
   </header>
 
   <!-- Main Content-->

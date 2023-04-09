@@ -105,6 +105,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 
   color: #222;
   background-color: var(--main-bg, #fff);
@@ -188,33 +189,225 @@ a:hover {
 
 .top-bar {
   display: flex;
-  min-height: 100px;
+  min-height: 80px;
   max-width: 1200px;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 .title {
-  margin: auto 0.5rem;
+  margin: auto 0;
   line-height: 2.618rem;
 }
 
 #main-header {
   padding-bottom: 0;
+}
 
-  text-align: center;
+/* --- Navigation Styles --- */
+
+.nav-wrapper {
+  max-width: 800px;
+  margin: auto 0;
 }
 
 #main-nav {
-  padding: 0.5rem 0;
-  margin-top: 0.75rem;
+  display: flex;
+  max-width: 550px;
+}
+
+nav .menu_item {
+  height: 2.25rem;
+  line-height: 2.25rem;
+}
+
+nav a {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding-right: 1rem;
+
+  color: #fff;
+  background: #3498db;
+  border-right: 0.25rem solid #fff;
+}
+
+nav .menu_item:last-of-type a {
+  border-right: 0;
+}
+
+nav .menu_item .fa {
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  line-height: inherit;
+  width: 2.5rem;
+  z-index: -1;
+
+  background: #2980b9;
+
+  text-align: center;
+  transition: all 0.35s;
+}
+
+nav a span {
+  display: block;
+  margin-left: 3rem;
+}
+
+nav a {
+  z-index: 1;
+  overflow: hidden;
+}
+
+nav a:hover {
+  border-bottom: none;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: -100%;
+  z-index: -2;
+
+  background: #2980b9;
+
+  transition: all 0.35s;
+}
+
+/* Burger menu */
+
+.open_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  height: 3.4rem;
+  width: 3.4rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+
+  color: #fff;
+  background: #3498db;
+  
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  
+  transition: background 0.35s;
+}
+
+.burger .fa {
+  display: block;
+  font-size: 1.5em;
+  line-height: 2.1em;
+  pointer-events: none;
+}
+
+/* --- Nav Media Queries --- */
+
+@media (min-width: 879px) {
+  nav a:hover::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transition: all 0.35s;
+  }
+
+  nav a:hover .fa {
+    font-size: 1.22rem;
+    width: 3rem;
+    transition: all 0.35s;
+  }
+}
+
+@media (max-width: 879px) {
+  nav .menu_item .fa {
+    z-index: 0;
+  }
+
+  nav a span {
+    width: 0;
+    margin-left: 1.5rem;
+    transition: margin-left 0.5s ease;
+  }
+
+  nav a:hover span {
+    width: auto;
+    margin-left: 4.5rem;
+    transition: margin-left 0.5s ease;
+  }
+}
+
+@media (max-width: 669px) {
+  .burger {
+    display: block;
+  }
+
+  .open_menu:checked + .burger {
+    background: #2980b9;
+    transition: background 0.35s;
+  }
+
+  .open_menu:checked + .burger + nav {
+    left: 50%;
+    transition: all 0.35s;
+  }
+
+  nav {
+    position: absolute;
+    left: 100%;
+    width: 50%;
+    z-index: 99;
+    flex-direction: column;
+    transition: all 0.35s;
+  }
+
+  nav div {
+    border-bottom: 0.25em solid #fff;
+  }
+
+  nav a {
+    border-right: 0;
+  }
+
+  nav a span {
+    width: auto;
+    margin-left: 4.5em;
+    transition: margin-left 0.5s ease;
+  }
+
+  nav a:hover::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.35s;
+  }
+
+  nav a:hover .fa {
+    width: 3.6em;
+    font-size: 1.25em;
+    transition: all 0.35s;
+  }
 }
 
 /* --- Search styles --- */
 
 .site-search {
-  display: block;
+  display: none;
   padding: 1rem;
 }
 
@@ -230,8 +423,6 @@ a:hover {
 .search-icon:hover {
   cursor: pointer;
 }
-
-
 
 /* --- General layout --- */
 
@@ -315,6 +506,14 @@ button.grow_box::after {
 button.grow_box:hover::after {
   /* Grow it back to a full size to fill the button */
   transform: scale(1, 1);
+}
+
+.button-link {
+  color: #fff;
+}
+
+.button-link:hover {
+  border: none;
 }
 
 .hero-button {
