@@ -202,7 +202,9 @@ a:hover {
 }
 
 #main-header {
+  width: 100%;
   padding-bottom: 0;
+  z-index: 999px;
 }
 
 /* --- Navigation Styles --- */
@@ -427,8 +429,9 @@ nav a::after {
 /* --- General layout --- */
 
 .container {
-  margin: 0 auto;
   max-width: 1200px;
+  padding: 0 1.5rem 1rem;
+  margin: 0 auto;
 }
 
 .flex-container {
@@ -531,7 +534,7 @@ button.grow_box:hover::after {
 .hero-content {
   display: flex;
   max-width: 1200px;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
   justify-content: right;
 }
