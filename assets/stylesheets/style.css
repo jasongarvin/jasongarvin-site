@@ -56,21 +56,10 @@ aside {
 header {
   position: sticky;   
   top: 0; 
-  background: var(--main-header, #fdfdfd);
-  box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
 }
 
 header nav {
   background-color: #f5fafc;
-}
-
-footer {
-  padding: 1rem;
-
-  background: var(--main-footer, #ced1d3);
-  
-  text-align: center;
-  font-size: 0.75rem;
 }
 
 footer h1,
@@ -393,6 +382,9 @@ button.grow_box:hover::after {
   width: 100%;
   padding-bottom: 0;
   z-index: 999px;
+
+  background: var(--main-header, #fdfdfd);
+  box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
 }
 
 /* --- Navigation Styles --- */
@@ -599,6 +591,82 @@ nav a::after {
     font-size: 1.25em;
     transition: all 0.35s;
   }
+}
+
+
+
+/* ================
+  Footer Styles
+================ */
+
+#primary-footer {
+  padding: 1rem 0 0;
+  margin: 0;
+  background: var(--main-footer, #ced1d3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-grid-left {
+  margin: 0.5rem 1rem 0 0;
+  text-align: left;
+}
+
+.footer-grid-center {
+  margin: 0.5rem 1rem 0;
+  text-align: center;
+}
+
+.footer-grid-right {
+  margin: 0.5rem 0 0 1rem;
+  text-align: right;
+}
+
+.end-footer-container {
+  padding: 0.5rem 0;
+  color: #fff;
+  background-color: #333;
+}
+
+.copyright {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  z-index: 2;
+
+  color: #fff;
+  background: #2980b9;
+  box-shadow: 0 4px 5px var(--shadow-normal, #b3b3b3);
+
+  text-align: center;
+}
+
+.back-to-top:hover {
+  border: none;
+}
+
+.to-top-button {
+  display: block;
+  position: relative;
+  top: 12px;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: inherit;
+  font-size: 24px;
 }
 
 
