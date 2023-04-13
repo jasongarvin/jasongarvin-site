@@ -1,5 +1,7 @@
 # custom directories to ignore during alpha development
-scripts/
+cache-status.js
+update-cache.js
+contact.js
 
 # ignore all files starting with . or ~
 .*
