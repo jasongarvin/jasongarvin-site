@@ -187,177 +187,11 @@ a:hover {
   justify-content: center;
 }
 
-/* --- Search styles --- */
-
-.search-container {
-  position: relative;
-  display: flex;
-  height: 2.25rem;
-  min-width: 100px;
-
-  margin: auto 0;
-}
-
-#search-bar {
-  height: 100%;
-  width: 100%;
-  padding: 2px 23px 2px 30px;
-
-  background-color: #ced1d3;
-  border: none;
-  outline: 0;
-}
-
-#search-bar:hover, 
-#search-bar:focus {
-  outline: 2px solid var(--form-border, #7CB9E8);
-  background-color: #fff;
-}
-
-.search-icon {
-  display: block;
-  position: absolute;
-  top: 0.65rem;
-  left: 0;
-  height: 100%;
-  width: 1.7rem;
-
-  line-height: inherit;
-
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.clear-icon {
-  display: block;
-  position: absolute;
-  top: 0.65rem;
-  right: 0;
-  height: 100%;
-  width: 1.7rem;
-  cursor: pointer;
-
-  line-height: inherit;
-
-  font-size: 18px;
-  text-align: center;
-  visibility: hidden;
-  cursor: pointer;
-}
-
-/* Fixes color of placeholder text in site search bar */
-#search-bar::placeholder {
-  opacity: 1;
-  color: #000;
-}
-
-#search-bar:-ms-input-placeholder,
-#search-bar::-ms-input-placeholder {
-  color: #000;
-}
-
-/* Clears the ‘X’ from Internet Explorer */
-input[type=search]::-ms-clear {
-  display: none; width : 0; height: 0;
-}
-
-input[type=search]::-ms-reveal {
-  display: none; width : 0; height: 0;
-}
-
-/* Clears the ‘X’ from Chrome */
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
-}
-
-/* --- Lists Layout --- */
-
-.list-hor {
-  display: -webkit-flex;
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-}
-
-.list-hor li a {
-  display: block;
-  padding: 1rem;
-
-  text-align: center;
-  text-decoration: none;
-}
-
-/* --- Buttons --- */
-
-button {
-  position: relative;
-  overflow: hidden;
-  padding: 0.1rem 0.2rem;
-  z-index: 1;
-
-  border: 2px solid #346edb;
-  background: #346edb;
-  color: #fff;
-}
-
-button:hover {
-  color: #346edb;
-}
-
-button::after {
-  content: "";
-  display: block;
-  padding: 0.1rem 0.2rem;
-  position: absolute;
-  /* Set z-index to -1 so this style can 
-  slide behind text in buttons with z-index 1*/
-  z-index: -1;
-
-  background: #ecf0f1;
-}
-
-button.grow_box {
-  transition: all 0.3s ease;
-}
-
-button.grow_box:hover::after {
-  transition: all 0.3s ease-out;
-}
-
-button.grow_box::after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  /* Make it SUPER TINY first so you can't see it */
-  transform: scale(0, 0);
-}
-
-button.grow_box:hover::after {
-  /* Grow it back to a full size to fill the button */
-  transform: scale(1, 1);
-}
-
-.button-link {
-  color: #fff;
-}
-
-.button-link:hover {
-  border: none;
-}
-
-.hero-button {
-  margin: 0.618rem 0;
-}
 
 
+/* =========================================
+              Core Page Chunks
+========================================= */
 
 /* ================
   Header Styles
@@ -373,9 +207,9 @@ button.grow_box:hover::after {
 }
 
 .title {
-  margin: auto 0;
+  margin: auto 0.25rem auto 0;
   font-size: 20px;
-  line-height: 2rem;
+  line-height: 1.3rem;
 }
 
 #main-header {
@@ -397,6 +231,7 @@ button.grow_box:hover::after {
 #main-nav {
   display: flex;
   max-width: 550px;
+  margin-left: 0.25rem;
 }
 
 nav .menu_item {
@@ -519,6 +354,11 @@ nav a::after {
 }
 
 @media (max-width: 879px) {
+  #main-nav {
+    width: 300px;
+    justify-content: right;
+  }
+
   nav .menu_item .fa {
     z-index: 0;
   }
@@ -593,6 +433,93 @@ nav a::after {
   }
 }
 
+/* --- Search styles --- */
+
+.search-container {
+  position: relative;
+  display: flex;
+  height: 2.25rem;
+  min-width: 100px;
+
+  margin: auto 0;
+}
+
+#search-bar {
+  height: 100%;
+  width: 100%;
+  padding: 2px 23px 2px 30px;
+
+  background-color: #ced1d3;
+  border: none;
+  outline: 0;
+}
+
+#search-bar:hover, 
+#search-bar:focus {
+  outline: 2px solid var(--form-border, #7CB9E8);
+  background-color: #fff;
+}
+
+.search-icon {
+  display: block;
+  position: absolute;
+  top: 0.65rem;
+  left: 0;
+  height: 100%;
+  width: 1.7rem;
+
+  line-height: inherit;
+
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.clear-icon {
+  display: block;
+  position: absolute;
+  top: 0.65rem;
+  right: 0;
+  height: 100%;
+  width: 1.7rem;
+  cursor: pointer;
+
+  line-height: inherit;
+
+  font-size: 18px;
+  text-align: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/* Fixes color of placeholder text in site search bar */
+#search-bar::placeholder {
+  opacity: 1;
+  color: #000;
+}
+
+#search-bar:-ms-input-placeholder,
+#search-bar::-ms-input-placeholder {
+  color: #000;
+}
+
+/* Clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+  display: none; width : 0; height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none; width : 0; height: 0;
+}
+
+/* Clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 
 
 /* ================
@@ -603,6 +530,7 @@ nav a::after {
   padding: 1rem 0 0;
   margin: 0;
   background: var(--main-footer, #ced1d3);
+  box-shadow: inset 0 1px 3px 0 var(--shadow-light, #d3d3d3);
 }
 
 .footer-grid {
@@ -633,6 +561,7 @@ nav a::after {
   padding: 0.5rem 0;
   color: #fff;
   background-color: #333;
+  box-shadow: inset 0 1px 5px 0 #222;
 }
 
 .copyright {
@@ -659,6 +588,12 @@ nav a::after {
   border: none;
 }
 
+.back-to-top:hover .to-top-button {
+  top: 9px;
+  font-size: 1.6rem;
+  transition: all 0.25s ease;
+}
+
 .to-top-button {
   display: block;
   position: relative;
@@ -667,13 +602,17 @@ nav a::after {
   width: 2.5rem;
   line-height: inherit;
   font-size: 24px;
+
+  transition: all 0.2s ease;
 }
 
 
 
-/* ================
-  Module Styles
-================ */
+/* =========================================
+              Component Styles
+========================================= */
+
+/* --- Hero Content Styles --- */
 
 .hero {
   background: var(--hero-color, #8990ee);
@@ -696,12 +635,45 @@ nav a::after {
 
 /* --- Social media styles --- */
 
+#floating-social {
+  position: fixed;
+  height: 6.5rem;
+  width: 3rem;
+  margin-left: 1rem;
+  z-index: 3;
+  background-color: rgba(137, 144, 238, 0.5);
+}
+
+.social-list {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.social-list li a {
+  display: block;
+  height: 1.618rem;
+  width: 1.8rem;
+  margin: 0.25rem auto;
+  overflow: hidden;
+
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-list li a:hover {
+  border: none;
+}
+
 .social-media {
   position: relative;
   text-decoration: none;
-  z-index: 1;
 
-  transition: transform 200ms;
+  transition: transform 0.2s;
 }
 
 .social-media:hover,
@@ -710,40 +682,92 @@ nav a::after {
 }
 
 .social-media:hover {
-  transform: translateY(-2px);
+  transform: translateX(3px);
+
+  transition: transform 0.2s;
 }
 
-.email-icon,
-.facebook-icon,
-.github-icon,
-.linkedin-icon,
-.instagram-icon,
-.mastodon-icon {
-  max-height: 1.5rem;
-  max-width: 1.5rem;
+/* --- Lists Layout --- */
+
+.list-hor {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
-/* --- Art styles --- */
+.list-hor li a {
+  display: block;
+  padding: 1rem;
 
-.artwork {
-  box-shadow: 0px 4px 5px var(--border-color, #999999);
-  display: inline-block;
-  margin: 5px;
-  min-width: 0;
-  padding: 5px;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* --- Gradient styles --- */
+/* --- Buttons --- */
 
-.gradient {
-  /* Fallback for browsers that don't support gradients */
-  color: #130088;
-  /* For Safari 5.1 to 6.0 */
-  color: -webkit-linear-gradient(#130088, #6A5ACD);
-  /* For Internet Explorer 10 */
-  color: -ms-linear-gradient(#130088, #6A5ACD);
-  /* Standard syntax */
-  color: linear-gradient(#130088, #6A5ACD);
+button {
+  position: relative;
+  overflow: hidden;
+  padding: 0.1rem 0.2rem;
+  z-index: 1;
+
+  border: 2px solid #346edb;
+  background: #346edb;
+  color: #fff;
+}
+
+button:hover {
+  color: #346edb;
+}
+
+button::after {
+  content: "";
+  display: block;
+  padding: 0.1rem 0.2rem;
+  position: absolute;
+  /* Set z-index to -1 so this style can 
+  slide behind text in buttons with z-index 1*/
+  z-index: -1;
+
+  background: #ecf0f1;
+}
+
+button.grow_box {
+  transition: all 0.3s ease;
+}
+
+button.grow_box:hover::after {
+  transition: all 0.3s ease-out;
+}
+
+button.grow_box::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Make it SUPER TINY first so you can't see it */
+  transform: scale(0, 0);
+}
+
+button.grow_box:hover::after {
+  /* Grow it back to a full size to fill the button */
+  transform: scale(1, 1);
+}
+
+.button-link {
+  color: #fff;
+}
+
+.button-link:hover {
+  border: none;
+}
+
+.hero-button {
+  margin: 0.618rem 0;
 }
 
 /* --- Form styles --- */
@@ -781,4 +805,27 @@ input[type="reset"] {
 .contact:active,
 .contact:focus {
   outline: 2px solid var(--form-border, #7CB9E8);
+}
+
+/* --- Art styles --- */
+
+.artwork {
+  box-shadow: 0px 4px 5px var(--border-color, #999999);
+  display: inline-block;
+  margin: 5px;
+  min-width: 0;
+  padding: 5px;
+}
+
+/* --- Gradient styles --- */
+
+.gradient {
+  /* Fallback for browsers that don't support gradients */
+  color: #130088;
+  /* For Safari 5.1 to 6.0 */
+  color: -webkit-linear-gradient(#130088, #6A5ACD);
+  /* For Internet Explorer 10 */
+  color: -ms-linear-gradient(#130088, #6A5ACD);
+  /* Standard syntax */
+  color: linear-gradient(#130088, #6A5ACD);
 }
