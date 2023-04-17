@@ -25,9 +25,9 @@
 
   <!-- Optional Banner with CTA -->
 
-  <div class="hero banner">
+  <div class="hero banner hero-gradient">
     <div class="hero-content">
-      <p class="call-to-action">Come take a look at my projects</p>
+      <p class="call-to-action">Take a look at my work</p>
 
       <button class="hero-button grow_box">
         <a class="button-link" href="#">Portfolio</a>
@@ -40,7 +40,7 @@
   <header id="main-header">
     <div class="top-bar">
       <h1 class="title">
-        <a class="nav-item gradient" href="index.html">Jason Garvin</a>
+        <a class="nav-item" href="index.html">Jason Garvin</a>
       </h1>
 
       <div class="search-container">
@@ -59,28 +59,28 @@
         </label>
     
         <nav id="main-nav">
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="about.html">
               <i class="fa fa-circle-info"></i>
               <span>About</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="art.html">
               <i class="fa fa-palette"></i>
               <span>Art</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="blog.html">
               <i class="fa fa-pen-nib"></i>
               <span>Blog</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="contact.html">
               <i class="fa fa-bullhorn"></i>
               <span>Contact</span>
@@ -91,54 +91,109 @@
     </div>
   </header>
 
+  <!-- Social Icons -->
+
+  <div id="floating-social">
+    <ul class="social-list flex-container">
+      <li>
+        <div>
+          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+            <i class="fa fa-envelope social-media"></i>
+            Email me
+          </a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#" target="_blank">
+            <i class="fa fa-github social-media"></i>
+            My Github
+          </a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="#" target="_blank">
+            <i class="fa fa-linkedin social-media"></i>
+            My LinkedIn
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
   <!-- Main Content-->
 
-  <section class="container">
-    <h2>A selection of my art throughout the years</h2>
-
-    <p>While I wouldn't exactly call myself the <em>best</em> photographer
-      in the world, I also don't necessarily think I'm the worst, either.
-      Here's a selection of my photograph from throughout the years.
-      Some I'm more proud of than others, but they all represent
-      significant moments in my life.</p>
+  <section class="main-content">
+    <article>
+      <h2>Art from throughout the years</h2>
+    </article>
 
     <!-- The Art Gallery -->
 
-    <div class="flex-container">
-      <img class="artwork" src="assets/img/dunes-2019.JPG" alt="The Great Sand Dunes" width="410">
-      <img class="artwork" src="assets/img/hotel-2019.JPG" alt="A Denver hotel" width="410">
-      <img class="artwork" src="assets/img/sugar-mill-2017.JPG" alt="The Sugar Mill in Longmont" width="410">
-      <img class="artwork" src="assets/img/lights-2016.JPG" alt="String lights against a wall" width="410">
-    </div>
+    <article>
+      <h3>Photography</h3>
+      <div class="photo-wrapper">
+        <img class="artwork photo" src="assets/img/dunes-2019.JPG" alt="The Great Sand Dunes">
+        <img class="artwork photo" src="assets/img/hotel-2019.JPG" alt="A Denver hotel">
+        <img class="artwork photo" src="assets/img/sugar-mill-2017.JPG" alt="The Sugar Mill in Longmont">
+        <img class="artwork photo" src="assets/img/lights-2016.JPG" alt="String lights against a wall">
+      </div>
+    </article>
   </section>
 
   <!-- Main Footer -->
 
   <footer id="primary-footer">
-    <div class="container">
+    <div class="container flex-container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">Resources</h3>
+          <ul class="list-vert">
+            <li>
+              <a href="#" target="_blank">Placeholder</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Placeholder</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Placeholder</a>
+            </li>
+          </ul>
+        </div>
 
-      <div>
+        <div>
+          <h3 class="footer-title">Social</h3>
+          <ul class="list-vert">
+            <li>
+              <a href="#" target="_blank">
+                <i class="fa fa-github"></i>
+                My Github
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fa fa-linkedin"></i>
+                My LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Get in touch</h3>
+          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+            <i class="fa fa-envelope"></i>
+            Email me
+          </a>
+        </div>
+      </div>
+
+      <div class="push-right">
         <a class="back-to-top" href="#top">
           <i class="fa fa-arrow-up to-top-button"></i>
           Back to top
         </a>
-      </div>
-
-      <div class="footer-grid">
-        <div class="footer-grid-left">
-          <h3 class="footer-title">Resources</h3>
-          <p>stuff</p>
-        </div>
-
-        <div class="footer-grid-center">
-          <h3 class="footer-title">Social</h3>
-          <p>stuff</p>
-        </div>
-
-        <div class="footer-grid-right">
-          <h3 class="footer-title">Get in touch</h3>
-          <p>stuff</p>
-        </div>
       </div>
     </div>
 
