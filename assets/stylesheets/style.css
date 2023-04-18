@@ -62,7 +62,7 @@ article {
 
 article,
 aside {
-  margin: 0.25rem 0;
+  margin: 0.25rem 0.25rem;
 }
 
 article {
@@ -558,7 +558,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .blurb {
+  min-height: 300px;
   max-width: 700px;
+  padding: 1rem;
 }
 
 .subtitle {
@@ -574,8 +576,17 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .image-banner {
+  padding: 0.5rem 1rem;
   background: #0bbaff;
   background-image: url("../img/main_bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-bg-panel {
+  padding: 50px 0;
+  background: #0bbaff;
+  background-image: url("../img/secondary_bg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -583,15 +594,23 @@ input[type="search"]::-webkit-search-results-decoration {
 /* --- Home Page / Index Styles --- */
 
 .picture-container {
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 350px;
   margin: auto 0.25rem;
   overflow: hidden;
   border-radius: 50%;
 }
 
 #my-profile-pic {
-  width: 250px;
+  width: 350px;
+}
+
+.vertical-space {
+  margin-top: 100px;
+}
+
+.emphasis {
+  font-size: 18px;
 }
 
 
@@ -876,18 +895,17 @@ button.grow_box:hover::after {
 
 .contact-wrapper {
   display: flex;
+  padding: 1rem;
   justify-content: space-between;
 }
 
 .contact-info {
   max-width: 420px;
-  padding-left: 1.25rem;
-  margin: 0 2rem 0 0;
+  margin: 0 1rem 0 0;
 }
 
 .contact-form {
-  padding-right: 1.25rem;
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 1rem;
 }
 
 input,
