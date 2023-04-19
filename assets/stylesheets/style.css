@@ -195,6 +195,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.max-container {
+  width: 100%;
+  background: #202024;
+}
+
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -892,6 +897,13 @@ button.grow_box:hover::after {
 }
 
 /* --- Contact styles --- */
+
+.contact-bar {
+  max-width: 1200px;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  color: #fff;
+}
 
 .contact-wrapper {
   display: flex;
