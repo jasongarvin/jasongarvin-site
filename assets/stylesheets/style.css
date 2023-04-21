@@ -189,6 +189,12 @@ a:hover {
 
 /* --- General layout --- */
 
+.main-content {
+  max-width: 1200px;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto 5rem;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 1.5rem 1rem;
@@ -241,7 +247,7 @@ a:hover {
 #main-header {
   width: 100%;
   padding-bottom: 0;
-  z-index: 999px;
+  z-index: 999;
 
   background: var(--main-header, #fdfdfd);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
@@ -551,10 +557,95 @@ input[type="search"]::-webkit-search-results-decoration {
   Main Content / Section Styles
 ================ */
 
-.main-content {
-  max-width: 1200px;
-  padding: 1rem 1.5rem;
-  margin: 1rem auto 5rem;
+/* --- Home Styles --- */
+
+.home-container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-container:first-child {
+  margin-right: 60px;
+}
+
+.home-aside {
+  position: relative;
+  right: 0.8rem;
+  z-index: 1;
+}
+
+.home-sub-aside {
+  position: relative;
+  left: 3.2rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  font-size: 1.6rem;
+}
+
+.picture-container {
+  position: relative;
+  left: 3.2rem;
+  height: 350px;
+  width: 350px;
+  margin: auto 0 auto 22px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid rgba(99, 115, 139, 0.6);
+}
+
+#my-profile-pic {
+  width: 350px;
+}
+
+.home-partial-block {
+  display: inline-block;
+  width: 67%;
+  margin: 1rem 0 0 0.25rem;
+}
+
+/* --- Action button --- */
+
+.action-arrow {
+  display: inline-block;
+  position: relative;
+  top: 22px;
+  left: 6px;
+  align-self: end;
+}
+
+.next-section-arrow {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  z-index: 2;
+
+  color: #fff;
+  background: #1fa1f8;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+  text-align: left;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.next-section-arrow:hover {
+  border: none;
+  transform: rotate(1turn);
+
+  transition: transform 0.3s;
+}
+
+.next-section-button {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 8px 0 0 10px;
+  line-height: inherit;
+  font-size: 24px;
 }
 
 .transparent-box {
@@ -562,52 +653,23 @@ input[type="search"]::-webkit-search-results-decoration {
   background: rgba(99, 115, 139, 0.6);
 }
 
+h1.transparent-box,
+h2.transparent-box {
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.transparent-emphasis {
+  background: rgba(0, 102, 255, 0.6);
+}
+
 .blurb {
-  min-height: 300px;
   max-width: 700px;
   padding: 1rem;
 }
 
 .subtitle {
   margin-top: 0;
-}
-
-.alt-text-style {
-  color: #fff;
-}
-
-.transparent {
-  background: rgba(0, 102, 255, 0.6);
-}
-
-.image-banner {
-  padding: 0.5rem 1rem;
-  background: #0bbaff;
-  background-image: url("../img/main_bg.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.image-bg-panel {
-  padding: 50px 0;
-  background: #0bbaff;
-  background-image: url("../img/secondary_bg.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-/* --- Home Page / Index Styles --- */
-
-.picture-container {
-  height: 350px;
-  width: 350px;
-  margin: auto 0.25rem;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-#my-profile-pic {
-  width: 350px;
 }
 
 .vertical-space {
@@ -752,7 +814,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #floating-social {
   position: fixed;
-  top: 190px;
+  top: 198px;
   height: 6.5rem;
   width: 3rem;
   margin-left: 1rem;
