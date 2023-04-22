@@ -728,47 +728,24 @@ h2.transparent-box {
 ================ */
 
 #primary-footer {
-  padding: 1rem 0 0;
-  margin: 0;
-  background: var(--border-color, #999);
-  font-size: 1rem;
+  max-width: 1200px;
+  padding: 0.5rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 #primary-footer a {
-  color: var(--link-color-footer, #657e85);
+  color: #222;
+  border: none;
 }
 
 #primary-footer a:hover {
-  color: var(--link-active-color-footer, #caf3fd);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  width: 67%;
-
-  justify-content: center;
-  align-content: center;
-}
-
-.footer-title {
-  color: #fff;
-  font-size: 21px;
-  font-variant: small-caps;
+  color: #222;
+  border: none;
 }
 
 .end-footer-container {
-  padding: 0.5rem 0;
-  color: #fff;
-  background-color: #010105;
-  box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.5);
-}
-
-.copyright {
-  max-width: 1200px;
-  padding: 0 1.5rem;
-  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .back-to-top {
