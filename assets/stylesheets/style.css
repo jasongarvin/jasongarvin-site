@@ -121,6 +121,14 @@ body {
                Helvetica, 
                Arial, 
                sans-serif;
+  
+  font-size: calc(15px + 0.390625vw);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 h1,
@@ -571,13 +579,13 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .home-aside {
   position: relative;
-  right: 0.8rem;
+  right: 1.5rem;
   z-index: 1;
 }
 
 .home-sub-aside {
   position: relative;
-  left: 3.2rem;
+  left: 3.5rem;
   margin-bottom: 2rem;
   z-index: 1;
   font-size: 1.6rem;
@@ -585,7 +593,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .picture-container {
   position: relative;
-  left: 3.2rem;
+  left: 3.5rem;
   height: 350px;
   width: 350px;
   margin: auto 0 auto 22px;
@@ -605,12 +613,46 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 1rem 0 0 0.25rem;
 }
 
+/* --- Company sections --- */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.teg-logo-box {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  height: 220px;
+}
+
+.teg-wrapper {
+  grid-column: 3 / span 3;
+  grid-row: 1;
+}
+
+.fnf-logo-box {
+  grid-column: 4 / span 1;
+  grid-row: 2;
+  height: 220px;
+}
+
+.fnf-wrapper {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+.fnf-title {
+  text-align: right;
+}
+
 /* --- Action button --- */
 
 .action-arrow {
   display: inline-block;
   position: relative;
-  top: 22px;
+  top: 26px;
   left: 6px;
   align-self: end;
 }
