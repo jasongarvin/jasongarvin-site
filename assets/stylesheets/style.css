@@ -577,7 +577,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  max-height: 420px;
+  max-height: 410px;
   max-width: 1080px;
   margin: 40px auto 100px;
   border-radius: 10px;
@@ -634,6 +634,24 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
 }
 
+.cta-container button {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 969px) {
+  .home-partial-block {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .picture-container {
+    height: 250px;
+    width: 250px;
+    border: 3px solid rgba(99, 115, 139, 0.6);
+  }
+}
+
 /* --- Company sections --- */
 
 .content-grid {
@@ -646,7 +664,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .fnf-logo-box {
   display: flex;
   justify-content: center;
-  height: 220px;
+  height: fit-content;
+  width: fit-content;
   border-radius: 5px;
 }
 
@@ -691,7 +710,9 @@ input[type="search"]::-webkit-search-results-decoration {
 #teg-logo,
 #fnf-logo {
   display: block;
-  height: 80%;
+  height: auto;
+  max-height: 180px;
+  width: auto;
   padding: 5%;
   margin: auto;
 
@@ -908,7 +929,7 @@ h2.transparent-box {
   width: 3rem;
   margin-left: 1rem;
   z-index: 3;
-  background-color: rgba(110, 103, 95, 0.5);
+  background-color: rgba(110, 103, 95, 0.4);
   border-radius: 3px;
 }
 
@@ -953,6 +974,30 @@ h2.transparent-box {
   transform: translateX(3px);
 
   transition: transform 0.2s;
+}
+
+@media (max-width: 1299px) {
+  #floating-social {
+    position: absolute;
+    top: 145px;
+    height: 2.5rem;
+    width: 6.5rem;
+    margin-left: 1.75rem;
+  }
+
+  .social-list {
+    flex-direction: row;
+  }
+
+  .social-list li a {
+    padding: 20% 0.2rem;
+  }
+
+  .social-media:hover {
+    transform: translateY(-3px);
+
+    transition: transform 0.2s;
+  }
 }
 
 /* --- Lists Layout --- */
@@ -1149,6 +1194,11 @@ input[type="reset"] {
 .widget-border-right {
   width: 100%;
   border-right: 12px solid rgba(0, 102, 255, 0.6);
+}
+
+.widget-border-left {
+  width: 100%;
+  border-left: 12px solid rgba(0, 102, 255, 0.6);
 }
 
 
