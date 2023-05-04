@@ -38,7 +38,7 @@
   <header id="main-header">
     <div class="top-bar">
       <h1 class="title">
-        <a class="nav-item gradient" href="index.html">Jason Garvin</a>
+        <a class="nav-item" href="index.html">Jason Garvin</a>
       </h1>
 
       <div class="search-container">
@@ -57,28 +57,28 @@
         </label>
     
         <nav id="main-nav">
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="about.html">
               <i class="fa fa-circle-info"></i>
               <span>About</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="art.html">
               <i class="fa fa-palette"></i>
               <span>Art</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="blog.html">
               <i class="fa fa-pen-nib"></i>
               <span>Blog</span>
             </a>
           </div>
       
-          <div class="menu_item">
+          <div class="menu-item">
             <a href="contact.html">
               <i class="fa fa-bullhorn"></i>
               <span>Contact</span>
@@ -88,7 +88,7 @@
       </div>
     </div>
   </header>
-  
+
   <!-- Social Icons -->
 
   <div id="floating-social">
@@ -129,68 +129,36 @@
   <!-- Main Footer -->
 
   <footer id="primary-footer">
-    <div class="container flex-container">
-      <div class="footer-grid">
-        <div>
-          <h3 class="footer-title">Resources</h3>
-          <ul class="list-vert">
-            <li>
-              <a href="#" target="_blank">Placeholder</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Placeholder</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Placeholder</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-title">Social</h3>
-          <ul class="list-vert">
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa fa-github"></i>
-                My Github
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa fa-linkedin"></i>
-                My LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer-title">Get in touch</h3>
-          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-            <i class="fa fa-envelope"></i>
-            Email me
-          </a>
-        </div>
-      </div>
-
-      <div class="push-right">
-        <a class="back-to-top" href="#top">
-          <i class="fa fa-arrow-up to-top-button"></i>
-          Back to top
-        </a>
+    <div class="flex-container">
+      <div>
+        <ul class="list-hor">
+          <li>
+            <a href="#" target="_blank">Email</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Github</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="end-footer-container">
-      <div class="copyright">
-        <p><small>&copy; Jason Garvin 2023</small></p>
-      </div>
+      <p><small>&copy; Jason Garvin 2023</small></p>
     </div>
   </footer>
+
+  <button onclick="toTopFunction()" id="back-to-top" title="Return to top">
+    <i class="fa fa-arrow-up to-top-button"></i>
+    Back to top
+  </button>
 
   <!-- Scripts and Handling -->
 
   <script src="assets/scripts/search-bar.js"></script>
+  <script src="assets/scripts/to-top.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

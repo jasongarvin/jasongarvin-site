@@ -759,7 +759,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: block;
   height: 2.5rem;
   width: 2.5rem;
-  margin: 8px 0 0 10px;
+  margin: 8px 0 0 11px;
   line-height: inherit;
   font-size: 24px;
 }
@@ -839,12 +839,15 @@ h2.transparent-box {
   padding: 0 1rem;
 }
 
-.back-to-top {
-  display: block;
+#back-to-top {
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
   height: 2.5rem;
   width: 2.5rem;
   overflow: hidden;
-  z-index: 2;
+  z-index: 99;
 
   color: #fff;
   background: #1fa1f8;
@@ -853,10 +856,12 @@ h2.transparent-box {
 
   text-align: left;
 
+  cursor: pointer;
+
   transition: all 0.2s ease-in-out;
 }
 
-.back-to-top:hover {
+#back-to-top:hover {
   border: none;
   transform: rotate(1turn);
 
@@ -867,7 +872,7 @@ h2.transparent-box {
   display: block;
   height: 2.5rem;
   width: 2.5rem;
-  margin: 8px 0 0 11px;
+  margin: 6px 0 0 7px;
   line-height: inherit;
   font-size: 24px;
 }
