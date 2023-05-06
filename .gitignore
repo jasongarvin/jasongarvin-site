@@ -1,4 +1,6 @@
 # custom directories to ignore during alpha development
+/card
+card-style.css
 cache-status.js
 update-cache.js
 contact.js

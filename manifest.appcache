@@ -12,7 +12,7 @@ assets/stylesheets/style.css
 
 # offline.html will be displayed if the user is offline
 FALLBACK:
-/ /offline.html
+/ /errors/offline.html
 
 # Add in later for elements that REQUIRE a network connection 
 NETWORK:
