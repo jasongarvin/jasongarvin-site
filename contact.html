@@ -150,31 +150,21 @@
 
         <!-- Contact Form -->
 
+
+        <!-- TODO: need to get this form to actually work -->
         <div class="contact-form">
           <form class="contact-me" action="#" method="post">
             <label>
               Name
-              <input class="contact" type="text" name="name" placeholder="Name" required>
+              <input id="contactName" class="contact" type="text" name="name" placeholder="Name" required>
             </label>
     
             <label>
               Email
-              <input class="contact" type="email" name="email" placeholder="name@domain.com" required>
+              <input id="contactEmail" class="contact" type="email" name="email" placeholder="name@domain.com" required>
             </label>
     
-            <label>
-              Topic
-              <select class="contact" name="question">
-                <option value="general" selected>General</option>
-                <option value="business">Business</option>
-                <option value="consulting">Consulting</option>
-                <option value="marketing">Marketing</option>
-                <option value="software">Software</option>
-                <option value="design">Design</option>
-              </select>
-            </label>
-    
-            <textarea class="contact" cols="60" rows="8" name="content"
+            <textarea id="contactCore" class="contact" cols="60" rows="8" name="content"
               placeholder="What do you want to talk about?"></textarea>
     
             <div>
@@ -220,6 +210,7 @@
 
   <script src="assets/scripts/search-bar.js"></script>
   <script src="assets/scripts/to-top.js"></script>
+  <script src="assets/scripts/contact.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

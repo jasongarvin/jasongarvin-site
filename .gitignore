@@ -3,7 +3,6 @@
 card-style.css
 cache-status.js
 update-cache.js
-contact.js
 
 # ignore all files starting with . or ~
 .*
