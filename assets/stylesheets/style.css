@@ -805,7 +805,7 @@ h2.transparent-box {
   margin-left: 1rem;
   z-index: 3;
   background-color: rgba(110, 103, 95, 0.4);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .social-list {
@@ -1082,7 +1082,7 @@ input[type="reset"] {
     top: 145px;
     height: 2.5rem;
     width: 6.5rem;
-    margin-left: 1.75rem;
+    margin-left: 1.5rem;
   }
 
   .social-list {
@@ -1134,6 +1134,11 @@ input[type="reset"] {
   .contact-wrapper {
     flex-direction: column;
   }
+
+  .contact-form {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 759px) {
@@ -1153,6 +1158,10 @@ input[type="reset"] {
 
   .picture-container {
     display: none;
+  }
+
+  .flex-container {
+    flex-direction: column;
   }
 }
 
@@ -1205,6 +1214,10 @@ input[type="reset"] {
   .fnf-title,
   .teg-title {
     margin-top: 1rem;
+  }
+
+  .hidden-mobile {
+    display: hidden;
   }
 }
 
