@@ -92,7 +92,7 @@
   <!-- Social Icons -->
 
   <div id="floating-social">
-    <ul class="social-list flex-container">
+    <ul class="social-list">
       <li>
         <div>
           <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
@@ -150,29 +150,7 @@
 
         <!-- Contact Form -->
 
-
-        <!-- TODO: need to get this form to actually work -->
-        <div class="contact-form">
-          <form class="contact-me" action="#" method="post">
-            <label>
-              Name
-              <input id="contactName" class="contact" type="text" name="name" placeholder="Name" required>
-            </label>
-    
-            <label>
-              Email
-              <input id="contactEmail" class="contact" type="email" name="email" placeholder="name@domain.com" required>
-            </label>
-    
-            <textarea id="contactCore" class="contact" cols="50" rows="8" name="content"
-              placeholder="What do you want to talk about?"></textarea>
-    
-            <div>
-              <input class="btn btn-alt contact" type="submit" value="Send">
-              <input class="btn btn-alt contact" type="reset" value="Reset">
-            </div>
-          </form>
-        </div>
+          <div class="contact-form" data-paperform-id="cy3q7bsj"></div>
       </div>
     </article>
   </section>
@@ -210,6 +188,13 @@
 
   <script src="assets/scripts/search-bar.js"></script>
   <script src="assets/scripts/to-top.js"></script>
+  <script>
+    (function () { 
+      var script = document.createElement('script'); 
+      script.src = "https://paperform.co/__embed.min.js"; 
+      document.body.appendChild(script); 
+    })()
+  </script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

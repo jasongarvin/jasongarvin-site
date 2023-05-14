@@ -965,6 +965,7 @@ button.grow_box:hover::after {
 }
 
 .contact-form {
+  min-width: 520px;
   margin: 0 0 0 1rem;
 }
 
@@ -1228,6 +1229,10 @@ input[type="reset"] {
   .photo-wrapper {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem 2rem;
+  }
+
+  .contact-form {
+    min-width: 0;
   }
 }
 
