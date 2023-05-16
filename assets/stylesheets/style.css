@@ -497,8 +497,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .home-sub-aside {
   position: relative;
-  left: 3.5rem;
-  margin-bottom: 2rem;
+  right: 1.5rem;
+  padding-left: 1rem;
+  margin: 0 0.25rem 2rem;
   z-index: 1;
   font-size: 1.6rem;
 }
@@ -662,7 +663,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 h1.transparent-box,
-h2.transparent-box {
+h2.transparent-box,
+h1.transparent-emphasis,
+h2.transparent-emphasis {
   padding-left: 1rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
@@ -1068,6 +1071,13 @@ textarea {
               Media Queries
 ========================================= */
 
+@media (min-width: 1200px) {
+  .home-sub-aside {
+    left: 3.5rem;
+    right: 0;
+  }
+}
+
 @media (max-width: 1299px) {
   #floating-social {
     position: absolute;
@@ -1089,6 +1099,16 @@ textarea {
     transform: translateY(-3px);
 
     transition: transform 0.2s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-container:first-child {
+    margin-right: 0;
+  }
+
+  .picture-container {
+    left: 1rem;
   }
 }
 
@@ -1117,9 +1137,7 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 1rem;
   }
-}
 
-@media (max-width: 899px) {
   .picture-container {
     height: 250px;
     width: 250px;
@@ -1139,10 +1157,6 @@ textarea {
 }
 
 @media (max-width: 759px) {
-  .home-container:first-child {
-    margin-right: 0;
-  }
-
   .home-aside {
     right: 0;
   }
