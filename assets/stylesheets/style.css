@@ -764,6 +764,8 @@ h2.transparent-emphasis {
   font-size: 24px;
 
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 #back-to-top:hover,
@@ -991,54 +993,65 @@ button.grow_box:hover::after {
 input,
 select,
 textarea {
-  font: 300 16px/21px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/21px "Lato", 
+                      "Open Sans", 
+                      "Helvetica Neue", 
+                      Helvetica, 
+                      Arial, 
+                      sans-serif;
 }
 
 /* --- Art styles --- */
 
-.photo-wrapper {
+.art-wrapper {
+  -webkit-column-count: 3;
+  -webkit-gap: 5px;
+  -moz-column-count: 3;
+  -moz-gap: 5px;
+  column-count: 3;
+  gap: 5px;
   padding: 1rem 0.5rem;
   background: rgba(0, 0, 0, 0.2);
 }
 
 .artwork {
-  display: inline-block;
-  margin: 5px auto;
+  position: relative;
   width: 100%;
-  height: fit-content;
   max-height: 700px;
-  border-bottom: 2px solid #fff;
+  margin-bottom: 5px;
+  overflow: hidden;
 
   background: none;
 }
 
-.photo {
-  display: block;
-  max-height: 660px;
-  max-width: 90%;
-  margin: 15px auto 25px;
+.art-image {
+  height: auto !important;
+  width: 100% !important;
   box-shadow: 0px 4px 5px var(--border-color, #999999);
 }
 
-.photo-description {
-  display: none;
-  position: relative;
-  top: -10rem;
+.art-description {
+  position: absolute;
+  top: -200px;
+  max-height: 200px;
   width: 100%;
-  margin: none;
 
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
 
   text-align: center;
+
+  transition: 0.25s ease-in;
 }
 
-.photo-description h4 {
+.art-description h4 {
   color: #fff;
 }
 
-.artwork:hover .photo-description {
-  display:inline-block;
+.artwork:hover .art-description {
+  top: 0;
+
+  transition: 0.2s ease-in-out;
 }
 
 /* --- Widget styles --- */
@@ -1180,6 +1193,12 @@ textarea {
     margin-top: 3rem;
     margin-left: 0;
   }
+
+  .art-wrapper {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+   }
 }
 
 @media (max-width: 759px) {
@@ -1265,6 +1284,12 @@ textarea {
   .contact-form {
     min-width: 0;
   }
+
+  .art-wrapper {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+   }
 }
 
 /* --- Nav Media Queries --- */
