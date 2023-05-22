@@ -1239,6 +1239,8 @@ textarea {
 
   .content-grid {
     display: grid;
+    width: 98%;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
   }
