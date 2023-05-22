@@ -1358,7 +1358,7 @@ textarea {
   }
 
   nav {
-    display: hidden;
+    display: none;
     position: absolute;
     left: 100%;
     width: 50%;
