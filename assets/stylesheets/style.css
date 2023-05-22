@@ -1355,14 +1355,15 @@ textarea {
 
   #main-nav {
     z-index: 2;
+    overflow: hidden;
   }
 
   nav {
-    display: none;
     position: absolute;
     left: 100%;
     width: 50%;
     z-index: 99;
+    overflow: hidden;
     flex-direction: column;
     transition: all 0.35s;
   }
