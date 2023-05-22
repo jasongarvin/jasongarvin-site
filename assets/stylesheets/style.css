@@ -1333,7 +1333,7 @@ textarea {
   nav a:hover span {
     width: auto;
     margin-left: 4.5rem;
-    transition: margin-left 0.5s ease;
+    transition: margin-left 0.5s;
   }
 }
 
@@ -1347,29 +1347,33 @@ textarea {
     transition: background 0.35s;
   }
 
-  .open_menu:checked + .burger + nav {
+  .open_menu:checked + .burger + #main-nav {
     display: block;
-    left: 50%;
+    top: 81px;
     transition: all 0.35s;
   }
 
-  #main-nav {
-    z-index: 2;
-    overflow: hidden;
+  nav .menu-item {
+    height: 3rem;
+    line-height: 2.5rem;
+    font-size: 22px;
   }
 
-  nav {
+  #main-nav {
+    display: none;
     position: absolute;
-    left: 100%;
+    top: -64px;
+    left: 50%;
     width: 50%;
     z-index: 99;
     overflow: hidden;
     flex-direction: column;
+    border-top: 0.25em solid #2980b9;
     transition: all 0.35s;
   }
 
   nav div {
-    border-bottom: 0.25em solid #fff;
+    border-bottom: 0.25em solid #2980b9;
   }
 
   nav a {
@@ -1378,8 +1382,12 @@ textarea {
 
   nav a span {
     width: auto;
-    margin-left: 4.5rem;
+    margin-left: 6rem;
     transition: margin-left 0.5s ease;
+  }
+
+  nav a:hover span {
+    margin-left: 5.5rem;
   }
 
   nav a:hover::after {
