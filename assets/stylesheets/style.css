@@ -121,12 +121,6 @@ body {
   font-size: calc(15px + 0.390625vw);
 }
 
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -1115,14 +1109,18 @@ textarea {
               Media Queries
 ========================================= */
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+
   .home-sub-aside {
     left: 3.5rem;
     right: 0;
   }
 }
 
-@media (max-width: 1299px) {
+@media screen and (max-width: 1299px) {
   #floating-social {
     position: absolute;
     top: 145px;
@@ -1146,7 +1144,7 @@ textarea {
   }
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .home-container:first-child {
     margin-right: 0;
   }
@@ -1156,7 +1154,7 @@ textarea {
   }
 }
 
-@media (max-width: 969px) {
+@media screen and (max-width: 969px) {
   .home-partial-block {
     margin-top: 4rem;
   }
@@ -1189,7 +1187,7 @@ textarea {
   }
 }
 
-@media (max-width: 879px) {
+@media screen and (max-width: 879px) {
   .contact-wrapper {
     flex-direction: column;
   }
@@ -1206,7 +1204,7 @@ textarea {
    }
 }
 
-@media (max-width: 759px) {
+@media screen and (max-width: 759px) {
   .home-aside {
     right: 0;
   }
@@ -1226,7 +1224,7 @@ textarea {
   }
 }
 
-@media (max-width: 669px) {
+@media screen and (max-width: 669px) {
   .home-partial-block {
     width: 90%;
     margin: 5rem 0 0;
@@ -1299,7 +1297,7 @@ textarea {
 
 /* --- Nav Media Queries --- */
 
-@media (min-width: 879px) {
+@media screen and (min-width: 879px) {
   nav a:hover::after {
     top: 0;
     right: 0;
@@ -1316,7 +1314,7 @@ textarea {
   }
 }
 
-@media (max-width: 879px) {
+@media screen and (max-width: 879px) {
   #main-nav {
     width: 300px;
     justify-content: right;
@@ -1339,7 +1337,7 @@ textarea {
   }
 }
 
-@media (max-width: 669px) {
+@media screen and (max-width: 669px) {
   .burger {
     display: block;
   }
@@ -1350,6 +1348,7 @@ textarea {
   }
 
   .open_menu:checked + .burger + nav {
+    display: block;
     left: 50%;
     transition: all 0.35s;
   }
@@ -1359,6 +1358,7 @@ textarea {
   }
 
   nav {
+    display: hidden;
     position: absolute;
     left: 100%;
     width: 50%;
@@ -1398,13 +1398,13 @@ textarea {
 
 /* --- Footer Media Queries --- */
 
-@media (max-width: 879px) {
+@media screen and (max-width: 879px) {
   .footer-grid {
     width: 100%;
   }
 }
 
-@media (max-width: 669px) {
+@media screen and (max-width: 669px) {
   .footer-grid {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
