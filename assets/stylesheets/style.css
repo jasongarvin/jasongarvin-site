@@ -1222,7 +1222,7 @@ textarea {
 
 @media screen and (max-width: 669px) {
   .home-partial-block {
-    width: 80%;
+    width: 90%;
     margin: 2rem 0 0;
   }
 
@@ -1235,7 +1235,7 @@ textarea {
 
   .content-grid {
     display: grid;
-    width: 98%;
+    width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
