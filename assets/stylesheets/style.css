@@ -9,24 +9,15 @@ thus requires an overhaul in full force. */
 ================ */
 
 :root {
-  --main-header: #fdfdfd;
-  --main-bg: #fff;
-  --content-bg: #eee;
-  --main-footer: #ced1d3;
-  --border-color: #999999;
+  --hero-bright: #D1DDD8;
+  --hero-tint: #85B8CB;
+  --hero-color: #1D6A96;
+  --hero-shade: #283B43;
 
-  --header-text: #333;
-  --link-color: #2d5b96;
-  --link-color-footer: #fff;
-  --link-active-color: #303ef5;
-  --link-active-color-footer: #caf3fd;
-
-  --shadow-light: #d3d3d3;
-  --shadow-normal: #b3b3b3;
-  --shadow-dark: #939393;
-  --form-border: #7CB9E8;
-
-  --hero-color: #0bbaff;
+  --base-bright: #D8D7D7;
+  --base-tint: #A6A5A4;
+  --base-color: #3C3D3E;
+  --base-shade: #0C0D0D;
 }
 
 
@@ -57,7 +48,7 @@ h6 {
 }
 
 article {
-  background: var(--content-bg, #eee);
+  background: var(--base-tint, #A6A5A4);
 }
 
 article,
@@ -76,10 +67,6 @@ aside {
 header {
   position: sticky;   
   top: 0; 
-}
-
-header nav {
-  background-color: #f5fafc;
 }
 
 footer h1,
@@ -108,8 +95,8 @@ body {
   margin: 0;
   overflow-x: hidden;
 
-  color: #222;
-  background-color: var(--main-bg, #fff);
+  color: var(--base-shade, #0C0D0D);
+  background-color: #fff;
 
   font-family: "Lato", 
                "Open Sans", 
@@ -127,7 +114,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--header-text, #333333);
   margin-bottom: 21px;
 }
 
@@ -176,12 +162,12 @@ h6 {
 }
 
 a {
-  color: var(--link-color, #2d5b96);
+  color: var(--hero-color, #1D6A96);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--link-active-color, #303ef5);
+  color: var(--hero-shade, #283B43);
   border-bottom: 1px dotted;
 }
 
@@ -252,7 +238,7 @@ a:hover {
   padding-bottom: 0;
   z-index: 999;
 
-  background: var(--main-header, #fdfdfd);
+  background: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -282,7 +268,7 @@ nav a {
   padding-right: 1rem;
 
   color: #fff;
-  background: #3498db;
+  background: var(--base-tint, #A6A5A4);
   border-right: 0.25rem solid #fff;
 }
 
@@ -299,7 +285,7 @@ nav .menu-item .fa {
   width: 2.5rem;
   z-index: -1;
 
-  background: #2980b9;
+  background: var(--base-bright, #D8D7D7);
 
   font-size: 18px;
   text-align: center;
@@ -329,7 +315,7 @@ nav a::after {
   left: -100%;
   z-index: -2;
 
-  background: #2980b9;
+  background: var(--base-bright, #D8D7D7);
 
   transition: all 0.35s;
 }
@@ -352,7 +338,7 @@ nav a::after {
   overflow: hidden;
 
   color: #fff;
-  background: #3498db;
+  background: var(--base-tint, #A6A5A4);
   
   font-size: 1.2em;
   text-align: center;
@@ -384,14 +370,15 @@ nav a::after {
   width: 100%;
   padding: 2px 23px 2px 30px;
 
-  background-color: #ced1d3;
+  background-color: var(--base-bright, #D8D7D7);
+  border-radius: 5px;
   border: none;
   outline: 0;
 }
 
 #search-bar:hover, 
 #search-bar:focus {
-  outline: 2px solid var(--form-border, #7CB9E8);
+  outline: 2px solid var(--hero-tint, #85B8CB);
   background-color: #fff;
 }
 
@@ -430,12 +417,12 @@ nav a::after {
 /* Fixes color of placeholder text in site search bar */
 #search-bar::placeholder {
   opacity: 1;
-  color: #000;
+  color: var(--base-shade, #0C0D0D);
 }
 
 #search-bar:-ms-input-placeholder,
 #search-bar::-ms-input-placeholder {
-  color: #000;
+  color: var(--base-shade, #0C0D0D);
 }
 
 /* Clears the ‘X’ from Internet Explorer */
