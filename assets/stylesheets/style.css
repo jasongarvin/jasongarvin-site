@@ -506,7 +506,7 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 50%;
-  border: 5px solid rgba(99, 115, 139, 0.6);
+  border: 20px solid #fff;
 }
 
 #my-profile-pic {
@@ -540,7 +540,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr;
 }
 
 .teg-logo-box,
@@ -554,12 +554,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .teg-logo-box {
   grid-column: 2 / span 1;
-  grid-row: 1;
+  grid-row: 2 / span 2;
 }
 
 .teg-wrapper {
   grid-column: 3 / span 3;
-  grid-row: 1;
+  grid-row: 2 / span 3;
 }
 
 .teg-title {
@@ -568,12 +568,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .fnf-logo-box {
   grid-column: 4 / span 1;
-  grid-row: 2;
+  grid-row: 6 / span 2;
 }
 
 .fnf-wrapper {
   grid-column: 1 / span 3;
-  grid-row: 2;
+  grid-row: 6 / span 3;
 }
 
 .fnf-title {
@@ -1155,10 +1155,6 @@ textarea {
 }
 
 @media screen and (max-width: 969px) {
-  .home-partial-block {
-    margin-top: 4rem;
-  }
-
   .teg-logo-box {
     grid-column: 1 / span 1;
   }
@@ -1181,9 +1177,9 @@ textarea {
   }
 
   .picture-container {
-    height: 250px;
-    width: 250px;
-    border: 3px solid rgba(99, 115, 139, 0.6);
+    height: 300px;
+    width: 300px;
+    margin-left: 0;
   }
 }
 
@@ -1226,14 +1222,14 @@ textarea {
 
 @media screen and (max-width: 669px) {
   .home-partial-block {
-    width: 90%;
-    margin: 5rem 0 0;
+    width: 80%;
+    margin: 2rem 0 0;
   }
 
   .action-arrow {
     display: block;
-    top: 14px;
     left: 10px;
+    margin-bottom: 2rem;
     align-self: end;
   }
 
@@ -1295,6 +1291,12 @@ textarea {
     -webkit-column-count: 1;
     column-count: 1;
    }
+}
+
+@media screen and (max-width: 500px) {
+  .home-partial-block {
+    margin: 3rem 0 0;
+  }
 }
 
 /* --- Nav Media Queries --- */
@@ -1404,27 +1406,5 @@ textarea {
     width: 3em;
     font-size: 1.25em;
     transition: all 0.35s;
-  }
-}
-
-/* --- Footer Media Queries --- */
-
-@media screen and (max-width: 879px) {
-  .footer-grid {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 669px) {
-  .footer-grid {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-  
-    justify-content: left;
-    align-content: center;
-  }
-
-  .footer-title {
-    margin-bottom: 0.2rem;
   }
 }
