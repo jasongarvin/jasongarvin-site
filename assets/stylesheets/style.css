@@ -549,7 +549,15 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: center;
   height: fit-content;
   width: fit-content;
+  padding: 0;
+  margin: 0;
   border-radius: 5px;
+}
+
+.teg-logo-box,
+.fnf-logo-box {
+  padding: 0.5rem;
+  margin: 0 auto;
 }
 
 .teg-logo-box {
@@ -596,8 +604,6 @@ input[type="search"]::-webkit-search-results-decoration {
   height: auto;
   max-height: 180px;
   width: auto;
-  padding: 5%;
-  margin: auto;
 
   background: #fff;
   border: 2px solid #fff;
@@ -609,6 +615,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .action-arrow {
   display: inline-block;
   position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
   top: 0;
   left: 10px;
   align-self: end;
@@ -1222,28 +1230,34 @@ textarea {
 
 @media screen and (max-width: 669px) {
   .home-partial-block {
-    width: 90%;
+    width: 100%;
     margin: 2rem 0 0;
+
+    text-align: center;
   }
 
   .action-arrow {
     display: block;
-    left: 10px;
-    margin-bottom: 2rem;
-    align-self: end;
+    position: static;
+    margin: 0 auto 3rem;
   }
 
   .content-grid {
     display: grid;
-    width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
   }
   
-  .teg-logo-box {
+  .teg-logo-box,
+  .fnf-logo-box {
     position: relative;
-    top: 2rem;
+    top: 0.5rem;
+    padding: 0;
+    margin: 2rem auto 0;
+  }
+
+  .teg-logo-box {
     grid-column: 1 / span 1;
     grid-row: 1;
   }
@@ -1296,6 +1310,45 @@ textarea {
 @media screen and (max-width: 500px) {
   .home-partial-block {
     margin: 3rem 0 0;
+  }
+
+  .content-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
+  }
+  
+  .teg-logo-box,
+  .fnf-logo-box {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .teg-logo-box {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    top: 2.5rem;
+    justify-self: left;
+  }
+  
+  .teg-wrapper {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+  }
+  
+  .fnf-logo-box {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+    top: 2.5rem;
+    justify-self: right;
+  }
+
+  .fnf-wrapper {
+    grid-column: 1 / span 1;
+    grid-row: 4;
   }
 }
 
@@ -1368,7 +1421,7 @@ textarea {
     position: absolute;
     top: -64px;
     left: 50%;
-    width: 50%;
+    width: 49%;
     z-index: 99;
     overflow: hidden;
     flex-direction: column;
@@ -1406,5 +1459,12 @@ textarea {
     width: 3em;
     font-size: 1.25em;
     transition: all 0.35s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
