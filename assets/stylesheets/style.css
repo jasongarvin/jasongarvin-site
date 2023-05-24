@@ -9,15 +9,16 @@ thus requires an overhaul in full force. */
 ================ */
 
 :root {
-  --hero-bright: #D1DDD8;
-  --hero-tint: #85B8CB;
-  --hero-color: #1D6A96;
+  --hero-bright: #b5d0e4;
+  --hero-tint: #68a0d4;
+  --hero-color: #1d5196;
   --hero-shade: #283B43;
 
-  --base-bright: #D8D7D7;
-  --base-tint: #A6A5A4;
-  --base-color: #3C3D3E;
-  --base-shade: #0C0D0D;
+  --base-bright: #d7d7d8;
+  --base-tint: #a4a5a6;
+  --base-subtle: #6e7279;
+  --base-color: #3c3d3e;
+  --base-shade: #0c0c0d;
 
   --pop-color: #2980b9;
 }
@@ -495,7 +496,7 @@ input[type="search"]::-webkit-search-results-decoration {
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 50%;
-  border: 20px solid #fff;
+  border: 5px solid rgba(99, 115, 139, 0.6);
 }
 
 #my-profile-pic {
@@ -779,7 +780,7 @@ h2.transparent-emphasis {
 /* --- Hero Content Styles --- */
 
 .hero {
-  background: var(--hero-tint, #85B8CB);
+  background: var(--pop-color, #2980b9);
 }
 
 .hero-content {
@@ -950,7 +951,7 @@ button.grow_box:hover::after {
 /* --- Contact styles --- */
 
 #contact-section {
-  background: var(--base-color, #3C3D3E);
+  background: var(--base-subtle, #616468);
 }
 
 .contact-bar {
