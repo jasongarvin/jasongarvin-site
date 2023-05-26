@@ -9,14 +9,14 @@ thus requires an overhaul in full force. */
 ================ */
 
 :root {
-  --hero-bright: #b5d0e4;
+  --hero-bright: #a4cceb;
   --hero-tint: #68a0d4;
   --hero-color: #1d5196;
-  --hero-shade: #283B43;
+  --hero-shade: #323e4d;
 
   --base-bright: #d7d7d8;
   --base-tint: #a4a5a6;
-  --base-subtle: #6e7279;
+  --base-subtle: #7d8188;
   --base-color: #3c3d3e;
   --base-shade: #0c0c0d;
 
@@ -271,7 +271,7 @@ nav a {
   padding-right: 1rem;
 
   color: var(--hero-color, #1D6A96);
-  background: var(--base-tint, #A6A5A4);
+  background: var(--base-tint, #a4a5a6);
   border-right: 0.25rem solid #fff;
 }
 
@@ -288,7 +288,7 @@ nav .menu-item .fa {
   width: 2.5rem;
   z-index: -1;
 
-  background: var(--base-bright, #D8D7D7);
+  background: var(--base-bright, #d7d7d8);
 
   font-size: 18px;
   text-align: center;
@@ -318,7 +318,7 @@ nav a::after {
   left: -100%;
   z-index: -2;
 
-  background: var(--base-bright, #D8D7D7);
+  background: var(--base-bright, #d7d7d8);
 
   transition: all 0.35s;
 }
@@ -533,6 +533,23 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr;
 }
 
+#teg-home-bg,
+#fnf-home-bg {
+  z-index: -1;
+  background: var(--base-bright, #d7d7d8);
+  border-radius: 10px;
+}
+
+#teg-home-bg {
+  grid-column: 2 / span 3;
+  grid-row: 2 / span 2;
+}
+
+#fnf-home-bg {
+  grid-column: 3 / span 2;
+  grid-row: 6 / span 2;
+}
+
 .teg-logo-box,
 .fnf-logo-box {
   display: flex;
@@ -648,6 +665,10 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translateY(2px);
 
   transition: transform 0.3s;
+}
+
+.emphasis-box {
+  background: var(--hero-tint, #68a0d4);
 }
 
 .transparent-box {
@@ -1170,6 +1191,16 @@ textarea {
     grid-column: 1 / span 4;
   }
 
+  #teg-home-bg {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+  }
+
+  #fnf-home-bg {
+    grid-column: 3 / span 3;
+    grid-row: 6 / span 2;
+  }
+
   .photo-wrapper {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 1rem;
@@ -1179,6 +1210,13 @@ textarea {
     height: 300px;
     width: 300px;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #teg-home-bg {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
   }
 }
 
@@ -1217,6 +1255,11 @@ textarea {
   .flex-container {
     flex-direction: column;
   }
+
+  #teg-home-bg {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+  }
 }
 
 @media screen and (max-width: 669px) {
@@ -1240,6 +1283,11 @@ textarea {
     grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
   }
   
+  #teg-home-bg,
+  #fnf-home-bg {
+    display: none;
+  }
+
   .teg-logo-box,
   .fnf-logo-box {
     position: relative;
@@ -1279,7 +1327,7 @@ textarea {
   }
 
   .hidden-mobile {
-    display: hidden;
+    display: none;
   }
 
   .photo-wrapper {
