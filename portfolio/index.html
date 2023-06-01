@@ -4,7 +4,8 @@
 <head>
   <title>Visit my Design Portfolio - Jason Garvin</title>
 
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width" , initial-scale="1" />
   <meta name="description" 
     content="Explore Jason's portfolio, including links to websites he's designed, CSS challenges, interface designs, and more." />
@@ -37,56 +38,43 @@
   
   <!-- Main Header -->
 
-  <header id="main-header">
-    <div class="top-bar">
-      <a class="nav-item title" href="../index.html">Jason Garvin</a>
+  <header id="main-header" class="top-bar">
 
-      <div class="search-container">
-        <form id="site-search" role="search">
-          <i class="fa fa-magnifying-glass search-icon"></i>
-          <input type="search" id="search-bar" name="search-site" placeholder="Search">
-          <i class="fa fa-xmark clear-icon"></i>
-        </form>
-      </div>
+    <!-- Logo -->
 
-      <div class="nav-wrapper">
-        <input type="checkbox" id="open_menu" class="open_menu">
-        <label for="open_menu" class="burger">
-          <i class="fa fa-bars"></i>
-          Open Menu
-        </label>
+    <a class="nav-item title" href="../index.html">Jason Garvin</a>
+
+    <!-- Hamburger icon -->
+
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+    <!-- Menu -->
     
-        <nav id="main-nav">
-          <div class="menu-item">
-            <a href="../about.html">
-              <i class="fa fa-circle-info"></i>
-              <span>About</span>
-            </a>
-          </div>
-      
-          <div class="menu-item">
-            <a href="../art.html">
-              <i class="fa fa-palette"></i>
-              <span>Art</span>
-            </a>
-          </div>
-      
-          <div class="menu-item">
-            <a href="../blog.html">
-              <i class="fa fa-pen-nib"></i>
-              <span>Blog</span>
-            </a>
-          </div>
-      
-          <div class="menu-item">
-            <a href="../contact.html">
-              <i class="fa fa-bullhorn"></i>
-              <span>Contact</span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <nav id="main-nav">
+      <ul class="menu">
+        <li>
+          <a href="../about.html">
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="../art.html">
+            <span>Art</span>
+          </a>
+        </li>
+        <li>
+          <a href="../blog.html">
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a href="../contact.html">
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Social Icons -->
