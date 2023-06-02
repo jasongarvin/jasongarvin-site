@@ -516,8 +516,6 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-
 /* --- Company sections --- */
 
 .content-grid {
@@ -1064,6 +1062,22 @@ textarea {
   transition: 0.2s ease-out;
 }
 
+/* --- Blog styles --- */
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0;
+}
+
+.blog-preview {
+  padding: 1rem;
+  color: #fff;
+  background-color: var(--base-subtle, #7d8188);
+  border-radius: 5px;
+}
+
 /* --- Widget styles --- */
 
 .widget {
@@ -1228,6 +1242,12 @@ textarea {
     -webkit-column-count: 2;
     column-count: 2;
    }
+
+  .preview-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 759px) {
@@ -1381,6 +1401,12 @@ textarea {
   .fnf-wrapper {
     grid-column: 1 / span 1;
     grid-row: 4;
+  }
+
+  .preview-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0;
   }
 }
 
