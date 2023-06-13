@@ -51,16 +51,13 @@ h6 {
 }
 
 article {
+  padding: 0.25rem 0.5rem;
   background: var(--base-bright, #D8D7D7);
 }
 
 article,
 aside {
   margin: 0.25rem 0.25rem;
-}
-
-article {
-  padding: 0.25rem 0.5rem;
 }
 
 aside {
@@ -453,6 +450,8 @@ input[type="search"]::-webkit-search-results-decoration {
   max-height: 410px;
   max-width: 1080px;
   margin: 40px auto 100px;
+
+  background-color: var(--hero-bright, #a4cceb);
   border-radius: 10px;
 }
 
