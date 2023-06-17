@@ -349,13 +349,19 @@ a:hover {
 
 /* --- Search styles --- */
 
+.blog-search {
+  height: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .search-container {
   position: relative;
+  top: 18px;
+  margin-right: 0.25rem;
   display: flex;
-  height: 2.25rem;
+  height: 2.5rem;
   min-width: 170px;
-
-  margin: auto 0;
 }
 
 #search-bar {
@@ -1152,7 +1158,7 @@ textarea {
     top: 145px;
     height: 2.5rem;
     width: 6.5rem;
-    margin-left: 1.5rem;
+    margin-left: 1.75rem;
   }
 
   .social-list {
