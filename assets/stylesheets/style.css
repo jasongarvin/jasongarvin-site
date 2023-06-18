@@ -731,12 +731,12 @@ h2.transparent-emphasis {
   font-size: 1.2rem;
 }
 
-#primary-footer a {
+#primary-footer .minimal-link {
   color: var(--base-shade, #0C0D0D);
   border: none;
 }
 
-#primary-footer a:hover {
+#primary-footer .minimal-link:hover {
   color: var(--hero-color, #1D6A96);
   border: none;
 }
@@ -838,7 +838,7 @@ h2.transparent-emphasis {
   list-style-type: none;
 }
 
-.social-list li a {
+.social-list .minimal-link {
   display: block;
   height: 1.618rem;
   width: 1.8rem;
@@ -850,7 +850,7 @@ h2.transparent-emphasis {
   text-decoration: none;
 }
 
-.social-list li a:hover {
+.social-list .minimal-link:hover {
   border: none;
 }
 
@@ -1057,10 +1057,6 @@ textarea {
   transition: 0.25s ease-in;
 }
 
-.art-description h4 {
-  color: #fff;
-}
-
 .artwork:hover .art-description {
   top: 0;
 
@@ -1165,7 +1161,7 @@ textarea {
     flex-direction: row;
   }
 
-  .social-list li a {
+  .social-list .minimal-link {
     padding: 20% 0.2rem;
   }
 
