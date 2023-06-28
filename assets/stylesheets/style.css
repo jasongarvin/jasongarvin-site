@@ -529,23 +529,6 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr 1fr;
 }
 
-#teg-home-bg,
-#fnf-home-bg {
-  z-index: -1;
-  background: var(--base-bright, #d7d7d8);
-  border-radius: 10px;
-}
-
-#teg-home-bg {
-  grid-column: 2 / span 3;
-  grid-row: 2 / span 2;
-}
-
-#fnf-home-bg {
-  grid-column: 3 / span 2;
-  grid-row: 6 / span 2;
-}
-
 .teg-logo-box,
 .fnf-logo-box {
   display: flex;
@@ -1294,11 +1277,6 @@ textarea {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr 2.5fr;
-  }
-  
-  #teg-home-bg,
-  #fnf-home-bg {
-    display: none;
   }
 
   .teg-logo-box,
