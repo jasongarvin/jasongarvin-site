@@ -21,6 +21,13 @@ thus requires an overhaul in full force. */
   --base-shade: #0c0c0d;
 
   --pop-color: #2980b9;
+
+  --lt-blue: #00bfff;
+  --md-blue: #008cba;
+  --dk-blue: #000080;
+  --lt-green: #a2efb5;
+  --md-green: #3fd177;
+  --dk-green: #006400;
 }
 
 
@@ -41,6 +48,7 @@ section,
 ul,
 ol,
 dl,
+li,
 h1,
 h2,
 h3,
@@ -278,14 +286,31 @@ a:hover {
   margin: 0;
 }
 
-.menu a {
+.menu-item {
   display: block;
-  padding: 30px;
+  position: relative;
+  padding: 30px 30px 23px 30px;
   color: var(--base-color, #3c3d3e);
 }
 
-.menu a:hover {
-  background-color: var(--base-bright, #d7d7d8);
+.active-page:after {
+  content: "";
+  position: absolute;
+  left: 1.7rem;
+  bottom: 0;
+  height: 1px;
+  width: 80%;  /* or 100px */
+  border-bottom: 5px solid var(--hero-tint, #68a0d4);
+}
+
+.menu li:hover .menu-item::after{
+  content: "";
+  position: absolute;
+  left: 1.7rem;
+  bottom: 0;
+  height: 1px;
+  width: 80%;  /* or 100px */
+  border-bottom: 5px solid var(--hero-bright, #a4cca4);
 }
 
 /* --- Hamburger menu icon --- */
@@ -1412,5 +1437,17 @@ textarea {
 
   .hamb {
       display: none;
+  }
+
+  .active-page:after {
+    left: calc(50% - 2.5rem);
+    bottom: -5px;
+    width: 5rem;
+  }
+  
+  .menu li:hover .menu-item::after{
+    left: calc(50% - 2.5rem);
+    bottom: -5px;
+    width: 5rem;
   }
 }
