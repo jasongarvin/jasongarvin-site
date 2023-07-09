@@ -1021,6 +1021,19 @@ textarea {
                       sans-serif;
 }
 
+/* --- Portfolio styles --- */
+
+#portfolio-subnav {
+  margin: 5.5rem auto 3.5rem;
+  max-width: 600px;
+}
+
+.subnav-list{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
 /* --- Art styles --- */
 
 .art-wrapper {
