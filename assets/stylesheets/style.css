@@ -14,8 +14,8 @@ thus requires an overhaul in full force. */
   --hero-color: #1d5196;
   --hero-shade: #323e4d;
 
-  --base-bright: #d7d7d8;
-  --base-tint: #a4a5a6;
+  --base-bright: #ededee;
+  --base-tint: #d0d1d2;
   --base-subtle: #7d8188;
   --base-color: #3c3d3e;
   --base-shade: #0c0c0d;
@@ -60,7 +60,7 @@ h6 {
 
 article {
   padding: 1rem 0.5rem;
-  background: var(--base-bright, #D8D7D7);
+  background: var(--base-bright, #ededee);
 }
 
 article,
@@ -394,7 +394,7 @@ a:hover {
   width: 100%;
   padding: 2px 23px 2px 30px;
 
-  background-color: var(--base-bright, #D8D7D7);
+  background-color: var(--base-bright, #ededee);
   border-radius: 5px;
   border: none;
   outline: 0;
@@ -513,13 +513,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .picture-container {
   position: relative;
   left: 3.5rem;
-  height: 350px;
-  width: 350px;
+  height: 340px;
+  width: 310px;
   margin: 2rem 0 auto 1.6rem;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: 50%;
-  border: 5px solid rgba(99, 115, 139, 0.6);
+  border-radius: 10px;
+  background-color: var(--base-bright, #ededee);
+  border: 2px solid rgba(99, 115, 139, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #my-profile-pic {
@@ -528,8 +530,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .home-partial-block {
   display: inline-block;
-  width: 67%;
-  margin: 1rem 0 0 0.25rem;
+  width: 60%;
+  margin: 3rem 0 0 auto;
   border-radius: 5px;
 }
 
@@ -735,7 +737,7 @@ h2.transparent-emphasis {
   padding: 0.5rem;
   margin: 1.5rem auto 0;
 
-  border-top: 1px solid var(--base-bright, #D8D7D7);
+  border-top: 1px solid var(--base-bright, #ededee);
   font-size: 1.2rem;
 }
 
@@ -813,12 +815,12 @@ h2.transparent-emphasis {
   padding: 0 1.5rem;
   margin: 0 auto;
   justify-content: right;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .call-to-action {
   display: block;
-  padding: 0.15rem 0.2rem;
+  padding: 0.5rem 0.2rem;
   margin: 0.618rem 1.5rem 0.618rem 0;
   color: #fff;
 }
@@ -970,6 +972,8 @@ button.grow_box:hover::after {
 
 .hero-button {
   margin: 0.618rem 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
 }
 
 /* --- Contact styles --- */
@@ -1024,8 +1028,21 @@ textarea {
 /* --- Portfolio styles --- */
 
 #portfolio-subnav {
+  position: relative;
   margin: 5.5rem auto 3.5rem;
   max-width: 600px;
+}
+
+#portfolio-subnav::before,
+#portfolio-subnav::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 5%;
+  height: 2px;
+  width: 90%;
+  background-color: var(--hero-color, #1d5196);
+  box-shadow: 0 2px 2px rgba(99, 115, 139, 0.3);
 }
 
 .subnav-list{
@@ -1102,7 +1119,7 @@ textarea {
 /* --- Widget styles --- */
 
 .widget {
-  background: var(--base-bright, #D8D7D7);
+  background: var(--base-bright, #ededee);
 }
 
 .rounded-all {
@@ -1171,7 +1188,7 @@ textarea {
 @media screen and (max-width: 1299px) {
   #floating-social {
     position: absolute;
-    top: 145px;
+    top: 152px;
     height: 2.5rem;
     width: 6.5rem;
     margin-left: 1.75rem;
