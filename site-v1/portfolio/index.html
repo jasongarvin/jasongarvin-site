@@ -11,9 +11,12 @@
     content="Explore Jason's portfolio, including links to websites he's designed, CSS challenges, interface designs, and more." />
   <meta name="author" content="Jason Garvin" />
 
+  <!-- Keeps the old version from being indexed - remove for live pages -->
+  <meta name="robots" content="noindex" />
+
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
+  <link rel="stylesheet" media="screen" href="../../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="../stylesheets/style.css" />
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400" />
@@ -23,22 +26,25 @@
 </head>
 
 <body id="top">
-
-  <!-- Optional Banner with CTA -->
-
-  <div class="hero banner">
-    <div class="hero-content">
-      <p class="call-to-action">Want to know what's coming?</p>
-
-      <button class="hero-button grow_box">
-        <a class="button-link" href="../update.html">Get Updates</a>
-      </button>
-    </div>
-  </div>
   
   <!-- Main Header -->
 
   <header id="main-header">
+
+    <!-- Return to live site banner -->
+
+    <div class="hero banner">
+      <div class="hero-content">
+        <button class="hero-button grow_box">
+          <a class="button-link" href="../../index.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            Back
+          </a>
+        </button>
+
+        <p class="call-to-action">Return to live site</p>
+      </div>
+    </div>
 
     <div class="top-bar">
       
@@ -196,7 +202,7 @@
 
   <!-- Scripts and Handling -->
 
-  <script src="../assets/scripts/to-top.js"></script>
+  <script src="../../assets/scripts/to-top.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

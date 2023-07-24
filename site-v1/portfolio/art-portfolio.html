@@ -11,9 +11,12 @@
     content="Check out Jason's artwork, primarily photography, and get inspiration for your next color scheme with hex-coded color values." />
   <meta name="author" content="Jason Garvin" />
 
+  <!-- Keeps the old version from being indexed - remove for live pages -->
+  <meta name="robots" content="noindex" />
+
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
+  <link rel="stylesheet" media="screen" href="../../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="../stylesheets/style.css" />
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400" />
@@ -24,21 +27,24 @@
 
 <body id="top">
 
-  <!-- Optional Banner with CTA -->
-
-  <div class="hero banner">
-    <div class="hero-content">
-      <p class="call-to-action">Want to know what's coming?</p>
-
-      <button class="hero-button grow_box">
-        <a class="button-link" href="../update.html">Get Updates</a>
-      </button>
-    </div>
-  </div>
-
   <!-- Main Header -->
 
   <header id="main-header">
+
+    <!-- Return to live site banner -->
+
+    <div class="hero banner">
+      <div class="hero-content">
+        <button class="hero-button grow_box">
+          <a class="button-link" href="../../index.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            Back
+          </a>
+        </button>
+
+        <p class="call-to-action">Return to live site</p>
+      </div>
+    </div>
 
     <div class="top-bar">
       
@@ -127,7 +133,7 @@
       <h2 class="subtitle transparent-box rounded-all">Jason's Photography</h2>
       <div class="art-wrapper rounded-all">
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/dunes-2019.JPG" alt="The Great Sand Dunes">
+          <img class="art-image" src="../../assets/img/gallery/dunes-2019.JPG" alt="The Great Sand Dunes">
           <div class="art-description">
             <h4>The Dunes</h4>
             <p>A sweeping current of sand from the Great Sand Dunes in Colorado.</p>
@@ -135,7 +141,7 @@
         </div>
 
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/dunes-2019-2.JPG" alt="The Great Sand Dunes and an Approaching Storm">
+          <img class="art-image" src="../../assets/img/gallery/dunes-2019-2.JPG" alt="The Great Sand Dunes and an Approaching Storm">
           <div class="art-description">
             <h4>Dunes, Darker</h4>
             <p>A storm encroaching on the Great Sand Dunes in Colorado.</p>
@@ -143,7 +149,7 @@
         </div>
 
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/hotel-2019.JPG" alt="A Denver hotel">
+          <img class="art-image" src="../../assets/img/gallery/hotel-2019.JPG" alt="A Denver hotel">
           <div class="art-description">
             <h4>View From the Bottom</h4>
             <p>A rather imposing view staring up at the interior of a Denver hotel.</p>
@@ -151,7 +157,7 @@
         </div>
 
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/sugar-mill-2017.JPG" alt="The Sugar Mill in Longmont">
+          <img class="art-image" src="../../assets/img/gallery/sugar-mill-2017.JPG" alt="The Sugar Mill in Longmont">
           <div class="art-description">
             <h4>Reclaimed Factory</h4>
             <p>Sometimes abandoned factories can be rather pretty once they've
@@ -160,7 +166,7 @@
         </div>
 
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/seattle-2019.JPG" alt="The Seattle Cityscape from the Coastline">
+          <img class="art-image" src="../../assets/img/gallery/seattle-2019.JPG" alt="The Seattle Cityscape from the Coastline">
           <div class="art-description">
             <h4>Seattle</h4>
             <p>I miss the rain.</p>
@@ -168,7 +174,7 @@
         </div>
 
         <div class="artwork">
-          <img class="art-image" src="../assets/img/gallery/lights-2016.JPG" alt="String lights against a wall">
+          <img class="art-image" src="../../assets/img/gallery/lights-2016.JPG" alt="String lights against a wall">
           <div class="art-description">
             <h4>Strings of Light</h4>
             <p>There's not much to this one. Just a bright series of lights
@@ -229,7 +235,7 @@
 
   <!-- Scripts and Handling -->
 
-  <script src="../assets/scripts/to-top.js"></script>
+  <script src="../../assets/scripts/to-top.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

@@ -814,14 +814,14 @@ h2.transparent-emphasis {
   max-width: 1200px;
   padding: 0 1.5rem;
   margin: 0 auto;
-  justify-content: right;
+  justify-content: left;
   font-size: 1rem;
 }
 
 .call-to-action {
   display: block;
   padding: 0.5rem 0.2rem;
-  margin: 0.618rem 1.5rem 0.618rem 0;
+  margin: 0.618rem 0 0.618rem 1.5rem;
   color: #fff;
 }
 

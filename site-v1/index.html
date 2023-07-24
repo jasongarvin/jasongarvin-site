@@ -11,9 +11,12 @@
     content="Get to know Jason and learn about his journey through software development, user experience design, and business." />
   <meta name="author" content="Jason Garvin" />
 
+  <!-- Keeps the old version from being indexed - remove for live pages -->
+  <meta name="robots" content="noindex" />
+
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css" />
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css" />
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="stylesheets/style.css" />
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400" />
@@ -24,21 +27,25 @@
 
 <body id="top">
 
-  <!-- Optional Banner with CTA -->
-
-  <div class="hero banner">
-    <div class="hero-content">
-      <p class="call-to-action">Want to know what's coming?</p>
-
-      <button class="hero-button grow_box">
-        <a class="button-link" href="update.html">Get Updates</a>
-      </button>
-    </div>
-  </div>
-
   <!-- Main Header -->
 
   <header id="main-header">
+    
+    <!-- Return to live site banner -->
+
+    <div class="hero banner">
+      <div class="hero-content">
+        <button class="hero-button grow_box">
+          <a class="button-link" href="../index.html">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            Back
+          </a>
+        </button>
+
+        <p class="call-to-action">Return to live site</p>
+      </div>
+    </div>
+
     <div class="top-bar">
 
       <!-- Logo -->
@@ -135,7 +142,7 @@
       </div>
   
       <div class="picture-container">
-        <img id="my-profile-pic" src="assets/img/me_home.jpg" alt="A picture of Jason Garvin" />
+        <img id="my-profile-pic" src="../assets/img/me_home.jpg" alt="A picture of Jason Garvin" />
       </div>
     </article>
 
@@ -159,7 +166,7 @@
 
     <div class="content-grid">
       <aside class="teg-logo-box">
-        <img id="teg-logo" src="assets/img/teg-logo.png" alt="The Total Escape Games logo" />
+        <img id="teg-logo" src="../assets/img/teg-logo.png" alt="The Total Escape Games logo" />
       </aside>
 
       <section class="teg-wrapper">
@@ -196,7 +203,7 @@
       </section>
   
       <aside class="fnf-logo-box">
-        <img id="fnf-logo" src="assets/img/fnf-logo.png" alt="The Fill and Fire logo" />
+        <img id="fnf-logo" src="../assets/img/fnf-logo.png" alt="The Fill and Fire logo" />
       </aside>
 
       <section class="fnf-wrapper">
@@ -294,7 +301,7 @@
 
   <!-- Scripts and Handling -->
 
-  <script src="assets/scripts/to-top.js"></script>
+  <script src="../assets/scripts/to-top.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>
