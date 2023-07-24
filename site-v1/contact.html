@@ -4,21 +4,19 @@
 <head>
   <title>Get in touch - Jason Garvin</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width" , initial-scale="1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
   <meta name="description"
-    content="Reach out to Jason with questions about learning software development, design, or business.">
-  <meta name="author" content="Jason Garvin">
+    content="Reach out to Jason with questions about learning software development, design, or business." />
+  <meta name="author" content="Jason Garvin" />
 
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css">
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css">
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400" />
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
@@ -26,91 +24,127 @@
 
 <body id="top">
 
+  <!-- Optional Banner with CTA -->
+
+  <div class="hero banner">
+    <div class="hero-content">
+      <p class="call-to-action">Want to know what's coming?</p>
+
+      <button class="hero-button grow_box">
+        <a class="button-link" href="update.html">Get Updates</a>
+      </button>
+    </div>
+  </div>
+
   <!-- Main Header -->
 
   <header id="main-header">
 
-    <!-- Logo -->
+    <div class="top-bar">
+      
+      <!-- Logo -->
 
-    <div class="site-logo">
-      <a class="title" href="index.html">Jason Garvin</a>
+      <a class="nav-item title" href="index.html">Jason Garvin</a>
+
+      <!-- Hamburger icon -->
+
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+      <!-- Menu -->
+
+      <nav id="main-nav">
+        <ul class="menu">
+          <li>
+            <a class="menu-item" href="about.html">
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu-item" href="blog.html">
+              <span>Blog</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu-item" href="portfolio/index.html">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu-item active-page" href="contact.html">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- Hamburger icon -->
-
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-    <!-- Menu -->
-
-    <nav id="main-nav">
-      <ul class="main-menu">
-        <li>
-          <a class="menu-item" href="blog/index.html">
-            <span>Blog</span>
-          </a>
-        </li>
-        <li>
-          <a class="menu-item" href="about.html">
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a class="menu-item" href="updates.html">
-            <span>Updates</span>
-          </a>
-        </li>
-        <li>
-          <a class="menu-item active-page" href="contact.html">
-            <span>Contact</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Social Icons -->
 
   <div id="floating-social">
-    <ul class="list-hor social-bar">
+    <ul class="social-list">
       <li>
-        <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-          <i class="fa fa-envelope"></i>
-          Email
-        </a>
+        <div>
+          <a class="minimal-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+            <i class="fa fa-envelope social-media"></i>
+            Email me
+          </a>
+        </div>
       </li>
       <li>
-        <a href="https://github.com/jasongarvin" target="_blank">
-          <i class="fa fa-github"></i>
-          Github
-        </a>
+        <div>
+          <a class="minimal-link" href="github.com/jasongarvin" target="_blank">
+            <i class="fa fa-github social-media"></i>
+            My Github
+          </a>
+        </div>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
-          <i class="fa fa-linkedin"></i>
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://www.threads.net/@jasonagarvin" target="_blank">
-          <i class="fa"></i>
-          Threads
-        </a>
+        <div>
+          <a class="minimal-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
+            <i class="fa fa-linkedin social-media"></i>
+            My LinkedIn
+          </a>
+        </div>
       </li>
     </ul>
   </div>
 
-  <!-- Introduction -->
+  <!-- Main Content-->
 
-  <section class="centered top-of-page">
-    <article class="hero-content">
-      <h1 class="cta-header">Contact Me</h1>
-      <p class="subtitle">About business, operations, and design</p>
+  <section class="main-content image-banner">
+    <h1 class="page-title transparent-box rounded-all">
+      Contact Me
+      <span class="subtitle text-outline rounded-all">
+        About business, operations, & design
+      </span>
+    </h1>
 
-      <!-- Contact Form -->
+    <article class="vertical-space rounded-all">
+      <h2 class="subtitle transparent-box rounded-all">I'd love to hear from you</h2>
 
-      <div class="contact-form vertical-space">
-        <iframe
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>
+            If you're reaching out about <span>Total Escape Games</span>, use <wbr /> 
+            <a href="mailto:jason@totalescapegames.com?subject=Question">jason@totalescapegames.com</a>
+          </p>
+          <p>
+            For Fill and Fire or other inquiries, use
+            <a href="mailto:jsongarvin@gmail.com?subject=Question">jsongarvin@gmail.com</a>
+            instead
+          </p>
+          <p>
+            Or fill out the contact form
+          </p>
+          <i class="fa fa-angles-right hidden-mobile"></i>
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+          <iframe
           id="JotFormIFrame-231337689291162"
           title="Modern Contact Form"
           onload="window.parent.scrollTo(0,0)"
@@ -120,69 +154,34 @@
           src="https://form.jotform.com/231337689291162"
           frameborder="0"
           scrolling="no">
-        </iframe>
+          </iframe>
+        </div>
       </div>
-    </article>
-
-    <article class="vertical-space left-align">
-      <h2 class="centered">
-        Small business
-        <span class="emphasis">consulting</span>
-      </h2>
-      <p>
-        I've helped a handful of small businesses optimize their
-        <strong>day-to-day operations</strong> to automate tedious tasks and free
-        up busy owners/operators to focus more time on their  
-        <strong>digital content strategy</strong>
-      </p>
-      <p>Whether you're looking for optimized operations, automation, implementing
-        AI into your workflow, or just need a digital content refresh and website
-        upgrade, I'm happy to help!
-      </p>
-    </article>
-
-    <article class="vertical-space left-align">
-      <h2 class="centered">
-        Front-end website
-        <span class="emphasis">design</span>
-      </h2>
-      <p>
-        If you're looking for a custom design for your small business website,
-        need help getting your website built in Wix or Wordpress,
-        or want to optimize setting up your Shopify storefront, I've got you covered
-      </p>
-      <p>
-        Website builders like Wix and Wordpress make web design much more accessible,
-        but being an owner of a small business means having to wear a ton of hats. 
-        Leverage my knowledge in these areas to free yourself up for what matters
-        most: <strong>growing your business</strong>
-      </p>
     </article>
   </section>
 
   <!-- Main Footer -->
 
   <footer id="primary-footer">
-    <div class="social-bar">
-      <ul class="list-hor">
-        <li>
-          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
-        </li>
-        <li>
-          <a href="https://github.com/jasongarvin" target="_blank">Github</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
-        </li>
-      </ul>
+    <div class="flex-container">
+      <div>
+        <ul class="list-hor">
+          <li>
+            <a class="minimal-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
+          </li>
+          <li>
+            <a class="minimal-link" href="https://github.com/jasongarvin" target="_blank">Github</a>
+          </li>
+          <li>
+            <a class="minimal-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <aside class="end-footer">
+    <div class="end-footer-container">
       <p><small>&copy; Jason Garvin 2023</small></p>
-    </aside>
+    </div>
   </footer>
 
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
@@ -190,10 +189,10 @@
     Back to top
   </button>
 
-  <!-- Scripts and handling -->
+  <!-- Scripts and Handling -->
 
   <script src="assets/scripts/to-top.js"></script>
-
+  
   <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-231337689291162");
     if (ifr) {

@@ -4,19 +4,21 @@
 <head>
   <title>About Me - Jason Garvin</title>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width", initial-scale="1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
   <meta name="description"
-    content="Learn more about Jason and his history with software development, user experience design, and business." />
-  <meta name="author" content="Jason Garvin" />
+    content="Learn more about Jason and his history with software development, user experience design, and business.">
+  <meta name="author" content="Jason Garvin">
 
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css" />
-  <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css" />
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css">
+  <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
@@ -24,273 +26,201 @@
 
 <body id="top">
 
-  <!-- Optional Banner with CTA -->
-
-  <div class="hero banner">
-    <div class="hero-content">
-      <p class="call-to-action">Want to know what's coming?</p>
-
-      <button class="hero-button grow_box">
-        <a class="button-link" href="update.html">Get Updates</a>
-      </button>
-    </div>
-  </div>
-
   <!-- Main Header -->
 
   <header id="main-header">
 
-    <div class="top-bar">
-      
-      <!-- Logo -->
+    <!-- Logo -->
 
-      <a class="nav-item title" href="index.html">Jason Garvin</a>
-
-      <!-- Hamburger icon -->
-
-      <input class="side-menu" type="checkbox" id="side-menu"/>
-      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-      <!-- Menu -->
-
-      <nav id="main-nav">
-        <ul class="menu">
-          <li>
-            <a class="menu-item active-page" href="about.html">
-              <span>About</span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="blog.html">
-              <span>Blog</span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="portfolio/index.html">
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a class="menu-item" href="contact.html">
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="site-logo">
+      <a class="title" href="index.html">Jason Garvin</a>
     </div>
+
+    <!-- Hamburger icon -->
+
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+    <!-- Menu -->
+
+    <nav id="main-nav">
+      <ul class="main-menu">
+        <li>
+          <a class="menu-item" href="blog/index.html">
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item active-page" href="about.html">
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item" href="updates.html">
+            <span>Updates</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item" href="contact.html">
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Social Icons -->
 
   <div id="floating-social">
-    <ul class="social-list">
+    <ul class="list-hor social-bar">
       <li>
-        <div>
-          <a class="minimal-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-            <i class="fa fa-envelope social-media"></i>
-            Email me
-          </a>
-        </div>
+        <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+          <i class="fa fa-envelope"></i>
+          Email
+        </a>
       </li>
       <li>
-        <div>
-          <a class="minimal-link" href="github.com/jasongarvin" target="_blank">
-            <i class="fa fa-github social-media"></i>
-            My Github
-          </a>
-        </div>
+        <a href="https://github.com/jasongarvin" target="_blank">
+          <i class="fa fa-github"></i>
+          Github
+        </a>
       </li>
       <li>
-        <div>
-          <a class="minimal-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
-            <i class="fa fa-linkedin social-media"></i>
-            My LinkedIn
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://www.threads.net/@jasonagarvin" target="_blank">
+          <i class="fa"></i>
+          Threads
+        </a>
       </li>
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Introduction -->
 
-  <section class="main-content">
-
-    <!-- Only Me -->
-
-    <h1 class="page-title transparent-box rounded-all">
-      About Me
-      <span class="subtitle text-outline rounded-all">
-        What I've done & my journey
-      </span>
-    </h1>
-
-    <article class="vertical-space flex-container space-apart rounded-all">
-      <div>
-        <h2 class="transparent-box rounded-all">Me, Summarized</h2>
-        <p class="blurb">
-          Mainly I've spent my life helping small businesses, especially 
-          local game stores, to succeed in their local environment. I also
-          consult with software companies to build tech solutions for the gaming
-          industry, and build websites for peers and businesses on the side. 
-        </p>
-        <p class="blurb">
-          I have a variety of skills, but am most specialized in
-          designing and implementing frameworks and operational scaffolding to
-          ensure and support the success of my teams.
-        </p>
-        <p class="blurb">
-          I've especially enjoyed learning front-end web development, but have
-          experience in Python (mostly data science and scripting), user
-          experience design, UI layout design, and project management.
-        </p>
-        <p class="blurb">
-          You'll hear more about my role with specific companies below!
-        </p>
+  <section class="centered top-of-page">
+    <article class="hero-content">
+      <div class="picture-container">
+        <img id="my-profile-pic" src="assets/img/me_home.jpg" alt="A picture of Jason Garvin" />
       </div>
 
-        <div class="transparent-emphasis rounded-all">
-          <aside>
-            <h4>My social media</h4>
-            <ul class="list-vert">
-              <li><a href="https://facebook.com/jasonagarvin" target="_blank" rel="noreferrer noopener">Facebook</a></li>
-              <li><a href="https://instagram.com/jasonagarvin" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-              <li><a href="https://linkedin.com/in/jasonagarvin" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/jasongarvin" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-            </ul>
-          </aside>
-        </div>
-      </div>
+      <h1 class="cta-header">About Me</h1>
+      <p class="subtitle">What I've done and where I'm going</p>
+
+      <p>
+        I create experience-driven business operations at a startup and 
+        small-business scale to bridge the divide between businesses and 
+        consumers
+      </p>
+    </article>
+  </section>
+
+  <section class="vertical-space left-align">
+    <h2 class="centered">
+      The beginning of my
+      <span class="emphasis">journey</span>
+    </h2>
+    <p>
+      I got my Bachelor's of Psychology from
+      <a href="https://www.colostate.edu/" rel="external nofollow" target="_blank">Colorado State University</a>
+      in pursuit of understanding people. Now, many years later, I'm putting that
+      knowledge to work handling operations and digital content creation for 
+      <a href="https://www.totalescapegames.com/" rel="external" target="_blank">Total Escape Games</a>
+      and product design for 
+      <a href="https://fillandfire.com/" rel="external" target="_blank">Fill and Fire</a>
+    </p>
+
+    <article class="vertical-space left-align">
+      <h2 class="centered">
+        My 
+        <span class="emphasis">mission</span>
+      </h2>
+      <p>
+        Everything I do is based around the belief that
+        <strong>in a post-AI world, the human experience is what's left.</strong>
+        When machines can automate and improve our lives in myriad ways, the 
+        remaining element that keeps us connected with one another is experience
+      </p>
+      <p>
+        <strong>My dream is a world where people can seek mutual experiences,
+        be a part of community, and where everything we do and see is tailor-fit
+        to us and our needs</strong>
+      </p>
     </article>
 
-    <!-- Total Escape Games -->
+    <article class="vertical-space left-align">
+      <h2 class="centered">My
+        <span class="emphasis">skills</span>
+        and projects
+      </h2>
+      <p>
+        First and foremost I excel in business, operations, and digital content
+        strategy. I'm heavily underway in modernizing Total Escape Games,
+        and the hobby industry overall, to bring our expertise to a digital future
+      </p>
+      <p>
+        To achieve the dream of digital parity between the in-store and 
+        online experience, I've been digging deep into software (and web) design 
+        for the past two years. Our website, social media, and Discord server
+        are all maintained solely by me, with more improvements on the way
+      </p>
+      <p>
+        I additionally leverage my web development and UX design experience for 
+        Fill and Fire, currently at MVP, to conduct usability testing and evaluate
+        market fit. We have a great deal of design and UX changes queued up 
+        for the next phase, and have been thrilled with the experiences we've 
+        created for event-goers and stores alike
+      </p>
+    </article>
 
-    <section id="teg-about" class="vertical-space">
-      <h2>Total Escape Games</h2>
-      <article class="transparent-box widget-border-left rounded-top">
-        <h3>About</h3>
-        <p>
-          I'll have been with <span>Total Escape Games</span> for 7 years
-          this year and have done a whole ton of different jobs. Some highlights
-          include event management and coordination, digital content creation,
-          operations management, business development, and brand design.
-        </p>
-      </article>
+    <article class="vertical-space">
+      <p>You can see what I've got cooking by visiting my
+        <a href="https://github.com/jasongarvin" target="_blank">GitHub profile</a>
+        and can even view the 
+        <a href="https://github.com/jasongarvin/jasongarvin.github.io" target="_blank">source code for this website</a>
+      </p>
+    </article>
+  </section>
 
-      <div class="flex-container">
-        <article class="transparent-emphasis widget-border-left">
-          <h3>My work at Total Escape Games</h3>
-          <p>
-            Over the course of my time with the store, sales have increased
-            substantially and we've truly come into our own as a stable,
-            inclusive local game store doing a high volume of sales while
-            maintaining the same, familiar small business atmosphere.
-          </p>
-          <p>
-            My current project is to hugely update our website and grow our
-            social media profiles through consistent posting and quality content
-            creation. To see how it's going, check us out at the links below!
-          </p>
-        </article>
 
-        <article class="emphasis-box widget-border-right">
-          <h3>Skills I've Used</h3>
-          <p>
-            <span>Total Escape Games</span> has given me the incredible opportunity
-            to grow my professional skillset. I've learned a great deal, focusing on
-            operations management, project management, user experience design,
-            merchandising, brand design, customer psychology, and sales.
-          </p>
-        </article>
-      </div>
-
-      <aside class="transparent-box widget-border-right rounded-bottom">
-        <h4>Total Escape Games</h4>
-        <h5 class="subtitle">Website & Social Media</h5>
-        <ul>
-          <li><a href="https://totalescapegames.com" target="_blank" rel="noreferrer noopener">Visit our website</a></li>
-          <li><a href="https://facebook.com/totalescapegames" target="_blank" rel="noreferrer noopener">Find us on Facebook</a></li>
-          <li><a href="https://instagram.com/totalescapegames" target="_blank" rel="noreferrer noopener">Follow us on Instagram</a>
-            <li><a href="https://discord.gg/R9krk7CVzK" target="_blank" rel="noreferrer noopener">Join us on Discord</a>
-          </li>
-        </ul>
-      </aside>
-    </section>
-
-    <!-- Fill and Fire -->
-
-    <section id="fnf-about" class="vertical-space">
-      <h2>Fill and Fire</h2>
-      <article class="transparent-box widget-border-left rounded-top">
-        <p>
-          I've also been with <span>Fill and Fire</span> coming up on 4 years now,
-          where I went from consulting to offer a perspective as a game store to
-          managing our product development and helping design our user experience.
-        </p>
-      </article>
-
-      <div class="flex-container">
-        <article class="transparent-box widget-border-left">
-          <h3>My Efforts with Fill and Fire</h3>
-          <p>
-            <span>Fill and Fire</span> is still in its youth, and we've yet to fully
-            release our product or finish our first phase of development. Life moves
-            slow as we work on the project aside our primary jobs, but as a team
-            we've grown tremendously at project management and feature design. 
-          </p>
-          <p>
-            So far, I've queued up a great deal of redesign work with user
-            experience in mind, ranging from UI overhauls to a complete rework of
-            how our accounts function and how stores interface with event creation.
-            I do design research, explore our ideal customers' needs and wants,
-            and try to design a system that pre-empts their needs and delivers
-            and excellent event-going experience.
-          </p>
-        </article>
-
-        <article class="emphasis-box widget-border-right">
-          <h3>Growing into UX</h3>
-          <p>
-            My time with <span>Fill and Fire</span> has given me invaluable experience
-            in UX design, which I've found a deep passion for doing. I can't wait to 
-            continue growing as a designer and professional, even as I wear a variety
-            of other hats to help balance our team.
-          </p>
-        </article>
-      </div>
-
-      <aside class="widget widget-border-right rounded-bottom">
-        <h4>Fill and Fire</h4>
-        <h5 class="subtitle">Web application</h5>
-        <ul>
-          <li><a href="https://fillandfire.com" target="_blank" rel="noreferrer noopener">Website</a></li>
-          </li>
-        </ul>
-      </aside>
-    </section>
+  <!-- Contact Section -->
+  
+  <section class="centered">
+    <div id="contact-me" class="cta-click-box">
+      <h3 class="cta-box-title">Contact Me</h3>
+      <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+        Drop me an email
+      </a>
+    </div>
   </section>
 
   <!-- Main Footer -->
 
   <footer id="primary-footer">
-    <div class="flex-container">
-      <div>
-        <ul class="list-hor">
-          <li>
-            <a class="minimal-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
-          </li>
-          <li>
-            <a class="minimal-link" href="https://github.com/jasongarvin" target="_blank">Github</a>
-          </li>
-          <li>
-            <a class="minimal-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
+    <div class="social-bar">
+      <ul class="list-hor">
+        <li>
+          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
+        </li>
+        <li>
+          <a href="https://github.com/jasongarvin" target="_blank">Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
+        </li>
+      </ul>
     </div>
 
-    <div class="end-footer-container">
+    <aside class="end-footer">
       <p><small>&copy; Jason Garvin 2023</small></p>
-    </div>
+    </aside>
   </footer>
 
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
@@ -298,7 +228,7 @@
     Back to top
   </button>
 
-  <!-- Scripts and Handling -->
+  <!-- Scripts and handling -->
 
   <script src="assets/scripts/to-top.js"></script>
 
