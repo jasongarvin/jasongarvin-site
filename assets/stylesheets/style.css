@@ -410,11 +410,15 @@ a.menu-item:hover {
 
 #JotFormIFrame-231337689291162 {
   position: relative;
-  top: -10px;
   min-width: 100%;
   max-width: 100%;
   height: 539px;
   border :none;
+}
+
+.contact-form {
+  height: 635px;
+  overflow: hidden;
 }
 
 /* --- Buttons --- */
@@ -615,5 +619,11 @@ a.menu-item:hover {
 
   #floating-social {
     margin: 2.5rem auto 0;
+  }
+}
+
+@media screen and (min-width: 562px) {
+  .contact-form {
+    height: 480px;
   }
 }
