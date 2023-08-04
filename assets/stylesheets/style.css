@@ -39,7 +39,7 @@ body {
 }
 
 section {
-  max-width: 700px;
+  max-width: 45rem;
   padding: 0.5rem 2rem;
   margin: 0 auto;
 }
@@ -347,7 +347,7 @@ a.menu-item:hover {
 }
 
 .hero-content {
-  max-width: 35rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
@@ -355,6 +355,10 @@ a.menu-item:hover {
   position: relative;
   margin: 0 auto 0.5rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cta-subtitle {
+  margin-top: 1rem;
 }
 
 .emphasis {
