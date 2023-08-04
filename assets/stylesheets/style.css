@@ -417,7 +417,7 @@ a.menu-item:hover {
 }
 
 .contact-form {
-  height: 635px;
+  max-height: 635px;
   overflow: hidden;
 }
 
@@ -434,10 +434,12 @@ a.menu-item:hover {
   background: transparent;
   border: none;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .button-link .fa {
   position: relative;
+  color: #68a0d4;
   font-size: 60px;
 
   transition: all 0.2s ease-in;
@@ -446,6 +448,7 @@ a.menu-item:hover {
 .button-link:hover .button-link,
 .button-link:hover .fa {
   transform: scaleX(1.1) scaleY(1.1);
+  color: #1d81bc;
 }
 
 #back-to-top {
@@ -571,7 +574,7 @@ a.menu-item:hover {
 
 @media screen and (min-width: 768px) {
   .site-logo {
-    margin: 4rem auto 1rem;
+    margin: 3.5rem auto 1rem;
     transition: all 0.2s ease-in-out;
   }
 
@@ -624,6 +627,7 @@ a.menu-item:hover {
 
 @media screen and (min-width: 562px) {
   .contact-form {
-    height: 480px;
+    max-height: 480px;
+    max-width: 700px;
   }
 }
