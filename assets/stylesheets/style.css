@@ -28,12 +28,12 @@ body {
   color: var(--base-shade, #0C0D0D);
   background-color: #fff;
 
-  font-family: "Quicksand", 
-               "Open Sans", 
-               Helvetica, 
-               Arial, 
+  font-family: "Quicksand",
+               "Open Sans",
+               Helvetica,
+               Arial,
                sans-serif;
-  
+
   font-size: calc(15px + 0.390625vw);
   line-height: 1.618;
 }
@@ -551,15 +551,34 @@ a.menu-item:hover {
   display: flex;
   margin-top: 0.15rem;
   font-size: 0.85rem;
-    font-family: "Quicksand", 
-                 "Open Sans", 
-                 Helvetica, 
-                 Arial, 
+    font-family: "Quicksand",
+                 "Open Sans",
+                 Helvetica,
+                 Arial,
                  sans-serif;
   text-transform: lowercase;
 }
 
 .pub-info-preview span {
+  margin-left: 4rem;
+  font-weight: lighter;
+}
+
+.blog-post {
+  max-width: 45rem;
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+}
+
+.blog-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.15rem;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+
+.blog-info span {
   margin-left: 4rem;
   font-weight: lighter;
 }
@@ -599,7 +618,7 @@ a.menu-item:hover {
     display: flex;
     padding: 0;
   }
-  
+
   .main-menu li {
     width: fit-content;
   }
@@ -616,7 +635,7 @@ a.menu-item:hover {
     height: 2.5rem;
     background-color: #aacbeb;
   }
-  
+
   .main-menu li:hover .menu-item::after{
     left: 0.5rem;
     bottom: 0.1rem;
