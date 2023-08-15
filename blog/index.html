@@ -135,7 +135,9 @@
 
         <h6 class="pub-info-preview">
           written by Jason Garvin
-          <span>07/22/2023</span>
+          <span>
+            <time datetime="2023-08-07">08/07/2023</time>
+          </span>
         </h6>
 
         <p class="text-preview">
@@ -152,7 +154,9 @@
 
         <h6 class="pub-info-preview">
           written by Jason Garvin
-          <span>07/21/2023</span>
+          <span>
+            <time datetime="2023-07-30">07/30/2023</time>
+          </span>
         </h6>
 
         <p class="text-preview">
@@ -169,7 +173,9 @@
 
         <h6 class="pub-info-preview">
           written by Jason Garvin
-          <span>07/20/2023</span>
+          <span>
+            <time datetime="2023-07-23">07/23/2023</time>
+          </span>
         </h6>
 
         <p class="text-preview">
@@ -181,18 +187,18 @@
     </section>
 
     <aside class="vertical-space centered">
-      <h3>Hopefully that gets you thinking</h3>
+      <h3>I hope that gets you thinking</h3>
     </aside>
 
     <!-- Contact Section -->
 
     <section class="centered">
-      <div id="contact-me" class="cta-click-box">
+      <address id="contact-me" class="cta-click-box">
         <h3 class="cta-box-title">Contact Me</h3>
         <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
           Drop me an email
         </a>
-      </div>
+      </address>
     </section>
 
   </main>
@@ -218,7 +224,13 @@
     </div>
 
     <aside class="end-footer">
-      <p><small>&copy; Jason Garvin 2023</small></p>
+      <p><small itemprop="copyrightNotice">
+        &copy;
+        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+        </span>
+        2023
+      </small></p>
     </aside>
   </footer>
 

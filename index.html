@@ -194,13 +194,13 @@
 
     <!-- Contact Section -->
 
-    <section class="centered next-section">
-      <div id="contact-me" class="cta-click-box">
+    <section class="centered">
+      <address id="contact-me" class="cta-click-box">
         <h3 class="cta-box-title">Contact Me</h3>
         <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
           Drop me an email
         </a>
-      </div>
+      </address>
     </section>
 
     <!-- Outro -->
@@ -232,7 +232,13 @@
     </div>
 
     <aside class="end-footer">
-      <p><small>&copy; Jason Garvin 2023</small></p>
+      <p><small itemprop="copyrightNotice">
+        &copy;
+        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+        </span>
+        2023
+      </small></p>
     </aside>
   </footer>
 

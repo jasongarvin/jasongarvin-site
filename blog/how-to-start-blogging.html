@@ -114,21 +114,23 @@
 
     <!-- Blog post -->
 
-    <article class="blog-post centered top-of-page">
+    <article class="blog-post centered top-of-page" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.jasongarvin.me/blog/how-to-start-blogging.html">
       <section class="vertical-space">
-        <h1 class="cta-header">How to Start Blogging</h1>
-        <aside class="blog-info">
-          written by Jason Garvin
-          <span>07/22/2023</span>
-        </aside>
+        <h1 class="cta-header" itemprop="name">How to Start Blogging</h1>
+        <div class="blog-info" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+          <span><time itemprop="datePublished" datetime="2023-07-23">07/23/2023</time></span>
+        </div>
       </section>
 
-      <p>
-        This is the introduction to the blog post, before the main content
-        gets rolling. Use this to write a quick hook and set up the premise.
-      </p>
+      <section itemprop="abstract">
+        <p>
+          This is the introduction to the blog post, before the main content
+          gets rolling. Use this to write a quick hook and set up the premise.
+        </p>
+      </section>
 
-      <section class="left-align">
+      <section class="left-align" itemprop="articleBody">
         <h2 class="centered">
           So, there's all these
           <span class="emphasis">tools</span>
@@ -146,12 +148,12 @@
     <!-- Contact Section -->
 
     <section class="centered">
-      <div id="contact-me" class="cta-click-box">
+      <address id="contact-me" class="cta-click-box">
         <h3 class="cta-box-title">Contact Me</h3>
         <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
           Drop me an email
         </a>
-      </div>
+      </address>
     </section>
 
   </main>
@@ -177,7 +179,13 @@
     </div>
 
     <aside class="end-footer">
-      <p><small>&copy; Jason Garvin 2023</small></p>
+      <p><small itemprop="copyrightNotice">
+        &copy;
+        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+        </span>
+        2023
+      </small></p>
     </aside>
   </footer>
 

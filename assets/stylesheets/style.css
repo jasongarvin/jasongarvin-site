@@ -412,6 +412,10 @@ a.menu-item:hover {
   text-transform: uppercase;
 }
 
+#contact-me {
+  font-style: normal;
+}
+
 #JotFormIFrame-231337689291162 {
   position: relative;
   min-width: 100%;
@@ -581,6 +585,10 @@ a.menu-item:hover {
 .blog-info span {
   margin-left: 4rem;
   font-weight: lighter;
+}
+
+.blog-info span:first-of-type {
+  margin-left: 0;
 }
 
 /* --- Media queries --- */
