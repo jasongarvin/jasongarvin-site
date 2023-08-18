@@ -348,7 +348,8 @@ a.menu-item:hover {
 
 .hero-content {
   max-width: 40rem;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cta-header {

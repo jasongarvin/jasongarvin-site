@@ -111,8 +111,8 @@
 
     <!-- Introduction -->
 
-    <section class="centered top-of-page">
-      <article class="hero-content">
+    <article class="hero-content centered top-of-page">
+      <section>
         <h1 class="cta-header">Hi, I'm Jason</h1>
 
         <div>
@@ -123,7 +123,7 @@
             and operations that lead to excellent experiences
           </p>
         </div>
-      </article>
+      </section>
 
       <div>
         <button onclick="toNextSection(0)" class="scroll-to button-link">
@@ -133,18 +133,18 @@
           </div>
         </button>
       </div>
-    </section>
+    </article>
 
     <!-- Below the cut -->
     <!-- Main content -->
 
-    <section id="next-section" class="next-section">
-      <aside class="brand-container">
+    <article id="next-section" class="next-section">
+      <section class="brand-container">
         <img id="teg-logo" src="assets/img/teg-logo.png" alt="The Total Escape Games logo" />
         <h2 class="brand-name">Total Escape Games</h2>
-      </aside>
+      </section>
 
-      <article>
+      <section>
         <h3>Building the brand</h3>
         <p>
           <span>Total Escape Games</span> is modernizing. There are infinite
@@ -155,7 +155,7 @@
           We strive to achieve a seamless and innovative retail and event experience,
           supported by modern solutions
         </p>
-      </article>
+      </section>
 
       <div>
         <button onclick="toNextSection(1)" class="scroll-to button-link">
@@ -165,22 +165,22 @@
           </div>
         </button>
       </div>
-    </section>
+    </article>
 
-    <section class="next-section">
-      <aside class="brand-container">
+    <article class="next-section">
+      <section class="brand-container">
         <img id="fnf-logo" src="assets/img/fnf-logo.png" alt="The Fill and Fire logo" />
         <h2 class="brand-name">Fill and Fire</h2>
-      </aside>
+      </section>
 
-      <article>
+      <section>
         <h3>Streamlining in-person events</h3>
         <p>
           <span>Fill and Fire</span> aims to reinvent the event preregistration process.
           Our goal is to bring event consumers to venues, and bring venues and
           their events closer to consumers than ever before.
         </p>
-      </article>
+      </section>
 
       <div>
         <button onclick="toNextSection(2)" class="scroll-to button-link">
@@ -190,24 +190,22 @@
           </div>
         </button>
       </div>
-    </section>
+    </article>
 
     <!-- Contact Section -->
 
-    <section class="centered">
-      <address id="contact-me" class="cta-click-box">
-        <h3 class="cta-box-title">Contact Me</h3>
-        <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-          Drop me an email
-        </a>
-      </address>
-    </section>
+    <address id="contact-me" class="cta-click-box centered">
+      <h3 class="cta-box-title">Contact Me</h3>
+      <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+        Drop me an email
+      </a>
+    </address>
 
     <!-- Outro -->
 
-    <section class="centered">
+    <aside class="centered">
       <h3>Experience is Everything.</h3>
-    </section>
+    </aside>
 
   </main>
 
@@ -231,15 +229,17 @@
       </ul>
     </div>
 
-    <aside class="end-footer">
-      <p><small itemprop="copyrightNotice">
-        &copy;
-        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Jason Garvin</span>
-        </span>
-        2023
-      </small></p>
-    </aside>
+    <div class="end-footer">
+      <p>
+        <small itemprop="copyrightNotice">
+          &copy;
+          <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Jason Garvin</span>
+          </span>
+          2023
+        </small>
+      </p>
+    </div>
   </footer>
 
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>

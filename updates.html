@@ -111,13 +111,11 @@
 
     <!-- Introduction -->
 
-    <section class="centered top-of-page">
-      <article class="hero-content">
+    <article class="hero-content centered top-of-page">
         <h1 class="cta-header">Website Updates</h1>
-      </article>
-    </section>
+    </article>
 
-    <section class="vertical-space left-align">
+    <article class="vertical-space left-align">
       <h2 class="centered">
         Past
         <span class="emphasis">versions</span>
@@ -131,7 +129,23 @@
         Consider this a sort of side pseudo-blog about my process
       </p>
 
-      <article class="vertical-space left-align">
+      <section class="vertical-space left-align">
+        <h2 class="centered">
+          <span class="emphasis">Semantic</span>
+          HTML & friends
+        </h2>
+        <p>
+          Articles are sections, and sections are articles! You won't notice a
+          visual change, but if you inspect the site you'll see an improvement
+          to the semantics of the HTML structure overall.
+        </p>
+        <p>
+          It feels good putting some of the new information in my brain to use
+          in a practical setting.
+        </p>
+      </section>
+
+      <section class="vertical-space left-align">
         <h2 class="centered">
           Snazzy
           <span class="emphasis">scrolling</span>
@@ -146,33 +160,34 @@
           <strong>more graphics and interactivity</strong> as I continue
           to design each page
         </p>
-      </article>
+      </section>
 
-      <article class="vertical-space left-align">
+      <section class="vertical-space left-align">
         <h2 class="centered">
-          <span class="emphasis">Out</span>
-          with the old
+          Spring
+          <span class="emphasis">cleaning</span>
         </h2>
         <p>
-          The new version of the site is live!
+          The new version of the site is live! Even though I'd gotten kind of
+          attached to the old version, the design just wasn't working. It's hard,
+          but I'm letting go...
         </p>
         <p>
-          If you want to see how it used to look, you can
-          <a href="site-v1/index.html">check it out here</a>
+          ...Mostly. The old version is alive below if you want to take a peek
+          <br>
+          <a href="site-v1/index.html">Check it out here</a>
         </p>
-      </article>
-    </section>
+      </section>
+    </article>
 
     <!-- Github section -->
 
-    <section class="centered">
-      <div class="cta-click-box">
-        <h3 class="cta-box-title">Source code</h3>
-        <a href="https://github.com/jasongarvin/jasongarvin.github.io" target="_blank">
-          check out under the hood
-        </a>
-      </div>
-    </section>
+    <div class="cta-click-box centered">
+      <h3 class="cta-box-title">Source code</h3>
+      <a href="https://github.com/jasongarvin/jasongarvin.github.io" target="_blank">
+        check out under the hood
+      </a>
+    </div>
 
   </main>
 
@@ -196,15 +211,17 @@
       </ul>
     </div>
 
-    <aside class="end-footer">
-      <p><small itemprop="copyrightNotice">
-        &copy;
-        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Jason Garvin</span>
-        </span>
-        2023
-      </small></p>
-    </aside>
+    <div class="end-footer">
+      <p>
+        <small itemprop="copyrightNotice">
+          &copy;
+          <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Jason Garvin</span>
+          </span>
+          2023
+        </small>
+      </p>
+    </div>
   </footer>
 
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
