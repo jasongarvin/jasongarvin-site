@@ -118,18 +118,22 @@
 
     <!-- Contact Form -->
 
-    <div class="contact-form vertical-space">
-      <iframe
-        id="JotFormIFrame-231337689291162"
-        title="Modern Contact Form"
-        onload="window.parent.scrollTo(0,0)"
-        allowtransparency="true"
-        allowfullscreen="true"
-        allow="geolocation; microphone; camera"
-        src="https://form.jotform.com/231337689291162"
-        frameborder="0"
-        scrolling="no">
-      </iframe>
+    <div class="contact-form-container">
+      <div id="loader" class="loader-center"></div>
+
+      <div id="jotform" class="contact-form vertical-space">
+        <iframe
+          id="JotFormIFrame-231337689291162"
+          title="Modern Contact Form"
+          onload="window.parent.scrollTo(0,0)"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allow="geolocation; microphone; camera"
+          src="https://form.jotform.com/231337689291162"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
     </div>
 
     <article>
@@ -220,6 +224,7 @@
   <!-- Scripts and handling -->
 
   <script src="assets/scripts/to-top.js"></script>
+  <script src="assets/scripts/loader.js"></script>
 
   <script type="text/javascript">
     var ifr = document.getElementById("JotFormIFrame-231337689291162");
