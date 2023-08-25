@@ -390,10 +390,12 @@ a.menu-item:hover {
   align-items: center;
   flex-direction: column;
   max-width: 35rem;
-  padding: 3rem 0 4rem;
+  padding: 2rem 0;
   margin: 10rem auto 4rem;
   border-radius: 10px;
   background-color: #68a0d4;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -407,14 +409,26 @@ a.menu-item:hover {
 }
 
 .cta-box-title {
-  margin: 0 0 1.618rem;
+  margin: auto 0;
   font-size: 3rem;
   color: #fff;
   text-transform: uppercase;
 }
 
+.cta-box-content {
+  color: #fff;
+}
+
 .contact-form-container {
   position: relative;
+}
+
+.cta-click-box,
+.cta-click-box:hover,
+.cta-box-title,
+.cta-box-title:hover {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 #contact-me {
