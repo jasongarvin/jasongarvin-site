@@ -454,6 +454,26 @@ a.menu-item:hover {
 
 /* --- Buttons --- */
 
+.default-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #68a0d4;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.default-button:hover {
+  background-color: #1d81bc;
+
+  transition: all 0.2s ease-in-out;
+}
+
 .button-link {
   display: flex;
   justify-content: center;
@@ -570,7 +590,7 @@ a.menu-item:hover {
   margin-bottom: 0.15rem;
 }
 
-.text-preview span {
+.text-preview {
   font-weight: 700;
 }
 
@@ -589,6 +609,15 @@ a.menu-item:hover {
 .pub-info-preview span {
   margin-left: 4rem;
   font-weight: lighter;
+}
+
+.blog-title {
+  margin-bottom: 3rem;
+}
+
+.blog-subtitle {
+  margin-top: 3rem;
+  margin-bottom: 1.618rem;
 }
 
 .blog-post {
