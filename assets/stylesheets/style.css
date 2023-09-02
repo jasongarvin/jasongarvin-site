@@ -311,11 +311,44 @@ a.menu-item:hover {
 
 /* --- Social media --- */
 
+#social-box {
+  display: none;
+}
+
+.social-toggle {
+  cursor: pointer;
+  padding: 30px 1.5rem 30px;
+  float: left;
+  z-index: 99;
+  font-size: 1.3rem;
+
+  transition: 0.25s all ease-in-out;
+}
+
+.social-toggle .fa-solid {
+  transition: 0.25s ease-in-out
+}
+
+.social-box:checked ~ .social-toggle .fa-solid {
+  transform: rotate(180deg);
+
+  transition: 0.25s ease-in-out
+}
+
+.social-box:checked ~ #floating-social .social-account {
+  max-height: 100%;
+
+  transition: 0.2s ease-in-out;
+}
+
 #floating-social {
+  height: 4rem;
   width: fit-content;
   max-width: 800px;
   padding: 0.5rem 0;
   margin: 1.5rem auto 0;
+
+  transition: 0.4s ease-in-out;
 }
 
 #floating-social a {
@@ -753,25 +786,42 @@ a.menu-item:hover {
   .menu-item {
     padding: 1rem 2rem 0.5rem;
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: calc(1.2rem + 0.2vw);
   }
 
   .active-page::after {
     left: 0.5rem;
-    bottom: 0.1rem;
-    height: 2.5rem;
+    bottom: 0.3rem;
+    height: 2.6rem;
     background-color: #aacbeb;
   }
 
   .main-menu li:hover .menu-item::after{
     left: 0.5rem;
-    bottom: 0.1rem;
-    height: 2.5rem;
+    bottom: 0.3rem;
+    height: 2.6rem;
     background-color:#84aed6;
   }
 
+  .social-toggle {
+    position: relative;
+    top: 0.2rem;
+    left: calc(50vw - 1.65rem);
+    padding: 0 1rem;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .social-toggle:hover {
+    background-color: #aacbeb;
+
+    transition: 0.25s all ease-in-out;
+  }
+
   #floating-social {
-    margin: 2.5rem auto 0;
+    padding: 1rem 0;
   }
 }
 
@@ -782,6 +832,12 @@ a.menu-item:hover {
 
   .button-link {
     margin: 6rem auto 16rem;
+  }
+}
+
+@media screen and (min-width: 615px) {
+  .social-bar li {
+    padding-top: 0.75rem;
   }
 }
 
