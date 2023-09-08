@@ -76,30 +76,35 @@
     </nav>
   </header>
 
-  <!-- Social Icons -->
+  <!-- Social toggle icon -->
+
+  <input class="social-box" type="checkbox" id="social-box"/>
+  <label class="social-toggle" for="social-box"><span class="fa-solid fa-arrow-turn-down"></span></label>
+
+  <!-- Social bar -->
 
   <div id="floating-social">
     <ul class="list-hor social-bar">
       <li>
-        <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+        <a class="social-account" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
           <i class="fa-regular fa-envelope"></i>
           Email
         </a>
       </li>
       <li>
-        <a href="https://github.com/jasongarvin" target="_blank">
+        <a class="social-account" href="https://github.com/jasongarvin" target="_blank">
           <i class="fa-brands fa-github"></i>
           Github
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
+        <a class="social-account" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
           <i class="fa-brands fa-linkedin-in"></i>
           LinkedIn
         </a>
       </li>
       <li>
-        <a href="https://www.threads.net/@jasonagarvin" target="_blank">
+        <a class="social-account" href="https://www.threads.net/@jasonagarvin" target="_blank">
           <i class="fa-brands fa-threads"></i>
           Threads
         </a>
@@ -111,24 +116,22 @@
 
     <!-- Introduction -->
 
-    <section class="centered top-of-page">
-      <article class="hero-content">
-        <div class="picture-container">
-          <img id="my-profile-pic" src="assets/img/me_home.jpg" alt="A picture of Jason Garvin" />
-        </div>
+    <article class="hero-content centered top-of-page">
+      <div class="picture-container">
+        <img id="my-profile-pic" src="assets/img/me_home.jpg" alt="A picture of Jason Garvin" />
+      </div>
 
-        <h1 class="cta-header">About Me</h1>
-        <p class="subtitle">What I've done and where I'm going</p>
+      <h1 class="cta-header">About Me</h1>
+      <p class="subtitle">What I've done and where I'm going</p>
 
-        <p>
-          I create experience-driven business operations at a startup and
-          small-business scale to bridge the divide between businesses and
-          consumers
-        </p>
-      </article>
-    </section>
+      <p>
+        I create experience-driven business operations at a startup and
+        small-business scale to bridge the divide between businesses and
+        consumers
+      </p>
+    </article>
 
-    <section class="vertical-space left-align">
+    <article class="vertical-space left-align">
       <h2 class="centered">
         The beginning of my
         <span class="emphasis">journey</span>
@@ -143,7 +146,7 @@
         <a href="https://fillandfire.com/" rel="external" target="_blank">Fill and Fire</a>
       </p>
 
-      <article class="vertical-space left-align">
+      <section class="vertical-space left-align">
         <h2 class="centered">
           My
           <span class="emphasis">mission</span>
@@ -159,9 +162,9 @@
           be a part of community, and where everything we do and see is tailor-fit
           to us and our needs</strong>
         </p>
-      </article>
+      </section>
 
-      <article class="vertical-space left-align">
+      <section class="vertical-space left-align">
         <h2 class="centered">My
           <span class="emphasis">skills</span>
           and projects
@@ -184,28 +187,25 @@
           for the next phase, and have been thrilled with the experiences we've
           created for event-goers and stores alike
         </p>
-      </article>
+      </section>
 
-      <article class="vertical-space">
+      <section class="vertical-space">
         <p>You can see what I've got cooking by visiting my
           <a href="https://github.com/jasongarvin" target="_blank">GitHub profile</a>
           and can even view the
           <a href="https://github.com/jasongarvin/jasongarvin.github.io" target="_blank">source code for this website</a>
         </p>
-      </article>
-    </section>
+      </section>
+    </article>
 
 
     <!-- Contact Section -->
 
-    <section class="centered">
-      <address id="contact-me" class="cta-click-box">
-        <h3 class="cta-box-title">Contact Me</h3>
-        <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-          Drop me an email
-        </a>
-      </address>
-    </section>
+    <address id="contact-me">
+      <a class="cta-click-box centered next-section" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+        <h3 class="cta-box-title">Contact me</h3>
+      </a>
+    </address>
 
   </main>
 
@@ -229,15 +229,17 @@
       </ul>
     </div>
 
-    <aside class="end-footer">
-      <p><small itemprop="copyrightNotice">
-        &copy;
-        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Jason Garvin</span>
-        </span>
-        2023
-      </small></p>
-    </aside>
+    <div class="end-footer">
+      <p>
+        <small itemprop="copyrightNotice">
+          &copy;
+          <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Jason Garvin</span>
+          </span>
+          2023
+        </small>
+      </p>
+    </div>
   </footer>
 
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
