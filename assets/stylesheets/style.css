@@ -1,3 +1,15 @@
+/* --- Core styles for every page in the website --- */
+
+:root {
+  --text: #00171f;
+  --background: #fff;
+  --primary: #007ea7;
+  --secondary: #003459;
+  --accent: #d2e6f1;
+  --link: #d54916;
+  --link-secondary: #8d2f0d;
+}
+
 article,
 aside,
 div,
@@ -25,8 +37,8 @@ body {
   margin: 0;
   overflow-x: hidden;
 
-  color: var(--base-shade, #0C0D0D);
-  background-color: #fff;
+  color: var(--text, #00171f);
+  background-color: var(--background, #fff);
 
   font-family: "Quicksand",
                "Open Sans",
@@ -94,19 +106,19 @@ h6 {
 }
 
 a {
-  color: #68a0d4;
+  color: var(--primary, #007ea7);
   transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #244d74;
+  color: var(--secondary, #003459);
   transition: all 0.2s ease-in-out;
 }
 
 p a {
-  color: #222;
+  color: var(--link, #d54916);
   text-decoration: none;
-  background-image: linear-gradient(#1d81bc, #1d81bc);
+  background-image: linear-gradient(var(--link, #d54916), var(--link, #d54916));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 1px;
@@ -120,7 +132,8 @@ p a:hover {
 }
 
 p a:visited {
-  color: #b67b37;
+  color: var(--link-secondary, #8d2f0d);
+  background-image: linear-gradient(var(--link-secondary, #8d2f0d), var(--link-secondary, #8d2f0d));
 }
 
 p a:visited:hover {
@@ -157,7 +170,7 @@ p a:visited:hover {
 a.title,
 a.title:visited,
 a.title:hover {
-  color: #222;
+  color: var(--text, #00171f);
 }
 
 .title {
@@ -184,7 +197,7 @@ a.title:hover {
   overflow: hidden;
   z-index: 99;
 
-  background-color: #fff;
+  background-color: var(--background, #fff);
 
   transition: max-height .4s ease-out;
 }
@@ -205,15 +218,15 @@ a.title:hover {
   padding: 2rem 2rem 1.5rem;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #222;
+  color: var(--text, #00171f);
 }
 
 a.menu-item:visited {
-  color: #222;
+  color: var(--text, #00171f);
 }
 
 a.menu-item:hover {
-  color: #244d74;
+  color: var(--secondary, #003459);
 }
 
 .active-page::after {
@@ -224,7 +237,7 @@ a.menu-item:hover {
   height: 3.5rem;
   width: 90%;
   z-index: -1;
-  background-color: #aacbeb;
+  background-color: var(--accent, #d2e6f1);
   border-radius: 1rem;
 }
 
@@ -236,7 +249,7 @@ a.menu-item:hover {
   height: 3.5rem;
   width: 90%;
   z-index: -1;
-  background-color:#84aed6;
+  background-color: var(--accent, #d2e6f1);
   border-radius: 1rem;
 }
 
@@ -254,7 +267,7 @@ a.menu-item:hover {
 }
 
 .hamb-line {
-  background: var(--base-color, #3c3d3e);
+  background: var(--text, #00171f);
   display: block;
   height: 3px;
   position: relative;
@@ -264,7 +277,7 @@ a.menu-item:hover {
 
 .hamb-line::before,
 .hamb-line::after {
-  background: var(--base-color, #3c3d3e);
+  background: var(--text, #00171f);
   content: '';
   display: block;
   height: 100%;
@@ -404,7 +417,7 @@ a.menu-item:hover {
 }
 
 .emphasis {
-  color: #68a0d4;
+  color: var(--primary, #007ea7);
   font-weight: 700;
 }
 
@@ -438,15 +451,15 @@ a.menu-item:hover {
   padding: 2rem 0;
   margin: 10rem auto 4rem;
   border-radius: 10px;
-  background-color: #68a0d4;
+  background-color: var(--primary, #007ea7);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box:hover {
-  background-color: #1d81bc;
-  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary, #003459);
+  transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box a {
@@ -506,7 +519,7 @@ a.menu-item:hover {
   padding: 0.6rem 0.8rem;
   border: none;
   border-radius: 10px;
-  background-color: #68a0d4;
+  background-color: var(--primary, #007ea7);
   color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -514,7 +527,7 @@ a.menu-item:hover {
 }
 
 .default-button:hover {
-  background-color: #1d81bc;
+  background-color: var(--secondary, #003459);
 
   transition: all 0.2s ease-in-out;
 }
@@ -535,7 +548,7 @@ a.menu-item:hover {
 
 .button-link .fa {
   position: relative;
-  color: #68a0d4;
+  color: var(--primary, #007ea7);
   font-size: 60px;
 
   transition: all 0.2s ease-in;
@@ -544,7 +557,7 @@ a.menu-item:hover {
 .button-link:hover .button-link,
 .button-link:hover .fa {
   transform: scaleX(1.1) scaleY(1.1);
-  color: #1d81bc;
+  color: var(--secondary, #003459);
 }
 
 #back-to-top {
@@ -557,8 +570,8 @@ a.menu-item:hover {
   overflow: hidden;
   z-index: 98;
 
-  color: #222;
-  background: #d2e6f1;
+  color: var(--text, #00171f);
+  background: var(--accent, #d2e6f1);
   border: none;
   border-radius: 50%;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
@@ -614,7 +627,7 @@ a.menu-item:hover {
   margin: 1rem auto;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid #444;
+  border: 2px solid var(--text, #00171f);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -716,7 +729,7 @@ a.menu-item:hover {
 #loader {
   border: 12px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 12px solid #222;
+  border-top: 12px solid var(--text, #00171f);
   width: 70px;
   height: 70px;
   animation: spin 1s linear infinite;
@@ -789,16 +802,12 @@ a.menu-item:hover {
 
   .active-page::after {
     left: 0.5rem;
-    bottom: 1rem;
     height: 2.6rem;
-    background-color: #aacbeb;
   }
 
   .main-menu li:hover .menu-item::after{
     left: 0.5rem;
-    bottom: 1rem;
     height: 2.6rem;
-    background-color:#84aed6;
   }
 
   .social-toggle {
@@ -813,7 +822,7 @@ a.menu-item:hover {
   }
 
   .social-toggle:hover {
-    background-color: #aacbeb;
+    background-color: var(--accent, #d2e6f1);
 
     transition: 0.25s all ease-in-out;
   }
