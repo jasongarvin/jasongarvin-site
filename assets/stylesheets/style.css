@@ -1,14 +1,31 @@
-/* --- Core styles for every page in the website --- */
+/* --- The core stylesheet for Jason Garvin, the website --- */
 
+/* Default theme */
 :root {
   --text: #00171f;
   --background: #fff;
   --primary: #007ea7;
   --secondary: #003459;
   --accent: #d2e6f1;
-  --link: #d54916;
-  --link-secondary: #8d2f0d;
+
+  --link-primary: #3075be;
+  --link-secondary: #114980;
 }
+
+/* Dark theme class and colors */
+.dark-theme {
+  --text: #e6e9de;
+  --secondary-text: #f1dac4;
+  --background: #0d0c1d;
+  --primary: #474973;
+  --secondary: #161b33;
+  --accent: #a69cac;
+
+  --link-primary: #007ea7;
+  --link-secondary: #003459;
+}
+
+/* --- Site styles --- */
 
 article,
 aside,
@@ -116,9 +133,9 @@ a:hover {
 }
 
 p a {
-  color: var(--link, #d54916);
+  color: var(--link-primary, #d54916);
   text-decoration: none;
-  background-image: linear-gradient(var(--link, #d54916), var(--link, #d54916));
+  background-image: linear-gradient(var(--link-primary, #d54916), var(--link-primary, #d54916));
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 1px;
@@ -335,6 +352,7 @@ a.menu-item:hover {
   padding: 30px 1.5rem 30px;
   float: left;
   z-index: 99;
+  color: #00171f;
   font-size: 1.3rem;
 
   transition: 0.25s all ease-in-out;
@@ -447,8 +465,8 @@ a.menu-item:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 35rem;
-  padding: 2rem 0;
+  max-width: 32rem;
+  padding: 2rem 1rem;
   margin: 10rem auto 4rem;
   border-radius: 10px;
   background-color: var(--primary, #007ea7);
@@ -463,18 +481,18 @@ a.menu-item:hover {
 }
 
 .cta-click-box a {
-  color: #fff;
+  color: var(--background, #fff);
 }
 
 .cta-box-title {
   margin: auto 0;
-  font-size: 3rem;
-  color: #fff;
+  font-size: 2.35em;
+  color: var(--background, #fff);
   text-transform: uppercase;
 }
 
 .cta-box-content {
-  color: #fff;
+  color: var(--background, #fff);
 }
 
 .contact-form-container {
@@ -487,6 +505,14 @@ a.menu-item:hover {
 .cta-box-title:hover {
   text-decoration: none;
   border-bottom: none;
+}
+
+.home-accent {
+  background-color: #68a0d4;
+}
+
+.home-accent:hover {
+  background-color: #1d81bc;
 }
 
 #contact-me {
