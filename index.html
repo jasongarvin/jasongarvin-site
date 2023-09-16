@@ -89,9 +89,14 @@
     </nav>
   </header>
 
+  <button id="toggle-theme" class="default-button">
+    <i class="fa fa-sun-o"></i>
+    Toggle Theme
+  </button>
+
   <!-- Social toggle icon -->
 
-  <input class="social-box" type="checkbox" id="social-box"/>
+  <input id="social-box" class="social-box" type="checkbox">
   <label class="social-toggle" for="social-box"><span class="fa-solid fa-arrow-turn-down"></span></label>
 
   <!-- Social bar -->
@@ -131,10 +136,10 @@
 
     <article class="hero-content centered top-of-page">
       <section>
-        <h1 class="cta-header">Hi, I'm Jason</h1>
+        <h1 class="hero-header">Hi, I'm Jason</h1>
 
         <div>
-          <h3 class="cta-subtitle"><strong>I design experiences and manage operations</strong></h3>
+          <h3 class="hero-subtitle"><strong>I design experiences and manage operations</strong></h3>
           <p>
             Operations and user experience are my bread and butter.
             I love designing experiences that lead to effective operations,
@@ -213,7 +218,7 @@
     <!-- Contact Section -->
 
     <address id="contact-me" class="next-section">
-      <a class="cta-click-box centered home-accent" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+      <a class="cta-click-box centered" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
         <h3 class="cta-box-title">Contact me</h3>
       </a>
     </address>
@@ -268,6 +273,7 @@
 
   <script src="assets/scripts/to-top.js"></script>
   <script src="assets/scripts/to-next-element.js"></script>
+  <script src="assets/scripts/toggle-theme.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

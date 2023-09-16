@@ -3,13 +3,17 @@
 /* Default theme */
 :root {
   --text: #00171f;
+  --secondary-text: #3c3744;
   --background: #fff;
-  --primary: #007ea7;
-  --secondary: #003459;
+  --sub-background: #fffff6;
+  --primary: #3066be;
+  --secondary: #17457d;
   --accent: #d2e6f1;
+  --sub-accent: #9eb9c9;
+  --generic-color: #b4c5e4;
 
-  --link-primary: #3075be;
-  --link-secondary: #114980;
+  --link-primary: #007ea7;
+  --link-secondary: #003459;
 }
 
 /* Dark theme class and colors */
@@ -17,9 +21,11 @@
   --text: #e6e9de;
   --secondary-text: #f1dac4;
   --background: #0d0c1d;
-  --primary: #474973;
-  --secondary: #161b33;
+  --primary: #696c9a;
+  --secondary: #474973;
+  --tertiary: #161b33;
   --accent: #a69cac;
+  --sub-accent: #696c9a;
 
   --link-primary: #007ea7;
   --link-secondary: #003459;
@@ -200,6 +206,7 @@ a.title:hover {
   font-size: 2rem;
   font-weight: 500;
   margin: 1rem 0 0;
+  color: var(--secondary-text, #3c3744);
 }
 
 /* --- Navigation Styles --- */
@@ -352,7 +359,7 @@ a.menu-item:hover {
   padding: 30px 1.5rem 30px;
   float: left;
   z-index: 99;
-  color: #00171f;
+  color: var(--text, #00171f);
   font-size: 1.3rem;
 
   transition: 0.25s all ease-in-out;
@@ -424,14 +431,15 @@ a.menu-item:hover {
   margin-left: auto;
 }
 
-.cta-header {
+.hero-header {
   position: relative;
   margin: 0 auto 0.5rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.cta-subtitle {
+.hero-subtitle {
   margin-top: 1rem;
+  color: var(--secondary-text, #3c3744);
 }
 
 .emphasis {
@@ -469,30 +477,30 @@ a.menu-item:hover {
   padding: 2rem 1rem;
   margin: 10rem auto 4rem;
   border-radius: 10px;
-  background-color: var(--primary, #007ea7);
+  background-color: #68a0d4;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 
   transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box:hover {
-  background-color: var(--secondary, #003459);
+  background-color: #1d81bc;
   transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box a {
-  color: var(--background, #fff);
+  color: var(--sub-background, #fffff6);
 }
 
 .cta-box-title {
   margin: auto 0;
   font-size: 2.35em;
-  color: var(--background, #fff);
+  color: var(--sub-background, #fffff6);
   text-transform: uppercase;
 }
 
 .cta-box-content {
-  color: var(--background, #fff);
+  color: var(--sub-background, #fffff6);
 }
 
 .contact-form-container {
@@ -505,14 +513,6 @@ a.menu-item:hover {
 .cta-box-title:hover {
   text-decoration: none;
   border-bottom: none;
-}
-
-.home-accent {
-  background-color: #68a0d4;
-}
-
-.home-accent:hover {
-  background-color: #1d81bc;
 }
 
 #contact-me {
@@ -619,10 +619,24 @@ a.menu-item:hover {
 }
 
 #back-to-top:hover {
-  background: #9eb9c9;
+  background: var(--sub-accent, #9eb9c9);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3),
               0 4px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-out;
+}
+
+#toggle-theme {
+  position: absolute;
+  display: flex;
+  top: 1rem;
+  left: 1rem;
+  z-index: 99;
+
+  cursor: pointer;
+}
+
+#toggle-theme .fa {
+  margin-right: 0.5rem;
 }
 
 /* --- Lists layout --- */
@@ -702,6 +716,7 @@ a.menu-item:hover {
 .blog-subtitle {
   margin-top: 3rem;
   margin-bottom: 1.618rem;
+  color: var(--secondary-text, #3c3744);
 }
 
 .read-more-btn {
@@ -714,7 +729,7 @@ a.menu-item:hover {
   background-size: 0% 1px;
   border: none;
 
-  color: #444;
+  color: var(--secondary-text, #3c3744);
   font-size: inherit;
   cursor: pointer;
 
@@ -753,7 +768,7 @@ a.menu-item:hover {
 /* --- Animations and Loaders --- */
 
 #loader {
-  border: 12px solid #f3f3f3;
+  border: 12px solid var(--secondary-text, #3c3744);
   border-radius: 50%;
   border-top: 12px solid var(--text, #00171f);
   width: 70px;
@@ -842,13 +857,13 @@ a.menu-item:hover {
     left: calc(50vw - 1.65rem);
     padding: 0 1rem;
 
-    background-color: #fff;
+    background-color: var(--background, #fff);
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   }
 
   .social-toggle:hover {
-    background-color: var(--accent, #d2e6f1);
+    background-color: var(--sub-accent, #9eb9c9);
 
     transition: 0.25s all ease-in-out;
   }
@@ -863,7 +878,7 @@ a.menu-item:hover {
 }
 
 @media screen and (min-width: 641px) {
-  .cta-subtitle {
+  .hero-subtitle {
     margin-top: 2rem;
   }
 
