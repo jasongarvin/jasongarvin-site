@@ -89,9 +89,14 @@
     </nav>
   </header>
 
+  <button id="toggle-theme" class="default-button" aria-describedby="#theme-text">
+    <i id="theme-icon" class="fa fa-moon-o"></i>
+    <span id="theme-text" hidden>Toggle Theme</span>
+  </button>
+
   <!-- Social toggle icon -->
 
-  <input class="social-box" type="checkbox" id="social-box"/>
+  <input id="social-box" class="social-box" type="checkbox">
   <label class="social-toggle" for="social-box"><span class="fa-solid fa-arrow-turn-down"></span></label>
 
   <!-- Social bar -->
@@ -131,10 +136,10 @@
 
     <article class="hero-content centered top-of-page">
       <section>
-        <h1 class="cta-header">Hi, I'm Jason</h1>
+        <h1 class="hero-header">Hi, I'm Jason</h1>
 
         <div>
-          <h3 class="cta-subtitle"><strong>I design experiences and manage operations</strong></h3>
+          <h3 class="hero-subtitle"><strong>I design experiences and manage operations</strong></h3>
           <p>
             Operations and user experience are my bread and butter.
             I love designing experiences that lead to effective operations,
@@ -232,16 +237,16 @@
     <div class="social-bar">
       <ul class="list-hor">
         <li>
-          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
+          <a class="accent-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
         </li>
         <li>
-          <a href="https://github.com/jasongarvin" target="_blank">Github</a>
+          <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">Github</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
+          <a class="accent-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
         </li>
         <li>
-          <a href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
+          <a class="accent-link" href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
         </li>
       </ul>
     </div>
@@ -268,6 +273,7 @@
 
   <script src="assets/scripts/to-top.js"></script>
   <script src="assets/scripts/to-next-element.js"></script>
+  <script src="assets/scripts/toggle-theme.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>
