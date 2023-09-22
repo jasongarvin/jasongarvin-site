@@ -747,10 +747,6 @@ a.menu-item:hover {
   cursor: pointer;
 }
 
-#toggle-theme .fa {
-  margin-right: 0.5rem;
-}
-
 /* --- Lists layout --- */
 
 .list-hor {
@@ -909,6 +905,14 @@ a.menu-item:hover {
 
   #floating-social {
     padding: 1rem 0;
+  }
+
+  #toggle-theme .fa {
+    margin-right: 0.5rem;
+  }
+
+  #theme-text {
+    display: inline;
   }
 
   .blog-preview {
