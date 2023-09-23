@@ -33,25 +33,7 @@
 
 /* --- Site styles --- */
 
-article,
-aside,
-div,
-footer,
-form,
-header,
-iframe,
-nav,
-section,
-ul,
-ol,
-dl,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* {
   box-sizing: border-box;
 }
 
@@ -74,7 +56,7 @@ body {
 }
 
 main {
-  max-width: 45rem;
+  max-width: 50rem;
   padding: 0.5rem 2rem;
   margin: 0 auto;
 }
@@ -522,7 +504,7 @@ a.menu-item:hover {
 }
 
 .hero-content {
-  max-width: 40rem;
+  max-width: 45rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -609,6 +591,8 @@ a.menu-item:hover {
 
 .contact-form-container {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .cta-click-box,
@@ -632,7 +616,7 @@ a.menu-item:hover {
 }
 
 .contact-form {
-  max-height: 635px;
+  max-height: 620px;
   overflow: hidden;
 }
 
@@ -941,5 +925,9 @@ a.menu-item:hover {
   .contact-form {
     max-height: 480px;
     max-width: 700px;
+  }
+
+  #jotform {
+    min-width: 500px;
   }
 }
