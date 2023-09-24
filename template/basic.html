@@ -2,21 +2,14 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-  <title>Designing for Experience - Jason Garvin</title>
+  <title>template - Jason Garvin</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width" , initial-scale="1">
   <meta name="description"
-    content="Get to know Jason and learn about his journey through software development, user experience design, and business.">
+    content="Template description." />
   <meta name="author" content="Jason Garvin">
-
-  <!-- Open Graph Protocol - Social Sharing -->
-  <meta property="og:title" content="Learn more about Jason Garvin">
-  <meta property="og:description" content="Read about the life and times of a UX Developer and business leader">
-  <meta property="og:url" content="https://jasongarvin.me/">
-  <meta property="og:image" content="">
-  <meta property="og:type" content="website">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,6 +18,16 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PTF8Q8JQ');</script>
   <!-- End Google Tag Manager -->
+
+  <!-- Open Graph Protocol - Social Sharing -->
+  <meta property="og:title" content="Page Title">
+  <meta property="og:description" content="A small, engaging blurb.">
+  <meta property="og:url" content="canonical-url">
+  <meta property="og:image" content="banner image, 1.91:1">
+  <meta property="og:type" content="website">
+
+  <!-- Keeps the template from being indexed - remove for live pages -->
+  <meta name="robots" content="noindex">
 
   <!-- Main Styles -->
   <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css">
@@ -42,8 +45,10 @@
 <body id="top">
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTF8Q8JQ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTF8Q8JQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
@@ -76,7 +81,7 @@
           </a>
         </li>
         <li>
-          <a class="menu-item" href="updates/index.html">
+          <a class="menu-item active-page" href="updates/index.html">
             <span>Updates</span>
           </a>
         </li>
@@ -96,7 +101,7 @@
 
   <!-- Social toggle icon -->
 
-  <input id="social-box" class="social-box" type="checkbox">
+  <input class="social-box" type="checkbox" id="social-box"/>
   <label class="social-toggle" for="social-box"><span class="fa-solid fa-arrow-turn-down"></span></label>
 
   <!-- Social bar -->
@@ -134,102 +139,27 @@
 
     <!-- Introduction -->
 
-    <article class="hero-content top-of-page">
-      <section>
-        <h1 class="hero-header centered">Hi, I'm Jason</h1>
-
-        <div>
-          <h3 class="hero-subtitle centered"><strong>I design experiences & operations</strong></h3>
-          <p>
-            Business operations and user experience are my bread and butter.
-            I love designing experiences that lead to effective operations,
-            and operations that lead to excellent experiences
-          </p>
-        </div>
-      </section>
-
-      <div>
-        <button onclick="toNextSection(0)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            What I'm doing with Total Escape Games
-          </div>
-        </button>
-      </div>
+    <article class="hero-content centered top-of-page">
+      <h1 class="cta-header">Title</h1>
+      <p class="subtitle">Subtitle</p>
     </article>
 
-    <!-- Below the cut -->
-    <!-- Main content -->
-
-    <article class="next-section">
-      <section class="brand-container">
-        <img id="teg-logo" src="assets/img/teg-logo.png" alt="The Total Escape Games logo" />
-        <h2 class="brand-name">Total Escape Games</h2>
-      </section>
-
-      <section>
-        <h3>Building the brand</h3>
-        <p class="left-align">
-          <span>Total Escape Games</span> is modernizing. We believe in meeting
-          our customers where they are, and have been working tirelessly to bring
-          our excellent in-store experience to online platforms
-        </p>
-        <p>
-          We strive to achieve an innovative retail and event experience,
-          supported by modern solutions, and in reaching our customers using
-          modern website design, building a Discord community, and connecting
-          over social media
-        </p>
-      </section>
-
-      <div>
-        <button onclick="toNextSection(1)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            What I'm doing with Fill and Fire
-          </div>
-        </button>
-      </div>
-    </article>
-
-    <article class="next-section">
-      <section class="brand-container">
-        <img id="fnf-logo" src="assets/img/fnf-logo.png" alt="The Fill and Fire logo" />
-        <h2 class="brand-name">Fill and Fire</h2>
-      </section>
-
-      <section>
-        <h3>Streamlining in-person events</h3>
-        <p class="left-align">
-          <span>Fill and Fire</span> aims to reinvent the event preregistration process.
-          Our goal is to bring eventgoers to venues, and bring peace of mind
-          to eventgoers with transparent pre-registration and event status
-        </p>
-      </section>
-
-      <div>
-        <button onclick="toNextSection(2)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            Get in touch with me
-          </div>
-        </button>
-      </div>
+    <article class="vertical-space left-align">
+      <h2 class="centered">
+        Section title
+      </h2>
+      <p>
+        Content
+      </p>
     </article>
 
     <!-- Contact Section -->
 
-    <address id="contact-me" class="next-section">
+    <address id="contact-me">
       <a class="cta-click-box centered" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
         <h3 class="cta-box-title">Contact me</h3>
       </a>
     </address>
-
-    <!-- Outro -->
-
-    <aside class="centered">
-      <h3>Experience is Everything.</h3>
-    </aside>
 
   </main>
 
@@ -239,16 +169,16 @@
     <div class="social-bar">
       <ul class="list-hor">
         <li>
-          <a class="accent-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
+          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
         </li>
         <li>
-          <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">Github</a>
+          <a href="https://github.com/jasongarvin" target="_blank">Github</a>
         </li>
         <li>
-          <a class="accent-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
         </li>
         <li>
-          <a class="accent-link" href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
+          <a href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
         </li>
       </ul>
     </div>
@@ -274,7 +204,6 @@
   <!-- Scripts and handling -->
 
   <script src="assets/scripts/to-top.js"></script>
-  <script src="assets/scripts/to-next-element.js"></script>
   <script src="assets/scripts/toggle-theme.js"></script>
 
   <noscript>
