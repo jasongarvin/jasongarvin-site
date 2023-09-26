@@ -56,8 +56,8 @@ body {
 }
 
 main {
-  max-width: 50rem;
-  padding: 0.5rem 2rem;
+  max-width: 58rem;
+  padding: 1rem 3rem;
   margin: 0 auto;
 }
 
@@ -460,12 +460,6 @@ a.menu-item:hover {
   background-size: 100% 1px;
 
   transition: all 0.2s ease-in-out;
-}
-
-.blog-post {
-  max-width: 50rem;
-  padding: 0.5rem 2rem;
-  margin: 0 auto;
 }
 
 .blog-info {
