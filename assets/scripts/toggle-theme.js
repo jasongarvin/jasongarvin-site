@@ -2,19 +2,16 @@
 // Checks if browser supports custom properties
 // Then enables a toggle button to control theme
 
-const supportsCustomProps = CSS.supports('--text: #e6e9de');
 const themeToggle = document.getElementById('toggle-theme');
 const themeIcon = document.getElementById('theme-icon');
 
-// Logs true to the console in browsers that support custom properties
+const supportsCustomProps = CSS.supports('--text: #e6e9de');
 console.log(supportsCustomProps);
 
 if (supportsCustomProps === false) {
     themeToggle.style.display = 'none';
 }
 
-// Check if the user's theme preference is already set
-const userThemePreference = localStorage.getItem('theme');
 
 // Match the active theme the user prefers machine-wide
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({matches}) => {
@@ -28,6 +25,14 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({ma
     console.log("change to light mode!")
   }
 })
+
+// Check if the user's theme preference is already set
+const userThemePreference = localStorage.getItem('theme');
+
+if (userThemePreference === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeIcon.className = 'fa fa-sun-o';
+}
 
 // Event listener for the theme toggle button
 themeToggle.addEventListener('click', () => {
