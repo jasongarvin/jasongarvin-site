@@ -554,7 +554,7 @@ a.menu-item:hover {
   align-items: center;
   flex-direction: column;
   max-width: 32rem;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin: 10rem auto 4rem;
   border-radius: 10px;
   background-color: #68a0d4;
@@ -572,6 +572,10 @@ a.menu-item:hover {
   color: var(--sub-background, #fffff6);
 }
 
+.subscribe-box {
+  margin: 2rem auto 4rem;
+}
+
 .cta-box-title {
   margin: auto 0;
   font-size: 2.35em;
@@ -586,7 +590,9 @@ a.menu-item:hover {
 .contact-form-container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 }
 
 .cta-click-box,
