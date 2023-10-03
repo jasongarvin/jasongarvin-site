@@ -3,7 +3,7 @@
 card-style.css
 cache-status.js
 update-cache.js
-assets/stylesheets/experimental.css
+temp.html
 
 # ignore all files starting with . or ~
 .*
