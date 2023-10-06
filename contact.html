@@ -109,30 +109,37 @@
 
     <!-- Contact Form -->
 
-    <div class="contact-form-container vertical-space">
-      <form action="#" method="post">
-        <ul>
-          <li>
+    <div class="contact-form-container box-emphasis vertical-space">
+      <h2 class="centered form-lead box-emphasis">Send me an email</h2>
+
+      <form class="contact-form" action="#" method="post">
+        <ul class="form-list">
+          <li class="form-item">
             <label for="form_name">
               Your Name <span aria-label="required">*</span>
             </label>
-            <input id="form_name" type="text" name="user_name" required />
+            <br>
+            <input id="form_name" class="form-input" type="text" name="user_name" required />
           </li>
 
-          <li>
+          <li class="form-item">
             <label for="form_email">
               Your Email <span aria-label="required">*</span>
             </label>
-            <input id="form_email" type="email" name="user_email" required />
+            <br>
+            <input id="form_email" class="form-input" type="email" name="user_email" required />
           </li>
 
-          <li>
+          <li class="form-item">
             <label for="form_body">Your Message</label>
-            <textarea id="form_body" name="user_message"></textarea>
+            <br>
+            <textarea id="form_body" class="form-textarea" name="user_message"></textarea>
+          </li>
+
+          <li class="form-item">
+            <button class="default-button form-submit" type="submit" disabled>Submit</button>
           </li>
         </ul>
-
-        <button type="submit">Submit</button>
       </form>
     </div>
 

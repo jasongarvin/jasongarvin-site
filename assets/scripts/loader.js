@@ -1,5 +1,7 @@
 // Display loading animation until page renders
 
+// TODO: repurpose this now that I'm not using jotform
+
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("#jotform").style.visibility = "hidden";
