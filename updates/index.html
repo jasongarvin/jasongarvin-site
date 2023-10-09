@@ -2,21 +2,21 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-  <title>My Experience Building a Website - Jason Garvin</title>
+  <title>Updates on my Website | Jason Garvin</title>
+  <link rel="canonical" href="https://jasongarvin.me/updates/" />
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width" , initial-scale="1">
-  <meta name="description"
-    content="A temporary page detailing Jason's experiences in building and scaling his website.">
-  <meta name="author" content="Jason Garvin">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
+  <meta name="description" content="Find out how Jason has been building his website, what updates it's gotten, and how it's helped him learn web development." />
+  <meta name="author" content="Jason Garvin" />
 
   <!-- Open Graph Protocol - Social Sharing -->
-  <meta property="og:title" content="Notes on Updating a Modern Website">
-  <meta property="og:description" content="The steps to building a website over time">
-  <meta property="og:url" content="https://jasongarvin.me/updates/index.html">
-  <meta property="og:image" content="">
-  <meta property="og:type" content="article">
+  <meta property="og:title" content="Notes on Updating a Modern Website" />
+  <meta property="og:description" content="The steps to building a website over time" />
+  <meta property="og:url" content="https://jasongarvin.me/updates/" />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="article" />
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,13 +27,13 @@
   <!-- End Google Tag Manager -->
 
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css">
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css">
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
@@ -94,72 +94,59 @@
     <span id="theme-text" hidden>Toggle Theme</span>
   </button>
 
-  <!-- Social toggle icon -->
-
-  <input class="social-box" type="checkbox" id="social-box"/>
-  <label class="social-toggle" for="social-box"><span class="fa-solid fa-arrow-turn-down"></span></label>
-
-  <!-- Social bar -->
-
-  <div id="floating-social">
-    <ul class="list-hor social-bar">
-      <li>
-        <a class="social-account" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-          <i class="fa-regular fa-envelope"></i>
-          Email
-        </a>
-      </li>
-      <li>
-        <a class="social-account" href="https://github.com/jasongarvin" target="_blank">
-          <i class="fa-brands fa-github"></i>
-          Github
-        </a>
-      </li>
-      <li>
-        <a class="social-account" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a class="social-account" href="https://www.threads.net/@jasonagarvin" target="_blank">
-          <i class="fa-brands fa-threads"></i>
-          Threads
-        </a>
-      </li>
-    </ul>
-  </div>
-
   <main>
 
     <!-- Introduction -->
 
     <article class="hero-content centered top-of-page">
-        <h1 class="cta-header">Website Updates</h1>
+        <h1 class="cta-header">Site Updates</h1>
+        <p class="subtitle">
+          I'm giving learning in public a try
+        </p>
     </article>
 
-    <article class="vertical-space hero-content">
-      <h2 class="centered">
-        Exploring the
-        <span class="emphasis">process</span>
-      </h2>
-      <p class="centered">
-        I'm documenting my adventures in creating a custom website
-        and learning in public.
-      </p>
-      <p class="centered">
-        If you like behind-the-scenes peeks into how a project comes together, or
-        are starting your own web development adventure, I hope my notes are
-        helpful to you!
-      </p>
-    </article>
+    <article class="vertical-space">
+      <section class="box-emphasis">
+        <h2>
+          Redefining
+          <span class="emphasis">content</span>
+        </h2>
+        <p>
+          I cut about 25% of the words on the site. No, really. This decision
+          came from advice I'd gotten about website copy, but also from my
+          intuition after interacting with the site personally
+        </p>
+        <p>
+          Nobody likes blocks of text. So I'm trying to refine the copy so you
+          know what's important sooner, and don't have to sweat the smalls stuff
+        </p>
+      </section>
 
-    <article id="updates-feed">
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
+          <span class="emphasis">Brand</span>
+          new colors ... sorta
+        </h2>
+        <p>
+          First off, I removed the header socials. They were distracting
+        </p>
+        <p>
+          Next, I converted the whole site to using an hsl palette with css
+          variables, which makes tweaking my colors way easier since I seem prone
+          to obsessing over them anyway
+        </p>
+        <p>
+          Mostly, the color theme is the same. Dark theme is still a work in
+          progress. I changed where the emphasis lays on each page, and tightened
+          up my color usage so it's more consistent throughout
+        </p>
+      </section>
+
+      <section class="vertical-space box-emphasis">
+        <h2>
           Rewriting
           <span class="emphasis">everything</span>
-        </h3>
+        </h2>
         <p>
           ...And they said copy was easy
         </p>
@@ -175,16 +162,16 @@
         </p>
       </section>
 
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
           My first
           <span class="emphasis">blog post</span>
           is live!
-        </h3>
+        </h2>
         <p>
           After fixing an enormous merge issue from not properly maintaining my
           branches in git (oops), my
-          <a href="blog/overcoming-inertia-how-to-start-blogging.html">first blog post is here</a>!
+          <a href="../blog/overcoming-inertia-how-to-start-blogging.html">first blog post is here</a>!
         </p>
         <p>
           I'm so excited to be officially producing content, and phew is it tougher
@@ -194,12 +181,12 @@
         </p>
       </section>
 
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
           Simplified
           <span class="emphasis">social</span>
           menus
-        </h3>
+        </h2>
         <p>
           Previous versions of the site had an always-on social media bar
           across the top of each page, just below the header
@@ -211,11 +198,11 @@
         </p>
       </section>
 
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
           <span class="emphasis">Semantic</span>
           coding
-        </h3>
+        </h2>
         <p>
           Articles are sections, and sections are articles! You won't notice a
           visual change, but if you inspect the site you'll see an improvement
@@ -228,11 +215,11 @@
         </p>
       </section>
 
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
           Snazzy
           <span class="emphasis">scrolling</span>
-        </h3>
+        </h2>
         <p>
           I smoothed out page transitions so you don't get whiplash
           whilst zooming around the home page or returning to the header
@@ -245,11 +232,11 @@
         </p>
       </section>
 
-      <section class="vertical-space">
-        <h3>
+      <section class="vertical-space box-emphasis">
+        <h2>
           Spring
           <span class="emphasis">cleaning</span>
-        </h3>
+        </h2>
         <p>
           The new version of the site is live! Even though I'd gotten kind of
           attached to the old version, the design just wasn't working. It's hard,
@@ -258,7 +245,7 @@
         <p>
           ...mostly. The old version is alive in a subdirectory if you're curious
           <br>
-          <a href="site-v1/index.html">Check it out here</a>
+          <a href="../site-v1/index.html">Check it out here</a>
         </p>
       </section>
     </article>
@@ -266,8 +253,9 @@
     <!-- Github section -->
 
     <div>
-      <a class="cta-click-box centered next-section" href="https://github.com/jasongarvin/jasongarvin.github.io">
-        <h3 class="cta-box-title">See the source</h3>
+      <a class="cta-click-box" href="https://github.com/jasongarvin/jasongarvin.github.io">
+        <h4 class="cta-box-title">See the source</h4>
+        <span class="cta-box-content">Visit my public repos</span>
       </a>
     </div>
 
@@ -279,16 +267,28 @@
     <div class="social-bar">
       <ul class="list-hor">
         <li>
-          <a href="mailto:jsongarvin@gmail.com?subject=Contact%20Form" target="_blank">Email</a>
+          <a class="accent-link" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
+            <i class="fa-regular fa-envelope"></i>
+            Email
+          </a>
         </li>
         <li>
-          <a href="https://github.com/jasongarvin" target="_blank">Github</a>
+          <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            Github
+          </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">LinkedIn</a>
+          <a class="accent-link" href="https://www.linkedin.com/in/jasonagarvin/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a href="https://www.threads.net/@jasonagarvin" target="_blank">Threads</a>
+          <a class="accent-link" href="https://www.threads.net/@jasonagarvin" target="_blank">
+            <i class="fa-brands fa-threads"></i>
+            Threads
+          </a>
         </li>
       </ul>
     </div>
