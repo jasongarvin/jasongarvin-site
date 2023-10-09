@@ -463,6 +463,10 @@ a.menu-item:hover {
   margin-top: 7rem;
 }
 
+.buffer {
+  margin-top: 3rem;
+}
+
 .centered {
   text-align: center;
 }
