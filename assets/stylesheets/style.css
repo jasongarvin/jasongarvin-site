@@ -25,6 +25,7 @@
   --background:          hsl(var(--neutral), 0%, 100%);
   --background-shade:    hsl(var(--neutral), 0%, 97%);
 
+  --gradient-fill:       transparent;
   --element-shadow:      rgba(0, 0, 0, 0.4);
 }
 
@@ -51,7 +52,8 @@
   --background:          hsl(var(--neutral), 30%, 16%);
   --background-shade:    hsl(var(--neutral), 41%, 8%);
 
-  --element-shadow:0     rgba(0, 0, 0, 0);
+  --gradient-fill:       hsl(var(--brand-hue), 30%, 51% );
+  --element-shadow:      rgba(0, 0, 0, 0);
 }
 
 
@@ -193,7 +195,7 @@ p a:visited:hover {
   width: 90%;
   max-width: 900px;
   z-index: 1;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 2px var(--element-shadow, rgba(0, 0, 0, 0.4));
 }
 
 .site-logo {
@@ -506,6 +508,7 @@ a.menu-item:hover {
 }
 
 .next-section {
+  position: relative;
   padding-top: 3rem;
 }
 
@@ -780,6 +783,33 @@ a.menu-item:hover {
 .fa-solid
 .fa {
   margin: 0 0.25rem;
+}
+
+/* --- Design Elements --- */
+
+.background-glow::before,
+.background-glow-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  border-radius: 50% 22% 40% 80%;
+	filter: blur(100px);
+  background: radial-gradient(circle at 50% 50%, var(--gradient-fill, transparent), var(--background, #fff));
+}
+
+.background-glow::before {
+  width: 100%;
+  height: 90%;
+  opacity: 0.25;
+}
+
+.background-glow-2::before {
+  width: 90%;
+  height: 70%;
+  opacity: 0.15;
 }
 
 /* --- Animations and Loaders --- */
