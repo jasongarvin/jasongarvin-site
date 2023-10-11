@@ -771,6 +771,17 @@ a.menu-item:hover {
   background-color: var(--brand-inactive);
 }
 
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.form-flex .form-item {
+  width: fit-content;
+}
+
 /* --- Lists layout --- */
 
 .list-hor {
@@ -1012,6 +1023,12 @@ a.menu-item:hover {
     padding: 0;
     background-color: transparent;
     box-shadow: none;
+  }
+
+  .form-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
   }
 }
 
