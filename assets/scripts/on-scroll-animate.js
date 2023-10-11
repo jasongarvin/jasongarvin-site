@@ -7,6 +7,7 @@ for (const element of animatedElements) {
 
 const pageviewObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        console.log(entry);
         if (entry.isIntersecting) {
             console.log('intersected')
             entry.target.classList.add('drop-into-frame');

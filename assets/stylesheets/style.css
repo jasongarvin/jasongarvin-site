@@ -820,6 +820,14 @@ a.menu-item:hover {
   transition: all 0.5s ease-out;
 }
 
+.animate-drop:nth-child(2) {
+  transition-delay: 0.25s;
+}
+
+.animate-drop:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
 #loader {
   border: 12px solid var(--mono-emphasis, #3c3744);
   border-radius: 50%;
