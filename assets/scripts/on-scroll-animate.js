@@ -12,6 +12,8 @@ const pageviewObserver = new IntersectionObserver(entries => {
             console.log('intersected')
             entry.target.classList.add('drop-into-frame');
             entry.target.style.opacity = '1';
+
+            pageviewObserver.unobserve(entry.target);
         }
     });
 }, {

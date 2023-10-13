@@ -933,6 +933,14 @@ a.menu-item:hover {
     transform: translateY(2rem);
     transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
   }
+
+  .drop-into-frame:nth-child(2) {
+    transition-delay: 0.25s;
+  }
+
+  .drop-into-frame:nth-child(3) {
+    transition-delay: 0.5s;
+  }
 }
 
 /* --- Screen size design --- */
