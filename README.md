@@ -1,4 +1,4 @@
-# Jason Garvin's website
+# Jason Garvin's website - v0.7
 
 Here is the raw HTML, CSS, and JavaScript of my static website about my journey, who I am, and how I got where I am now.
 

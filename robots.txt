@@ -3,4 +3,4 @@ Disallow: /errors/
 Disallow: /site-v1/
 Disallow: /template/
 
-Sitemap: https://jasongarvin.me/sitemap.xml
+Sitemap: https://jasongarvin.com/sitemap.xml
