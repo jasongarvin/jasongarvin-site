@@ -537,7 +537,7 @@ a.menu-item:hover {
   max-width: 32rem;
   padding: 1rem 1rem;
   margin: 10rem auto 4rem;
-  border-radius: 10px;
+  border-radius: 40px;
   background-color: #68a0d4;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 
@@ -558,13 +558,14 @@ a.menu-item:hover {
 }
 
 .cta-box-title {
-  margin: auto 0;
-  font-size: 2.35em;
+  text-align: center;
+  font-size: 1.7em;
+  margin: 0;
   color: var(--background, #fff);
-  text-transform: uppercase;
 }
 
 .cta-box-content {
+  margin-bottom: 0.5rem;
   color: var(--background, #fff);
 }
 
@@ -685,6 +686,96 @@ a.menu-item:hover {
   z-index: 5;
 
   cursor: pointer;
+}
+
+/* --- Subscription Box --- */
+
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-content {
+  width: 90%;
+  height: 2.5rem;
+  margin: 1rem 1rem 0;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+#subscription-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#subscription-form .add-email{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 1.25rem;
+
+  background-color: var(--background, #fff);
+  color: var(--monotone);
+}
+
+#subscription-form .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 7.5rem;
+  padding: 0.5rem 1.25rem;
+  margin: 1px;
+
+  border: none;
+  border-radius: 60px;
+  outline: none;
+
+  cursor: pointer;
+  background: var(--brand-highlight);
+  color: var(--background, #fff);
+  transition: all .35s ease-in-out;
+}
+
+#subscription-form.done .submit-email {
+  width: calc(100% - 2px);
+  background: var(--brand-secondary);
+}
+
+#subscription-form .before-submit,
+#subscription-form .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 2.25rem;
+  transition: visibility .35s ease-in-out,
+              opacity .35s ease-in-out;
+}
+
+#subscription-form.done .before-submit,
+#subscription-form:not(.done) .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#subscription-form .submit-email .after-submit {
+  transition-delay: .35s;
+}
+
+#subscription-form:not(.done) .before-submit,
+#subscription-form.done .after-submit {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* --- Contact Form --- */
