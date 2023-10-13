@@ -215,11 +215,21 @@
 
     <!-- Contact Section -->
 
-    <div>
-      <a class="cta-click-box next-section" href="#">
-        <h4 class="cta-box-title">Subscribe</h4>
-        <span class="cta-box-content">to my updates</span>
-      </a>
+    <div class="next-section cta-click-box subscribe-container">
+      <h4 class="cta-box-title">Subscribe to my updates</h4>
+
+      <div class="subscribe-content">
+
+        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
+          <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
+
+          <button id="subscription-submit" class="submit-email" type="submit">
+            <span class="before-submit">Subscribe</span>
+            <span class="after-submit">Thank you for subscribing!</span>
+           </button>
+        </form>
+        <p id="form-status"></p>
+      </div>
     </div>
 
     <!-- Outro -->
@@ -286,6 +296,7 @@
   <script src="assets/scripts/to-next-element.js"></script>
   <script src="assets/scripts/toggle-theme.js"></script>
   <script src="assets/scripts/on-scroll-animate.js"></script>
+  <script src="assets/scripts/subscription-form-submit.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>
