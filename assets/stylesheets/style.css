@@ -373,6 +373,20 @@ a.menu-item:hover {
 
 /* --- Blog --- */
 
+#blog-post section {
+  margin: 1rem 0;
+}
+
+#blog-post section:first-of-type {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#blog-post section:last-of-type {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .blog-preview {
   padding: 0.5rem 1rem;
   margin: 1rem 0;
