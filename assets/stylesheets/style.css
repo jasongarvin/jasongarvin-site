@@ -78,13 +78,13 @@ body {
                Arial,
                sans-serif;
 
-  font-size: calc(1rem + 0.390625vw);
+  font-size: calc(1rem + 0.2vw);
   line-height: 1.618;
 }
 
 main {
   max-width: 58rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   margin: 0 auto;
 }
 
@@ -218,7 +218,7 @@ a.title:hover {
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: calc(1.3em + 0.59vw);
   font-weight: 500;
   margin: 1rem 0 0;
   color: var(--mono-emphasis, #3c3744);
@@ -472,7 +472,7 @@ a.menu-item:hover {
 /* --- Main content --- */
 
 .top-of-page {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .vertical-space {
@@ -506,6 +506,7 @@ a.menu-item:hover {
 .hero-subtitle {
   margin-top: 1rem;
   color: var(--mono-emphasis, #3c3744);
+  font-size: calc(1.3em + 0.59vw);
 }
 
 .emphasis {
@@ -523,7 +524,7 @@ a.menu-item:hover {
 
 .next-section {
   position: relative;
-  padding-top: 3rem;
+  padding-top: 0.5rem;
 }
 
 .brand-container {
@@ -573,7 +574,7 @@ a.menu-item:hover {
 
 .cta-box-title {
   text-align: center;
-  font-size: 1.7em;
+  font-size: calc(1.2em + 0.59vw);
   margin: 0;
   color: var(--background, #fff);
 }
@@ -629,10 +630,10 @@ a.menu-item:hover {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 60px;
-  width: 60px;
+  height: 4rem;
+  width: 4rem;
   padding: 0;
-  margin: 4rem auto 10rem;
+  margin: 4.5rem auto 10rem;
   background: transparent;
   border: none;
   overflow: hidden;
@@ -792,6 +793,10 @@ a.menu-item:hover {
   opacity: 1;
 }
 
+#subscribe-email {
+  font-size: calc(0.8rem + 0.2vw);
+}
+
 /* --- Contact Form --- */
 
 .contact-form-container {
@@ -914,7 +919,7 @@ a.menu-item:hover {
   justify-content: left;
   gap: 1rem;
   padding: 0;
-  margin: 0;
+  margin: 1.5rem 0 0;
 
   list-style-type: none;
 }
@@ -930,7 +935,7 @@ a.menu-item:hover {
 }
 
 .list-item-emphasis a {
-  font-size: 1.7rem;
+  font-size: calc(1.1rem + 0.5vw);
   text-decoration: none;
 }
 
@@ -1061,6 +1066,10 @@ a.menu-item:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    padding: 1rem 3rem;
+  }
+
   main section {
     padding: 1rem 2rem;
     background-color: var(--background, #fff);
@@ -1144,6 +1153,10 @@ a.menu-item:hover {
     flex-direction: row;
     justify-content: space-between;
     gap: 4rem;
+  }
+
+  #subscribe-email {
+    font-size: 1rem;
   }
 }
 
