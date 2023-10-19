@@ -106,37 +106,37 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: calc(2.5rem + 0.3vw);
   font-weight: 900;
   line-height: 1.35;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: calc(1.7rem + 0.3vw);
   font-weight: 800;
   line-height: 1.45;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: calc(1.4rem + 0.3vw);
   font-weight: 700;
   line-height: 1.6;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: calc(1.2rem + 0.3vw);
   font-weight: 700;
   line-height: 1.5;
 }
 
 h5 {
-  font-size: 1.15rem;
+  font-size: calc(1.1rem + 0.3vw);
   font-weight: 400;
   line-height: 1.4;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: calc(1rem + 0.2vw);
   font-weight: 400;
   line-height: 1.4;
 
@@ -472,11 +472,11 @@ a.menu-item:hover {
 /* --- Main content --- */
 
 .top-of-page {
-  margin-top: 7rem;
+  margin-top: 15vh;
 }
 
 .vertical-space {
-  margin-top: 7rem;
+  margin-top: 10vh;
 }
 
 .buffer {
@@ -592,10 +592,6 @@ a.menu-item:hover {
   border-bottom: none;
 }
 
-.top-of-page hr {
-  margin-top: 4rem;
-}
-
 .accent-link {
   color: var(--brand-secondary, #696c9a);
 }
@@ -633,7 +629,7 @@ a.menu-item:hover {
   height: 4rem;
   width: 4rem;
   padding: 0;
-  margin: 4.5rem auto 10rem;
+  margin: 10vh auto 55vh;
   background: transparent;
   border: none;
   overflow: hidden;
@@ -1130,6 +1126,10 @@ a.menu-item:hover {
     box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
   }
 
+  .top-of-page {
+    margin-top: 10vh;
+  }
+
   .blog-preview {
     padding-left: 0;
     padding-right: 0;
@@ -1163,10 +1163,6 @@ a.menu-item:hover {
 @media screen and (min-width: 641px) {
   .hero-subtitle {
     margin-top: 2rem;
-  }
-
-  .button-link {
-    margin: 6rem auto 16rem;
   }
 }
 
