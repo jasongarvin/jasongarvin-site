@@ -183,6 +183,8 @@ p a:visited:hover {
 
 #main-header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
   z-index: 1;
 }
 
@@ -199,22 +201,23 @@ p a:visited:hover {
 }
 
 .site-logo {
-  padding: 1rem 0 0;
-  margin: 2rem auto 1rem;
-  text-align: center;
+  width: fit-content;
+  padding-left: 1.5rem;
+  margin: 2rem 0 1rem;
+  text-align: left;
   transition: all 0.2s ease-in-out;
+}
+
+.title {
+  font-size: calc(2.4rem + 0.5vw);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 a.title,
 a.title:visited,
 a.title:hover {
   color: var(--core-monotone, #00171f);
-}
-
-.title {
-  font-size: 3.5rem;
-  font-weight: 900;
-  text-decoration: none;
 }
 
 .subtitle {
@@ -302,7 +305,7 @@ a.menu-item:hover {
   position: relative;
   cursor: pointer;
   padding: 40px 1.5rem 40px;
-  float: right;
+  margin-top: 1.5rem;
   z-index: 10;
 }
 
@@ -652,8 +655,8 @@ a.menu-item:hover {
 
 #back-to-top {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
+  right: 1.5rem;
+  bottom: 1.5rem;
   height: 4rem;
   width: 4rem;
   padding: 0;
@@ -690,10 +693,10 @@ a.menu-item:hover {
 }
 
 #toggle-theme {
-  position: absolute;
+  position: fixed;
   display: flex;
-  top: 1rem;
-  left: 1rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
   z-index: 5;
 
   cursor: pointer;
@@ -1071,9 +1074,19 @@ a.menu-item:hover {
     background-color: var(--background, #fff);
   }
 
+  #main-header {
+    flex-direction: column;
+  }
+
   .site-logo {
+    padding: 0 1.5rem;
     margin: 2rem auto 0;
     transition: all 0.2s ease-in-out;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 3.5rem;
   }
 
   #main-nav {
