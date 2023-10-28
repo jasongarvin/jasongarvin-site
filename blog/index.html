@@ -32,6 +32,7 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PTF8Q8JQ');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://jasongarvin.com/blog/" />
@@ -39,12 +40,10 @@
   <!-- Main Styles -->
   <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
   <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
-
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
@@ -57,22 +56,18 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
-
   <header id="main-header">
 
     <!-- Logo -->
-
     <div class="site-logo">
       <a class="title" href="../index.html">Jason Garvin</a>
     </div>
 
-    <!-- Hamburger icon -->
-
+    <!-- Hamburger Icon -->
     <input class="side-menu" type="checkbox" id="side-menu"/>
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
     <!-- Menu -->
-
     <nav id="main-nav">
       <ul class="main-menu">
         <li>
@@ -106,17 +101,16 @@
 
   <main>
 
-    <!-- Introduction -->
-
-    <article class="top-of-page hero-content centered">
+    <section class="top-of-page hero-content centered transparent-bg">
       <h1 class="cta-header">My Blog</h1>
       <p class="subtitle">Discussing human
         <span class="emphasis">experience</span>
         in all forms
       </p>
-    </article>
+    </section>
 
-    <article class="left-align blog-preview box-emphasis vertical-space">
+    <!-- Post Preview -->
+    <section class="left-align blog-preview box-emphasis vertical-space">
       <section class="subsection">
         <h3 class="title-preview">
           <a href="overcoming-inertia-how-to-start-blogging.html">Overcoming Intertia: How to Start Blogging</a>
@@ -147,15 +141,13 @@
           </button>
         </p>
       </section>
-    </article>
+    </section>
 
     <!-- Subscribe Section -->
-
-    <div class="cta-click-box subscribe-container">
+    <section class="cta-click-box subscribe-container">
       <h4 class="cta-box-title">Subscribe to my updates</h4>
 
       <div class="subscribe-content">
-
         <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
           <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
@@ -166,14 +158,13 @@
         </form>
         <p id="form-status"></p>
       </div>
-    </div>
+    </section>
 
   </main>
 
   <!-- Main Footer -->
-
   <footer id="primary-footer">
-    <div class="social-bar">
+    <nav class="social-bar">
       <ul class="list-hor">
         <li>
           <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">
@@ -194,9 +185,9 @@
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="end-footer">
+    <section class="end-footer">
       <p>
         <small>
           <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
@@ -212,16 +203,16 @@
           2023
         </small>
       </p>
-    </div>
+    </section>
   </footer>
 
+  <!-- Quick-scroll to Top Button -->
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
     <i class="fa fa-arrow-up to-top-button"></i>
     Back to top
   </button>
 
-  <!-- Scripts and handling -->
-
+  <!-- Scripts and Handling -->
   <script src="../assets/scripts/to-top.js"></script>
   <script src="../assets/scripts/show-text-preview.js"></script>
   <script src="../assets/scripts/toggle-theme.js"></script>

@@ -423,6 +423,7 @@ a.menu-item:hover {
 }
 
 .blog-title {
+  padding: 0;
   margin-bottom: 3rem;
 }
 
@@ -492,6 +493,10 @@ a.menu-item:hover {
 
 .left-align {
   text-align: left;
+}
+
+.transparent-bg {
+  background-color: transparent;
 }
 
 .hero-content {
@@ -642,7 +647,7 @@ a.menu-item:hover {
 .button-link .fa {
   position: relative;
   color: var(--brand-primary, #3066be);
-  font-size: 60px;
+  font-size: 62px;
 
   transition: all 0.2s ease-in-out;
 }
@@ -803,7 +808,9 @@ a.menu-item:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding: 0;
   background-color: var(--background, #fff);
+  box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
   border-radius: 10px;
 }
 
@@ -1140,6 +1147,7 @@ a.menu-item:hover {
   }
 
   .top-of-page {
+    padding: 0;
     margin-top: 10vh;
   }
 

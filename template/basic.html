@@ -32,6 +32,7 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PTF8Q8JQ');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Keeps the template from being indexed - remove for live pages -->
   <meta name="robots" content="noindex">
@@ -39,12 +40,10 @@
   <!-- Main Styles -->
   <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css">
   <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
-
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
@@ -59,22 +58,18 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
-
   <header id="main-header">
 
     <!-- Logo -->
-
     <div class="site-logo">
       <a class="title" href="index.html">Jason Garvin</a>
     </div>
 
-    <!-- Hamburger icon -->
-
+    <!-- Hamburger Icon -->
     <input class="side-menu" type="checkbox" id="side-menu"/>
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
     <!-- Menu -->
-
     <nav id="main-nav">
       <ul class="main-menu">
         <li>
@@ -108,36 +103,42 @@
 
   <main>
 
-    <!-- Introduction -->
-
-    <article class="hero-content centered top-of-page">
+    <section class="hero-content centered top-of-page transparent-bg">
       <h1 class="cta-header">Title</h1>
       <p class="subtitle">Subtitle</p>
-    </article>
+    </section>
 
-    <article class="vertical-space left-align">
+    <section class="vertical-space left-align">
       <h2 class="centered">
         Section title
       </h2>
       <p>
         Content
       </p>
-    </article>
+    </section>
 
-    <!-- Contact Section -->
+    <!-- Subscribe Section -->
+    <section class="next-section cta-click-box subscribe-container">
+      <h4 class="cta-box-title">Subscribe to my updates</h4>
 
-    <address id="contact-me">
-      <a class="cta-click-box centered" href="mailto:jsongarvin@gmail.com?subject=Contact%20Form">
-        <h3 class="cta-box-title">Contact me</h3>
-      </a>
-    </address>
+      <div class="subscribe-content">
+        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
+          <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
+
+          <button id="subscription-submit" class="submit-email" type="submit">
+            <span class="before-submit">Subscribe</span>
+            <span class="after-submit">Thank you for subscribing!</span>
+           </button>
+        </form>
+        <p id="form-status"></p>
+      </div>
+    </section>
 
   </main>
 
   <!-- Main Footer -->
-
   <footer id="primary-footer">
-    <div class="social-bar">
+    <nav class="social-bar">
       <ul class="list-hor">
         <li>
           <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">
@@ -158,9 +159,9 @@
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="end-footer">
+    <section class="end-footer">
       <p>
         <small itemprop="copyrightNotice">
           &copy;
@@ -170,16 +171,16 @@
           2023
         </small>
       </p>
-    </div>
+    </section>
   </footer>
 
+  <!-- Quick-scroll to Top Button -->
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
     <i class="fa fa-arrow-up to-top-button"></i>
     Back to top
   </button>
 
-  <!-- Scripts and handling -->
-
+  <!-- Scripts and Handling -->
   <script src="assets/scripts/to-top.js"></script>
   <script src="assets/scripts/toggle-theme.js"></script>
 

@@ -33,6 +33,7 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PTF8Q8JQ');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://jasongarvin.com" />
@@ -40,12 +41,10 @@
   <!-- Styles -->
   <link rel="stylesheet" media="screen" href="assets/stylesheets/normalize.css" />
   <link rel="stylesheet" media="screen" href="assets/stylesheets/style.css" />
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
-
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
@@ -58,24 +57,20 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
-
   <header id="main-header">
 
     <!-- Logo -->
-
     <div class="site-logo">
       <a class="title" href="index.html">Jason Garvin</a>
     </div>
 
-    <!-- Hamburger icon -->
-
+    <!-- Hamburger Icon -->
     <input class="side-menu" type="checkbox" id="side-menu" />
     <label class="hamb" for="side-menu">
       <span class="hamb-line"></span>
     </label>
 
     <!-- Menu -->
-
     <nav id="main-nav">
       <ul class="main-menu">
         <li>
@@ -109,9 +104,7 @@
 
   <main>
 
-    <!-- Introduction -->
-
-    <article class="hero-content top-of-page centered">
+    <section class="hero-content top-of-page centered transparent-bg">
       <h1 class="hero-header">Hi, I'm Jason</h1>
 
       <div>
@@ -123,20 +116,16 @@
         </p>
       </div>
 
-      <div>
-        <button onclick="toNextSection(0)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            What I'm doing with Total Escape Games
-          </div>
-        </button>
-      </div>
-    </article>
+      <button onclick="toNextSection(0)" class="scroll-to button-link">
+        <div>
+          <i class="fa fa-angles-down"></i>
+          What I'm doing with Total Escape Games
+        </div>
+      </button>
+    </section>
 
     <!-- Below the cut -->
-    <!-- Main content -->
-
-    <article class="next-section home-block">
+    <section class="next-section home-block transparent-bg">
       <section class="brand-container box-emphasis">
         <img id="teg-logo" src="assets/img/teg-logo.png" alt="The Total Escape Games logo" width="100px" height="100px" />
         <h2 class="brand-name">Total Escape Games</h2>
@@ -180,17 +169,15 @@
         </ul>
       </aside>
 
-      <div>
-        <button onclick="toNextSection(1)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            What I'm doing with Fill and Fire
-          </div>
-        </button>
-      </div>
-    </article>
+      <button onclick="toNextSection(1)" class="scroll-to button-link">
+        <div>
+          <i class="fa fa-angles-down"></i>
+          What I'm doing with Fill and Fire
+        </div>
+      </button>
+    </section>
 
-    <article class="next-section home-block">
+    <section class="next-section home-block transparent-bg">
       <section class="brand-container box-emphasis">
         <img id="fnf-logo" src="assets/img/fnf-logo.png" alt="The Fill and Fire logo" width="75px" height="100px" />
         <h2 class="brand-name">Fill and Fire</h2>
@@ -216,23 +203,19 @@
         </ul>
       </aside>
 
-      <div>
-        <button onclick="toNextSection(2)" class="scroll-to button-link">
-          <div>
-            <i class="fa fa-angles-down"></i>
-            Get in touch with me
-          </div>
-        </button>
-      </div>
-    </article>
+      <button onclick="toNextSection(2)" class="scroll-to button-link">
+        <div>
+          <i class="fa fa-angles-down"></i>
+          Get in touch with me
+        </div>
+      </button>
+    </section>
 
     <!-- Subscribe Section -->
-
-    <div class="next-section cta-click-box subscribe-container">
+    <section class="next-section cta-click-box subscribe-container">
       <h4 class="cta-box-title">Subscribe to my updates</h4>
 
       <div class="subscribe-content">
-
         <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
           <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
@@ -243,10 +226,9 @@
         </form>
         <p id="form-status"></p>
       </div>
-    </div>
+    </section>
 
     <!-- Outro -->
-
     <aside class="centered">
       <h3>Experience is Everything.</h3>
     </aside>
@@ -254,9 +236,8 @@
   </main>
 
   <!-- Main Footer -->
-
   <footer id="primary-footer">
-    <div class="social-bar">
+    <nav class="social-bar">
       <ul class="list-hor">
         <li>
           <a class="accent-link" href="https://github.com/jasongarvin" target="_blank">
@@ -277,9 +258,9 @@
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="end-footer">
+    <section class="end-footer">
       <p>
         <small itemprop="copyrightNotice">
           &copy;
@@ -289,16 +270,16 @@
           2023
         </small>
       </p>
-    </div>
+    </section>
   </footer>
 
+  <!-- Quick-scroll to Top Button -->
   <button onclick="toTopFunction()" id="back-to-top" title="Return to top" hidden>
     <i class="fa fa-arrow-up to-top-button"></i>
     Back to top
   </button>
 
-  <!-- Scripts and handling -->
-
+  <!-- Scripts and Handling -->
   <script src="assets/scripts/to-top.js"></script>
   <script src="assets/scripts/to-next-element.js"></script>
   <script src="assets/scripts/toggle-theme.js"></script>
