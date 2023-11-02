@@ -2,7 +2,7 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-  <title>template - Jason Garvin</title>
+  <title>template | Jason Garvin</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   <meta name="description" content="Template description." />
 
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
-  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#696c9a" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
 
   <!-- Open Graph Protocol - Social Sharing -->
   <meta property="og:title" content="Page Title">
@@ -115,6 +115,15 @@
         </div>
       </section>
 
+      <nav class="table-of-contents" itemprop="">
+        <h2 class="toc-title">Table of Contents</h2>
+        <ol class="toc-quick-links">
+          <li>
+            <a href="#subsection-1">Section Heading</a>
+          </li>
+        </ol>
+      </nav>
+
       <section class="left-align" itemprop="abstract">
         <p>
           ...
@@ -146,22 +155,22 @@
 
   </main>
 
-  <!-- Subscribe Section -->
-  <section class="cta-click-box subscribe-container">
-    <h4 class="cta-box-title">Subscribe to my updates</h4>
+    <!-- Subscribe Section -->
+    <section class="cta-click-box subscribe-container">
+      <h4 class="cta-box-title">Subscribe to my updates</h4>
 
-    <div class="subscribe-content">
-      <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
-        <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
+      <div class="subscribe-content">
+        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
+          <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
-        <button id="subscription-submit" class="submit-email" type="submit">
-          <span class="before-submit">Subscribe</span>
-          <span class="after-submit">Thank you for subscribing!</span>
-          </button>
-      </form>
-      <p id="form-status"></p>
-    </div>
-  </section>
+          <button id="subscription-submit" class="submit-email" type="submit">
+            <span class="before-submit">Subscribe</span>
+            <span class="after-submit">Thank you for subscribing!</span>
+            </button>
+        </form>
+        <p id="form-status"></p>
+      </div>
+    </section>
 
   <!-- Main Footer -->
   <footer id="primary-footer">
