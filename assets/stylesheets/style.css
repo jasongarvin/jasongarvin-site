@@ -179,6 +179,21 @@ p a:visited:hover {
   color: var(--background, #fff);
 }
 
+code {
+  display: block;
+  padding: 0.25rem 2rem;
+  margin: 2rem 0;
+  color: var(--core-monotone, #00171f);
+  background-color: var(--background-shade);
+  border: 1px solid var(--brand-lowlight);
+  border-radius: 5px;
+  overflow: scroll;
+
+  font-size: calc(1rem - 0.5vw);
+
+  white-space: pre-wrap;
+}
+
 /* --- Header --- */
 
 #main-header {
@@ -408,6 +423,13 @@ a.menu-item:hover {
 
 .toc-title {
   padding-left: 1rem;
+}
+
+.toc-title .fa {
+  padding-left: 1rem;
+  color: var(--brand-primary, #3066be);
+
+  cursor: pointer;
 }
 
 .blog-preview {
