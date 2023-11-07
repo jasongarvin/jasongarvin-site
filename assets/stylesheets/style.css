@@ -200,18 +200,27 @@ p a:visited:hover {
   box-shadow: 0 1px 2px var(--element-shadow, rgba(0, 0, 0, 0.4));
 }
 
-.site-logo {
+.logo-container {
   width: fit-content;
-  padding-left: 1.5rem;
   margin: 2rem 0 1rem;
   text-align: left;
   transition: all 0.2s ease-in-out;
 }
 
-.title {
-  font-size: calc(2.4rem + 0.5vw);
+.site-logo {
+  max-width: 6rem;
+}
+
+.site-title {
+  display: flex;
+  font-size: calc(2rem + 0.5vw);
   font-weight: 700;
   text-decoration: none;
+}
+
+.site-title span {
+  max-width: 10rem;
+  line-height: 1.4;
 }
 
 a.title,
@@ -1106,15 +1115,26 @@ a.menu-item:hover {
     flex-direction: column;
   }
 
-  .site-logo {
+  .logo-container {
+    max-width: 15rem;
     padding: 0 1.5rem;
     margin: 2rem auto 0;
     transition: all 0.2s ease-in-out;
     text-align: center;
   }
 
-  .title {
-    font-size: 3.5rem;
+  .site-logo {
+    max-width: max-content;
+  }
+
+  .site-title {
+    flex-direction: column;
+    font-size: calc(1.6rem + 0.2vw);
+  }
+
+  .site-title span {
+    max-width: 15rem;
+    line-height: 1.4;
   }
 
   #main-nav {
