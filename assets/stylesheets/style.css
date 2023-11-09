@@ -217,17 +217,33 @@ code {
 
 .logo-container {
   width: fit-content;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0;
   text-align: left;
   transition: all 0.2s ease-in-out;
 }
 
 .site-logo {
+  min-width: 3.2rem;
   max-width: 6rem;
+}
+
+.site-logo .cls-1 {
+  fill: var(--brand-primary, #3066be);
+}
+
+.site-logo .cls-1,
+.site-logo .cls-2 {
+  stroke-width: 0px;
+}
+
+.site-logo .cls-2 {
+  fill: var(--brand-highlight);
 }
 
 .site-title {
   display: flex;
+
+  font-family: "PT Serif", serif;
   font-size: calc(2rem + 0.5vw);
   font-weight: 700;
   text-decoration: none;
@@ -236,6 +252,11 @@ code {
 .site-title span {
   max-width: 10rem;
   line-height: 1.4;
+}
+
+.site-title:hover,
+.site-title:hover span{
+  color: var(--brand-primary, #3066be);
 }
 
 a.title,
@@ -328,7 +349,7 @@ a.menu-item:hover {
 .hamb {
   position: relative;
   cursor: pointer;
-  padding: 40px 1.5rem 40px;
+  padding: 30px 1.5rem 30px;
   margin-top: 1.5rem;
   z-index: 10;
 }
@@ -1140,7 +1161,7 @@ a.menu-item:hover {
   .logo-container {
     max-width: 15rem;
     padding: 0 1.5rem;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
     transition: all 0.2s ease-in-out;
     text-align: center;
   }
@@ -1156,7 +1177,7 @@ a.menu-item:hover {
 
   .site-title span {
     max-width: 15rem;
-    line-height: 1.4;
+    line-height: 0.5;
   }
 
   #main-nav {
