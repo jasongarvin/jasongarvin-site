@@ -4,42 +4,49 @@
 
     <url>
         <loc>https://jasongarvin.com</loc>
-        <lastmod>2023-10-13</lastmod>
+        <lastmod>2023-10-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
      </url>
 
     <url>
         <loc>https://jasongarvin.com/about</loc>
-        <lastmod>2023-10-13</lastmod>
+        <lastmod>2023-10-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/contact</loc>
-        <lastmod>2023-10-13</lastmod>
+        <lastmod>2023-10-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/updates/</loc>
-        <lastmod>2023-10-13</lastmod>
+        <lastmod>2023-11-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/blog/</loc>
-        <lastmod>2023-10-13</lastmod>
+        <lastmod>2023-11-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/blog/how-to-build-effective-habits</loc>
-        <lastmod>2023-10-31</lastmod>
+        <lastmod>2023-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jasongarvin.com/blog/publishing-my-first-python-library</loc>
+        <lastmod>2023-11-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
