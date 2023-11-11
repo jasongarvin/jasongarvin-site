@@ -315,12 +315,8 @@
           I’d get back an HTML status code of 200 and a whole pile of JSON data.
         </p>
 
-        <pre>
-          <code>
-api_response = requests.get(url, timeout=timeout)
-response.raise_for_status()
-          </code>
-        </pre>
+        <pre><code>api_response = requests.get(url, timeout=timeout)
+    response.raise_for_status()</code></pre>
 
         <p>
           Next, I used the json library to assign the returned JSON to a
@@ -354,12 +350,8 @@ response.raise_for_status()
           is down.
         </p>
 
-        <pre>
-          <code class="language-python">
-except requests.exceptions.HTTPError as error_h:
-    print(error_h)
-          </code>
-        </pre>
+        <pre><code>except requests.exceptions.HTTPError as error_h:
+    print(error_h)</code></pre>
 
         <p>
           Great, so Pokemon requests were working, endpoints were validated,
@@ -520,11 +512,7 @@ except requests.exceptions.HTTPError as error_h:
           way to publish the library. I desperately longed for the smoothness of:
         </p>
 
-        <pre>
-          <code>
-pip install pokewrap
-          </code>
-        </pre>
+        <pre><code>pip install pokewrap</code></pre>
 
         <p>
           I could taste the efficiency. I wanted to use such simple, elegant
@@ -626,13 +614,9 @@ pip install pokewrap
           compile the necessary files for distribution.
         </p>
 
-        <pre>
-          <code>
-[build-system]
+        <pre><code>[build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
-build-backend = "setuptools.build_meta"
-          </code>
-        </pre>
+build-backend = "setuptools.build_meta"</code></pre>
 
         <p>
           Part of completing that file is adding basic metadata such as author,
@@ -672,11 +656,7 @@ build-backend = "setuptools.build_meta"
           distribution, and the tarball (.tar) is the source distribution.
         </p>
 
-        <pre>
-          <code>
-python3 -m build
-          </code>
-        </pre>
+        <pre><code>python3 -m build</code></pre>
 
         <p>
           Generally, newer versions of pip will use the build distribution, but
@@ -688,15 +668,11 @@ python3 -m build
           under my PyPI account.
         </p>
 
-        <pre>
-          <code>
-twine check dist/*
+        <pre><code>twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
-# pass your login credentials or token ID
-          </code>
-        </pre>
+# pass your login credentials or token ID</code></pre>
 
         <p>
           While I eventually wrote a shell script to automate the test deployment,

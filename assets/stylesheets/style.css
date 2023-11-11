@@ -180,8 +180,8 @@ p a:visited:hover {
 }
 
 pre {
-  height: fit-content;
-  margin: 0;
+  display: block;
+  margin: 2rem 0;
 }
 
 code {
@@ -191,9 +191,8 @@ code {
   background-color: var(--background-shade);
   border: 1px solid var(--brand-lowlight);
   border-radius: 5px;
-  overflow: scroll;
 
-  font-size: calc(0.6rem + 0.3vw);
+  font-size: calc(0.7rem + 0.3vw);
 }
 
 /* --- Header --- */
