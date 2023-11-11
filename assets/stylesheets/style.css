@@ -286,7 +286,7 @@ a.title:hover {
 
   background-color: var(--background-shade, #f8f8f8);
 
-  transition: max-height .4s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 .main-menu {
@@ -440,10 +440,75 @@ a.menu-item:hover {
   margin: 1rem auto;
   background-color: var(--background, #fff);
   border-radius: 10px;
+
+  transition: font-size 0.2s ease-out;
+}
+
+.toc-title {
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+#table-header {
+  display: flex;
+}
+
+#table-header .fa {
+  padding-left: 1rem;
+  color: var(--brand-primary, #3066be);
+}
+
+#toc-collapse {
+  display: none;
+}
+
+#toc-collapse:checked ~ .collapsible-button {
+  transform: rotate(180deg);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#toc-collapse:checked ~ #toc-content {
+  max-height: 100%;
+  transform: scaleY(1);
+}
+
+.collapsible-button {
+  color: var(--brand-primary, #3066be);
+  font-size: calc(1.7rem + 0.3vw);
+  line-height: 1.45;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#toc-content {
+  max-height: 0;
+  overflow: hidden;
 }
 
 .toc-quick-links {
   padding-inline-start: 2rem;
+}
+
+.toc-quick-links a {
+  background-color: transparent;
+  background-image: linear-gradient(var(--brand-lowlight), var(--brand-lowlight));
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  border: none;
+
+  text-decoration: none;
+
+  transition: all 0.1s linear;
+}
+
+.toc-quick-links a:hover {
+  background-size: 100% 1px;
+
+  transition: all 0.2s ease-in-out;
 }
 
 .toc-quick-links li::marker {
@@ -451,15 +516,16 @@ a.menu-item:hover {
   font-weight: 700;
 }
 
-.toc-title {
-  padding-left: 1rem;
+#toc-content li {
+  transform: translateY(-10rem);
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 
-.toc-title .fa {
-  padding-left: 1rem;
-  color: var(--brand-primary, #3066be);
-
-  cursor: pointer;
+#toc-collapse:checked ~ #toc-content li {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .blog-preview {
@@ -1130,6 +1196,33 @@ a.menu-item:hover {
   .drop-into-frame:nth-child(3) {
     transition-delay: 0.5s;
   }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(5) {
+    transition: all 0.35s ease;
+    transition-delay: 0.4s;
+  }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(6) {
+    transition: all 0.4s ease;
+    transition-delay: 0.5s;
+  }
+
+  #toc-collapse:checked ~ #toc-content li:nth-child(7) {
+    transition: all 0.5s ease;
+    transition-delay: 0.6s;
+  }
 }
 
 /* --- Screen size design --- */
@@ -1172,7 +1265,7 @@ a.menu-item:hover {
 
   .site-title {
     flex-direction: column;
-    font-size: calc(1.6rem + 0.2vw);
+    font-size: 1.5rem;
   }
 
   .site-title span {
