@@ -44,6 +44,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Get highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
@@ -311,10 +313,12 @@
           I’d get back an HTML status code of 200 and a whole pile of JSON data.
         </p>
 
-        <code>
+        <pre>
+          <code>
 api_response = requests.get(url, timeout=timeout)
 response.raise_for_status()
-        </code>
+          </code>
+        </pre>
 
         <p>
           Next, I used the json library to assign the returned JSON to a
@@ -348,10 +352,12 @@ response.raise_for_status()
           is down.
         </p>
 
-        <code>
+        <pre>
+          <code class="language-python">
 except requests.exceptions.HTTPError as error_h:
     print(error_h)
-        </code>
+          </code>
+        </pre>
 
         <p>
           Great, so Pokemon requests were working, endpoints were validated,
@@ -512,9 +518,11 @@ except requests.exceptions.HTTPError as error_h:
           way to publish the library. I desperately longed for the smoothness of:
         </p>
 
-        <code>
+        <pre>
+          <code>
 pip install pokewrap
-        </code>
+          </code>
+        </pre>
 
         <p>
           I could taste the efficiency. I wanted to use such simple, elegant
@@ -616,11 +624,13 @@ pip install pokewrap
           compile the necessary files for distribution.
         </p>
 
-        <code>
+        <pre>
+          <code>
 [build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
 build-backend = "setuptools.build_meta"
-        </code>
+          </code>
+        </pre>
 
         <p>
           Part of completing that file is adding basic metadata such as author,
@@ -660,9 +670,11 @@ build-backend = "setuptools.build_meta"
           distribution, and the tarball (.tar) is the source distribution.
         </p>
 
-        <code>
+        <pre>
+          <code>
 python3 -m build
-        </code>
+          </code>
+        </pre>
 
         <p>
           Generally, newer versions of pip will use the build distribution, but
@@ -674,13 +686,15 @@ python3 -m build
           under my PyPI account.
         </p>
 
-        <code>
+        <pre>
+          <code>
 twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
 # pass your login credentials or token ID
-        </code>
+          </code>
+        </pre>
 
         <p>
           While I eventually wrote a shell script to automate the test deployment,
@@ -852,6 +866,10 @@ twine upload dist/*
   <!-- Scripts and Handling -->
   <script src="../assets/scripts/to-top.js"></script>
   <script src="../assets/scripts/toggle-theme.js"></script>
+  <script type="module">
+    import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js';
+    hljs.highlightAll();
+  </script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

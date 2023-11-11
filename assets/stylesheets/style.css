@@ -179,10 +179,14 @@ p a:visited:hover {
   color: var(--background, #fff);
 }
 
+pre {
+  height: fit-content;
+  margin: 0;
+}
+
 code {
   display: block;
   padding: 0.25rem 2rem;
-  margin: 2rem 0;
   color: var(--core-monotone, #00171f);
   background-color: var(--background-shade);
   border: 1px solid var(--brand-lowlight);
@@ -190,8 +194,6 @@ code {
   overflow: scroll;
 
   font-size: calc(0.6rem + 0.3vw);
-
-  white-space: pre-wrap;
 }
 
 /* --- Header --- */
