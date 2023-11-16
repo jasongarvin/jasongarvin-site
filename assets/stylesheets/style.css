@@ -1314,13 +1314,15 @@ a.menu-item:hover {
 
 /* --- || Media Queries for Screen Size ------------------------------------- */
 
-@media screen and (min-width: 1015px) {
-  #main-header::after {
-    left: calc((100vw - 900px) / 2);
-    bottom: -20px;
-    height: 1px;
-    width: 90%;
-    max-width: 900px;
+@media screen and (min-width: 615px) {
+  .social-bar li {
+    padding-top: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .hero-subtitle {
+    margin-top: 2rem;
   }
 }
 
@@ -1445,14 +1447,12 @@ a.menu-item:hover {
   }
 }
 
-@media screen and (min-width: 641px) {
-  .hero-subtitle {
-    margin-top: 2rem;
-  }
-}
-
-@media screen and (min-width: 615px) {
-  .social-bar li {
-    padding-top: 0.75rem;
+@media screen and (min-width: 1015px) {
+  #main-header::after {
+    left: calc((100vw - 900px) / 2);
+    bottom: -20px;
+    height: 1px;
+    width: 90%;
+    max-width: 900px;
   }
 }
