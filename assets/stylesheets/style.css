@@ -840,7 +840,7 @@ a.menu-item:hover {
   padding: 1rem;
   margin: 1rem auto;
   background-color: var(--background, #fff);
-  border-radius: 10px;
+  border-radius: 20px;
 
   transition: font-size 0.2s ease-out;
 }
@@ -961,15 +961,18 @@ a.menu-item:hover {
 }
 
 #blog-post section {
-  margin: 1rem 0;
+  margin: 0;
+  border-radius: 0;
 }
 
 #blog-post section:first-of-type {
+  margin: 1rem 0 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 #blog-post section:last-of-type {
+  margin: 0 0 1rem;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
