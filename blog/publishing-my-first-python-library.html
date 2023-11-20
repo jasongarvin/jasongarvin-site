@@ -319,7 +319,7 @@
           I’d get back an HTML status code of 200 and a whole pile of JSON data.
         </p>
 
-        <pre><code>api_response = requests.get(url, timeout=timeout)
+        <pre class="code-snippet"><code>api_response = requests.get(url, timeout=timeout)
     response.raise_for_status()</code></pre>
 
         <p>
@@ -354,7 +354,7 @@
           is down.
         </p>
 
-        <pre><code>except requests.exceptions.HTTPError as error_h:
+        <pre class="code-snippet"><code>except requests.exceptions.HTTPError as error_h:
     print(error_h)</code></pre>
 
         <p>
@@ -516,7 +516,7 @@
           way to publish the library. I desperately longed for the smoothness of:
         </p>
 
-        <pre><code>pip install pokewrap</code></pre>
+        <pre class="code-snippet"><code>pip install pokewrap</code></pre>
 
         <p>
           I could taste the efficiency. I wanted to use such simple, elegant
@@ -618,7 +618,7 @@
           compile the necessary files for distribution.
         </p>
 
-        <pre><code>[build-system]
+        <pre class="code-snippet"><code>[build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
 build-backend = "setuptools.build_meta"</code></pre>
 
@@ -660,7 +660,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           distribution, and the tarball (.tar) is the source distribution.
         </p>
 
-        <pre><code>python3 -m build</code></pre>
+        <pre class="code-snippet"><code>python3 -m build</code></pre>
 
         <p>
           Generally, newer versions of pip will use the build distribution, but
@@ -672,7 +672,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           under my PyPI account.
         </p>
 
-        <pre><code>twine check dist/*
+        <pre class="code-snippet"><code>twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
@@ -852,6 +852,7 @@ twine upload dist/*
     import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js';
     hljs.highlightAll();
   </script>
+  <script src="../assets/scripts/copy-to-clipboard.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>

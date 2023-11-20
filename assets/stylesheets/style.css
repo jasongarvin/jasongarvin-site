@@ -13,12 +13,12 @@
 
   --brand-primary:       hsl(var(--brand-hue), 60%, 47% );
   --brand-highlight:     hsl(var(--brand-hue), 65%, 75% );
-  --brand-lowlight:      hsl(var(--brand-hue), 60%, 19% );
+  --brand-lowlight:      hsl(var(--brand-hue), 50%, 19% );
   --brand-inactive:      hsl(var(--brand-hue), 35%, 47% );
 
   --brand-secondary:     hsl(var(--brand-hue-alt), 23%, 51% );
   --brand-2nd-highlight: hsl(var(--brand-hue-alt), 30%, 81% );
-  --brand-2nd-lowlight:  hsl(var(--brand-hue-alt), 70%, 21% );
+  --brand-2nd-lowlight:  hsl(var(--brand-hue-alt), 30%, 10% );
   --brand-2nd-inactive:  hsl(var(--brand-hue-alt), 20%, 35% );
 
   --core-monotone:       hsl(var(--monotone), 100%, 6%);
@@ -40,8 +40,8 @@
 
   --brand-primary:       hsl(var(--brand-hue), 23%, 51% );
   --brand-highlight:     hsl(var(--brand-hue), 30%, 71% );
-  --brand-lowlight:      hsl(var(--brand-hue), 40%, 31% );
-  --brand-inactive:      hsl(var(--brand-hue), 20%, 36% );
+  --brand-lowlight:      hsl(var(--brand-hue), 30%, 10% );
+  --brand-inactive:      hsl(var(--brand-hue), 20%, 35% );
 
   --brand-secondary:     hsl(var(--brand-hue-alt), 45%, 47% );
   --brand-2nd-highlight: hsl(var(--brand-hue-alt), 60%, 75% );
@@ -185,6 +185,7 @@ p a:visited:hover {
 }
 
 pre {
+  position: relative;
   display: block;
   margin: 2rem 0;
 }
@@ -193,7 +194,7 @@ code {
   display: block;
   padding: 0.25rem 2rem;
   color: var(--core-monotone, #00171f);
-  background-color: var(--background-shade);
+  background-color: var(--brand-lowlight) !important;
   border: 1px solid var(--brand-lowlight);
   border-radius: 5px;
 
@@ -503,9 +504,36 @@ a.menu-item:hover {
   cursor: pointer;
 }
 
+  /* --- Social Media --- */
+
+.social-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 
 /* --- || CTA (Call to Action) & Subscribe Box ------------------------------ */
+
+  /* --- Main Hero Section --- */
+
+.hero-content {
+  max-width: 45rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-header {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  color: var(--mono-emphasis, #3c3744);
+  font-size: calc(1.3em + 0.59vw);
+}
 
   /* --- CTA Box --- */
 
@@ -661,81 +689,6 @@ a.menu-item:hover {
 
 .end-footer {
   text-align: center;
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/* --- || Utilities --------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
-.top-of-page {
-  margin-top: 15vh;
-}
-
-.vertical-space {
-  margin-top: 10vh;
-}
-
-.buffer {
-  margin-top: 3rem;
-}
-
-.centered {
-  text-align: center;
-}
-
-.left-align {
-  text-align: left;
-}
-
-.transparent-bg {
-  background-color: transparent;
-}
-
-.emphasis {
-  color: var(--brand-primary, #3066be);
-  font-weight: 700;
-}
-
-.next-section {
-  position: relative;
-  padding-top: 0.5rem;
-}
-
-.accent-link {
-  color: var(--brand-secondary, #696c9a);
-}
-
-.accent-link:hover {
-  color: var(--brand-2nd-lowlight);
-}
-
-  /* --- Main Hero Section --- */
-
-.hero-content {
-  max-width: 45rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero-header {
-  position: relative;
-  margin: 0 auto 0.5rem;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.hero-subtitle {
-  margin-top: 1rem;
-  color: var(--mono-emphasis, #3c3744);
-  font-size: calc(1.3em + 0.59vw);
-}
-
-  /* --- Social Media --- */
-
-.social-bar {
-  display: flex;
-  justify-content: space-around;
 }
 
 
@@ -1005,6 +958,71 @@ a.menu-item:hover {
 /* -------------------------------------------------------------------------- */
 /* --- || Widgets, Components, & Misc. -------------------------------------- */
 /* -------------------------------------------------------------------------- */
+
+.copy-to-clipboard {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0.2rem 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--brand-highlight);
+  border-radius: 5px;
+  color: var(--brand-highlight);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-to-clipboard:hover {
+  border: 1px solid #fff;
+  color: #fff;
+
+  transition: all 0.2s ease;
+}
+
+/* --- || Utility Classes --------------------------------------------------- */
+
+.top-of-page {
+  margin-top: 15vh;
+}
+
+.vertical-space {
+  margin-top: 10vh;
+}
+
+.buffer {
+  margin-top: 3rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.emphasis {
+  color: var(--brand-primary, #3066be);
+  font-weight: 700;
+}
+
+.next-section {
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.accent-link {
+  color: var(--brand-secondary, #696c9a);
+}
+
+.accent-link:hover {
+  color: var(--brand-2nd-lowlight);
+}
 
 
 
@@ -1283,33 +1301,6 @@ a.menu-item:hover {
 
   .drop-into-frame:nth-child(3) {
     transition-delay: 0.5s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(2) {
-    transition-delay: 0.1s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(3) {
-    transition-delay: 0.2s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(4) {
-    transition-delay: 0.3s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(5) {
-    transition: all 0.35s ease;
-    transition-delay: 0.4s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(6) {
-    transition: all 0.4s ease;
-    transition-delay: 0.5s;
-  }
-
-  #toc-collapse:checked ~ #toc-content li:nth-child(7) {
-    transition: all 0.5s ease;
-    transition-delay: 0.6s;
   }
 }
 
