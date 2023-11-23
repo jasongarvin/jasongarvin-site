@@ -120,12 +120,13 @@
     <article id="blog-post" class="top-of-page" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.jasongarvin.com/blog/how-to-start-blogging.html">
       <div class="vertical-space blog-title centered transparent-bg">
         <h1 class="cta-header" itemprop="name">
-          <span class="emphasis">Building Blocks</span>
-          <br>Publishing My First Python Library
+          <span class="emphasis">Publishing</span>
+          My First Python Library
         </h1>
         <section class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
           <span itemprop="name">Jason Garvin</span>
           <span><time itemprop="datePublished" datetime="2023-09-08">11/07/2023</time></span>
+          <span id="post-read-time">12 min read</span>
         </section>
       </div>
 
@@ -848,6 +849,7 @@ twine upload dist/*
   <!-- Scripts and Handling -->
   <script src="../assets/scripts/to-top.js"></script>
   <script src="../assets/scripts/toggle-theme.js"></script>
+  <script src="../assets/scripts/calculate-read-time.js"></script>
   <script type="module">
     import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js';
     hljs.highlightAll();
