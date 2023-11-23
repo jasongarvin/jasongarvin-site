@@ -207,14 +207,14 @@ code {
 /* --- || Sitewide ---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/* --- Font Awesome --- */
+  /* --- Font Awesome --- */
 
 .fa-solid
 .fa {
   margin: 0 0.25rem;
 }
 
-/* --- Page Background Effects */
+  /* --- Page Background Effects */
 
 .background-glow::before,
 .background-glow-2::before {
@@ -454,6 +454,28 @@ a.menu-item:hover {
 
 
 /* --- || Global Buttons ---------------------------------------------------- */
+
+  /* --- Skip to Content Link --- */
+
+.skip-to-link {
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  padding: 0.25rem;
+  border-radius: px;
+
+  text-decoration: none;
+
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-link:focus {
+  transform: translateY(12%);
+}
+
+  /* --- Back to Top Button --- */
 
 #back-to-top {
   position: fixed;
@@ -1366,7 +1388,7 @@ a.menu-item:hover {
     top: 0;
     max-height: none;
     width: fit-content;
-    margin: 0 auto;
+    margin: 1.5rem auto 0;
     background-color: transparent;
   }
 
@@ -1381,21 +1403,19 @@ a.menu-item:hover {
 
   .main-menu li {
     width: fit-content;
+    margin: 0.25rem;
   }
 
   .menu-item {
-    padding: 1rem 2rem 1.2rem;
+    padding: 0.25rem 2rem;
     margin-top: 1rem;
     font-size: calc(1.2rem + 0.2vw);
   }
 
-  .active-page::after {
+  .active-page::after,
+  .main-menu li:hover .menu-item::after {
     left: 0.5rem;
-    height: 2.6rem;
-  }
-
-  .main-menu li:hover .menu-item::after{
-    left: 0.5rem;
+    bottom: 0.1rem;
     height: 2.6rem;
   }
 
