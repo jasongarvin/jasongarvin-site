@@ -987,14 +987,21 @@ a.menu-item:hover {
 /* -------------------------------------------------------------------------- */
 
 .copy-to-clipboard {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 5px;
   right: 5px;
-  padding: 0.2rem 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
   background-color: transparent;
   border: 1px solid var(--brand-highlight);
   border-radius: 5px;
+  overflow: hidden;
+
   color: var(--brand-highlight);
+  font-size: 1.2rem;
 
   cursor: pointer;
   transition: all 0.2s ease;

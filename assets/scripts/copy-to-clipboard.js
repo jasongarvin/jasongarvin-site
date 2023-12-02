@@ -1,16 +1,15 @@
 // Creates a 'Copy to Clipboard' button in code snippets
 
-const copyButtonLabel = "Copy Code";
-
 let snippets = document.querySelectorAll(".code-snippet");
 
 snippets.forEach((snippet) => {
-    // only add button if browser supports Clipboard API
+    // Add button only if browser supports Clipboard API
     if (navigator.clipboard) {
         let button = document.createElement("button");
         button.classList.add("copy-to-clipboard")
+        // Add FontAwesome classes for the clipboard icon
+        button.classList.add("fa-regular", "fa-clipboard")
 
-        button.innerText = copyButtonLabel;
         snippet.appendChild(button);
 
         button.addEventListener("click", async () => {
@@ -25,10 +24,13 @@ async function copyCode(snippet, button) {
 
     await navigator.clipboard.writeText(text);
 
-    // visual feedback that task is completed
-    button.innerText = "Copied!";
+    // Visual feedback that task is completed
+    button.classList.remove("fa-regular", "fa-clipboard");
+    button.classList.add("fa-solid", "fa-clipboard-check");
 
     setTimeout(() => {
-      button.innerText = copyButtonLabel;
+        // Return to the original icon
+      button.classList.remove("fa-solid", "fa-clipboard-check");
+      button.classList.add("fa-regular", "fa-clipboard");
     }, 1000);
   }
