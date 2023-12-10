@@ -253,7 +253,9 @@ code {
   justify-content: space-between;
   z-index: 1;
   background-color: var(--background-shade, #fff);
-  box-shadow: 0 1px 2px var(--element-shadow, rgba(0, 0, 0, 0.4))
+  box-shadow: 0 1px 2px var(--element-shadow, rgba(0, 0, 0, 0.4));
+
+  transition: top 0.2s ease-in-out;
 }
 
   /* --- Header Logo & Title --- */
@@ -480,6 +482,7 @@ a.menu-item:hover {
   padding: 0;
   overflow: hidden;
   z-index: 4;
+  opacity: 0;
 
   color: var(--core-monotone, #00171f);
   background: var(--brand-highlight);
@@ -1361,6 +1364,7 @@ a.menu-item:hover {
   #main-header {
     left: 0;
     right: 0;
+    top: 0;
     width: 96%;
     max-width: 900px;
     margin: 1rem auto 0;
