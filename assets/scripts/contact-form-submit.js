@@ -1,4 +1,4 @@
-// A quick script providing submit confirmation
+// Assume control of form submission event handling and user feedback
 
 const contactForm = document.getElementById('contact-me');
 
@@ -16,13 +16,13 @@ async function handleSubmit(event) {
     method: contactForm.method,
     body: formContent,
     headers: {
-        'Accept': 'application/json'
+      'Accept': 'application/json'
     }
   }).then(response => {
     if (response.ok) {
-        submitButton.textContent = 'Thanks for your submission!';
-        contactForm.reset()
-        setTimeout(resetButton, 1000, submitButton, 'Submit');
+      submitButton.textContent = 'Thanks for your submission!';
+      contactForm.reset()
+      setTimeout(resetButton, 1000, submitButton, 'Submit');
     } else {
       response.json().then(formContent => {
         if (Object.hasOwn(formContent, 'errors')) {

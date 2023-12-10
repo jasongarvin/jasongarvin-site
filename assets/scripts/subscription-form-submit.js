@@ -1,4 +1,4 @@
-// A quick script providing submit confirmation
+// Assume control of form submission event handling and user feedback
 
 const subscribeForm = document.getElementById('subscription-form');
 

@@ -1,4 +1,4 @@
-// Sets certain elements to animate when they intersect with the viewport
+// Set elements with animate classes to animate when they intersect the viewport
 
 const animatedElements = document.querySelectorAll('.animate-drop');
 for (const element of animatedElements) {

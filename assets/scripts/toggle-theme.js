@@ -1,6 +1,6 @@
-// Manages light/dark theme state
-// Checks if browser supports custom properties
-// Then enables a toggle button to control theme
+/* Manages light/dark theme state
+Checks if browser supports custom properties
+Then enables a toggle button to control theme */
 
 const themeToggle = document.getElementById('toggle-theme');
 const themeIcon = document.getElementById('theme-icon');
@@ -9,12 +9,12 @@ const supportsCustomProps = CSS.supports('--text: #e6e9de');
 console.log(supportsCustomProps);
 
 if (supportsCustomProps === false) {
-    themeToggle.style.display = 'none';
+  themeToggle.style.display = 'none';
 }
 
 
 // Match the active theme the user prefers machine-wide
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({matches}) => {
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({ matches }) => {
   if (matches) {
     document.body.classList.add('dark-theme');
     themeIcon.className = 'fa fa-sun-o';
