@@ -109,7 +109,7 @@
     </nav>
   </header>
 
-  <button id="toggle-theme" class="default-button" aria-labelledby="#theme-text">
+  <button id="toggle-theme" class="default-button" aria-label="Toggle color theme">
     <i id="theme-icon" class="fa fa-moon-o"></i>
     <span id="theme-text" hidden>Toggle Theme</span>
   </button>
@@ -128,20 +128,26 @@
         </div>
       </section>
 
-      <nav class="table-of-contents" itemprop="">
+      <nav class="table-of-contents">
         <h2 class="toc-title">Table of Contents</h2>
-        <ol class="toc-quick-links">
+
+        <input id="toc-collapse" type="checkbox" aria-label="Expand the table of contents" />
+        <label class="collapsible-button" for="toc-collapse">
+          <i class="fa fa-chevron-down"></i>
+        </label>
+
+        <ol id="toc-content" class="toc-quick-links">
           <li>
-            <a href="#subsection-1">Section Heading</a>
+            <a href="#subsection-1">...</a>
           </li>
           <li>
-            <a href="#subsection-1">Section Heading</a>
+            <a href="#subsection-2">...</a>
           </li>
           <li>
-            <a href="#subsection-1">Section Heading</a>
+            <a href="#subsection-3">...</a>
           </li>
           <li>
-            <a href="#subsection-1">Section Heading</a>
+            <a href="#subsection-4">...</a>
           </li>
         </ol>
       </nav>
