@@ -954,6 +954,13 @@ a.menu-item:hover {
   border-bottom-right-radius: 20px;
 }
 
+.bonus-content {
+  margin: 2rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: var(--background, #fff);
+}
+
 
 
 /* --- || Page: Contact ----------------------------------------------------- */
@@ -1442,6 +1449,10 @@ a.menu-item:hover {
   .blog-preview {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .bonus-content {
+    background-color: var(--background-shade, #fff);
   }
 
   .list-emphasis {
