@@ -1,18 +1,30 @@
-// Get the button
-let myButton = document.getElementById("back-to-top");
+// Controls the visibility and function of the back-to-top button
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// Set a variable for our button element.
+const scrollToTopButton = document.getElementById('back-to-top');
+const rootElement = document.documentElement;
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    myButton.hidden = false;
+const scrollFunc = () => {
+  // Get the current scroll value
+  let windowYAxis = window.scrollY;
+
+  /* If the scroll value is greater than the window's desired Y axis,
+  toggle visibility of the back-to-top button */
+  if (windowYAxis > 500) {
+    scrollToTopButton.hidden = false;
+    scrollToTopButton.style.opacity = 1;
   } else {
-    myButton.hidden = true;
+    scrollToTopButton.hidden = true;
+    scrollToTopButton.style.opacity = 0;
   }
+};
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function toTopFunction() {
-  window.scroll({top: 0, behavior: "smooth"})
-}
+window.addEventListener("scroll", scrollFunc);
+scrollToTopButton.addEventListener("click", scrollToTop);
