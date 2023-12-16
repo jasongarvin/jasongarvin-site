@@ -836,7 +836,11 @@ a.menu-item:hover {
   display: none;
 }
 
-#toc-collapse:checked ~ .collapsible-button {
+.collapsible-button .fa {
+  transition: all 0.2s ease-in-out;
+}
+
+#toc-collapse:checked ~ .collapsible-button .fa {
   transform: rotate(180deg);
 
   transition: all 0.2s ease-in-out;
