@@ -81,7 +81,7 @@
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
     <!-- Menu -->
-    <nav id="main-nav">
+    <nav id="main-nav" aria-label="Site Navigation">
       <ul class="main-menu">
         <li>
           <a class="menu-item" href="blog/index.html">
@@ -123,9 +123,9 @@
     </article>
 
     <section class="contact-form-container vertical-space">
-      <h2 class="centered form-lead box-emphasis">Send me an email</h2>
+      <h2 id="contact-title" class="centered form-lead box-emphasis">Send me an email</h2>
 
-      <form id="contact-me" class="contact-form" action="https://formspree.io/f/mjvqjygb" method="POST" autocomplete="on">
+      <form id="contact-me" class="contact-form" action="https://formspree.io/f/mjvqjygb" method="POST" autocomplete="on" aria-labelledby="contact-title">
         <ul class="form-list">
 
           <li>
@@ -181,11 +181,11 @@
     </section>
 
     <!-- Subscribe Section -->
-    <section class="cta-click-box subscribe-container">
-      <h4 class="cta-box-title">Subscribe to my updates</h4>
+    <section class="next-section cta-click-box subscribe-container">
+      <h4 id="subscribe" class="cta-box-title">Subscribe to my updates</h4>
 
-      <div class="subscribe-content">
-        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
+      <div class="subscribe-content" role="form">
+        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
           <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
           <button id="subscription-submit" class="submit-email" type="submit">

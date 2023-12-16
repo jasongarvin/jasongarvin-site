@@ -83,7 +83,7 @@
     </label>
 
     <!-- Menu -->
-    <nav id="main-nav" aria-label="Main Menu">
+    <nav id="main-nav" aria-label="Site Navigation">
       <ul class="main-menu">
         <li>
           <a class="menu-item" href="blog/index.html">
@@ -234,10 +234,10 @@
 
     <!-- Subscribe Section -->
     <section class="next-section cta-click-box subscribe-container">
-      <h4 class="cta-box-title">Subscribe to my updates</h4>
+      <h4 id="subscribe" class="cta-box-title">Subscribe to my updates</h4>
 
-      <div class="subscribe-content">
-        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST">
+      <div class="subscribe-content" role="form">
+        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
           <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
           <button id="subscription-submit" class="submit-email" type="submit">
