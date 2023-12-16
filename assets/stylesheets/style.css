@@ -40,7 +40,7 @@
 
   --brand-primary:       hsl(var(--brand-hue), 23%, 51% );
   --brand-highlight:     hsl(var(--brand-hue), 30%, 71% );
-  --brand-lowlight:      hsl(var(--brand-hue), 30%, 10% );
+  --brand-lowlight:      hsl(var(--brand-hue), 32%, 41% );
   --brand-inactive:      hsl(var(--brand-hue), 20%, 35% );
 
   --brand-secondary:     hsl(var(--brand-hue-alt), 45%, 47% );
@@ -1230,7 +1230,7 @@ a.menu-item:hover {
 
 .list-hor li a {
   display: block;
-  padding: 1rem;
+  margin: 1rem;
 
   text-align: center;
   text-decoration: none;
@@ -1423,7 +1423,7 @@ a.menu-item:hover {
 
   .active-page::after,
   .main-menu li:hover .menu-item::after {
-    left: 0.5rem;
+    left: 0.35rem;
     bottom: 0.1rem;
     height: 2.6rem;
   }
