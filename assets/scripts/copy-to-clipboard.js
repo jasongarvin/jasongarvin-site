@@ -1,6 +1,6 @@
 // Creates a 'Copy to Clipboard' button in code snippets
 
-let snippets = document.querySelectorAll(".code-snippet");
+let snippets = document.querySelectorAll(".js-code-snippet");
 
 snippets.forEach((snippet) => {
   // Add button only if browser supports Clipboard API

@@ -66,7 +66,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
-  <header id="main-header">
+  <header id="main-header" class="site-header">
     <a class="skip-to-link" href="#main-content">Skip to main content</a>
 
     <!-- Logo -->
@@ -113,7 +113,7 @@
     </nav>
   </header>
 
-  <button id="toggle-theme" class="default-button" aria-label="Toggle color theme">
+  <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
     <i id="theme-icon" class="fa fa-moon-o"></i>
     <span id="theme-text" hidden>Toggle Theme</span>
   </button>
@@ -205,7 +205,7 @@
       </section>
 
       <section id="subsection-1" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Getting to know
           <span class="emphasis">APIs</span>
         </h2>
@@ -286,7 +286,7 @@
       </section>
 
       <section id="subsection-2" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Building the
           <span class="emphasis">Scaffolding</span>
         </h2>
@@ -323,7 +323,7 @@
           I’d get back an HTML status code of 200 and a whole pile of JSON data.
         </p>
 
-        <pre class="code-snippet"><code>api_response = requests.get(url, timeout=timeout)
+        <pre class="js-code-snippet"><code>api_response = requests.get(url, timeout=timeout)
     response.raise_for_status()</code></pre>
 
         <p>
@@ -358,7 +358,7 @@
           is down.
         </p>
 
-        <pre class="code-snippet"><code>except requests.exceptions.HTTPError as error_h:
+        <pre class="js-code-snippet"><code>except requests.exceptions.HTTPError as error_h:
     print(error_h)</code></pre>
 
         <p>
@@ -413,7 +413,7 @@
       </section>
 
       <section id="subsection-3" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Becoming
           <span class="emphasis">Production</span>-Ready
         </h2>
@@ -510,7 +510,7 @@
       </section>
 
       <section id="subsection-4" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Publishing with
           <span class="emphasis">PyPI</span>
         </h2>
@@ -520,7 +520,7 @@
           way to publish the library. I desperately longed for the smoothness of:
         </p>
 
-        <pre class="code-snippet"><code>pip install pokewrap</code></pre>
+        <pre class="js-code-snippet"><code>pip install pokewrap</code></pre>
 
         <p>
           I could taste the efficiency. I wanted to use such simple, elegant
@@ -595,7 +595,7 @@
       </section>
 
       <section id="subsection-5" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           <span class="emphasis">Bundling</span>
           Up
         </h2>
@@ -622,7 +622,7 @@
           compile the necessary files for distribution.
         </p>
 
-        <pre class="code-snippet"><code>[build-system]
+        <pre class="js-code-snippet"><code>[build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
 build-backend = "setuptools.build_meta"</code></pre>
 
@@ -664,7 +664,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           distribution, and the tarball (.tar) is the source distribution.
         </p>
 
-        <pre class="code-snippet"><code>python3 -m build</code></pre>
+        <pre class="js-code-snippet"><code>python3 -m build</code></pre>
 
         <p>
           Generally, newer versions of pip will use the build distribution, but
@@ -676,7 +676,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           under my PyPI account.
         </p>
 
-        <pre class="code-snippet"><code>twine check dist/*
+        <pre class="js-code-snippet"><code>twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
@@ -690,7 +690,7 @@ twine upload dist/*
       </section>
 
       <section id="subsection-6" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Launching For
           <span class="emphasis">Real</span>
         </h2>
@@ -761,7 +761,7 @@ twine upload dist/*
       </section>
 
       <section id="subsection-7" itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           References
         </h2>
 
@@ -855,7 +855,7 @@ twine upload dist/*
   </footer>
 
   <!-- Quick-scroll to Top Button -->
-  <button id="back-to-top" title="Return to top" hidden>
+  <button id="back-to-top" class="back-to-top" title="Return to top of page" hidden>
     <i class="fa fa-arrow-up to-top-button"></i>
     Back to top
   </button>

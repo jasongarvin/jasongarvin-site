@@ -245,7 +245,7 @@ code {
 
 /* --- || Header ------------------------------------------------------------ */
 
-#main-header {
+.site-header {
   position: fixed;
   display: flex;
   width: 100%;
@@ -473,7 +473,7 @@ a.menu-item:hover {
 
   /* --- Back to Top Button --- */
 
-#back-to-top {
+.back-to-top {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
@@ -506,14 +506,14 @@ a.menu-item:hover {
   cursor: pointer;
 }
 
-#back-to-top:hover {
+.back-to-top:hover {
   background: var(--brand-primary, #3066be);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3),
               0 4px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-out;
 }
 
-#toggle-theme {
+.theme-button {
   position: fixed;
   display: flex;
   bottom: 1.5rem;
@@ -1049,7 +1049,7 @@ a.menu-item:hover {
   font-weight: 700;
 }
 
-.next-section {
+.home-block {
   position: relative;
   padding-top: 0.5rem;
 }
@@ -1368,7 +1368,7 @@ a.menu-item:hover {
     background-color: var(--background, #fff);
   }
 
-  #main-header {
+  .site-header {
     left: 0;
     right: 0;
     top: 0;
@@ -1428,7 +1428,7 @@ a.menu-item:hover {
     height: 2.6rem;
   }
 
-  #toggle-theme .fa {
+  .theme-button .fa {
     margin-right: 0.5rem;
   }
 
