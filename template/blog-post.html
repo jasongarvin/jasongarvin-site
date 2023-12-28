@@ -62,7 +62,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Main Header -->
-  <header id="main-header">
+  <header id="main-header" class="site-header">
     <a class="skip-to-link" href="#main-content">Skip to main content</a>
 
     <!-- Logo -->
@@ -109,7 +109,7 @@
     </nav>
   </header>
 
-  <button id="toggle-theme" class="default-button" aria-label="Toggle color theme">
+  <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
     <i id="theme-icon" class="fa fa-moon-o"></i>
     <span id="theme-text" hidden>Toggle Theme</span>
   </button>
@@ -180,7 +180,7 @@
       </section>
 
       <section itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Title
           <span class="emphasis">Emphasis</span>
         </h2>
@@ -191,7 +191,7 @@
       </section>
 
       <section itemprop="articleBody">
-        <h2 class="blog-subtitle">
+        <h2 class="blog-subtitle js-heading">
           Title
           <span class="emphasis">Emphasis</span>
         </h2>
@@ -218,7 +218,7 @@
       <h4 id="subscribe" class="cta-box-title">Subscribe to my updates</h4>
 
       <div class="subscribe-content" role="form">
-        <form id="subscription-form" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
+        <form id="subscription-form" class="form-widget" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
           <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
 
           <button id="subscription-submit" class="submit-email" type="submit">
@@ -277,7 +277,7 @@
   </footer>
 
   <!-- Quick-scroll to Top Button -->
-  <button id="back-to-top" title="Return to top" hidden>
+  <button id="back-to-top" class="back-to-top" title="Return to top of page" hidden>
     <i class="fa fa-arrow-up to-top-button"></i>
     Back to top
   </button>

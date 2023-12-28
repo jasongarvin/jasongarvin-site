@@ -1,6 +1,6 @@
 // Allows for bookmarking of headings within a blog post
 
-let headings = document.querySelectorAll(".blog-subtitle");
+let headings = document.querySelectorAll(".js-heading");
 // Construct this URL ourselves to exclude the text fragment
 const currentURL = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
 
