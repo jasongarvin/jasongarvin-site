@@ -1022,6 +1022,12 @@ a.menu-item:hover {
   transition: all 0.2s ease;
 }
 
+.breadcrumbs {
+  margin-top: 20vh;
+  background-color: var(--background, #fff);
+  border-radius: 20px;
+}
+
 /* --- || Utility Classes --------------------------------------------------- */
 
 .top-of-page {
@@ -1232,12 +1238,27 @@ a.menu-item:hover {
   list-style-type: none;
 }
 
-.list-hor li a {
-  display: block;
-  margin: 1rem;
-
+.list-hor li a,
+.list-hor li i,
+.list-hor li span {
+  display: inline-block;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.list-hor li a {
+  margin: 1rem;
   text-decoration: none;
+}
+
+.list-hor li i {
+  margin: 1rem 0;
+  font-size: calc(1rem + 0.2vw);
+  line-height: 1.618;
+}
+
+.list-hor li span {
+  margin: 1rem;
 }
 
 .list-emphasis {
@@ -1480,5 +1501,11 @@ a.menu-item:hover {
 
   #subscribe-email {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .breadcrumbs {
+    margin-top: 30vh;
   }
 }
