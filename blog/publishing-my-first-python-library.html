@@ -344,7 +344,7 @@
           I’d get back an HTML status code of 200 and a whole pile of JSON data.
         </p>
 
-        <pre class="js-code-snippet"><code>api_response = requests.get(url, timeout=timeout)
+        <pre class="js-code-snippet"><code class="language-python">api_response = requests.get(url, timeout=timeout)
     response.raise_for_status()</code></pre>
 
         <p>
@@ -379,7 +379,7 @@
           is down.
         </p>
 
-        <pre class="js-code-snippet"><code>except requests.exceptions.HTTPError as error_h:
+        <pre class="js-code-snippet"><code class="language-python">except requests.exceptions.HTTPError as error_h:
     print(error_h)</code></pre>
 
         <p>
@@ -541,7 +541,7 @@
           way to publish the library. I desperately longed for the smoothness of:
         </p>
 
-        <pre class="js-code-snippet"><code>pip install pokewrap</code></pre>
+        <pre class="js-code-snippet"><code class="language-bash">pip install pokewrap</code></pre>
 
         <p>
           I could taste the efficiency. I wanted to use such simple, elegant
@@ -643,7 +643,7 @@
           compile the necessary files for distribution.
         </p>
 
-        <pre class="js-code-snippet"><code>[build-system]
+        <pre class="js-code-snippet"><code class="language-ini">[build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
 build-backend = "setuptools.build_meta"</code></pre>
 
@@ -685,7 +685,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           distribution, and the tarball (.tar) is the source distribution.
         </p>
 
-        <pre class="js-code-snippet"><code>python3 -m build</code></pre>
+        <pre class="js-code-snippet"><code class="language-bash">python3 -m build</code></pre>
 
         <p>
           Generally, newer versions of pip will use the build distribution, but
@@ -697,7 +697,7 @@ build-backend = "setuptools.build_meta"</code></pre>
           under my PyPI account.
         </p>
 
-        <pre class="js-code-snippet"><code>twine check dist/*
+        <pre class="js-code-snippet"><code class="language-bash">twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
