@@ -3,26 +3,26 @@
 
 <head>
   <title>Publishing My First Python Library | Jason Garvin</title>
-  <link rel="manifest" href="../manifest.webmanifest">
-  <link rel="icon" href="../favicon.ico" sizes="32x32">
-  <link rel="icon" href="../icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width" , initial-scale="1">
-  <meta name="author" content="Jason Garvin">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
+  <meta name="author" content="Jason Garvin" />
   <meta name="description" content="In this blog post I review the work it took to publish Pokewrap, my first ever Python library, including my trials with PyPI, package bundling, and dependencies." />
 
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
 
   <!-- Open Graph Protocol - Social Sharing -->
-  <meta property="og:title" content="Publishing My First Python Library | Jason Garvin">
-  <meta property="og:description" content="Sit back, relax, and enjoy reading through my trials and tribulations of publishing a Python library for the first time ever.">
-  <meta property="og:url" content="https://jasongarvin.com/blog/publishing-my-first-python-library">
-  <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png">
-  <meta property="og:type" content="article">
+  <meta property="og:title" content="Publishing My First Python Library | Jason Garvin" />
+  <meta property="og:description" content="Sit back, relax, and enjoy reading through my trials and tribulations of publishing a Python library for the first time ever." />
+  <meta property="og:url" content="https://jasongarvin.com/blog/publishing-my-first-python-library" />
+  <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+  <meta property="og:type" content="article" />
   <meta property="article:section" content="Technology" />
   <meta property="article:published_time" content="2023-11-07" />
   <meta name="twitter:title" content="Publishing My First Python Library | Jason Garvin" />
@@ -44,14 +44,14 @@
   <link rel="canonical" href="https://jasongarvin.com/blog/publishing-my-first-python-library" />
 
   <!-- Main Styles -->
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css">
-  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css">
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
   <!-- Get highlight.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
 </head>
@@ -135,17 +135,17 @@
     </nav>
 
     <article id="blog-post" class="vertical-space" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.jasongarvin.com/blog/publishing-my-first-python-library.html">
-      <div class="vertical-space blog-title centered transparent-bg">
+      <section class="vertical-space blog-title centered transparent-bg">
         <h1 class="cta-header" itemprop="name">
           <span class="emphasis">Publishing</span>
           My First Python Library
         </h1>
-        <section class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
           <span itemprop="name">Jason Garvin</span>
           <span><time itemprop="datePublished" datetime="2023-09-08">11/07/2023</time></span>
           <span id="post-read-time">12 min read</span>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <nav class="table-of-contents" aria-labelledby="table-of-contents-title">
         <h2 id="table-of-contents-title" class="toc-title">Table of Contents</h2>
