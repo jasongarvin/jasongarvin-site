@@ -1,4 +1,4 @@
-# Jason Garvin's website - v1.0
+# Jason Garvin's website - v1.3
 
 [![pages-build-deployment](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment)
 
@@ -51,7 +51,3 @@ Now that I've achieved 1.0, the major design of the site likely won't change too
 Next I'm looking at a potential rehost to Cloudflare Pages from GitHub Pages to enable more customization, pseudobackend functionality, and a whole host of better options. But GitHub Pages is pretty cool and has been working great so far.
 
 I will also include a portfolio section at some point, as well as make some changes to what information is included in the site overall.
-
-Most likely, the Updates section will be sunset and replaced by a "Notes" feature within my blog for short-form content including my Threads content.
-
-The old code from the previous iteration of the website is also going away soon, so if you want to check that out please do so now.
