@@ -262,7 +262,7 @@ code {
 
 .logo-container {
   width: fit-content;
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
   text-align: left;
   transition: all 0.2s ease-in-out;
 }
@@ -395,7 +395,7 @@ a.menu-item:hover {
   position: relative;
   cursor: pointer;
   padding: 30px 1.5rem 30px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   z-index: 10;
 }
 
@@ -463,7 +463,7 @@ a.menu-item:hover {
 
   text-decoration: none;
 
-  transform: translateY(-150%);
+  transform: translateY(-175%);
   transition: transform 0.3s;
 }
 
@@ -565,14 +565,14 @@ a.menu-item:hover {
   padding: 1rem 1rem;
   margin: 10rem auto 4rem;
   border-radius: 40px;
-  background-color: #68a0d4;
+  background-color: var(--brand-primary, #3066be);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 
   transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box:hover {
-  background-color: #1d81bc;
+  background-color: var(--brand-lowlight);
   transition: all 0.2s ease-in-out;
 }
 
@@ -1195,6 +1195,10 @@ a.menu-item:hover {
   cursor: pointer;
 }
 
+.form-submit:hover {
+  background-color: var(--brand-lowlight);
+}
+
 .form-submit:disabled {
   background-color: var(--brand-inactive);
 }
@@ -1399,7 +1403,7 @@ a.menu-item:hover {
     top: 0;
     width: 96%;
     max-width: 900px;
-    margin: 1rem auto 0;
+    margin: 2rem auto 0;
     padding-bottom: 0;
     border-radius: 50px;
   }
