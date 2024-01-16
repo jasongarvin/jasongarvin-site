@@ -1072,6 +1072,12 @@ a.menu-item:hover {
   color: var(--brand-2nd-lowlight);
 }
 
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 
 /* --- || Buttons ----------------------------------------------------------- */
@@ -1501,6 +1507,12 @@ a.menu-item:hover {
 
   #subscribe-email {
     font-size: 1rem;
+  }
+
+  .card-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
