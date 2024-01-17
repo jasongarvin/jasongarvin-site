@@ -23,7 +23,7 @@
 
   --core-monotone:       hsl(var(--monotone), 100%, 6%);
   --mono-emphasis:       hsl(var(--monotone), 25%, 20%);
-  --mono-subtle:         hsl(var(--monotone), 10%, 90%);
+  --mono-subtle:         hsl(var(--monotone), 20%, 90%);
 
   --background:          hsl(var(--neutral), 0%, 100%);
   --background-shade:    hsl(var(--neutral), 0%, 97%);
@@ -49,8 +49,8 @@
   --brand-2nd-inactive:  hsl(var(--brand-hue-alt), 35%, 45% );
 
   --core-monotone:       hsl(var(--monotone), 32%, 93%);
-  --mono-emphasis:       hsl(var(--monotone), 3%, 90%);
-  --mono-subtle:         hsl(var(--monotone), 3%, 20%);
+  --mono-emphasis:       hsl(var(--monotone), 0%, 90%);
+  --mono-subtle:         hsl(var(--monotone), 0%, 10%);
 
   --background:          hsl(var(--neutral), 30%, 16%);
   --background-shade:    hsl(var(--neutral), 41%, 8%);
@@ -1076,6 +1076,11 @@ a.menu-item:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
+}
+
+.inactive-card {
+  background-color: var(--mono-subtle)
 }
 
 
@@ -1086,18 +1091,24 @@ a.menu-item:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   padding: 0.6rem 0.8rem;
+
   border: none;
   border-radius: 10px;
-  background-color: var(--brand-secondary, #696c9a);
-  color: #fff;
+  background-color: var(--brand-primary, #3066be);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
+  color: #fff;
+  text-decoration: none;
+
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .default-button:hover {
-  background-color: var(--brand-2nd-lowlight);
+  background-color: var(--brand-lowlight);
+  color: #fff;
 
   transition: all 0.2s ease-in-out;
 }
