@@ -111,37 +111,37 @@ h6 {
 }
 
 h1 {
-  font-size: calc(2.5rem + 0.3vw);
+  font-size: 2.986rem;
   font-weight: 900;
   line-height: 1.35;
 }
 
 h2 {
-  font-size: calc(1.7rem + 0.3vw);
+  font-size: 2.488rem;
   font-weight: 800;
   line-height: 1.45;
 }
 
 h3 {
-  font-size: calc(1.4rem + 0.3vw);
+  font-size: 2.074rem;
   font-weight: 700;
   line-height: 1.6;
 }
 
 h4 {
-  font-size: calc(1.2rem + 0.3vw);
+  font-size: 1.728rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
 h5 {
-  font-size: calc(1.1rem + 0.3vw);
+  font-size: 1.44rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
 h6 {
-  font-size: calc(1rem + 0.2vw);
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
 
@@ -272,6 +272,7 @@ code {
   max-width: 6rem;
 }
 
+  /* Targetting parts of the SVG */
 .site-logo .cls-1 {
   fill: var(--brand-primary, #3066be);
 }
@@ -284,6 +285,7 @@ code {
 .site-logo .cls-2 {
   fill: var(--brand-highlight);
 }
+  /* End targetting parts of the SVG */
 
 .site-title {
   display: flex;
@@ -521,13 +523,6 @@ a.menu-item:hover {
   z-index: 5;
 
   cursor: pointer;
-}
-
-  /* --- Social Media --- */
-
-.social-bar {
-  display: flex;
-  justify-content: space-around;
 }
 
 
@@ -1072,6 +1067,11 @@ a.menu-item:hover {
   color: var(--brand-2nd-lowlight);
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .card-flex {
   display: flex;
   flex-direction: column;
@@ -1393,7 +1393,7 @@ a.menu-item:hover {
 /* --- || Media Queries for Screen Size ------------------------------------- */
 
 @media screen and (min-width: 615px) {
-  .social-bar li {
+  .flex-around li {
     padding-top: 0.75rem;
   }
 }
