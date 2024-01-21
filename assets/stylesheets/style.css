@@ -200,6 +200,7 @@ pre {
 
 code {
   display: block;
+  min-height: 3rem;
   padding: 0.25rem 2rem;
   color: var(--core-monotone, #00171f);
   background-color: var(--brand-lowlight) !important;
