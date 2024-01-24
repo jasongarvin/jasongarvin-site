@@ -200,9 +200,8 @@ pre {
 
 code {
   display: block;
-  min-height: 3rem;
-  padding: 0.25rem 2rem;
-  color: var(--core-monotone, #00171f);
+  padding: 1rem;
+  color: #fff;
   background-color: var(--brand-lowlight) !important;
   border: 1px solid var(--brand-lowlight);
   border-radius: 5px;

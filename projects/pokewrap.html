@@ -127,46 +127,51 @@
     </section>
 
     <section class="vertical-space">
-      <h2>Introducting Pokewrap</h2>
+      <h2>Introducing Pokewrap</h2>
       <p>
         Pokewrap is a lightweight wrapper library for
         <a href="https://pokeapi.co/" target="_blank" ref="nofollow external">PokeAPI</a>
         designed to stay out of your way and get you to adding Pokemon data
-        to your project as quickly as possible.
+        into your project as quickly as possible
       </p>
       <p>
-        I built it as a learning project, and continue to update it as new ideas
-        come up. I hope you find it useful in your own projects.
+        It's at its best for personal projects, casual use, or as a learning
+        tool. After all, I built it to do just that
+      </p>
+      <p>
+        I hope you find it useful in your own projects, and if you find areas
+        where I can improve it, please let me know!
       </p>
     </section>
 
     <section class="vertical-space box-emphasis">
       <h2>Technical Details</h2>
-
       <p>
         Pokewrap is written entirely in Python, as a 3-file distribution
         (plus tests).
-      </p>
       <p>
-        It uses two API controller classes to properly manage
-        API calls and translate the received data into useful, Python-first
-        dictionary data. It then extends those classes with helper classes
+        It uses API controller classes to properly manage API calls and translate
+        the received data into dictionary data for you to access through the
+        class. It then extends those classes with helper classes
         (like the class Pokemon) to allow you to get more specific when you
-        want to be.
+        want to be, and ignore all the extra endpoints you don't need
       </p>
       <h3>Dependencies</h3>
       <p>
         Pokewrap makes thorough use of the Requests library as the only external
         dependency beyond Python's core libraries. It also uses json to parse
-        API data, and os to configure directories.
+        API data, and os to configure directories
       </p>
-    </section>
+      <p>
+        It is compatible with Python 3.8 and forward by design,
+        and may be compatible with older versions of Python but is not guaranteed
+        to be as stable.
+      </p>
 
-    <section class="vertical-space box-emphasis">
       <h2>How to use</h2>
       <p>
         I wanted Pokewrap to be as accessible as possible, so you can find it
-        on PyPI, install it through pip, or download/fork it from GitHub.
+        on PyPI, install it through pip, or download/fork it from GitHub
       </p>
 
       <h3>Installation with pip</h3>
@@ -176,12 +181,11 @@
       <h3>Reporting issues</h3>
       <p>
         You can report bugs, issues, or submit feature requests using the GitHub
-        repository.
+        repository
       </p>
       <p>
-        Visit the
-        <a href="https://github.com/jasongarvin/pokewrap/issues" target="_blank" rel="nofollow external">issues page</a>
-        and I'll get back to you ASAP!
+        <a href="https://github.com/jasongarvin/pokewrap/issues" target="_blank" rel="nofollow external">Submit an issue</a>
+        and I'll get back to you ASAP
       </p>
     </section>
 
@@ -201,10 +205,12 @@
     </div>
 
     <section class="vertical-space box-emphasis">
-      <h2>Easter Eggs</h2>
+      <h2>Did you know?</h2>
       <p>
-        Did you know? Pokewrap is named after the Poke Rap, a rap song that played
-        at the end of episodes of the Pokemon original series in English
+        Pokewrap is named after the
+        <a href="https://youtu.be/xMk8wuw7nek?si=gtUirl3EH5w0vHX3" target="_blank" rel="nofollow external">Pok&eacute Rap</a>,
+        a ridiculously catch rap song of all 150 Pokemon that played at the end
+        of episodes of the Pokemon original series
       </p>
     </section>
 
