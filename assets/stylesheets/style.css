@@ -612,7 +612,7 @@ a.menu-item:hover {
 
 .subscribe-content {
   width: 90%;
-  height: 2.5rem;
+  height: 3rem;
   margin: 1rem 1rem 0;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
   border-radius: 60px;
@@ -645,7 +645,6 @@ a.menu-item:hover {
   right: 0;
   height: calc(100% - 2px);
   width: 7.5rem;
-  padding: 0.5rem 1.25rem;
   margin: 1px;
 
   border: none;
@@ -671,7 +670,7 @@ a.menu-item:hover {
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 2.25rem;
+  line-height: 2.65rem;
   transition: visibility .35s ease-in-out,
               opacity .35s ease-in-out;
 }
@@ -1072,7 +1071,7 @@ a.menu-item:hover {
 }
 
 .bottom-space {
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
 }
 
 .transparent-bg {
@@ -1123,7 +1122,7 @@ a.menu-item:hover {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  padding: 0.6rem 0.8rem;
+  padding: 1rem 0.75rem;
 
   border: none;
   border-radius: 10px;
@@ -1336,7 +1335,9 @@ a.menu-item:hover {
 }
 
 .list-item-emphasis .fa-solid {
-  font-size: 1.5rem;
+  position: relative;
+  bottom: 0.1rem;
+  font-size: 1rem;
 }
 
 
