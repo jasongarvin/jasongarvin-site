@@ -520,12 +520,9 @@ a.menu-item:hover {
 }
 
 .theme-button {
-  position: fixed;
+  max-height: 3rem;
+  margin-top: 2.1rem;
   display: flex;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  z-index: 5;
-
   cursor: pointer;
 }
 
@@ -718,7 +715,6 @@ a.menu-item:hover {
 .footer-links {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
 }
 
 .link-list {
@@ -1072,6 +1068,17 @@ a.menu-item:hover {
 
 .bottom-space {
   margin: 2rem 0 1rem;
+}
+
+.container-subsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.container-subsection div {
+  max-width: 75%;
 }
 
 .transparent-bg {
@@ -1567,6 +1574,13 @@ a.menu-item:hover {
   }
 
   .footer-links {
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+
+  .container-subsection {
+    max-width: 50%;
+    flex-direction: column;
     justify-content: flex-start;
   }
 }
