@@ -840,6 +840,7 @@ a.menu-item:hover {
   display: inline-block;
   margin: 1rem;
   border-radius: 5px;
+  font-size: 1.8rem;
 }
 
 #table-header {
@@ -1345,6 +1346,10 @@ a.menu-item:hover {
   position: relative;
   bottom: 0.1rem;
   font-size: 1rem;
+}
+
+.list-spaced li {
+  margin: 0.75rem 0;
 }
 
 

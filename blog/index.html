@@ -89,11 +89,6 @@
     </nav>
   </header>
 
-  <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
-    <i id="theme-icon" class="fa fa-moon-o"></i>
-    <span id="theme-text" hidden>Toggle Theme</span>
-  </button>
-
   <main id="main-content">
 
     <section class="top-of-page hero-content centered transparent-bg">
@@ -105,6 +100,40 @@
 
     <!-- Post Previews -->
     <section class="left-align blog-preview box-emphasis vertical-space">
+      <section class="subsection">
+        <h3 class="title-preview">
+          <a href="buying-a-business.html">6 Things to Know When Buying a Business</a>
+        </h3>
+
+        <h6 class="pub-info-preview">
+          written by Jason Garvin
+          <span>
+            <time datetime="2024-01-31">01/31/2024</time>
+          </span>
+        </h6>
+      </section>
+
+      <section class="subsection">
+        <p id="post-2">
+          <span class="text-preview">Preview:</span>
+          Between city, county, state, and federal laws, there’s a whole lot to unpack, and major parts of the process
+          <span class="dots">...</span>
+
+          <span class="read-more" hidden>
+            can feel vague. The government, on average, has an archaic labyrinth
+            of documentation and is in desperate need of a UX Designer. Which is
+            to say, the information is there, but you might eat up a ton of time
+            just trying to find it.
+          </span>
+
+          <button id="btn-2" class="read-more-btn underline-animate" onclick="toggleLongPreview('post-2', 'btn-2')">
+            Read more
+          </button>
+        </p>
+      </section>
+    </section>
+
+    <section class="left-align blog-preview box-emphasis">
       <section class="subsection">
         <h3 class="title-preview">
           <a href="2023-in-review.html">2023 in Review: Finding Purpose in the Chaos</a>
@@ -148,7 +177,7 @@
         <h6 class="pub-info-preview">
           written by Jason Garvin
           <span>
-            <time datetime="2023-09-08">11/07/2023</time>
+            <time datetime="2023-11-07">11/07/2023</time>
           </span>
         </h6>
       </section>
@@ -231,10 +260,13 @@
   <!-- Main Footer -->
   <footer id="primary-footer" class="site-footer">
     <section class="footer-container">
-      <section>
+      <section class="container-subsection">
         <h3>Jason Garvin</h3>
-        <p>Hey, you made it to the bottom!</p>
-        <p>Thanks for reading</p>
+
+        <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
+          <i id="theme-icon" class="fa fa-moon-o"></i>
+          <span id="theme-text" hidden>Toggle Theme</span>
+        </button>
       </section>
 
       <section class="footer-links">
