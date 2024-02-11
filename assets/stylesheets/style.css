@@ -217,9 +217,9 @@ code {
 
   /* --- Font Awesome --- */
 
-.fa-solid
-.fa {
-  margin: 0 0.25rem;
+.fa-solid,
+.fa-brands {
+  margin-right: 0.5rem;
 }
 
   /* --- Page Background Effects */
@@ -739,6 +739,17 @@ a.menu-item:hover {
 
 /* --- || Pages: Home ------------------------------------------------------- */
 
+.home-gap {
+  margin-top: 10rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: transparent;
+}
+
 .brand-container {
   display: flex;
   justify-content: start;
@@ -1144,22 +1155,38 @@ a.menu-item:hover {
 
 /* --- || Buttons ----------------------------------------------------------- */
 
-.default-button {
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.default-button,
+.secondary-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
-  padding: 1rem 0.75rem;
-
-  border: none;
+  padding: 1rem 1.5rem;
   border-radius: 10px;
-  background-color: var(--brand-primary, #3066be);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-
-  color: #fff;
 
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.default-button {
+  border: none;
+  background-color: var(--brand-primary, #3066be);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.secondary-button {
+  border: 1px solid var(--core-monotone);
+  background-color: transparent;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  color: var(--core-monotone);
 }
 
 .default-button:hover {
@@ -1550,9 +1577,14 @@ a.menu-item:hover {
     margin-top: 30vh;
   }
 
-  .preview-grid {
+  .home-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+  }
+
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
   .bonus-content {
