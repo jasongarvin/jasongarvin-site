@@ -83,7 +83,7 @@ body {
                Arial,
                sans-serif;
 
-  font-size: calc(1rem + 0.2vw);
+  font-size: calc(1rem + 0.1vw);
   line-height: 1.618;
 }
 
@@ -119,31 +119,31 @@ h6 {
 }
 
 h1 {
-  font-size: 2.986rem;
+  font-size: 2.9rem;
   font-weight: 900;
   line-height: 1.35;
 }
 
 h2 {
-  font-size: 2.488rem;
+  font-size: 2.4rem;
   font-weight: 800;
   line-height: 1.45;
 }
 
 h3 {
-  font-size: 2.074rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.6;
 }
 
 h4 {
-  font-size: 1.728rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
 h5 {
-  font-size: 1.44rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -545,7 +545,7 @@ a.menu-item:hover {
 }
 
 .hero-subtitle {
-  margin-top: 1rem;
+  margin: 1rem 0;
   color: var(--mono-emphasis, #3c3744);
   font-size: calc(1.3em + 0.59vw);
 }
@@ -755,10 +755,11 @@ a.menu-item:hover {
   justify-content: start;
   align-items: center;
   margin: 1rem auto;
+  background-color: transparent;
 }
 
 .brand-name {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 #teg-logo,
@@ -1097,6 +1098,10 @@ a.menu-item:hover {
   text-align: left;
 }
 
+.right-align {
+  text-align: right;
+}
+
 .bottom-space {
   margin: 2rem 0 1rem;
 }
@@ -1158,7 +1163,7 @@ a.menu-item:hover {
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.1rem;
   margin-top: 4rem;
 }
 
@@ -1183,10 +1188,11 @@ a.menu-item:hover {
 }
 
 .secondary-button {
-  border: 1px solid var(--core-monotone);
+  border: 1px solid var(--mono-emphasis);
   background-color: transparent;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-  color: var(--core-monotone);
+  color: var(--mono-emphasis);
+  font-weight: 500;
 }
 
 .default-button:hover {
@@ -1491,6 +1497,9 @@ a.menu-item:hover {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
   main {
     padding: 1rem 3rem;
   }
@@ -1577,14 +1586,25 @@ a.menu-item:hover {
     margin-top: 30vh;
   }
 
+  .hero-subtitle {
+    margin: 1rem 0 1rem 5.5rem;
+  }
+
+  .button-container {
+    gap: 2.2rem;
+  }
+
   .home-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
 
+  .brand-name {
+    margin-left: 2.5rem;
+  }
+
   .preview-grid {
     grid-template-columns: repeat(2, 1fr);
-
   }
 
   .bonus-content {
