@@ -93,28 +93,156 @@
 
   <main id="main-content">
 
-    <section class="hero-content top-of-page centered transparent-bg">
+    <section class="hero-content top-of-page transparent-bg">
       <h1 class="hero-header">Hi, I'm Jason</h1>
 
       <div>
-        <h2 class="hero-subtitle"><strong>I design experiences that drive growth</strong></h3>
-        <p>
-          To bridge the gap between UX and operations, I leverage a variety of
-          skills from running small business and working in startups.
-          Keep scrolling to see how I'm putting my skills to work
-        </p>
+        <h2 class="hero-subtitle">
+          <strong>I design experiences that drive growth</strong>
+          <br />and write about what I learn
+        </h2>
       </div>
 
-      <button onclick="toNextSection(0)" class="button-link js-scroll-to">
-        <div>
-          <i class="fa fa-angles-down"></i>
-          What I'm doing with Total Escape Games
-        </div>
-      </button>
+      <div class="button-container">
+        <a class="secondary-button">
+          See my Projects
+        </a>
+        <a class="default-button">
+          Read my Blog
+        </a>
+      </div>
     </section>
 
     <!-- Below the cut -->
-    <section class="home-block transparent-bg js-next-section">
+    <section class="home-gap transparent-bg">
+      <h2>My Focus</h2>
+      <p>
+        To bridge the gap between UX and operations, I leverage a variety of
+        skills from running small business and working in startups.
+        Keep scrolling to see how I'm putting my skills to work
+      </p>
+    </section>
+
+    <aside>
+      <div class="home-grid vertical-space">
+        <section>
+          <h3 class="subtitle">
+            <i class="fa-brands fa-figma"></i>
+            Product Design
+          </h3>
+          <p>
+            I use my knowledge of UX, research, and UI to plan and implement
+            user-friendly designs
+          </p>
+        </section>
+        <section>
+          <h3 class="subtitle">
+            <i class="fa-solid fa-code"></i>
+            Web Dev
+          </h3>
+          <p>
+            I create websites and web experiences using classic front-end
+            frameworks and toolsets
+          </p>
+        </section>
+        <section>
+          <h3 class="subtitle">
+            <i class="fa-solid fa-sitemap"></i>
+            Operations
+          </h3>
+          <p>
+            I build efficient and people-friendly procedures so businesses and
+            employees can operate smoothly
+          </p>
+        </section>
+        <section>
+          <h3 class="subtitle">
+            <i class="fa-solid fa-chart-line"></i>
+            Business Growth
+          </h3>
+          <p>
+            I'm a business owner working to grow my own businesses, and help
+            others in my industry to find their paths to success
+          </p>
+        </section>
+      </div>
+    </aside>
+
+    <section class="home-gap transparent-bg">
+      <h3>I'm still exploring my future in blogging</h3>
+      <p>
+        Blogging is (relatively) new to me, meaning I'm still experimenting
+        with different topics <b>and</b> different formats
+      </p>
+      <p>
+        Here are some of my favorite posts so far
+      </p>
+    </section>
+
+    <aside class="preview-grid vertical-space">
+      <section class="blog-preview">
+        <h3 class="title-preview centered">
+          <a href="buying-a-business.html">6 Things to Know When Buying a Business</a>
+        </h3>
+
+        <h6 class="pub-info-preview">
+          written by Jason Garvin
+          <span>
+            <time datetime="2024-01-31">01/31/2024</time>
+          </span>
+        </h6>
+      </section>
+
+      <section class="blog-preview">
+        <h3 class="title-preview centered">
+          <a href="2023-in-review.html">2023 in Review: Finding Purpose in the Chaos</a>
+        </h3>
+
+        <h6 class="pub-info-preview">
+          written by Jason Garvin
+          <span>
+            <time datetime="2023-12-31">12/31/2023</time>
+          </span>
+        </h6>
+      </section>
+
+      <section class="blog-preview">
+        <h3 class="title-preview centered">
+          <a href="publishing-my-first-python-library.html">Publishing My First Python Library</a>
+        </h3>
+
+        <h6 class="pub-info-preview">
+          written by Jason Garvin
+          <span>
+            <time datetime="2023-11-07">11/07/2023</time>
+          </span>
+        </h6>
+      </section>
+
+      <section class="blog-preview">
+        <h3 class="title-preview centered">
+          <a href="harnessing-the-power-of-habits.html">Harnessing the Power of Habits</a>
+        </h3>
+
+        <h6 class="pub-info-preview">
+          written by Jason Garvin
+          <span>
+            <time datetime="2023-09-08">09/08/2023</time>
+          </span>
+        </h6>
+      </section>
+    </aside>
+
+    <aside class="home-block home-gap">
+      <p class="subtitle">
+        Or, learn more about what keeps me busy each day
+      </p>
+      <p class="right-align">
+        And what I've learned from it
+      </p>
+    </aside>
+
+    <section class="home-block home-gap transparent-bg">
       <section class="brand-container box-emphasis">
         <img id="teg-logo" src="assets/img/teg-logo.webp" alt="The Total Escape Games logo" width="100" height="100" />
         <h2 class="brand-name">Total Escape Games</h2>
@@ -158,15 +286,9 @@
         </ul>
       </aside>
 
-      <button onclick="toNextSection(1)" class="button-link js-scroll-to">
-        <div>
-          <i class="fa fa-angles-down"></i>
-          What I'm doing with Fill and Fire
-        </div>
-      </button>
     </section>
 
-    <section class="home-block transparent-bg js-next-section">
+    <section class="home-block home-gap transparent-bg">
       <section class="brand-container box-emphasis">
         <img id="fnf-logo" src="assets/img/fnf-logo.webp" alt="The Fill and Fire logo" width="75" height="100" />
         <h2 class="brand-name">Fill and Fire</h2>
@@ -200,13 +322,6 @@
           </li>
         </ul>
       </aside>
-
-      <button onclick="toNextSection(2)" class="button-link js-scroll-to">
-        <div>
-          <i class="fa fa-angles-down"></i>
-          Get in touch with me
-        </div>
-      </button>
     </section>
 
     <!-- Subscribe Section -->

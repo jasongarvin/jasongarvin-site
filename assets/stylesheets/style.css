@@ -83,7 +83,7 @@ body {
                Arial,
                sans-serif;
 
-  font-size: calc(1rem + 0.2vw);
+  font-size: calc(1rem + 0.1vw);
   line-height: 1.618;
 }
 
@@ -119,31 +119,31 @@ h6 {
 }
 
 h1 {
-  font-size: 2.986rem;
+  font-size: 2.9rem;
   font-weight: 900;
   line-height: 1.35;
 }
 
 h2 {
-  font-size: 2.488rem;
+  font-size: 2.4rem;
   font-weight: 800;
   line-height: 1.45;
 }
 
 h3 {
-  font-size: 2.074rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.6;
 }
 
 h4 {
-  font-size: 1.728rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
 h5 {
-  font-size: 1.44rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -217,9 +217,9 @@ code {
 
   /* --- Font Awesome --- */
 
-.fa-solid
-.fa {
-  margin: 0 0.25rem;
+.fa-solid,
+.fa-brands {
+  margin-right: 0.5rem;
 }
 
   /* --- Page Background Effects */
@@ -542,12 +542,14 @@ a.menu-item:hover {
   position: relative;
   margin: 0 auto 0.5rem;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .hero-subtitle {
-  margin-top: 1rem;
+  margin: 1rem 0;
   color: var(--mono-emphasis, #3c3744);
   font-size: calc(1.3em + 0.59vw);
+  text-align: center;
 }
 
   /* --- CTA Box --- */
@@ -739,6 +741,17 @@ a.menu-item:hover {
 
 /* --- || Pages: Home ------------------------------------------------------- */
 
+.home-gap {
+  margin-top: 10rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: transparent;
+}
+
 .brand-container {
   display: flex;
   justify-content: start;
@@ -747,7 +760,7 @@ a.menu-item:hover {
 }
 
 .brand-name {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 #teg-logo,
@@ -762,11 +775,30 @@ a.menu-item:hover {
 
 /* --- Blog Preview --- */
 
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: transparent;
+}
+
 .blog-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   border-radius: 10px;
   background-color: var(--background, #fff);
+  box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
+
+  transition: 0.2s all ease-in-out;
+}
+
+.blog-preview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 15px var(--element-shadow, rgba(0, 0, 0, 0.5));
+  transition: 0.2s all ease-in-out;
 }
 
 .title-preview {
@@ -779,7 +811,7 @@ a.menu-item:hover {
 
 .pub-info-preview {
   display: flex;
-  margin-top: 0.15rem;
+  margin-top: 3rem;
   font-size: 0.85rem;
     font-family: "Quicksand",
                  "Open Sans",
@@ -1067,6 +1099,10 @@ a.menu-item:hover {
   text-align: left;
 }
 
+.right-align {
+  text-align: right;
+}
+
 .bottom-space {
   margin: 2rem 0 1rem;
 }
@@ -1125,21 +1161,39 @@ a.menu-item:hover {
 
 /* --- || Buttons ----------------------------------------------------------- */
 
-.default-button {
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-top: 4rem;
+}
+
+.default-button,
+.secondary-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0.75rem;
-
-  border: none;
+  width: fit-content;
+  padding: 1rem 1.5rem;
   border-radius: 10px;
-  background-color: var(--brand-primary, #3066be);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-
-  color: #fff;
 
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.default-button {
+  border: none;
+  background-color: var(--brand-primary, #3066be);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.secondary-button {
+  border: 1px solid var(--mono-emphasis);
+  background-color: transparent;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  color: var(--mono-emphasis);
+  font-weight: 500;
 }
 
 .default-button:hover {
@@ -1444,6 +1498,9 @@ a.menu-item:hover {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
   main {
     padding: 1rem 3rem;
   }
@@ -1530,9 +1587,31 @@ a.menu-item:hover {
     margin-top: 30vh;
   }
 
-  .blog-preview {
-    padding-left: 0;
-    padding-right: 0;
+  .hero-header {
+    margin: 1rem 0 1rem 5.5rem;
+    text-align: left;
+  }
+
+  .hero-subtitle {
+    margin: 1rem 0 1rem 5.5rem;
+    text-align: left;
+  }
+
+  .button-container {
+    gap: 2.2rem;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .brand-name {
+    margin-left: 2.5rem;
+  }
+
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .bonus-content {
