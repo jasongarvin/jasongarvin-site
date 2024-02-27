@@ -2,7 +2,7 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-  <title>Blog | Jason Garvin</title>
+  <title>SEO vs. Writing for Humans | Jason Garvin</title>
   <link rel="manifest" href="../manifest.webmanifest" />
   <link rel="icon" href="../favicon.ico" sizes="32x32" />
   <link rel="icon" href="../icon.svg" type="image/svg+xml" />
@@ -10,28 +10,29 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width", initial-scale="1" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
   <meta name="author" content="Jason Garvin" />
-  <meta name="description" content="Visit my blog, covering topics such as productivity, business, web development, and design. Expect a focus on UX and experience-driven design." />
+  <meta name="description" content="Writing on the web is complicated, and involves managing SEO, marketing, and your actual content. Join me in breaking down the differences in writing for your audience versus writing to be discovered." />
 
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
 
   <!-- Open Graph Protocol - Social Sharing -->
-  <meta property="og:title" content="Explore the Human Experience in Tech and Life | Jason Garvin" />
-  <meta property="og:description" content="You're invited to explore Jason's blog about design, business, and experience." />
-  <meta property="og:url" content="https://jasongarvin.com/blog/" />
+  <meta property="og:title" content="SEO vs. Writing for Humans | Jason Garvin" />
+  <meta property="og:description" content="Writing on the web is complicated, and involves managing SEO, marketing, and your actual content. Join me in breaking down the differences in writing for your audience versus writing to be discovered." />
+  <meta property="og:url" content="https://jasongarvin.com/blog/seo-vs-humans" />
   <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:title" content="Explore the Human Experience in Tech and Life | Jason Garvin" />
-  <meta name="twitter:description" content="You're invited to explore Jason's blog about design, business, and experience." />
-  <meta name="twitter:url" content="https://jasongarvin.com/blog/" />
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="Productivity" />
+  <meta name="twitter:title" content="SEO vs. Writing for Humans | Jason Garvin" />
+  <meta name="twitter:description" content="Writing on the web is complicated, and involves managing SEO, marketing, and your actual content. Join me in breaking down the differences in writing for your audience versus writing to be discovered." />
+  <meta name="twitter:url" content="https://jasongarvin.com/blog/seo-vs-humans" />
   <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
   <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
   <meta name="twitter:creator" content="@jasonagarvin" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://jasongarvin.com/blog/" />
+  <link rel="canonical" href="https://jasongarvin.com/blog/seo-vs-humans" />
 
   <!-- Main Styles -->
   <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
@@ -71,7 +72,7 @@
     <nav id="main-nav" aria-label="Site Navigation">
       <ul class="main-menu">
         <li>
-          <a class="menu-item active-page" href="index.html" aria-current="page">
+          <a class="menu-item active-page" href="index.html">
             <span>Blog</span>
           </a>
         </li>
@@ -91,80 +92,127 @@
 
   <main id="main-content">
 
-    <section class="top-of-page hero-content centered transparent-bg">
-      <h1 class="cta-header">My Blog</h1>
-      <p class="subtitle">Discussing tech, life, and
-        <span class="emphasis">experience</span>
-      </p>
-    </section>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul class="list-hor">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="index.html">Blog</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <span>Current Post</span>
+        </li>
+      </ul>
+    </nav>
 
-    <!-- Post Previews -->
-    <section class="preview-grid vertical-space">
-      <section class="blog-preview">
-        <h3 class="title-preview centered">
-          <a href="seo-versus-humans.html">SEO vs. Writing for Humans</a>
-        </h3>
-
-        <h6 class="pub-info-preview">
-          written by Jason Garvin
-          <span>
-            <time datetime="2024-02-29">02/29/2024</time>
-          </span>
-        </h6>
+    <article id="blog-post" class="vertical-space" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.jasongarvin.com/blog/2023-in-review">
+      <section class="vertical-space blog-title centered transparent-bg">
+        <h1 class="cta-header" itemprop="name">
+          SEO vs.
+          <span class="emphasis">Writing</span>
+          for Humans
+        </h1>
+        <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+          <span><time itemprop="datePublished" datetime="2024-02-29">02/29/2024</time></span>
+          <span id="post-read-time">7 min read</span>
+        </div>
       </section>
 
-      <section class="blog-preview">
-        <h3 class="title-preview centered">
-          <a href="buying-a-business.html">6 Things to Know When Buying a Business</a>
-        </h3>
+      <nav class="table-of-contents" aria-labelledby="table-of-contents-title">
+        <h2 id="table-of-contents-title" class="toc-title">Table of Contents</h2>
 
-        <h6 class="pub-info-preview">
-          written by Jason Garvin
-          <span>
-            <time datetime="2024-01-31">01/31/2024</time>
-          </span>
-        </h6>
+        <input id="toc-collapse" type="checkbox" aria-label="Expand the table of contents" />
+        <label class="collapsible-button" for="toc-collapse">
+          <i class="fa fa-chevron-down"></i>
+        </label>
+
+        <ol id="toc-content" class="toc-quick-links">
+          <li>
+            <a href="#subsection-1">Search Engine Optimization (SEO) and You</a>
+          </li>
+          <li>
+            <a href="#subsection-2">Writing for Humans</a>
+          </li>
+          <li>
+            <a href="#subsection-3">Help! I Still Want a Personality</a>
+          </li>
+          <li>
+            <a href="#subsection-4">Closing Arguments</a>
+          </li>
+        </ol>
+      </nav>
+
+      <section itemprop="abstract">
+        <p>
+          Stuff.
+        </p>
       </section>
 
-      <section class="blog-preview">
-        <h3 class="title-preview centered">
-          <a href="2023-in-review.html">2023 in Review: Finding Purpose in the Chaos</a>
-        </h3>
+      <section id="subsection-1" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          Search Engine
+          <span class="emphasis">Optimization</span>
+          (SEO) and You
+        </h2>
 
-        <h6 class="pub-info-preview">
-          written by Jason Garvin
-          <span>
-            <time datetime="2023-12-31">12/31/2023</time>
-          </span>
-        </h6>
+        <p>
+          Stuff.
+        </p>
       </section>
 
-      <section class="blog-preview">
-        <h3 class="title-preview centered">
-          <a href="publishing-my-first-python-library.html">Publishing My First Python Library</a>
-        </h3>
+      <section id="subsection-2" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          Writing For
+          <span class="emphasis">Humans</span>
+        </h2>
 
-        <h6 class="pub-info-preview">
-          written by Jason Garvin
-          <span>
-            <time datetime="2023-11-07">11/07/2023</time>
-          </span>
-        </h6>
+        <p>
+          Stuff.
+        </p>
       </section>
 
-      <section class="blog-preview">
-        <h3 class="title-preview centered">
-          <a href="harnessing-the-power-of-habits.html">Harnessing the Power of Habits</a>
-        </h3>
+      <section id="subsection-3" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          <span class="emphasis">Help!</span>
+          I Still Want a Personality
+        </h2>
 
-        <h6 class="pub-info-preview">
-          written by Jason Garvin
-          <span>
-            <time datetime="2023-09-08">09/08/2023</time>
-          </span>
-        </h6>
+        <p>
+          Stuff.
+        </p>
       </section>
-    </section>
+
+      <section id="subsection-4" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          Closing
+          <span class="emphasis">Arguments</span>
+        </h2>
+
+        <p>
+          Stuff.
+        </p>
+      </section>
+
+      <!-- AddToAny BEGIN -->
+      <section class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://jasongarvin.com/blog" data-a2a-title="Blog | Jason Garvin">
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_linkedin"></a>
+        <a class="a2a_button_x"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_copy_link"></a>
+      </section>
+      <!-- AddToAny END -->
+
+    </article>
 
     <!-- Subscribe Section -->
     <section class="next-section cta-click-box subscribe-container">
@@ -264,8 +312,10 @@
   <!-- Scripts and Handling -->
   <script src="../assets/scripts/header-controller.js"></script>
   <script src="../assets/scripts/to-top.js"></script>
-  <script src="../assets/scripts/show-text-preview.js"></script>
   <script src="../assets/scripts/toggle-theme.js"></script>
+  <script src="../assets/scripts/calculate-read-time.js"></script>
+  <script src="../assets/scripts/bookmark-headers.js"></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>
