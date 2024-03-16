@@ -921,6 +921,7 @@ a.menu-item:hover {
 }
 
 .title-preview {
+  font-size: 1.6rem;
   margin-bottom: 0.15rem;
 }
 
@@ -1879,7 +1880,7 @@ a.menu-item:hover {
 
   .hero-subtitle {
     margin: 0.5rem auto;
-    text-align: left;
+    text-align: center;
   }
 
   .button-container {
