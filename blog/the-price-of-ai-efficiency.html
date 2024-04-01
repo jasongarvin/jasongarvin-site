@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+
+<head>
+  <title>The Price of AI Efficiency | Jason Garvin</title>
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
+  <meta name="author" content="Jason Garvin" />
+  <meta name="description" content="In this opinion piece, we'll explore whether AI is good for society, its pros and cons for business and for people, and how we can address it in the future." />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
+
+  <!-- Open Graph Protocol - Social Sharing -->
+  <meta property="og:title" content="The Price of AI Efficiency | Jason Garvin" />
+  <meta property="og:description" content="In this opinion piece, we'll explore whether AI is good for society, its pros and cons for business and for people, and how we can address it in the future." />
+  <meta property="og:url" content="https://jasongarvin.com/blog/the-price-of-ai-efficiency" />
+  <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:title" content="The Price of AI Efficiency | Jason Garvin" />
+  <meta name="twitter:description" content="In this opinion piece, we'll explore whether AI is good for society, its pros and cons for business and for people, and how we can address it in the future." />
+  <meta name="twitter:url" content="https://jasongarvin.com/blog/the-price-of-ai-efficiency" />
+  <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+  <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
+  <meta name="twitter:creator" content="@jasonagarvin" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://jasongarvin.com/blog/the-price-of-ai-efficiency" />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" media="screen" href="../assets/stylesheets/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="top" class="background-glow-2">
+
+  <!-- Main Header -->
+  <header id="main-header" class="site-header">
+    <a class="skip-to-link" href="#main-content">Skip to main content</a>
+
+    <!-- Logo -->
+    <div class="logo-container">
+      <a class="site-title" href="../index.html">
+        <svg id="Layer_2" class="site-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" alt="Site logo - links to home">
+          <path class="cls-1" d="m490.27,449.65v6c0,6.07-4.93,11-11,11-3.04,0-5.79,1.23-7.78,3.22s-3.22,4.74-3.22,7.78v47c0,6.07-4.93,11-11,11H142.27c-6.08,0-11-4.93-11-11v-188c0-6.08,4.92-11,11-11h315c6.07,0,11,4.92,11,11v50c0,6.07-4.93,11-11,11h-244c-4.46,0-8.29,2.64-10.02,6.45-.63,1.38-.98,2.93-.98,4.55v47c0,6.07,4.92,11,11,11h175c6.07,0,11-4.93,11-11v-6c0-6.08,4.92-11,11-11h69c6.07,0,11,4.92,11,11Z"/>
+          <path class="cls-1" d="m491.27,75.61v49.79c0,6.22-5.04,11.26-11.26,11.26-3.11,0-5.92,1.26-7.95,3.3-2.04,2.03-3.3,4.84-3.3,7.95v115.19c0,6.21-5.04,11.25-11.26,11.25H142.52c-6.22,0-11.25-5.04-11.25-11.25v-74.32c0-6.21,5.03-11.25,11.25-11.25h46.92c6.21,0,11.25,5.04,11.25,11.25v5.47c0,1.24.2,2.43.57,3.54,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65.08-.52.12-1.06.12-1.6v-46.34c0-6.21-5.04-11.25-11.25-11.25h-243.04c-6.22,0-11.25-5.04-11.25-11.26v-49.79c0-6.22,5.03-11.26,11.25-11.26h337.49c6.22,0,11.26,5.04,11.26,11.26Z"/>
+          <path class="cls-2" d="m439.81,325.65c-5.03,27.61-18.04,52.44-36.56,72h-189.98c-4.46,0-8.29,2.64-10.02,6.45-21.97-20.42-37.46-47.71-43.06-78.45h279.62Z"/>
+          <path class="cls-2" d="m439.81,274.35H160.19c5.43-29.8,20.16-56.36,41.07-76.56,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65,22,20.42,37.51,47.73,43.12,78.5Z"/>
+        </svg>
+        <span>Jason Garvin</span>
+      </a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+    <!-- Menu -->
+    <nav id="main-nav" aria-label="Site Navigation">
+      <ul class="main-menu">
+        <li>
+          <a class="menu-item active-page" href="index.html">
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item" href="../about.html">
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu-item" href="../contact.html">
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul class="list-hor">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="index.html">Blog</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <span>Current Post</span>
+        </li>
+      </ul>
+    </nav>
+
+    <article id="blog-post" class="top-of-page" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.jasongarvin.com/blog/how-to-start-blogging.html">
+      <section class="vertical-space blog-title centered transparent-bg">
+        <h1 class="cta-header" itemprop="name">
+          The
+          <span class="emphasis">Price</span>
+          of AI Efficiency
+        </h1>
+        <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+          <span><time itemprop="datePublished" datetime="2024-03-31">03/31/2024</time></span>
+          <span id="post-read-time">8 min read</span>
+        </div>
+      </section>
+
+      <nav class="table-of-contents" aria-labelledby="table-of-contents-title">
+        <h2 id="table-of-contents-title" class="toc-title">Table of Contents</h2>
+
+        <input id="toc-collapse" type="checkbox" aria-label="Expand the table of contents" />
+        <label class="collapsible-button" for="toc-collapse">
+          <i class="fa fa-chevron-down"></i>
+        </label>
+
+        <ol id="toc-content" class="toc-quick-links">
+          <li>
+            <a href="#subsection-1">Business Goals and AI</a>
+          </li>
+          <li>
+            <a href="#subsection-2">Human Goals and AI</a>
+          </li>
+          <li>
+            <a href="#subsection-3">Evaluating the Impact of AI</a>
+          </li>
+          <li>
+            <a href="#subsection-4">Is AI Good or Bad?</a>
+          </li>
+        </ol>
+      </nav>
+
+      <section itemprop="abstract">
+        <p>
+          As a forward-looking tech enthusiast and a business owner, AI has been
+          on my mind for a couple of years now. I’ve been through waves of
+          excitement and waves of disappointment, and over time it’s led me to
+          realize that AI is perhaps not the solution to society’s problems.
+        </p>
+        <p>
+          Inundated with new AI products designed to “save time and 10x my
+          productivity” I've become rather numb to a lot of the marketing
+          buzzwords, which has got me thinking deeper about what our AI-powered
+          future really means.
+        </p>
+        <p>
+          In particular, I think about the usefulness of AI. I wonder which
+          tasks should be automated, or should be made so efficient we barely
+          have to notice them at all. How important is efficiency, really?
+        </p>
+        <p>
+          Also, who are we as humans, and what parts of ourselves are uniquely
+          ours instead of something to outsource for productivity gains? What
+          parts of work that I do in a day are a representation of myself, and
+          which are busywork?
+        </p>
+        <p>
+          When measuring business success, we can use a variety of keywords,
+          data, and acronyms. Product-market fit. Gross revenue. Profit. KPIs.
+          Growth. But I’ve noticed it’s much more difficult to nail down what
+          it means to be a successful person.
+        </p>
+        <p>
+          To some, maybe that’s money, or is deeply linked to business success,
+          but I think there’s more to it than that. Being happy is both more,
+          and less, than something you can measure like objective success.
+        </p>
+      </section>
+
+      <section id="subsection-1" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          <span class="emphasis">Business</span>
+          Goals and AI
+        </h2>
+
+        <p>
+          If there were ever a product designed to make business owners excited,
+          it’s AI. It makes operations more efficient. It’s cost-effective as
+          hell. It’s new, it’s shiny, and it promises to scale down your
+          overhead while growing your productivity and innovation. What’s not
+          to like?
+        </p>
+        <p>
+          When I see the marketing for AI tools, it’s always the same. “10x your
+          productivity,” they’ll say. “Automate key segments of [this work] to
+          save yourself and your team time.” It’s hyperbolic statements about
+          how AI will single handedly make your business a success and give you
+          all your free time back so you can go party on the beach.
+        </p>
+        <p>
+          The interesting part is how many tools are coming out claiming to
+          leverage AI versus the number of them that actually work and improve
+          the average employee’s workflow. A lot of it feels like vaporware, but
+          there are some incredible outliers.
+        </p>
+        <p>
+          ChatGPT, and other large language models, are changing people’s lives.
+          Writing an essay, doing research, drafting up a presentation, and
+          other tedious tasks have never been easier or more accessible. Now,
+          they’ve also never been more prone to error–hallucinations are a real
+          issue and this work still has to be double-checked.
+        </p>
+        <p>
+          Still, they solve a real need. It’s the same with Notion’s AI when I’m
+          browsing through the maze of notes I’ve left myself trying to find a
+          small piece of information. Or when I want an AI coach to analyze my
+          thoughts over the past few weeks and help me find common trends.
+        </p>
+        <p>
+          AI has an incredible ability to synthesize data. It’s truly amazing.
+        </p>
+        <p>
+          So when we look at AI’s role in business, and its usefulness, it’s
+          pretty easy to see where it shines. We can process loads more data,
+          which leads to better insights and quicker decision-making when
+          implementing features and pivoting sales objectives.
+        </p>
+        <p>
+          AI is a great tool to empower decision-makers in business. It’s a huge
+          boon, and it has a lot of really interesting applications which I’m
+          about to ignore. Applications that undoubtedly make business more
+          efficient, but that are outside of the scope of this post because
+          they don’t inherently make a person more fulfilled.
+        </p>
+        <p>
+          Honestly, business isn’t why we’re alive. I’m saying that as a
+          business owner. I know. It goes against what we hear in our peer
+          groups, and what we’re sold by presentations and marketing copy, but
+          it’s true.
+        </p>
+      </section>
+
+      <section id="subsection-2" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          <span class="emphasis">Human</span>
+          Goals and AI
+        </h2>
+
+        <p>
+          When it comes to fulfillment for ourselves as people, it gets more complicated.
+        </p>
+        <p>
+          For some of us, a good life may be a comfortable one. In this case, AI
+          makes sense as the next step in human societal evolution. It does work
+          for us, after all, and it abstracts away all that unpleasant stuff to
+          get you back to reclining in the sun.
+        </p>
+        <p>
+          On the other hand, it makes me think of Wall-E, and not in a good,
+          cute, “oh my god look at the little robot,” kind of way. It makes me
+          nervous for our future. I don’t want to be a guy in a chair drifting
+          around. It’s not what makes life worthwhile.
+        </p>
+        <p>
+          If you’ve read anything from me in the past, you already know how
+          important community is to me, and how much time I spend thinking about
+          humans in terms of our connection to one another. I also spend a lot
+          of time exploring how we connect to the world around us.
+        </p>
+        <p>
+          AI threatens this balance, I think. AI makes it easier not to talk to
+          people, and actually makes it less likely to even be able to talk to
+          someone. For example, service interactions are becoming automated. And
+          as the surface area of human-to-human interaction shrinks, we get lonelier.
+        </p>
+        <p>
+          AI has some really interesting applications here, though. AI therapy
+          is fascinating to me, and so is the idea of having an AI companion.
+          It’s scary as a simulacrum for human life and as a replacement for
+          human comforts, but I also understand the appeal and accessibility of
+          such options especially in extreme cases of isolation.
+        </p>
+        <p>
+          Even in interpersonal life, or exercises like journaling, AI’s ability
+          to process data gives us the opportunity to examine ourselves like
+          never before.
+        </p>
+        <p>
+          It’s a mixed bag, and it comes down to individual preferences. I have
+          friends who have doven deep into AI and who are seeing huge gains in
+          their personal lives because of it. I have other friends and
+          colleagues, however, who are dealing with deep depression, have had
+          their art stolen, or are profoundly struggling to adjust to an
+          uncertain future.
+        </p>
+        <p>
+          Neither side is easy. Adopting new technology is tough even at the
+          best of times. But what I come back to every time is the idea of our
+          future, and whether AI truly helps us arrive at the finish line we’re
+          imagining for ourselves.
+        </p>
+      </section>
+
+      <section id="subsection-3" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          Evaluating the
+          <span class="emphasis">Impact</span>
+          of AI
+        </h2>
+
+        <p>
+          It’s hard to say, especially this early, how AI will affect us.
+        </p>
+        <p>
+          We didn’t realize the long-term impact of social media until years
+          after we were all addicted to it and it’d become a major part of life.
+          Even now we’re discovering new and insidious ways that social media
+          undermines our friendships and our happiness, even despite its many
+          benefits.
+        </p>
+        <p>
+          Is that going to be AI in a few years?
+        </p>
+        <p>
+          There’s been a lot of talk recently about the “loneliness epidemic,”
+          and I’ve seen it happening around me, as well. It’s easier than ever
+          to feel isolated, to be unsure how to meet people. AI makes that worse.
+        </p>
+        <p>
+          AI, and machine learning in general, is also guilty for much of the
+          social media addictiveness and nastiness. It makes the wide-scale use
+          of our personal data that much scarier in the hands of large tech companies.
+        </p>
+        <p>
+          But, on the other hand, it gives people incredible opportunities.
+          Being able to practice for an interview with a pretend interviewer is
+          amazing. Getting to brainstorm with ChatGPT is inspiring.
+        </p>
+        <p>
+          AI is, like many of the other elements we face in our modern lives,
+          not a simple problem to approach.
+        </p>
+      </section>
+
+      <section id="subsection-4" itemprop="articleBody">
+        <h2 class="blog-subtitle js-heading">
+          Is
+          <span class="emphasis">AI</span>
+          Good or Bad?
+        </h2>
+
+        <p>
+          I wish I could tell you. I wish it was that simple, that I could wrap
+          up this post with an optimistic take and a smile.
+        </p>
+        <p>
+          In truth, I think AI will be both good and bad. It will be both. It
+          will do things and lead to changes that hurt people. It will also
+          create innovation and improvements that make things we used to
+          consider fantasy into reality.
+        </p>
+        <p>
+          It will be up to us to decide whether that’s worth it. Whether the
+          good outweighs the bad, and to police AI and the companies producing
+          it when we feel their interests stop aligning with our own.
+        </p>
+        <p>
+          Policing AI, and knowing our boundaries as a society and as a people
+          will be huge in shaping how this technology changes the world.
+        </p>
+        <p>
+          And AI will change the world.
+        </p>
+      </section>
+
+      <!-- AddToAny BEGIN -->
+      <section class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://jasongarvin.com/blog" data-a2a-title="Blog | Jason Garvin">
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_linkedin"></a>
+        <a class="a2a_button_x"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_copy_link"></a>
+      </section>
+      <!-- AddToAny END -->
+
+    </article>
+
+    <!-- Subscribe Section -->
+    <section class="next-section cta-click-box subscribe-container">
+      <h4 id="subscribe" class="cta-box-title">Subscribe to my updates</h4>
+
+      <div class="subscribe-content" role="form">
+        <form id="subscription-form" class="form-widget" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
+          <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
+
+          <button id="subscription-submit" class="submit-email" type="submit">
+            <span class="before-submit">Subscribe</span>
+            <span class="after-submit">Thank you for subscribing!</span>
+           </button>
+        </form>
+        <p id="form-status"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Main Footer -->
+  <footer id="primary-footer" class="site-footer">
+    <section class="footer-container">
+      <section class="container-subsection">
+        <h3>Jason Garvin</h3>
+
+        <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
+          <i id="theme-icon" class="fa fa-moon-o"></i>
+          <span id="theme-text" hidden>Toggle Theme</span>
+        </button>
+      </section>
+
+      <section class="footer-links">
+        <nav>
+          <h4>Links</h4>
+          <ul class="link-list no-indent">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html">Blog</a>
+            </li>
+            <li>
+              <a href="../projects/index.html">Projects</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h4>Social</h4>
+          <ul class="link-list no-indent">
+            <li>
+              <a href="https://github.com/jasongarvin" target="_blank" ref="nofollow external">
+                <i class="fa-brands fa-github"></i>
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jasonagarvin/" target="_blank" ref="nofollow external">
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.threads.net/@jasonagarvin" target="_blank" ref="nofollow external">
+                <i class="fa-brands fa-threads"></i>
+                Threads
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+
+    <section>
+      <p>
+        <small itemprop="copyrightNotice">
+          &copy;
+          <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Jason Garvin</span>
+          </span>
+          2024
+        </small>
+      </p>
+    </section>
+  </footer>
+
+  <!-- Quick-scroll to Top Button -->
+  <button id="back-to-top" class="back-to-top" title="Return to top of page" hidden>
+    <i class="fa fa-arrow-up to-top-button"></i>
+    Back to top
+  </button>
+
+  <!-- Scripts and Handling -->
+  <script src="../assets/scripts/header-controller.js"></script>
+  <script src="../assets/scripts/to-top.js"></script>
+  <script src="../assets/scripts/toggle-theme.js"></script>
+  <script src="../assets/scripts/calculate-read-time.js"></script>
+  <script src="../assets/scripts/bookmark-headers.js"></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+  <noscript>
+    <p>Oops! Elements of this website require JavaScript to work properly.</p>
+  </noscript>
+</body>
+
+</html>
