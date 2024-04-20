@@ -64,6 +64,83 @@
 
 
 /* -------------------------------------------------------------------------- */
+/* --- || Font Faces -------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt_serif/ptserif-regular-webfont.woff2") format("woff2"),
+       url("../fonts/pt_serif/ptserif-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt_serif/ptserif-italic-webfont.woff2") format("woff2"),
+       url("../fonts/pt_serif/ptserif-italic-webfont.woff") format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt_serif/ptserif-bold-webfont.woff2") format("woff2"),
+       url("../fonts/pt_serif/ptserif-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt_serif/ptserif-bolditalic-webfont.woff2") format("woff2"),
+       url("../fonts/pt_serif/ptserif-bolditalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-regular-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-italic-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-italic-webfont.woff") format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-bold-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-bolditalic-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-bolditalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-light-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-light-webfont.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand/quicksand-lightitalic-webfont.woff2") format("woff2"),
+       url("../fonts/quicksand/quicksand-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
 /* --- || General ----------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
