@@ -1448,6 +1448,7 @@ a.menu-item:hover {
 
 .default-button {
   border: none;
+  border: 1px solid var(--brand-primary, #3066be);
   background-color: var(--brand-primary, #3066be);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -1457,6 +1458,7 @@ a.menu-item:hover {
 }
 
 .default-button:hover {
+  border: 1px solid var(--brand-lowlight);
   background-color: var(--brand-lowlight);
   color: #e6e9de;
   -webkit-transition: none;
