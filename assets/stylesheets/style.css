@@ -246,6 +246,29 @@ h6 {
   text-transform: uppercase;
 }
 
+blockquote {
+  margin: 0;
+}
+
+blockquote footer {
+  padding: 0.5rem 1rem;
+}
+
+blockquote p {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  background: var(--background-shade);
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
 a {
   color: var(--brand-primary, #3066be);
   text-decoration: none;
