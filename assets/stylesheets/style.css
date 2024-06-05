@@ -184,7 +184,7 @@ footer {
 }
 
 main {
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 footer {
@@ -1335,7 +1335,12 @@ a.menu-item:hover {
 /* --- || Utility Classes --------------------------------------------------- */
 
 .top-of-page {
-  margin-top: 25vh;
+  margin-top: 20vh;
+}
+
+.top-of-page-blog {
+  padding: 0;
+  margin-top: 15vh;
 }
 
 .vertical-space {
@@ -1982,7 +1987,7 @@ a.menu-item:hover {
 
   .top-of-page {
     padding: 0;
-    margin-top: 30vh;
+    margin-top: 25vh;
   }
 
   .hero-header {
