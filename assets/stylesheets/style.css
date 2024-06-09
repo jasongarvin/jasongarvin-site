@@ -2090,6 +2090,10 @@ a.menu-item:hover {
             justify-content: space-between;
   }
 
+  .flex-percent-60 {
+    max-width: 60%;
+  }
+
   .footer-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
