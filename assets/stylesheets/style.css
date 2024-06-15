@@ -405,6 +405,10 @@ code {
   transition: all 0.2s ease-in-out;
 }
 
+#error-404 .logo-container {
+  margin: 1.5rem 1rem;
+}
+
 .site-logo {
   min-width: 3.2rem;
   max-width: 6rem;
@@ -1269,11 +1273,9 @@ a.menu-item:hover {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 100%;
-  max-width: 720px;
   padding: 0;
   margin: 0 auto;
   background-color: var(--background, #fff);
-  border: 1px solid var(--brand-primary, #3066be);
   -webkit-box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
           box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
   border-radius: 10px;
@@ -1284,7 +1286,8 @@ a.menu-item:hover {
 }
 
 .contact-form {
-  margin-top: 1rem;
+  max-width: 860px;
+  margin: 1rem;
 }
 
 
@@ -1397,6 +1400,11 @@ a.menu-item:hover {
   background-color: transparent;
 }
 
+.huge {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
 .emphasis {
   color: var(--brand-primary, #3066be);
   font-weight: 700;
@@ -1488,6 +1496,8 @@ a.menu-item:hover {
   padding: 1rem 1.5rem;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .default-button {
@@ -1497,16 +1507,14 @@ a.menu-item:hover {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #e6e9de;
-  -webkit-transition: none;
-  transition: none;
 }
 
 .default-button:hover {
   border: 1px solid var(--brand-lowlight);
   background-color: var(--brand-lowlight);
   color: #e6e9de;
-  -webkit-transition: none;
-  transition: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .secondary-button {
@@ -1528,6 +1536,8 @@ a.menu-item:hover {
 .secondary-button:hover {
   background-size: 50% 1px;
   color: var(--mono-emphasis);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .button-link {
@@ -1555,7 +1565,6 @@ a.menu-item:hover {
   font-size: 62px;
 
   -webkit-transition: all 0.2s ease-in-out;
-
   transition: all 0.2s ease-in-out;
 }
 
@@ -1567,18 +1576,12 @@ a.menu-item:hover {
   color: var(--brand-lowlight);
 }
 
-.cta-button,
-.cta-button:hover {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
 
 
 /* --- || Forms ------------------------------------------------------------- */
 
 .form-lead {
-  padding: 2rem 0 1rem;
+  padding: 1rem 3rem;
   margin: 0;
   background-color: var(--brand-primary, #3066be);
   color: var(--background, #fff);
@@ -1589,7 +1592,7 @@ a.menu-item:hover {
 .form-list {
   width: 100%;
   max-width: 700px;
-  padding: 0 1rem;
+  padding: 1rem 0 0;
   margin: auto auto;
   list-style-type: none;
 }
@@ -1638,13 +1641,8 @@ a.menu-item:hover {
   display: block;
   width: 100%;
   max-width: 22rem;
-  margin: 0 auto;
-  background-color: var(--brand-primary, #3066be);
+  margin: 1rem auto 0;
   cursor: pointer;
-}
-
-.form-submit:hover {
-  background-color: var(--brand-lowlight);
 }
 
 .form-submit:disabled {
