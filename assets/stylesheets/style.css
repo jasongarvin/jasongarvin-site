@@ -1346,6 +1346,11 @@ a.menu-item:hover {
   margin-top: 15vh;
 }
 
+.extended {
+  position: relative;
+  width: 100%;
+}
+
 .vertical-space {
   margin-top: 10vh;
 }
@@ -1424,6 +1429,10 @@ a.menu-item:hover {
   gap: 2rem;
 }
 
+.card-flex aside {
+  border-radius: 10px;
+}
+
 .active-card {
   padding: 1rem 2rem;
   -webkit-box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
@@ -1432,7 +1441,11 @@ a.menu-item:hover {
 
 .inactive-card {
   padding: 1rem 2rem;
-  background-color: var(--mono-subtle)
+  background-color: var(--mono-subtle);
+}
+
+.side-accent-1 {
+  border-right: 0.75rem solid var(--brand-primary, #3066be);
 }
 
 
@@ -1656,14 +1669,11 @@ a.menu-item:hover {
 
 .picture-container {
   position: relative;
-  height: 150px;
-  width: 150px;
-  margin: 1rem auto;
+  height: 18rem;
+  width: 18rem;
+  margin: 2rem auto;
   overflow: hidden;
-  border-radius: 50%;
-  border: 2px solid var(--core-monotone, #00171f);
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 #my-profile-pic {
@@ -1748,6 +1758,21 @@ a.menu-item:hover {
 
 .list-spaced li {
   margin: 0.75rem 0;
+}
+
+.highlight-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.highlight-list li {
+  margin: 0.35rem 0;
+  padding-left: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--brand-primary, #3066be), to(var(--brand-primary, #3066be))));
+  background-image: linear-gradient(var(--brand-primary, #3066be), var(--brand-primary, #3066be));
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 2% 1.5rem;
 }
 
 
@@ -1983,9 +2008,19 @@ a.menu-item:hover {
     display: inline;
   }
 
+  .extended {
+    left: -10%;
+    width: 120%;
+  }
+
   .box-emphasis {
     -webkit-box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
             box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
+  }
+
+  .side-accent-1 {
+    border-left: 0.75rem solid var(--brand-primary, #3066be);
+    border-right: 0;
   }
 
   .top-of-page {
