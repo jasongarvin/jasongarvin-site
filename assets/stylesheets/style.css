@@ -1665,17 +1665,27 @@ a.menu-item:hover {
 
 /* --- || Images (img) ------------------------------------------------------ */
 
+.picture-hero {
+  margin-bottom: 0;
+}
+
 .picture-container {
   position: relative;
   height: 18rem;
   width: 18rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   overflow: hidden;
+  border: 1px solid var(--background, #fff);
   border-radius: 10px;
 }
 
 #my-profile-pic {
   width: 100%;
+}
+
+.beside-picture-abs {
+  width: 100%;
+  margin: 1rem;
 }
 
 
@@ -2009,6 +2019,7 @@ a.menu-item:hover {
   .extended {
     left: -10%;
     width: 120%;
+    padding: 0 1rem;
   }
 
   .box-emphasis {
@@ -2069,6 +2080,21 @@ a.menu-item:hover {
 
   .bonus-content {
     background-color: var(--background-shade, #fff);
+  }
+
+  .picture-hero {
+    margin-bottom: 10rem;
+  }
+
+  .picture-container {
+    position: absolute;
+    height: 20rem;
+    margin: 2rem;
+  }
+
+  .beside-picture-abs {
+    width: 60%;
+    margin: 1rem 0 1rem auto;
   }
 
   .list-emphasis {
