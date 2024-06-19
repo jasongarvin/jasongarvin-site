@@ -1454,6 +1454,7 @@ a.menu-item:hover {
 
 .side-accent-1 {
   border-right: 0.75rem solid var(--brand-primary, #3066be);
+  border-radius: 0;
 }
 
 
@@ -1666,7 +1667,9 @@ a.menu-item:hover {
 /* --- || Images (img) ------------------------------------------------------ */
 
 .picture-hero {
+  padding: 1rem;
   margin-bottom: 0;
+  background: var(--background, #fff);
 }
 
 .picture-container {
@@ -1685,7 +1688,7 @@ a.menu-item:hover {
 
 .beside-picture-abs {
   width: 100%;
-  margin: 1rem;
+  margin: 0;
 }
 
 
@@ -2030,6 +2033,7 @@ a.menu-item:hover {
   .side-accent-1 {
     border-left: 0.75rem solid var(--brand-primary, #3066be);
     border-right: 0;
+    border-radius: 10px;
   }
 
   .top-of-page {
