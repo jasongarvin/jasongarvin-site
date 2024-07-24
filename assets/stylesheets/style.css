@@ -282,7 +282,8 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-p a {
+p a,
+.body-link {
   color: var(--brand-secondary, #696c9a);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--brand-secondary, #696c9a)), to(var(--brand-secondary, #696c9a)));
   background-image: linear-gradient(var(--brand-secondary, #696c9a), var(--brand-secondary, #696c9a));
@@ -295,18 +296,21 @@ p a {
   transition: all 0.1s linear;
 }
 
-p a:hover {
+p a:hover,
+.body-link:hover {
   background-size: 100% 100%;
   color: var(--background, #fff);
 }
 
-p a:visited {
+p a:visited,
+.body-link:visited {
   color: var(--brand-2nd-inactive);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--brand-2nd-inactive)), to(var(--brand-2nd-inactive)));
   background-image: linear-gradient(var(--brand-2nd-inactive), var(--brand-2nd-inactive));
 }
 
-p a:visited:hover {
+p a:visited:hover,
+.body-link:visited:hover {
   background-size: 100% 100%;
   color: var(--background, #fff);
 }
@@ -1249,7 +1253,7 @@ a.menu-item:hover {
   border-radius: 0;
 }
 
-#blog-post section:first-of-type {
+#blog-post section:nth-of-type(2) {
   margin: 1rem 0 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -1262,8 +1266,8 @@ a.menu-item:hover {
 }
 
 .bonus-content {
-  margin: 2rem 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  padding: 0.5rem 2rem;
   border-radius: 25px;
   background-color: var(--background, #fff);
 }
@@ -1836,6 +1840,25 @@ a.menu-item:hover {
   left: 2rem;
 }
 
+@keyframes spring {
+  0.00% {transform: scale(0.00)}
+  3% {transform: scale(0.05)}
+  6% {transform: scale(0.25)}
+  12% {transform: scale(0.8)}
+  15% {transform: scale(1.05)}
+  20% {transform: scale(1.25)}
+  20% {transform: scale(1.22)}
+  30% {transform: scale(1.15)}
+  35% {transform: scale(1.0)}
+  40% {transform: scale(0.95)}
+  45% {transform: scale(0.93)}
+  60% {transform: scale(1.0)}
+  70% {transform: scale(1.2)}
+  80% {transform: scale(1.0)}
+  90% {transform: scale(0.99)}
+  100% {transform: scale(1.00)}
+}
+
 
 
 /* --- || Loaders & Spinners ------------------------------------------------ */
@@ -1921,6 +1944,11 @@ a.menu-item:hover {
     -webkit-transform: translateX(-2rem);
         -ms-transform: translateX(-2rem);
             transform: translateX(-2rem);
+  }
+
+  .animate-spring {
+    -webkit-animation: spring 0.5s linear;
+            animation: spin 0.5s linear;
   }
 }
 
