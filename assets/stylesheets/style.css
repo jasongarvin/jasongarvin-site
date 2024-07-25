@@ -750,16 +750,6 @@ a.menu-item:hover {
   background-color: var(--brand-primary, #3066be);
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
-
-  -webkit-transition: all 0.2s ease-in-out;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.cta-click-box:hover {
-  background-color: var(--brand-lowlight);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .cta-click-box a {
@@ -848,19 +838,25 @@ a.menu-item:hover {
   cursor: pointer;
   background: var(--brand-highlight);
   color: var(--background, #fff);
-  -webkit-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.submit-email:hover {
+  background: var(--brand-primary);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .form-widget.done .submit-email {
   width: calc(100% - 2px);
-  background: var(--brand-secondary);
+  background: var(--brand-lowlight);
 }
 
 .form-widget .before-submit,
 .form-widget .after-submit {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   width: 100%;
   height: 100%;
