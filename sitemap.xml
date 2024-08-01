@@ -25,7 +25,7 @@
 
     <url>
         <loc>https://jasongarvin.com/blog/</loc>
-        <lastmod>2024-07-24</lastmod>
+        <lastmod>2024-07-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -60,7 +60,7 @@
 
     <url>
         <loc>https://jasongarvin.com/blog/seo-versus-humans</loc>
-        <lastmod>2024-06-04</lastmod>
+        <lastmod>2024-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -74,21 +74,28 @@
 
     <url>
         <loc>https://jasongarvin.com/blog/navigating-time-as-a-business-owner</loc>
-        <lastmod>2024-06-04</lastmod>
+        <lastmod>2024-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/blog/learn-to-grow-by-exploring-your-past</loc>
-        <lastmod>2024-06-19</lastmod>
+        <lastmod>2024-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://jasongarvin.com/blog/context-switching-destroys-your-effectiveness</loc>
-        <lastmod>2024-06-30</lastmod>
+        <lastmod>2024-07-31</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jasongarvin.com/blog/optimize-your-decisions-and-save-time</loc>
+        <lastmod>2024-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
