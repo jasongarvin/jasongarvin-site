@@ -1003,6 +1003,7 @@ a.menu-item:hover {
 }
 
 .blog-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1023,6 +1024,21 @@ a.menu-item:hover {
 
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
+}
+
+.blog-card:focus-within {
+  outline: 2px solid #000;
+}
+
+.blog-card:focus-within :focus {
+  outline: none;
+}
+
+.blog-card .title-preview a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .preview-list .blog-card {
