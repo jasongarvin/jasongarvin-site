@@ -1,4 +1,4 @@
-// Creates a 'Copy to Clipboard' button in code snippets
+'use strict';
 
 let snippets = document.querySelectorAll(".js-code-snippet");
 

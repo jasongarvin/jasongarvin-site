@@ -1,6 +1,6 @@
-// Display loading animation until page renders
-
 // TODO: repurpose this now that I'm not using jotform
+
+'use strict';
 
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {

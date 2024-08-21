@@ -1,4 +1,4 @@
-// Set elements with animate classes to animate when they intersect the viewport
+'use strict';
 
 // Drop-in animation
 const animatedElements = document.querySelectorAll('.animate-drop');
@@ -9,8 +9,10 @@ for (const element of animatedElements) {
 const pageviewObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry);
+
     if (entry.isIntersecting) {
       console.log('intersected')
+
       entry.target.classList.add('drop-into-frame');
       entry.target.style.opacity = '1';
 
@@ -30,8 +32,10 @@ for (const element of slidingElements) {
 const pageviewObserver2 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry);
+
     if (entry.isIntersecting) {
       console.log('intersected')
+
       entry.target.classList.add('slide-into-frame');
       entry.target.style.opacity = '1';
 
@@ -42,6 +46,5 @@ const pageviewObserver2 = new IntersectionObserver(entries => {
   rootMargin: '0px 0px -10% 0px'
 });
 
-// Tell the observer to track all elements with animate classes
 animatedElements.forEach(element => pageviewObserver.observe(element));
 slidingElements.forEach(element => pageviewObserver2.observe(element));

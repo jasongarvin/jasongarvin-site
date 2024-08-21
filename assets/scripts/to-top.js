@@ -1,11 +1,13 @@
-// Controls the visibility and function of the back-to-top button
+'use strict';
 
-// Set a variable for our button element.
 const scrollToTopButton = document.getElementById('back-to-top');
 const rootElement = document.documentElement;
 
-const scrollFunc = () => {
-  // Get the current scroll value
+window.addEventListener("scroll", scrollFunc);
+scrollToTopButton.addEventListener("click", scrollToTop);
+
+
+function scrollFunc() {
   let windowYAxis = window.scrollY;
 
   /* If the scroll value is greater than the window's desired Y axis,
@@ -17,7 +19,7 @@ const scrollFunc = () => {
     scrollToTopButton.hidden = true;
     scrollToTopButton.style.opacity = 0;
   }
-};
+}
 
 function scrollToTop() {
   rootElement.scrollTo({
@@ -25,6 +27,3 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
-
-window.addEventListener("scroll", scrollFunc);
-scrollToTopButton.addEventListener("click", scrollToTop);

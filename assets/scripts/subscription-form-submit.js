@@ -1,6 +1,9 @@
-// Assume control of form submission event handling and user feedback
+'use strict';
 
 const subscribeForm = document.getElementById('subscription-form');
+
+subscribeForm.addEventListener('submit', handleSubmit);
+
 
 function resetForm(formName) {
   // TODO confirm this works properly (and fix syntax for new use case)
@@ -38,7 +41,6 @@ async function handleSubmit(event) {
 
   }).catch(error => {
     formStatus.textContent = 'Oops! Please try again.';
+    console.log(error);
   });
 }
-
-subscribeForm.addEventListener('submit', handleSubmit)

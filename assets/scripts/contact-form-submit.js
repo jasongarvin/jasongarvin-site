@@ -1,6 +1,9 @@
-// Assume control of form submission event handling and user feedback
+'use strict';
 
 const contactForm = document.getElementById('contact-me');
+
+contactForm.addEventListener('submit', handleSubmit)
+
 
 function resetButton(buttonId, newContent) {
   buttonId.textContent = newContent;
@@ -34,7 +37,6 @@ async function handleSubmit(event) {
     }
   }).catch(error => {
     submitButton.textContent = 'Oops! There was a problem submitting your form';
+    console.log(error);
   });
 }
-
-contactForm.addEventListener('submit', handleSubmit)

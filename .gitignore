@@ -1,10 +1,9 @@
 # custom directories to ignore during alpha development
 /card
 card-style.css
-cache-status.js
-update-cache.js
+search-bar.js
+show-text-preview.js
 temp.html
-testing.css
 
 # ignore all files starting with . or ~
 .*
