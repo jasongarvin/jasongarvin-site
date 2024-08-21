@@ -6,9 +6,8 @@ snippets.forEach((snippet) => {
   // Add button only if browser supports Clipboard API
   if (navigator.clipboard) {
     let button = document.createElement("button");
-    button.classList.add("copy-to-clipboard")
-    // Add FontAwesome classes for the clipboard icon
-    button.classList.add("fa-regular", "fa-clipboard")
+    // Add style class and FontAwesome classes to create the clipboard icon
+    button.classList.add("copy-to-clipboard", "fa-regular", "fa-clipboard")
 
     snippet.appendChild(button);
 
@@ -17,6 +16,7 @@ snippets.forEach((snippet) => {
     });
   }
 });
+
 
 async function copyCode(snippet, button) {
   let code = snippet.querySelector("code");

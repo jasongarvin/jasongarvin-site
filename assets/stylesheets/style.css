@@ -1288,10 +1288,12 @@ a.menu-item:hover {
   display: block;
   width: fit-content;
   margin-top: 0.75rem;
-  padding: 0 0.5rem;
+  padding: 0.35rem 0.7rem;
   font-weight: normal;
+  color: var(--brand-primary, #3066be);
   border: 1px solid var(--brand-primary, #3066be);
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .copy-link .fa-solid {
