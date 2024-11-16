@@ -1836,7 +1836,7 @@ a.menu-item:hover {
   background-image: linear-gradient(var(--brand-primary, #3066be), var(--brand-primary, #3066be));
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 2% 1.5rem;
+  background-size: 5px 1.5rem;
 }
 
 
