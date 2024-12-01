@@ -108,6 +108,27 @@
     </url>
 
     <url>
+        <loc>https://jasongarvin.com/blog/i-blogged-for-a-year</loc>
+        <lastmod>2024-11-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jasongarvin.com/blog/hard-truths-about-owning-your-choices</loc>
+        <lastmod>2024-11-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jasongarvin.com/blog/the-value-of-keeping-a-library</loc>
+        <lastmod>2024-11-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
         <loc>https://jasongarvin.com/projects/</loc>
         <lastmod>2024-04-17</lastmod>
         <changefreq>monthly</changefreq>
