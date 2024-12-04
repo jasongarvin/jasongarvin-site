@@ -388,7 +388,7 @@ code {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
-  background-color: var(--background-shade, #fff);
+  background-color: var(--background, #fff);
   -webkit-box-shadow: 0 1px 2px var(--header-shadow, rgba(0, 0, 0, 0.4));
           box-shadow: 0 1px 2px var(--header-shadow, rgba(0, 0, 0, 0.4));
   border-bottom-right-radius: 50px;
@@ -1331,7 +1331,7 @@ a.menu-item:hover {
   background-color: var(--background, #fff);
   -webkit-box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
           box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 #contact-me {
@@ -1638,8 +1638,8 @@ a.menu-item:hover {
   margin: 0;
   background-color: var(--brand-primary, #3066be);
   color: var(--background, #fff);
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .form-list {

@@ -4,6 +4,7 @@ card-style.css
 search-bar.js
 show-text-preview.js
 temp.html
+testing.css
 
 # ignore all files starting with . or ~
 .*
