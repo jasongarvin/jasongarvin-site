@@ -2,7 +2,7 @@
 <html lang="en" manifest="manifest.appcache">
 
 <head>
-  <title>Projects | Jason Garvin</title>
+  <title>Writing When You Have Something to Say | Jason Garvin</title>
   <link rel="manifest" href="../manifest.webmanifest" />
   <link rel="icon" href="../favicon.ico" sizes="32x32" />
   <link rel="icon" href="../icon.svg" type="image/svg+xml" />
@@ -10,28 +10,30 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width", initial-scale="1" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1" />
   <meta name="author" content="Jason Garvin" />
-  <meta name="description" content="Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work." />
+  <meta name="description" content="Writing is a powerful tool. An incredible means of communication. But we should write when we have something to say, not just to fill space." />
 
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
 
   <!-- Open Graph Protocol - Social Sharing -->
-  <meta property="og:title" content="My Projects | Jason Garvin" />
-  <meta property="og:description" content="Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work." />
-  <meta property="og:url" content="https://jasongarvin.com/projects/" />
+  <meta property="og:title" content="Writing When You Have Something to Say | Jason Garvin" />
+  <meta property="og:description" content="Writing is a powerful tool. An incredible means of communication. But we should write when we have something to say, not just to fill space." />
+  <meta property="og:url" content="https://jasongarvin.com/blog/writing-when-you-have-something-to-say" />
   <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:title" content="My Projects | Jason Garvin" />
-  <meta name="twitter:description" content="Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work." />
-  <meta name="twitter:url" content="https://jasongarvin.com/projects/" />
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="Productivity" />
+  <meta property="article:published_time" content="2025-01-31" />
+  <meta name="twitter:title" content="Writing When You Have Something to Say | Jason Garvin" />
+  <meta name="twitter:description" content="Writing is a powerful tool. An incredible means of communication. But we should write when we have something to say, not just to fill space." />
+  <meta name="twitter:url" content="https://jasongarvin.com/blog/writing-when-you-have-something-to-say" />
   <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
   <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
   <meta name="twitter:creator" content="@jasonagarvin" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://jasongarvin.com/projects/" />
+  <link rel="canonical" href="https://jasongarvin.com/blog/writing-when-you-have-something-to-say" />
 
   <!-- Main Styles -->
   <link rel="stylesheet" media="screen" href="../assets/stylesheets/normalize.css" />
@@ -67,7 +69,7 @@
     <nav id="main-nav" aria-label="Site Navigation">
       <ul class="main-menu">
         <li>
-          <a class="menu-item" href="../blog/index.html">
+          <a class="menu-item active-page" href="index.html">
             <span>Blog</span>
           </a>
         </li>
@@ -87,56 +89,116 @@
 
   <main id="main-content">
 
-    <section class="hero-content top-of-page centered transparent-bg">
-      <h1 class="cta-header">My Projects</h1>
-      <p class="subtitle">
-        See what
-        <span class="emphasis">tech</span>
-        I'm cooking up
-      </p>
-    </section>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul class="list-hor">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="index.html">Blog</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <span>Current Post</span>
+        </li>
+      </ul>
+    </nav>
 
-    <section class="vertical-space">
-      <h2>Building Software</h2>
-      <p>
-        It's no secret that I love building new things, whether in software or
-        otherwise. What I'm not as great about sharing, though, tends to be the
-        actual results of those projects.
-      </p>
-      <p>
-        So I made this page! That way I can share what I'm working on, include
-        notes from each project, document my journey, and hopefully give back
-        all I've learned to the community that's helped me grow all this time.
-      </p>
-    </section>
-
-    <div class="vertical-space card-flex">
-      <section class="active-card">
-        <h2>
-          Pokewrap
-        </h2>
-        <p>A Python library to abstract away requesting Pok&eacute;mon info.</p>
-        <p>
-          Pokewrap is a lightweight wrapper library for consuming
-          <a href="https://pokeapi.co/" target="_blank" ref="external">PokeAPI</a>,
-          making it easier to request Pok&eacute;mon game data easier so you can
-          get it into your project quicker.
-        </p>
-
-        <a class="default-button bottom-space" href="pokewrap.html">
-          Explore the Docs
-        </a>
+    <article id="blog-post" class="top-of-page-blog" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://jasongarvin.com/blog/writing-when-you-have-something-to-say">
+      <section class="vertical-space blog-title transparent-bg">
+        <h1 class="blog-header" itemprop="name">
+          Writing When You Have Something to Say
+        </h1>
+        <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <div>
+            <span id="post-read-time">3 min read</span> &mdash;
+            published on
+            <time itemprop="datePublished" datetime="2025-01-31">01/31/2025</time>,
+            last updated
+            <time itemprop="dateUpdated" datetime="2025-01-31">01/31/2025</time>
+          </div>
+          <span itemprop="name">by Jason Garvin</span>
+          <button id="copy-link" class="copy-link">
+            copy link
+            <i class="fa-solid fa-link"></i>
+          </button>
+        </div>
       </section>
 
-      <section class="box-emphasis inactive-card">
-        <h2>
-          Coming Soon
-        </h2>
+      <section itemprop="abstract">
         <p>
-          I have more projects in the works!
+          Last year I blogged every single month. It was a satisfying
+          accomplishment, and I’m proud of myself for getting it done. I’ve
+          proved to myself and everyone else I can keep up with a monthly
+          release schedule!
+        </p>
+        <p>
+          That said, I don’t think it’s the right approach. At least, not for
+          me, and not right now.
+        </p>
+        <p>
+          In my
+          <a href="2024-in-review.html">review of a year of blogging last year</a>,
+          I talked about wanting to write more thoughtful, interesting pieces
+          that dig deep into the topics that excite me. What I’ve realized is
+          because of my current work schedule and diverging interests, it’s no
+          longer reasonable to expect that kind of quality in a monthly cadence.
+        </p>
+        <p>
+          If I’m being really honest with myself, I don’t think writing monthly
+          has ever let me squeeze the kind of quality I know I’m capable of into
+          some of my existing posts.
+        </p>
+        <p>
+          When I have to commit a new post each month, I often end up picking a
+          comfortable topic because it’s something I can write about easily.
+          There’s much less time spent exploring and synthesizing ideas, and
+          much more time spent organizing my thoughts and committing existing
+          knowledge and ideas to the page.
+        </p>
+        <p>
+          Which, although that’s not a bad approach, it also isn’t what I want.
+        </p>
+        <p>
+          Instead, my current approach is often antithetical to quality and
+          interesting writing, in my opinion. So instead of focusing on a
+          regular schedule and quantity, I’m shifting to an irregular schedule
+          and quality.
+        </p>
+        <p>
+          I won’t be publishing every month. Instead, I’ll be publishing when I
+          feel like I have something to say. That way, whenever I share a post,
+          it’s guaranteed to be something I really care about, something I can’t
+          help but to write because I feel so strongly it needs to be said.
+        </p>
+        <p>
+          The work I’ve done so far is good and I’m happy to have done it,
+          but as with all things, my process needs to evolve this year. I need
+          to evolve this year.
+        </p>
+        <p>
+          So, I’m trying something new. Maybe I’ll return to posting
+          monthly&mdash;who knows. For now though, I think it’s important to
+          focus on putting together quality articles and contributing
+          meaningfully to the content on the internet instead of becoming yet
+          another place producing fluff.
+        </p>
+        <p>
+          That’s my commitment to myself and to you.
+        </p>
+        <p>
+          So, I’ll be back with something as soon as I have it ready. That
+          could be in 2 weeks or 2 months. Regardless, I appreciate you being
+          here, and thanks for reading!
         </p>
       </section>
-    </div>
+    </article>
 
     <!-- Subscribe Section -->
     <section class="next-section cta-click-box subscribe-container">
@@ -177,10 +239,10 @@
               <a href="../index.html">Home</a>
             </li>
             <li>
-              <a href="../blog/index.html">Blog</a>
+              <a href="index.html">Blog</a>
             </li>
             <li>
-              <a href="index.html">Projects</a>
+              <a href="../projects/index.html">Projects</a>
             </li>
             <li>
               <a href="../contact.html">Contact</a>
@@ -243,7 +305,10 @@
   <script src="../assets/scripts/header-controller.js"></script>
   <script src="../assets/scripts/to-top.js"></script>
   <script src="../assets/scripts/toggle-theme.js"></script>
+  <script src="../assets/scripts/calculate-read-time.js"></script>
+  <script src="../assets/scripts/bookmark-headers.js"></script>
   <script src="../assets/scripts/subscription-form-submit.js"></script>
+  <script src="../assets/scripts/copy-link.js"></script>
 
   <noscript>
     <p>Oops! Elements of this website require JavaScript to work properly.</p>
