@@ -1,10 +1,10 @@
 # custom directories to ignore during alpha development
 /card
 card-style.css
-search-bar.js
-show-text-preview.js
+assets/scripts/search-bar.js
+assets/scripts/show-text-preview.js
 temp.html
-testing.css
+blog-posts.json
 
 # ignore all files starting with . or ~
 .*

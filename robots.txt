@@ -1,5 +1,4 @@
-User-agent: *
-Disallow: /errors/
-Disallow: /template/
+User-agent: *AI*
+Disallow: /
 
 Sitemap: https://jasongarvin.com/sitemap.xml

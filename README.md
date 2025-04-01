@@ -8,7 +8,7 @@ This is where my personal website is hosted, including information about me and 
 
 ## What's in the repo
 
-Included in this repository is eveerything needed to keep my website running, and all necessary metadata and files. Since the site is deployed using GitHub pages, there's nothing behind the scenes besides what's included here.
+Included in this repository is everything needed to keep my website running, and all necessary metadata and files. Since the site is deployed using Cloudflare Pages, there's nothing behind the scenes besides what's included here.
 
 Mainly, that means:
 
@@ -32,22 +32,15 @@ I'm also using a variety of small scripts to control functionality and flair, mo
 
 Since this is a static site, form submissions are routed through formspree so I don't need to wire up any kind of API or backend.
 
-Finally, the site has my Google Tag embedded in each page for analytics and search engine optimization (SEO).
-
 ## 3rd Party Tools & Libraries
 
 Since this is a static site with no proper back-end, I'm using a variety of tools to make certain functions easier and save development/maintenence time.
 
 - Forms - all my forms use [formspree](https://formspree.io/) as the endpoint
 - Code Highlights - code highlighting and language-specific display comes from [highlight.js](https://highlightjs.org/)
-- Share Buttons - the blog share buttons come from [AddToAny](https://www.addtoany.com/)
 
-All three are free (or I'm only using the free plan) and have been huge time savers so far.
+Both are free (or I'm only using the free plan) and have been huge time savers so far.
 
 ## Upcoming changes
 
 Now that I've achieved 1.0, the major design of the site likely won't change too much (in the near future at least).
-
-Next I'm looking at a potential rehost to Cloudflare Pages from GitHub Pages to enable more customization, pseudobackend functionality, and a whole host of better options. But GitHub Pages is pretty cool and has been working great so far.
-
-I will also include a portfolio section at some point, as well as make some changes to what information is included in the site overall.
