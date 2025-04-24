@@ -150,6 +150,13 @@
     </url>
 
     <url>
+        <loc>https://jasongarvin.com/blog/overcoming-uncertainty-a-response-to-tariffs</loc>
+        <lastmod>2025-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
         <loc>https://jasongarvin.com/projects/</loc>
         <lastmod>2024-04-17</lastmod>
         <changefreq>monthly</changefreq>
