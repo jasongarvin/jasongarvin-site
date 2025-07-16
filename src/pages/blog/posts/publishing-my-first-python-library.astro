@@ -1,5 +1,6 @@
 ---
 import BlogPost from "../../../layouts/BlogPost.astro";
+import { Prism } from "@astrojs/prism";
 
 const title = "Publishing My First Python Library";
 const description = "";
@@ -192,9 +193,12 @@ const tableOfContents = [
         an HTML status code of 200 and a whole pile of JSON data.
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-python">api_response = requests.get(url, timeout=timeout)
-    response.raise_for_status()</code></pre>
+      <Prism
+        class="js-code-snippet"
+        lang="python"
+        code={`api_response = requests.get(url, timeout=timeout)
+response.raise_for_status()`}
+      />
 
       <p>
         Next, I used the json library to assign the returned JSON to a
@@ -227,9 +231,12 @@ const tableOfContents = [
         to try, and if it’s an issue with their code or if the endpoint is down.
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-python">except requests.exceptions.HTTPError as error_h:
-    print(error_h)</code></pre>
+      <Prism
+        class="js-code-snippet"
+        lang="python"
+        code={`except requests.exceptions.HTTPError as error_h:
+    print(error_h)`}
+      />
 
       <p>
         Great, so Pokemon requests were working, endpoints were validated, and
@@ -376,8 +383,10 @@ const tableOfContents = [
         way to publish the library. I desperately longed for the smoothness of:
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-bash">pip install pokewrap</code></pre>
+      <Prism class="js-code-snippet"
+        lang="bash"
+        code={`pip install pokewrap`}
+      />
 
       <p>
         I could taste the efficiency. I wanted to use such simple, elegant
@@ -486,10 +495,12 @@ const tableOfContents = [
         necessary files for distribution.
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-ini">[build-system]
+      <Prism class="js-code-snippet"
+        lang="ini"
+        code={`[build-system]
 requires = ["setuptools>=63.2.0", "wheel"]
-build-backend = "setuptools.build_meta"</code></pre>
+build-backend = "setuptools.build_meta"`}
+      />
 
       <p>
         Part of completing that file is adding basic metadata such as author,
@@ -529,8 +540,10 @@ build-backend = "setuptools.build_meta"</code></pre>
         distribution, and the tarball (.tar) is the source distribution.
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-bash">python3 -m build</code></pre>
+      <Prism class="js-code-snippet"
+        lang="bash"
+        code={`python3 -m build`}
+      />
 
       <p>
         Generally, newer versions of pip will use the build distribution, but
@@ -542,12 +555,14 @@ build-backend = "setuptools.build_meta"</code></pre>
         under my PyPI account.
       </p>
 
-      <pre
-        class="js-code-snippet"><code class="language-bash">twine check dist/*
+      <Prism class="js-code-snippet"
+        lang="bash"
+        code={`twine check dist/*
 # confirms dist is stable
 
 twine upload dist/*
-# pass your login credentials or token ID</code></pre>
+# pass your login credentials or token ID`}
+      />
 
       <p>
         While I eventually wrote a shell script to automate the test deployment,
@@ -667,8 +682,4 @@ twine upload dist/*
   </div>
 </BlogPost>
 
-<script type="module">
-  import hljs from "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js";
-  hljs.highlightAll();
-</script>
 <script src="../../../assets/scripts/copy-code-to-clipboard.js"></script>
