@@ -1,0 +1,132 @@
+---
+import '../styles/Style.astro';
+import '../styles/Normalize.astro';
+
+const navigationLinks = [
+  {name: 'Home', href: '/'},
+  {name: 'Blog', href: '/blog/'},
+  {name: 'Projects', href: '/projects/'},
+  {name: 'Contact', href: '/contact'}
+];
+
+const socialLinks = [
+  {name: 'BlueSky', href: 'https://bsky.app/profile/jasongarvin.bsky.social', icon: 'fa-brands fa-bluesky'},
+  {name: 'GitHub', href: 'https://github.com/jasongarvin', icon: 'fa-brands fa-github-alt'},
+  {name: 'Instagram', href: 'https://instagram.com/jasonagarvin', icon: 'fa-brands fa-instagram'},
+  {name: 'LinkedIn', href: 'https://www.linkedin.com/in/jasonagarvin/', icon: 'fa-brands fa-linkedin-in'},
+]
+---
+
+<footer id="primary-footer" class="site-footer">
+  <section class="footer-container">
+    <section class="container-subsection">
+      <h3>Jason Garvin</h3>
+
+      <button id="toggle-theme" class="default-button theme-button" aria-label="Toggle color theme">
+        <i id="theme-icon" class="fa fa-moon-o"></i>
+        <span id="theme-text" hidden>Toggle Theme</span>
+      </button>
+    </section>
+
+    <section class="footer-links">
+      <nav>
+        <h4>Links</h4>
+        <ul class="link-list no-indent">
+          {navigationLinks.map((link) => (
+            <li>
+              <a class="menu-item" href={link.href}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav>
+        <h4>Social</h4>
+        <ul class="link-list no-indent">
+          {socialLinks.map((link) => (
+            <li>
+              <a class="menu-item" href={link.href} target="_blank" rel="external">
+                <i class={link.icon}></i>
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </section>
+  </section>
+
+  <section>
+    <p>
+      <small itemprop="copyrightNotice">
+        &copy;
+        <span itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Jason Garvin</span>
+        </span>
+        2025
+      </small>
+    </p>
+  </section>
+</footer>
+
+<style>
+  #primary-footer {
+    margin-top: 2rem;
+  }
+
+  .site-footer {
+    background-color: var(--background, #fff);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .link-list {
+    list-style-type: none;
+  }
+
+  .link-list li {
+    margin-top: 1rem;
+  }
+
+  .no-indent {
+    padding-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+
+    .footer-links {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      gap: 5rem;
+    }
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+import '../styles/Normalize.astro';
+import '../styles/Style.astro';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SubscribeBox from '../components/SubscribeBox.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+}
+
+const {
+  canonicalUrl,
+  description,
+  title
+}: Props = Astro.props;
+---
+
+
+<!DOCTYPE html>
+
+<html lang="en" manifest="manifest.appcache">
+
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width", initial-scale="1" />
+    <meta name="author" content="Jason Garvin" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
+
+    <!-- Open Graph Protocol - Social Sharing -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
+    <meta name="twitter:creator" content="@jasonagarvin" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body id="top" class="background-glow">
+    <Header></Header>
+
+    <slot />
+
+    <SubscribeBox></SubscribeBox>
+
+    <Footer></Footer>
+
+    <!-- Quick-scroll to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Return to top of page" hidden>
+      <i class="fa fa-arrow-up to-top-button"></i>
+      Back to top
+    </button>
+
+    <!-- Scripts and Handling -->
+    <script src="../assets/scripts/to-top.js"></script>
+    <script src="../assets/scripts/toggle-theme.js"></script>
+
+    <noscript>
+      <p>Oops! Elements of this website require JavaScript to work properly.</p>
+    </noscript>
+  </body>
+
+</html>

@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Projects | Jason Garvin";
+const description = "Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work.";
+const canonicalUrl = "https://jasongarvin.com/projects";
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <section class="hero-content top-of-page centered transparent-bg">
+      <h1 class="cta-header">My Projects</h1>
+      <p class="subtitle">
+        See what
+        <span class="emphasis">tech</span>
+        I'm cooking up
+      </p>
+    </section>
+
+    <section class="vertical-space">
+      <h2>Building Software</h2>
+      <p>
+        It's no secret that I love building new things, whether in software or
+        otherwise. What I'm not as great about sharing, though, tends to be the
+        actual results of those projects.
+      </p>
+      <p>
+        So I made this page! That way I can share what I'm working on, include
+        notes from each project, document my journey, and hopefully give back
+        all I've learned to the community that's helped me grow all this time.
+      </p>
+    </section>
+
+    <div class="vertical-space card-flex">
+      <section class="active-card">
+        <h2>
+          Pokewrap
+        </h2>
+        <p>A Python library to abstract away requesting Pok&eacute;mon info.</p>
+        <p>
+          Pokewrap is a lightweight wrapper library for consuming
+          <a href="https://pokeapi.co/" target="_blank" rel="external">PokeAPI</a>,
+          making it easier to request Pok&eacute;mon game data easier so you can
+          get it into your project quicker.
+        </p>
+
+        <a class="default-button bottom-space" href="/projects/pokewrap">
+          Explore the Docs
+        </a>
+      </section>
+
+      <section class="box-emphasis inactive-card">
+        <h2>
+          Coming Soon
+        </h2>
+        <p>
+          I have more projects in the works!
+        </p>
+      </section>
+    </div>
+  </main>
+</BaseLayout>

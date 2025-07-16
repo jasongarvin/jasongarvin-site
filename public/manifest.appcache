@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# 06/27/2025:v2.0
+# TODO: update to new astro build
+
+CACHE:
+# pages
+index.html
+
+# styles & scripts
+assets/stylesheets/normalize.css
+assets/stylesheets/style.css
+assets/scripts/header-controller.js
+assets/scripts/subscription-form-submit.js
+
+# resources
+favicon.ico
+icon.svg
+assets/img/jg-logo.svg
+
+# 404.html will be displayed if the user is offline
+FALLBACK:
+/ /404.html
+
+# All other resources require a network connection
+NETWORK:
+*

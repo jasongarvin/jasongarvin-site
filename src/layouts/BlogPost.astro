@@ -1,0 +1,299 @@
+---
+import '../styles/Normalize.astro';
+import '../styles/Style.astro';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SubscribeBox from '../components/SubscribeBox.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  contentCategory: string;
+  publishDate: string;
+  editDate: string;
+  tableOfContents: Array<string>;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  contentCategory,
+  publishDate,
+  editDate,
+  tableOfContents
+}: Props = Astro.props;
+---
+
+
+<!DOCTYPE html>
+
+<html lang="en" manifest="manifest.appcache">
+
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width", initial-scale="1" />
+    <meta name="author" content="Jason Garvin" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
+
+    <!-- Open Graph Protocol - Social Sharing -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://schema.org/BlogPosting" itemid={canonicalUrl} />
+    <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta property="og:type" content="article">
+    <meta property="article:section" content={contentCategory} />
+    <meta property="article:published_time" content={publishDate} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:url" content="https://schema.org/BlogPosting" itemid={canonicalUrl} />
+    <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
+    <meta name="twitter:creator" content="@jasonagarvin" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body id="top" class="background-glow">
+    <Header></Header>
+
+    <main id="main-content">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ul class="list-hor">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <i class="fa fa-chevron-right"></i>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <i class="fa fa-chevron-right"></i>
+          </li>
+          <li>
+            <span>Current Post</span>
+          </li>
+        </ul>
+      </nav>
+
+      <article id="blog-post" class="top-of-page-blog" itemscope itemtype="https://schema.org/BlogPosting" itemid={canonicalUrl}>
+
+        <!-- Front Matter -->
+        <section class="vertical-space blog-title transparent-bg">
+          <h1 class="blog-header" itemprop="name">{title}</h1>
+          <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <div>
+              <span id="post-read-time">7 min read</span> &mdash;
+              published on
+              <time itemprop="datePublished" datetime={publishDate}>{publishDate}</time>,
+              last updated
+              <time itemprop="dateUpdated" datetime={editDate}>{editDate}</time>
+            </div>
+            <span itemprop="name">by Jason Garvin</span>
+            <button id="copy-link" class="copy-link">
+              copy link
+              <i class="fa-solid fa-link"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- Table of Contents -->
+        {
+          (tableOfContents.length > 0 && tableOfContents[0] != "") &&
+
+          <nav class="table-of-contents" aria-labelledby="table-of-contents-title">
+            <h2 id="table-of-contents-title" class="toc-title">Table of Contents</h2>
+
+            <input id="toc-collapse" type="checkbox" aria-label="Expand the table of contents" />
+            <label class="collapsible-button" for="toc-collapse">
+              <i class="fa fa-chevron-down"></i>
+            </label>
+
+            <ol id="toc-content" class="toc-quick-links">
+              {
+                tableOfContents.map((header, index) => (
+                  <li>
+                    <a href={"#subsection-" + String(index)}>{header}</a>
+                  </li>
+                ))
+              }
+            </ol>
+          </nav>
+        }
+
+        <!--- Blog Content -->
+        <slot />
+
+      </article>
+    </main>
+
+    <SubscribeBox></SubscribeBox>
+
+    <Footer></Footer>
+
+    <!-- Quick-scroll to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="Return to top of page" hidden>
+      <i class="fa fa-arrow-up to-top-button"></i>
+      Back to top
+    </button>
+
+    <!-- Scripts and Handling -->
+    <script src="../assets/scripts/to-top.js"></script>
+    <script src="../assets/scripts/toggle-theme.js"></script>
+    <script src="../assets/scripts/calculate-read-time.js"></script>
+    <script src="../assets/scripts/bookmark-headers.js"></script>
+    <script src="../assets/scripts/copy-link.js"></script>
+
+    <noscript>
+      <p>Oops! Elements of this website require JavaScript to work properly.</p>
+    </noscript>
+  </body>
+
+</html>
+
+<style>
+  /* --- Table of Contents --- */
+  .table-of-contents {
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: var(--background, #fff);
+    border-radius: 50px;
+
+    -webkit-transition: font-size 0.2s ease-out;
+
+    transition: font-size 0.2s ease-out;
+  }
+
+  .toc-title {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+  }
+
+  #table-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  #table-header .fa {
+    padding-left: 1rem;
+    color: var(--brand-primary, #3066be);
+  }
+
+  #toc-collapse {
+    display: none;
+  }
+
+  .collapsible-button .fa {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toc-collapse:checked ~ .collapsible-button .fa {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+
+    -webkit-transition: all 0.2s ease-in-out;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toc-collapse:checked ~ #toc-content {
+    max-height: 100%;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+
+  .collapsible-button {
+    color: var(--brand-primary, #3066be);
+    font-size: calc(1.7rem + 0.3vw);
+    line-height: 1.45;
+
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #toc-content {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .toc-quick-links {
+    -webkit-padding-start: 2rem;
+            padding-inline-start: 2rem;
+  }
+
+  .toc-quick-links li {
+    padding-left: 0.5rem;
+  }
+
+  .toc-quick-links a {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--brand-lowlight)), to(var(--brand-lowlight)));
+    background-image: linear-gradient(var(--brand-lowlight), var(--brand-lowlight));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    border: none;
+
+    -webkit-transition: all 0.1s linear;
+
+    transition: all 0.1s linear;
+  }
+
+  .toc-quick-links a:hover {
+    background-size: 100% 1px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .toc-quick-links li::marker {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+  }
+
+  #toc-content li {
+    -webkit-transform: translateY(-10rem);
+        -ms-transform: translateY(-10rem);
+            transform: translateY(-10rem);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #toc-collapse:checked ~ #toc-content li {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+</style>

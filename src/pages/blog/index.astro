@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPreview from '../../components/BlogPreview.astro';
+import blogPosts from "../../data/blog-entries.json";
+
+const title = "Blog | Jason Garvin";
+const description = "Visit my blog, covering topics such as productivity, business, web development, and design. Expect a focus on UX and experience-driven design.";
+const canonicalUrl = "https://jasongarvin.com/blog";
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <section class="top-of-page hero-content centered transparent-bg">
+      <h1 class="cta-header">My Blog</h1>
+      <p class="subtitle">
+        Discussing tech, business, and productivity
+      </p>
+    </section>
+
+    <!-- Post Previews -->
+    <section class="preview-list vertical-space">
+
+      {
+        blogPosts.map(({title, fileName, publishDate}) => (
+          <BlogPreview
+            title={title}
+            fileName={fileName}
+            publishDate={publishDate}></BlogPreview>
+        ))
+      }
+
+      <!-- Placeholder for upcoming content -->
+      <section class="blog-card inactive-card">
+        <h2 class="title-preview">
+          More coming soon
+        </h2>
+      </section>
+    </section>
+  </main>
+</BaseLayout>

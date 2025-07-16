@@ -1,0 +1,189 @@
+---
+import '../styles/Normalize.astro';
+import '../styles/Style.astro';
+---
+
+<aside class="cta-click-box subscribe-container">
+  <h4 id="subscribe" class="cta-box-title">Subscribe to my updates</h4>
+
+  <div class="subscribe-content" role="form">
+    <form id="subscription-form" class="form-widget" action="https://formspree.io/f/xpzgkrgk" method="POST" aria-labelledby="subscribe">
+      <input id="subscribe-email" class="add-email" type="email" name="suscriber_email" placeholder="mail@example.com" required autocomplete="email" />
+
+      <button id="subscription-submit" class="submit-email" type="submit">
+        <span class="before-submit">Subscribe</span>
+        <span class="after-submit">Thank you for subscribing!</span>
+        </button>
+    </form>
+    <p id="form-status"></p>
+  </div>
+</aside>
+
+<script src="../assets/scripts/subscription-form-submit.js"></script>
+
+<style>
+  .cta-click-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 32rem;
+    padding: 1rem 1rem;
+    margin: 10rem auto 4rem;
+    border-radius: 50px;
+    background-color: var(--brand-primary, #3066be);
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .cta-click-box a {
+    color: var(--background, #fff);
+  }
+
+  .subscribe-box {
+    margin: 2rem auto 4rem;
+  }
+
+  .cta-box-title {
+    text-align: center;
+    font-size: calc(1.2em + 0.59vw);
+    margin: 0;
+    color: var(--background, #fff);
+  }
+
+  .cta-box-content {
+    margin-bottom: 0.5rem;
+    color: var(--background, #fff);
+  }
+
+  .cta-click-box,
+  .cta-click-box:hover,
+  .cta-box-title,
+  .cta-box-title:hover {
+    border-bottom: none;
+  }
+
+  .subscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .subscribe-content {
+    width: 90%;
+    height: 3rem;
+    margin: 1rem 1rem 0;
+    -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .form-widget {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-widget .add-email{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 1.25rem;
+
+    background-color: var(--background, #fff);
+    color: var(--monotone);
+  }
+
+  .form-widget .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 7.5rem;
+    margin: 1px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+
+    cursor: pointer;
+    background: var(--brand-highlight);
+    color: var(--background, #fff);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+
+  .submit-email:hover {
+    background: var(--brand-primary);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+
+  .form-widget.done .submit-email {
+    width: calc(100% - 2px);
+    background: var(--brand-lowlight);
+  }
+
+  .form-widget .before-submit,
+  .form-widget .after-submit {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2.65rem;
+    -webkit-transition: visibility .35s ease-in-out,
+                opacity .35s ease-in-out;
+    transition: visibility .35s ease-in-out,
+                opacity .35s ease-in-out;
+  }
+
+  .form-widget.done .before-submit,
+  .form-widget:not(.done) .after-submit {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .form-widget .submit-email .after-submit {
+    -webkit-transition-delay: .35s;
+            transition-delay: .35s;
+  }
+
+  .form-widget:not(.done) .before-submit,
+  .form-widget.done .after-submit {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #subscribe-email {
+    font-size: calc(0.8rem + 0.2vw);
+  }
+
+
+  @media screen and (min-width: 768px) {
+    #subscribe-email {
+      font-size: 1rem;
+    }
+  }
+</style>

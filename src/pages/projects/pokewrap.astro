@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = "Pokewrap - A PokeAPI Python Wrapper | Jason Garvin";
+const description = "Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work.";
+const canonicalUrl = "https://jasongarvin.com/projects/pokewrap";
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <ul class="list-hor">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <a href="/projects/">Projects</a>
+        </li>
+        <li>
+          <i class="fa fa-chevron-right"></i>
+        </li>
+        <li>
+          <span>Pokewrap</span>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero-content vertical-space centered transparent-bg">
+      <h1 class="cta-header">Pokewrap</h1>
+      <p class="subtitle">
+        A
+        <span class="emphasis">wrapper</span>
+        library for PokeAPI in Python
+      </p>
+    </section>
+
+    <section class="vertical-space">
+      <h2>Introducing Pokewrap</h2>
+      <p>
+        Pokewrap is a lightweight wrapper library for
+        <a href="https://pokeapi.co/" target="_blank" rel="external">PokeAPI</a>
+        designed to stay out of your way and get you to adding Pok&eacute;mon
+        data into your project as quickly as possible.
+      </p>
+      <p>
+        It's at its best for personal projects, casual use, or as a learning
+        tool. After all, I built it to do just that.
+      </p>
+      <p>
+        I hope you find it useful in your own projects, and if you find areas
+        where I can improve it, please let me know!
+      </p>
+    </section>
+
+    <section class="vertical-space box-emphasis">
+      <h2>Technical Details</h2>
+      <p>
+        Pokewrap is written entirely in Python, as a 3-file distribution
+        (plus tests).
+      <p>
+        It uses API controller classes to properly manage API calls and translate
+        the received data into dictionary data for you to access through the
+        class. It then extends those classes with helper classes
+        (like the class Pokemon) to allow you to get more specific when you
+        want to be, and ignore all the extra endpoints you don't need.
+      </p>
+      <h3>Dependencies</h3>
+      <p>
+        Pokewrap makes thorough use of the Requests library as the only external
+        dependency beyond Python's core libraries. It also uses json to parse
+        API data, and os to configure directories.
+      </p>
+      <p>
+        It is compatible with Python 3.8 and forward by design,
+        and may be compatible with older versions of Python but is not guaranteed
+        to be as stable.
+      </p>
+
+      <h3>How to Use</h3>
+      <p>
+        I wanted Pokewrap to be as accessible as possible, so you can find it
+        on PyPI, install it through pip, or download/fork it from GitHub.
+      </p>
+
+      <h3>Installation With pip</h3>
+      <p>All you need is a quick pip command from the command line:</p>
+      <pre class="js-code-snippet"><code class="language-bash">pip install pokewrap</code></pre>
+
+      <h3>Reporting Issues</h3>
+      <p>
+        You can report bugs, issues, or submit feature requests using the GitHub
+        repository.
+      </p>
+      <p>
+        <a href="https://github.com/jasongarvin/pokewrap/issues" target="_blank" rel="external">Submit an issue</a>
+        and I'll get back to you ASAP.
+      </p>
+    </section>
+
+    <div class="vertical-space card-flex">
+      <section class="box-emphasis">
+        <h4>Open Source</h4>
+        <p>Pokewrap is fully open-source, so you can check it out on GitHub!</p>
+        <a class="default-button bottom-space" href="https://github.com/jasongarvin/pokewrap/" target="_blank" rel="external">
+          Visit the Repo
+        </a>
+      </section>
+
+      <section>
+        <h4>Lightweight</h4>
+        <p>
+          With just a few hundred lines of code, Pokewrap helps to keep
+          your project scale and dependencies low.
+        </p>
+      </section>
+    </div>
+
+    <section class="vertical-space transparent-bg">
+      <h2>Did you know?</h2>
+      <p>
+        Pokewrap is named after the
+        <a href="https://youtu.be/xMk8wuw7nek?si=gtUirl3EH5w0vHX3" target="_blank" rel="external">Pok&eacute Rap</a>,
+        a ridiculously catchy rap song of all 150 Pok&eacute;mon that played at
+        the end of the Pok&eacute;mon original series episodes.
+      </p>
+    </section>
+  </main>
+</BaseLayout>
+
+<script type="module">
+  import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js';
+  hljs.highlightAll();
+</script>
+<script src="../../assets/scripts/copy-code-to-clipboard.js"></script>

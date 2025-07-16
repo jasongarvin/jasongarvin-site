@@ -1,0 +1,80 @@
+---
+import '../styles/Normalize.astro';
+import '../styles/Style.astro';
+---
+
+<section class="vertical-space contact-form-container">
+  <h2 id="contact-title" class="centered form-lead">Send me an email</h2>
+
+  <form id="contact-me" class="contact-form" action="https://formspree.io/f/mjvqjygb" method="POST" autocomplete="on" aria-labelledby="contact-title">
+    <ul class="form-list">
+
+      <li>
+        <ul class="form-list form-flex">
+
+          <li class="form-item">
+            <label for="form_name">
+              Your Name <span aria-label="required">*</span>
+            </label>
+            <br>
+            <input id="form_name" class="form-input" type="text" name="user_name" placeholder="First and Last" required
+              autocomplete="name" />
+          </li>
+
+          <li class="form-item">
+            <label for="form_email">
+              Your Email <span aria-label="required">*</span>
+            </label>
+            <br>
+            <input id="form_email" class="form-input" type="email" name="user_email" placeholder="mail@example.com"
+              required autocomplete="off" />
+          </li>
+        </ul>
+      </li>
+
+      <li class="form-item">
+        <label for="form_body">Your Message</label>
+        <br>
+        <textarea id="form_body" class="form-textarea" name="user_message"></textarea>
+      </li>
+
+      <li class="form-item">
+        <button id="contact-submit" class="default-button form-submit" type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+</section>
+
+<script src="../assets/scripts/contact-form-submit.js"></script>
+
+<style>
+  .contact-form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    padding: 0;
+    background-color: var(--background, #fff);
+    -webkit-box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
+            box-shadow: 0 1px 5px var(--element-shadow, rgba(0, 0, 0, 0.4));
+    border-radius: 20px;
+  }
+
+  #contact-me {
+    font-style: normal;
+  }
+
+  .contact-form {
+    max-width: 860px;
+    margin: 1rem;
+  }
+</style>

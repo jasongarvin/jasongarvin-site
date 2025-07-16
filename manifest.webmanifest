@@ -1,8 +1,0 @@
-{
-    "name": "Jason Garvin",
-    "description": "Jason Garvin's personal website, including information about me, my blog, and links to my socials.",
-    "icons": [
-      { "src": "icon-192.png", "type": "image/png", "sizes": "192x192" },
-      { "src": "icon-512.png", "type": "image/png", "sizes": "512x512" }
-    ]
-  }

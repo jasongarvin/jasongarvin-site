@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import teg_logo from '../assets/img/teg-logo.webp';
+
+const title = "Designing for Experience | Jason Garvin";
+const description = "Learn about why UX and experience-driven design is so important to me, and read my blog about business, experience, and personal growth.";
+const canonicalUrl = "https://jasongarvin.com";
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <section class="hero-content top-of-page transparent-bg">
+      <h1 class="hero-header">Hi, I'm Jason</h1>
+
+      <div>
+        <h2 class="hero-subtitle">
+          <strong>I build tight operations that partner with strategy & growth</strong>
+          and write about what I learn
+        </h2>
+      </div>
+
+      <div class="button-container">
+        <a class="default-button cta-button" href="/blog/">
+          Read my Blog
+        </a>
+        <a class="secondary-button cta-button" href="/projects/">
+          See my Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- Below the cut -->
+    <section class="home-gap transparent-bg">
+      <h2>My Focus</h2>
+      <p>
+        To bridge the gap between user experience and operations, I leverage
+        skills earned from running my business and helping startups.
+      </p>
+    </section>
+
+    <aside>
+      <div class="home-grid vertical-space">
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-sitemap"></i>
+            Operations
+          </h3>
+          <p>
+            I build efficient and people-friendly procedures so businesses and
+            employees can run smoothly.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-chart-line"></i>
+            Business Growth
+          </h3>
+          <p>
+            I'm a business owner working to grow my own business, and use what
+            I learn to help my peers grow, too.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-shield-halved"></i>
+            Governance
+          </h3>
+          <p>
+            I maintain a depth of knowledge on legal & compliance requirements
+            to ensure our business runs effectively.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-code"></i>
+            Web Dev
+          </h3>
+          <p>
+            I create websites and web experiences using popular front-end
+            frameworks and toolsets.
+          </p>
+        </section>
+      </div>
+    </aside>
+
+    <section class="home-gap transparent-bg animate-drop">
+      <h2>Regular blog posts</h3>
+      <p>
+        I discuss a variety of topics ranging from business managemenet to
+        personal growth and the implementation of technology.
+      </p>
+      <p>
+        Here are some of my favorite posts so far.
+      </p>
+    </section>
+
+    <section class="preview-grid vertical-space transparent-bg">
+      <section class="blog-card active-card animate-slide">
+        <h3 class="title-preview centered">
+          <a href="/blog/the-value-of-keeping-a-library">The Value of Keeping a Library</a>
+        </h3>
+        <div class="blog-card-info">
+          <time class="pub-info-preview" datetime="2024-11-30">11/30/2024</time>
+        </div>
+      </section>
+
+      <section class="blog-card animate-slide">
+        <h3 class="title-preview centered">
+          <a href="/blog/overcoming-decision-fatigue-strategies-for-business-owners">Overcoming Decision Fatigue: Strategies for Business Owners</a>
+        </h3>
+        <div class="blog-card-info">
+          <time class="pub-info-preview" datetime="2024-07-31">07/31/2024</time>
+        </div>
+      </section>
+
+      <section class="blog-card animate-slide">
+        <h3 class="title-preview centered">
+          <a href="/blog/context-switching-destroys-your-effectiveness">Context Switching Destroys your Effectiveness</a>
+        </h3>
+        <div class="blog-card-info">
+          <time class="pub-info-preview" datetime="2024-06-30">06/30/2024</time>
+        </div>
+      </section>
+
+      <section class="blog-card animate-slide">
+        <h3 class="title-preview centered">
+          <a href="/blog/navigating-time-as-a-business-owner">Navigating Time as a Business Owner</a>
+        </h3>
+        <div class="blog-card-info">
+            <time class="pub-info-preview" datetime="2024-04-30">04/30/2024</time>
+        </div>
+      </section>
+    </section>
+
+    <aside class="home-block home-gap animate-drop">
+      <p class="subtitle">
+        Or, learn about what keeps me busy each day
+      </p>
+      <p class="right-align">
+        And what I've learned from it.
+      </p>
+    </aside>
+
+    <section class="home-block home-gap transparent-bg">
+      <section class="brand-container animate-slide">
+        <img id="teg-logo" src={teg_logo.src} alt="The Total Escape Games logo" width="100" height="100" />
+        <h2 class="brand-name">Total Escape Games</h2>
+      </section>
+
+      <section class="animate-slide">
+        <h3 class="subtitle">Connecting Physical to Digital</h3>
+        <p class="left-align">
+          <span>Total Escape Games</span> is embracing cutting-edge technologies
+          to elevate our services. I'm committed to bridging the gap between
+          physical and digital experiences, and have been working tirelessly to
+          bring our excellent in-store offerings to online platforms.
+        </p>
+        <p>
+          Through AI, modern web design best practices, and efficient
+          tech solutions, I've positioned us to grow beyond the bounds of what a
+          typical small business can achieve.
+        </p>
+      </section>
+
+      <aside>
+        <ul class="list-emphasis">
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://totalescapegames.com" target="_blank" rel="external">
+              Website
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://facebook.com/totalescapegames" target="_blank" rel="external">
+              Facebook
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://instagram.com/totalescapegames" target="_blank" rel="external">
+              Instagram
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+  </main>
+</BaseLayout>
+
+<script src="../assets/scripts/on-scroll-animate.js"></script>

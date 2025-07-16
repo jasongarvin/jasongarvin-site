@@ -1,0 +1,26 @@
+---
+import '../styles/Normalize.astro';
+import '../styles/Style.astro';
+
+export interface Props {
+  title: string;
+  fileName: string;
+  publishDate: string;
+}
+
+const {
+  title,
+  fileName,
+  publishDate,
+}: Props = Astro.props;
+---
+
+<section class="blog-card">
+  <h2 class="title-preview">
+    <a href={fileName}>{title}</a>
+  </h2>
+
+  <time class="pub-info-preview pub-info-list-view" datetime={publishDate}>
+    {publishDate}
+  </time>
+</section>
