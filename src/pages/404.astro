@@ -29,7 +29,20 @@ import '../styles/Style.astro';
 <body id="top" class="background-glow-2">
 
   <main id="error-404">
-    <section class="vertical-space">
+    <!-- Logo -->
+    <div class="logo-container">
+      <a class="site-title" href="/">
+        <svg id="Layer_2" class="site-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img">
+          <path class="cls-1" d="m490.27,449.65v6c0,6.07-4.93,11-11,11-3.04,0-5.79,1.23-7.78,3.22s-3.22,4.74-3.22,7.78v47c0,6.07-4.93,11-11,11H142.27c-6.08,0-11-4.93-11-11v-188c0-6.08,4.92-11,11-11h315c6.07,0,11,4.92,11,11v50c0,6.07-4.93,11-11,11h-244c-4.46,0-8.29,2.64-10.02,6.45-.63,1.38-.98,2.93-.98,4.55v47c0,6.07,4.92,11,11,11h175c6.07,0,11-4.93,11-11v-6c0-6.08,4.92-11,11-11h69c6.07,0,11,4.92,11,11Z"/>
+          <path class="cls-1" d="m491.27,75.61v49.79c0,6.22-5.04,11.26-11.26,11.26-3.11,0-5.92,1.26-7.95,3.3-2.04,2.03-3.3,4.84-3.3,7.95v115.19c0,6.21-5.04,11.25-11.26,11.25H142.52c-6.22,0-11.25-5.04-11.25-11.25v-74.32c0-6.21,5.03-11.25,11.25-11.25h46.92c6.21,0,11.25,5.04,11.25,11.25v5.47c0,1.24.2,2.43.57,3.54,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65.08-.52.12-1.06.12-1.6v-46.34c0-6.21-5.04-11.25-11.25-11.25h-243.04c-6.22,0-11.25-5.04-11.25-11.26v-49.79c0-6.22,5.03-11.26,11.25-11.26h337.49c6.22,0,11.26,5.04,11.26,11.26Z"/>
+          <path class="cls-2" d="m439.81,325.65c-5.03,27.61-18.04,52.44-36.56,72h-189.98c-4.46,0-8.29,2.64-10.02,6.45-21.97-20.42-37.46-47.71-43.06-78.45h279.62Z"/>
+          <path class="cls-2" d="m439.81,274.35H160.19c5.43-29.8,20.16-56.36,41.07-76.56,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65,22,20.42,37.51,47.73,43.12,78.5Z"/>
+        </svg>
+        <span>Jason Garvin</span>
+      </a>
+    </div>
+
+    <section>
       <h1>
         <span class="huge">Error 404</span>
         <br />
@@ -46,20 +59,81 @@ import '../styles/Style.astro';
         </p>
       </div>
     </section>
-
-    <!-- Logo -->
-    <div class="logo-container">
-      <a class="site-title" href="/">
-        <svg id="Layer_2" class="site-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img">
-          <path class="cls-1" d="m490.27,449.65v6c0,6.07-4.93,11-11,11-3.04,0-5.79,1.23-7.78,3.22s-3.22,4.74-3.22,7.78v47c0,6.07-4.93,11-11,11H142.27c-6.08,0-11-4.93-11-11v-188c0-6.08,4.92-11,11-11h315c6.07,0,11,4.92,11,11v50c0,6.07-4.93,11-11,11h-244c-4.46,0-8.29,2.64-10.02,6.45-.63,1.38-.98,2.93-.98,4.55v47c0,6.07,4.92,11,11,11h175c6.07,0,11-4.93,11-11v-6c0-6.08,4.92-11,11-11h69c6.07,0,11,4.92,11,11Z"/>
-          <path class="cls-1" d="m491.27,75.61v49.79c0,6.22-5.04,11.26-11.26,11.26-3.11,0-5.92,1.26-7.95,3.3-2.04,2.03-3.3,4.84-3.3,7.95v115.19c0,6.21-5.04,11.25-11.26,11.25H142.52c-6.22,0-11.25-5.04-11.25-11.25v-74.32c0-6.21,5.03-11.25,11.25-11.25h46.92c6.21,0,11.25,5.04,11.25,11.25v5.47c0,1.24.2,2.43.57,3.54,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65.08-.52.12-1.06.12-1.6v-46.34c0-6.21-5.04-11.25-11.25-11.25h-243.04c-6.22,0-11.25-5.04-11.25-11.26v-49.79c0-6.22,5.03-11.26,11.25-11.26h337.49c6.22,0,11.26,5.04,11.26,11.26Z"/>
-          <path class="cls-2" d="m439.81,325.65c-5.03,27.61-18.04,52.44-36.56,72h-189.98c-4.46,0-8.29,2.64-10.02,6.45-21.97-20.42-37.46-47.71-43.06-78.45h279.62Z"/>
-          <path class="cls-2" d="m439.81,274.35H160.19c5.43-29.8,20.16-56.36,41.07-76.56,1.48,4.48,5.71,7.71,10.69,7.71h173.61c5.67,0,10.36-4.19,11.13-9.65,22,20.42,37.51,47.73,43.12,78.5Z"/>
-        </svg>
-        <span>Jason Garvin</span>
-      </a>
-    </div>
   </main>
 </body>
 
 </html>
+
+<style>
+    .logo-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1.5rem 0 0;
+    text-align: left;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #error-404 .logo-container {
+    margin: 1.5rem 1rem;
+  }
+
+  .site-logo {
+    min-width: 3.2rem;
+    max-width: 6rem;
+  }
+
+  /* Targetting parts of the SVG */
+  .site-logo .cls-1 {
+    fill: var(--brand-primary, #3066be);
+  }
+
+  .site-logo .cls-1,
+  .site-logo .cls-2 {
+    stroke-width: 0px;
+  }
+
+  .site-logo .cls-2 {
+    fill: var(--brand-highlight);
+  }
+  /* End targetting parts of the SVG */
+
+  .site-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    font-family: "PT Serif", serif;
+    font-size: calc(2rem + 0.5vw);
+    font-weight: 700;
+  }
+
+  .site-title span {
+    max-width: 10rem;
+    line-height: 1.4;
+  }
+
+  .site-title:hover,
+  .site-title:hover span{
+    color: var(--brand-primary, #3066be);
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo-container {
+      margin: 0.5rem 0 0 2rem;
+    }
+
+    .site-title {
+      font-size: 1.5rem;
+    }
+
+    .site-title span {
+      display: block;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      margin: auto 0;
+    }
+  }
+</style>
