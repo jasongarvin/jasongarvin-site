@@ -206,7 +206,8 @@
   h4,
   h5,
   h6 {
-    margin-bottom: 21px;
+    margin-top: 40px;
+    margin-bottom: 18px;
     font-family: "PT Serif",
                 serif;
   }
@@ -321,16 +322,19 @@
   pre {
     position: relative;
     display: block;
-    margin: 2rem 0;
+  }
+
+  pre,
+  code {
+    border-radius: 10px;
   }
 
   code {
+    position: relative;
     display: block;
     padding: 1rem;
-    color: #fff;
-    background-color: var(--brand-lowlight) !important;
     border: 1px solid var(--brand-lowlight);
-    border-radius: 10px;
+    background-color: var(--background-shade);
 
     font-size: calc(0.7rem + 0.3vw);
   }
@@ -685,15 +689,6 @@
     text-transform: lowercase;
   }
 
-  .blog-info span {
-    margin-left: 4rem;
-  }
-
-  .blog-info span:first-of-type {
-    margin-left: 0;
-  }
-
-
   .copy-link {
     display: block;
     width: fit-content;
@@ -739,11 +734,11 @@
     height: 2rem;
     padding: 0.25rem 0.5rem;
     background-color: transparent;
-    border: 1px solid var(--brand-highlight);
+    border: 1px solid var(--brand-lowlight);
     border-radius: 5px;
     overflow: hidden;
 
-    color: var(--brand-highlight);
+    color: var(--brand-lowlight);
     font-size: 1.2rem;
 
     cursor: pointer;
@@ -752,8 +747,8 @@
   }
 
   .copy-to-clipboard:hover {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid var(--brand-2nd-lowlight);
+    color: var(--brand-2nd-lowlight);
 
     -webkit-transition: all 0.2s ease;
 
@@ -766,6 +761,11 @@
     border-radius: 20px;
   }
 
+  .subheading-link {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 0.35rem;
+  }
 
   /* --- || Utility Classes --------------------------------------------------- */
 

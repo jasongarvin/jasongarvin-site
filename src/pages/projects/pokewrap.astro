@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { Prism } from '@astrojs/prism';
 
 const title = "Pokewrap - A PokeAPI Python Wrapper | Jason Garvin";
 const description = "Learn more about my new and existing software projects, find out which tech stacks I'm most excited about, and see more of my work.";
@@ -94,7 +93,10 @@ const canonicalUrl = "https://jasongarvin.com/projects/pokewrap";
 
       <h3>Installation With pip</h3>
       <p>All you need is a quick pip command from the command line:</p>
-      <Prism class="js-code-snippet" lang="bash" code={"pip install pokewrap"} />
+
+      <code class="js-code-snippet" lang="bash">
+        pip install pokewrap
+      </code>
 
       <h3>Reporting Issues</h3>
       <p>

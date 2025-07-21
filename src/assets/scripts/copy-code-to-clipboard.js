@@ -1,6 +1,6 @@
 'use strict';
 
-let snippets = document.querySelectorAll(".js-code-snippet");
+let snippets = document.querySelectorAll("code");
 
 snippets.forEach((snippet) => {
   // Add button only if browser supports Clipboard API
@@ -19,10 +19,7 @@ snippets.forEach((snippet) => {
 
 
 async function copyCode(snippet, button) {
-  let code = snippet.querySelector("code");
-  let text = code.innerText;
-
-  await navigator.clipboard.writeText(text);
+  await navigator.clipboard.writeText(snippet.innerText);
 
   // Visual feedback that task is completed
   button.classList.remove("fa-regular", "fa-clipboard");

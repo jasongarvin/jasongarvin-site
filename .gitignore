@@ -1,9 +1,6 @@
 # Custom directories to ignore during rewrite
-/card
-card-style.css
 assets/scripts/search-bar.js
 assets/scripts/show-text-preview.js
-blog-posts.json
 TODO.md
 
 # Ignore all files starting with . or ~
