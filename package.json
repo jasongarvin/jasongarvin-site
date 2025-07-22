@@ -17,5 +17,8 @@
     "astro": "^5.12.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.25.1"
   }
 }
