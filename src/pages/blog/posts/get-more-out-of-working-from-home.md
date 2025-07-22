@@ -2,7 +2,7 @@
 layout: ../../../layouts/MarkdownBlogPost.astro
 
 title: "Get More out of Working from Home"
-description: ""
+description: "Working from home can be tricky, especially if you're setting your own tasks, too. Let's explore ways to get the most from your new at-home routine."
 canonicalUrl: "https://jasongarvin.com/blog/posts/get-more-out-of-working-from-home"
 contentCategory: "Productivity"
 publishDate: "2024-08-31"

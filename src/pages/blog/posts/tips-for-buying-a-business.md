@@ -2,8 +2,8 @@
 layout: ../../../layouts/MarkdownBlogPost.astro
 
 title: "6 Things to Know When Buying a Business"
-description: ""
-canonicalUrl: "https://jasongarvin.com/blog/posts/buying-a-business"
+description: "Follow along with me as I discuss what I learned while buying Total Escape Games and how you can best prepare yourself for your own business acquisition(s)."
+canonicalUrl: "https://jasongarvin.com/blog/posts/tips-for-buying-a-business"
 contentCategory: "Business"
 publishDate: "2024-01-31"
 editDate: "2024-08-14"

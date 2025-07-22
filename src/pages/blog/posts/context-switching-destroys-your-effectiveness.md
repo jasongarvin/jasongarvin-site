@@ -2,7 +2,7 @@
 layout: ../../../layouts/MarkdownBlogPost.astro
 
 title: "Context Switching Destroys your Effectiveness"
-description: ""
+description: "Unpack context switching with me to learn how to get the most from your work day, avoid mental fatigue, and stay on task without burning out."
 canonicalUrl: "https://jasongarvin.com/blog/posts/context-switching-destroys-your-effectiveness"
 contentCategory: "Productivity"
 publishDate: "2024-06-30"

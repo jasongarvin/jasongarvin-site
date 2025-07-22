@@ -2,7 +2,7 @@
 layout: ../../../layouts/MarkdownBlogPost.astro
 
 title: "Writing When You Have Something to Say"
-description: ""
+description: "No matter how great routine can be, it's important to make choices that are authentic to you, even when they're tough. Writing is the same way."
 canonicalUrl: "https://jasongarvin.com/blog/posts/writing-when-you-have-something-to-say"
 contentCategory: "Business"
 publishDate: "2025-01-31"

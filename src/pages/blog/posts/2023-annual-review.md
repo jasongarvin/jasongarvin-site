@@ -1,9 +1,9 @@
 ---
 layout: ../../../layouts/MarkdownBlogPost.astro
 
-title: "2023 in Review: Finding Purpose in the Chaos"
-description: ""
-canonicalUrl: "https://jasongarvin.com/blog/posts/2023-in-review"
+title: "2023 Annual Review: Incremental Improvement through Habits"
+description: "As I reflect on 2023, I review the habits I formed, the progress I've made towards new skills, and how I'm achieving my goals."
+canonicalUrl: "https://jasongarvin.com/blog/posts/2023-annual-review"
 contentCategory: "Productivity"
 publishDate: "2023-12-31"
 editDate: "2024-08-14"

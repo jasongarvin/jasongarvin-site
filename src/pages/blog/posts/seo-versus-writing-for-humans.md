@@ -2,8 +2,8 @@
 layout: ../../../layouts/MarkdownBlogPost.astro
 
 title: "SEO vs. Writing for Humans"
-description: ""
-canonicalUrl: "https://jasongarvin.com/blog/posts/seo-vs-humans"
+description: "Writing to be seen by the algorithm is not the same as writing good content for your audience, and I think it's important to talk about that difference."
+canonicalUrl: "https://jasongarvin.com/blog/posts/seo-vs-writing-for-humans"
 contentCategory: "Technology"
 publishDate: "2024-02-29"
 editDate: "2024-08-14"
