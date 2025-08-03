@@ -1,6 +1,6 @@
 # Custom directories to ignore during rewrite
-assets/scripts/search-bar.js
-assets/scripts/show-text-preview.js
+search-bar.js
+show-text-preview.js
 
 # Ignore all files starting with . or ~
 .*
