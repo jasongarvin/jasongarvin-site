@@ -2,8 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   const contactForm = document.getElementById('contact-me');
-
-  contactForm.addEventListener('submit', handleSubmit)
+  contactForm.addEventListener('submit', handleSubmit);
 
 
   function resetButton(buttonId, newContent) {

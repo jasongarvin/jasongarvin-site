@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-  let snippets = document.querySelectorAll("code");
+  const snippets = document.querySelectorAll("code");
 
   snippets.forEach((snippet) => {
     // Add button only if browser supports Clipboard API

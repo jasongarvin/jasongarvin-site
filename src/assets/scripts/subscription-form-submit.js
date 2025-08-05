@@ -1,46 +1,47 @@
 'use strict';
 
-const subscribeForm = document.getElementById('subscription-form');
+document.addEventListener('DOMContentLoaded', function() {
+  const subscribeForm = document.getElementById('subscription-form');
+  subscribeForm.addEventListener('submit', handleSubmit);
 
-subscribeForm.addEventListener('submit', handleSubmit);
 
+  function resetForm(formName) {
+    // TODO confirm this works properly (and fix syntax for new use case)
+    formName.classList.remove('done');
+  }
 
-function resetForm(formName) {
-  // TODO confirm this works properly (and fix syntax for new use case)
-  formName.classList.remove('done');
-}
+  async function handleSubmit(event) {
+    event.preventDefault();
 
-async function handleSubmit(event) {
-  event.preventDefault();
+    let formStatus = document.getElementById('form-status');
+    let formContent = new FormData(event.target);
 
-  let formStatus = document.getElementById('form-status');
-  let formContent = new FormData(event.target);
+    fetch(event.target.action, {
+      method: subscribeForm.method,
+      body: formContent,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+          subscribeForm.reset()
+          subscribeForm.classList.add('done');
 
-  fetch(event.target.action, {
-    method: subscribeForm.method,
-    body: formContent,
-    headers: {
-        'Accept': 'application/json'
-    }
-  }).then(response => {
-    if (response.ok) {
-        subscribeForm.reset()
-        subscribeForm.classList.add('done');
+      } else {
+        response.json().then(formContent => {
+          if (Object.hasOwn(formContent, 'errors')) {
+            formStatus.textContent = formContent['errors'].map(error => error['message']).join(', ')
 
-    } else {
-      response.json().then(formContent => {
-        if (Object.hasOwn(formContent, 'errors')) {
-          formStatus.textContent = formContent['errors'].map(error => error['message']).join(', ')
+          } else {
+            formStatus.textContent = 'Oops! Please try again.'
+          }
+        })
+      }
+      setTimeout(resetForm, 1000, subscribeForm);
 
-        } else {
-          formStatus.textContent = 'Oops! Please try again.'
-        }
-      })
-    }
-    setTimeout(resetForm, 1000, subscribeForm);
-
-  }).catch(error => {
-    formStatus.textContent = 'Oops! Please try again.';
-    console.log(error);
-  });
-}
+    }).catch(error => {
+      formStatus.textContent = 'Oops! Please try again.';
+      console.log(error);
+    });
+  }
+})

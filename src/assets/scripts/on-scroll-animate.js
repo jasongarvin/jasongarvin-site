@@ -2,8 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   // Drop-in animation
-  const animatedElements = document.querySelectorAll('.animate-drop');
-  for (const element of animatedElements) {
+  const dropInElements = document.querySelectorAll('.animate-drop');
+  for (const element of dropInElements) {
     element.style.opacity = '0';
   }
 
@@ -47,6 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     rootMargin: '0px 0px -10% 0px'
   });
 
-  animatedElements.forEach(element => pageviewObserver.observe(element));
+  dropInElements.forEach(element => pageviewObserver.observe(element));
   slidingElements.forEach(element => pageviewObserver2.observe(element));
 })

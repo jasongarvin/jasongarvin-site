@@ -1,3 +1,5 @@
+// TODO: add minor animation to confirm button press
+
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       await navigator.clipboard.writeText(location.href);
       console.log('Page URL copied to clipboard');
     } catch(err) {
-      console.error('Failed to copy: ', err);
+      console.error('FAILED TO COPY: ', err);
     }
   }
 })
