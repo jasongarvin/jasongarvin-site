@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Learn to Grow by Exploring Your Past"
 description: "Our past is a powerful resource to propel ourselves forward. Let's talk about how to get the most from self-reflection to make sure you achieve your goals."
 canonicalUrl: "https://jasongarvin.com/blog/posts/learn-to-grow-by-exploring-your-past"

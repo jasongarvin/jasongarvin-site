@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Industry Togetherness at GAMA Expo"
 description: "If you're in the tabletop gaming industry, GAMA is an incredible resource. Follow along as I break down its benefits as an organization and why you should join."
 canonicalUrl: "https://jasongarvin.com/blog/posts/industry-togetherness-at-gama-expo"

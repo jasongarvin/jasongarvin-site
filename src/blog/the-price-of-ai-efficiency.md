@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "The Price of AI Efficiency"
 description: "Artificial Intelligence may be the greatest tool of our lifetime, but it also poses enormous risks. Let's talk about it."
 canonicalUrl: "https://jasongarvin.com/blog/posts/the-price-of-ai-efficiency"

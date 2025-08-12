@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "I Wrote for a Year and All I Got Was This Blog Post"
 description: "Using my own experience with blogging as an example, let's talk about the importance of re-evaluating your goals to make sure you're on track."
 canonicalUrl: "https://jasongarvin.com/blog/posts/wow-ive-been-writing-for-a-year"

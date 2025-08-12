@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Publishing My First Python Library"
 description: "Learn about my experience publishing a Python library, save yourself trips to StackOverflow, and avoid unnecessary code when you write your own!"
 canonicalUrl: "https://jasongarvin.com/blog/posts/publishing-my-first-python-library"

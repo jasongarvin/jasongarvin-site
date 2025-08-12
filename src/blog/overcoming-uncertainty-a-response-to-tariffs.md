@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Overcoming Uncertainty - A Response to Tariffs"
 description: "In the face of uncertainty, all you can do is act. It won't be perfect, but it's important to keep moving to stay ahead of the changing business landscape."
 canonicalUrl: "https://jasongarvin.com/blog/posts/overcoming-uncertainty-a-response-to-tariffs"

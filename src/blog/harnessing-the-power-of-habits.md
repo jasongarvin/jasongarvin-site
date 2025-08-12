@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Harnessing the Power of Habits: Simple Steps to Lasting Change"
 description: "Habits are one of the most powerful tools you have in making meaningful changes to your life, so let's talk about how to set good habits and maintain them."
 canonicalUrl: "https://jasongarvin.com/blog/posts/harnessing-the-power-of-habits"

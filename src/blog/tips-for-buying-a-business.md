@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "6 Things to Know When Buying a Business"
 description: "Follow along with me as I discuss what I learned while buying Total Escape Games and how you can best prepare yourself for your own business acquisition(s)."
 canonicalUrl: "https://jasongarvin.com/blog/posts/tips-for-buying-a-business"

@@ -1,6 +1,4 @@
 ---
-layout: ../../../layouts/MarkdownBlogPost.astro
-
 title: "Hard Truths About Owning Your Choices"
 description: "You can't always do the right thing, and sometimes it's more important to understand how to fail gracefully and recover than to never make a mistake."
 canonicalUrl: "https://jasongarvin.com/blog/posts/hard-truths-about-owning-your-choices"
