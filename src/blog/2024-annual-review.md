@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/2024-annual-review"
 contentCategory: "Business"
 publishDate: "2025-01-02"
 editDate: "2025-01-31"
+tags: ["productivity", "review", "habits"]
 ---
 
 Time is funny–often it manifests as a series of cycles, each with different steps we must pass through, over and over, until we can start the next.

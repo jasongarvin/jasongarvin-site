@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/overcoming-uncertainty-a-respo
 contentCategory: "Business"
 publishDate: "2025-04-24"
 editDate: ""
+tags: ["business", "leadership"]
 ---
 
 A day hasn’t gone by without someone talking to me about tariffs. My industry is panicking. My friends are anxious. Every meeting I attend, every conversation I have, includes this nasty little six-letter word that I’m only ever half-sure I’m spelling right.

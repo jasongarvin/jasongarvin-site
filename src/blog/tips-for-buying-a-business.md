@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/tips-for-buying-a-business"
 contentCategory: "Business"
 publishDate: "2024-01-31"
 editDate: "2024-08-14"
+tags: ["business"]
 ---
 
 If there were ever a process as daunting in practice as it is in theory, it’s business acquisition and transition.

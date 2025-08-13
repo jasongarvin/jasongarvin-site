@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/industry-togetherness-at-gama-
 contentCategory: "Business"
 publishDate: "2025-03-03"
 editDate: ""
+tags: ["business"]
 ---
 
 Last month I was on 7 airplanes, in 4 countries, and at 2 work conferences. Most of that happened in the span of 12 days.

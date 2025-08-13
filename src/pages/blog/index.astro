@@ -7,6 +7,8 @@ import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection('blog');
 const sortedPosts = allBlogPosts.sort((a, b) => Date.parse(b.data.publishDate) - Date.parse(a.data.publishDate))
 
+const uniqueTags = [...new Set(allBlogPosts.map((post) => post.data.tags).flat())];
+
 // Local page metadata
 const title = "Blog | Jason Garvin";
 const description = "Visit my blog, covering topics such as productivity, business, web development, and design. Expect a focus on UX and experience-driven design.";
@@ -31,10 +33,10 @@ const canonicalUrl = "https://jasongarvin.com/blog";
     <section class="preview-list vertical-space">
 
       {
-        sortedPosts.map((post) => (
+        sortedPosts.map((post: any) => (
           <BlogPreview
             title={post.data.title}
-            fileName={`/posts/${post.id}/`}
+            fileName={`/blog/posts/${post.id}/`}
             publishDate={post.data.publishDate} />
         ))
       }
@@ -46,5 +48,36 @@ const canonicalUrl = "https://jasongarvin.com/blog";
         </h2>
       </section>
     </section>
+
+    <!-- Tag List -->
+    <section class="vertical-space">
+      <h3 class="cta-header">Blog Post Tags</h3>
+      <p>Browse and filter by tag to find blog posts</p>
+
+      <div class="tags">
+        {uniqueTags.map((tag) => (
+          <span class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </span>
+        ))}
+     </div>
+    </section>
   </main>
 </BaseLayout>
+
+<style>
+  .tags {
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .tag {
+    margin: 0.25em 0;
+    border: dotted 1px var(--brand-primary);
+    border-radius: 25px;
+    padding: .5em 1em;
+    background-color: var(--background-shade);
+  }
+</style>

@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/the-value-of-keeping-a-library
 contentCategory: "Productivity"
 publishDate: "2024-11-30"
 editDate: ""
+tags: ["productivity", "lifestyle"]
 ---
 
 There are 7 books within arm’s reach of me right now, and 58 more within six feet.

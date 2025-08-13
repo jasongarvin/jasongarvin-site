@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPreview from '../../components/BlogPreview.astro';
+
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allBlogPosts = await getCollection("blog");
+  const uniqueTags = [...new Set(allBlogPosts.map((post) => post.data.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allBlogPosts.filter((post: any) =>
+      post.data.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+const description = "Browse all of my blog posts tagged as " + tag + " and explore the topic more deeply.";
+const title = "Posts tagged as" + tag + " - Blog | Jason Garvin";
+const canonicalUrl = "https://jasongarvin.com/tags/" + tag;
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <section class="top-of-page hero-content centered transparent-bg">
+      <h1 class="cta-header">Blog Posts</h1>
+      <p class="subtitle">
+        Posts tagged with <i>"{tag}"</i>
+      </p>
+    </section>
+
+    <!-- Post Previews -->
+    <section class="preview-list vertical-space">
+
+      {
+        posts.map((post: any) => (
+          <BlogPreview
+            title={post.data.title}
+            fileName={`/posts/${post.id}/`}
+            publishDate={post.data.publishDate} />
+        ))
+      }
+
+      <!-- Placeholder for upcoming content -->
+      <section class="blog-card inactive-card">
+        <h2 class="title-preview">
+          More coming soon
+        </h2>
+      </section>
+    </section>
+  </main>
+
+</BaseLayout>

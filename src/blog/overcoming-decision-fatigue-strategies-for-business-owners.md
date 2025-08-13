@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/overcoming-decision-fatigue-st
 contentCategory: "Business"
 publishDate: "2024-07-31"
 editDate: "2024-08-14"
+tags: ["productivity", "business", "leadership"]
 ---
 
 Finally owning the business I'd been managing went from feeling like I had things locked down to feeling like I’d been thrown from a moving ship into a bottomless ocean in the middle of a hurricane.

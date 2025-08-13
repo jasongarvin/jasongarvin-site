@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/context-switching-destroys-you
 contentCategory: "Productivity"
 publishDate: "2024-06-30"
 editDate: "2024-08-14"
+tags: ["productivity", "habits", "business", "lifestyle"]
 ---
 
 I did an audit recently of every task I do throughout the day and my mental state. The results were horrifying.

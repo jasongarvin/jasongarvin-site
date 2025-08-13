@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/hard-truths-about-owning-your-
 contentCategory: "Business"
 publishDate: "2024-10-31"
 editDate: ""
+tags: ["business", "leadership"]
 ---
 
 It’s Halloween today, so to honor the occasion I figured we’d explore something thematic: ghosts.

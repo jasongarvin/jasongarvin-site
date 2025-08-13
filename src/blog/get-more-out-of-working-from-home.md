@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/get-more-out-of-working-from-h
 contentCategory: "Productivity"
 publishDate: "2024-08-31"
 editDate: ""
+tags: ["productivity", "habits", "business", "lifestyle"]
 ---
 
 After 7 years running the store in person, I recently switched to spending most of my week working from home. This has been a huge change for me, and has come with some amazing benefits but also some unexpected costs.

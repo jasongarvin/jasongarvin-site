@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/publishing-my-first-python-lib
 contentCategory: "Technology"
 publishDate: "2023-11-07"
 editDate: "2024-08-14"
+tags: ["technology", "coding"]
 ---
 
 After using Python for a few months, I had a spontaneous thought: I’d been consuming 3rd party libraries this whole time but had no idea what they were.

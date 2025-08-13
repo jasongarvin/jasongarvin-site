@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/writing-when-you-have-somethin
 contentCategory: "Business"
 publishDate: "2025-01-31"
 editDate: ""
+tags: ["habits", "lifestyle", "writing"]
 ---
 
 Last year I blogged every single month. It was a satisfying accomplishment, and I’m proud of myself for getting it done. I’ve proved to myself and everyone else I can keep up with a monthly release schedule!

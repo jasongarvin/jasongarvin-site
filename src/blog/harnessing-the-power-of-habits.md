@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/harnessing-the-power-of-habits
 contentCategory: "Productivity"
 publishDate: "2023-09-08"
 editDate: "2024-08-14"
+tags: ["productivity", "habits", "lifestyle"]
 ---
 
 Ever feel like your life is a hamster wheel of procrastination powered by Netflix and snacks? Me too. But fear not, there's a way out, and it involves something more powerful than sheer willpower: habits.

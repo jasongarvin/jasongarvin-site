@@ -96,6 +96,12 @@ const { headings } = Astro.props;
               }
             </div>
 
+            <div class="in-post-tags">
+              {frontmatter.tags.map((tag: string) => (
+                <p><a href={`/tags/${tag}`}>{tag}</a></p>
+              ))}
+            </div>
+
             <span itemprop="name">by Jason Garvin</span>
             <button id="copy-link" class="copy-link">
               copy link
@@ -184,6 +190,16 @@ const { headings } = Astro.props;
   .subheading-link {
     display: block;
     margin-left: 0.5rem;
+  }
+
+  .in-post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .in-post-tags p {
+    margin: 0;
   }
 
   /* --- Table of Contents --- */

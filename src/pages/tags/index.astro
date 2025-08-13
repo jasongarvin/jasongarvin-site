@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import { getCollection } from "astro:content";
+
+const allBlogPosts = await getCollection("blog");
+const uniqueTags = [...new Set(allBlogPosts.map((post) => post.data.tags).flat())];
+
+const description = "Browse a list of tags included in my blog posts to filter for your favorite subjects.";
+const title = "Tags and Topics - Blog | Jason Garvin";
+const canonicalUrl = "https://jasongarvin.com/tags/";
+---
+
+<BaseLayout
+  description={description}
+  title={title}
+  canonicalUrl={canonicalUrl}>
+
+  <main id="main-content">
+
+    <section class="top-of-page hero-content centered transparent-bg">
+      <h1 class="cta-header">Blog Post Tags</h1>
+      <p class="subtitle">
+        Browse and filter by tag to find blog posts
+      </p>
+    </section>
+
+    <!-- Post Previews -->
+    <section class="preview-list vertical-space">
+
+      <div class="tags">
+        {uniqueTags.map((tag) => (
+          <span class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </span>
+        ))}
+     </div>
+
+    </section>
+  </main>
+
+</BaseLayout>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px var(--brand-primary);
+    border-radius: 25px;
+    padding: .5em 1em;
+    background-color: var(--background);
+  }
+</style>

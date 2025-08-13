@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/learn-to-grow-by-exploring-you
 contentCategory: "Productivity"
 publishDate: "2024-05-31"
 editDate: "2024-08-14"
+tags: ["productivity", "review", "lifestyle"]
 ---
 
 This month I was struck by the panicked thought that my writing lacks my personality.

@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/2023-annual-review"
 contentCategory: "Productivity"
 publishDate: "2023-12-31"
 editDate: "2024-08-14"
+tags: ["productivity", "review", "habits"]
 ---
 
 This year was hard. Really hard. I wrote a different version of this post originally, but it came off too shallow. I wrote of numbers, of data and statistics, but the human version of my story throughout 2023 was conspicuously missing.

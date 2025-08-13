@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/seo-vs-writing-for-humans"
 contentCategory: "Technology"
 publishDate: "2024-02-29"
 editDate: "2024-08-14"
+tags: ["technology", "writing"]
 ---
 
 For thousands of years, we’ve always written for each other. For humans. The invention of language, and the many improvements since that led to the widespread availability of text through magical computer boxes has always been towards that end.

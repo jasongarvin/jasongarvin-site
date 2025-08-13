@@ -12,7 +12,8 @@ const blog = defineCollection({
     canonicalUrl: z.string(),
     contentCategory: z.string(),
     publishDate: z.string(),
-    editDate: z.string()
+    editDate: z.string(),
+    tags: z.array(z.string())
   })
 });
 

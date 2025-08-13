@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/wow-ive-been-writing-for-a-yea
 contentCategory: "Productivity"
 publishDate: "2024-09-30"
 editDate: ""
+tags: ["productivity", "habits", "lifestyle", "writing"]
 ---
 
 Fun fact: I like to write ridiculous blog titles when I’m first drafting each post to get myself excited and beat writer's block by putting something on the page right away.

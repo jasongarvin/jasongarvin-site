@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/the-price-of-ai-efficiency"
 contentCategory: "Productivity"
 publishDate: "2024-03-31"
 editDate: "2024-08-14"
+tags: ["technology", "business", "lifestyle"]
 ---
 
 AI has been a major part of our lives for over a year, ever since the release of ChatGPT by OpenAI. The explosion of AI-related tools and products, not to mention wild claims of future utopias (or death by robot) are abundant in all forms of media today.

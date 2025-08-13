@@ -5,6 +5,7 @@ canonicalUrl: "https://jasongarvin.com/blog/posts/managing-your-time-as-a-busine
 contentCategory: "Productivity"
 publishDate: "2024-04-30"
 editDate: "2024-08-14"
+tags: ["productivity", "habits", "business", "lifestyle"]
 ---
 
 As I’ve gotten into the flow of owning my business, I’ve realized how careful I need to be with my time. My days disappear into the wind so easily it’s scary.
