@@ -29,14 +29,27 @@ const canonicalUrl = "https://jasongarvin.com/blog";
       </p>
     </section>
 
+    <!-- Tag List -->
+    <section class="vertical-space tag-container">
+      <h3>Browse and filter by tag</h3>
+
+      <div class="tags">
+        {uniqueTags.map((tag) => (
+          <span class="tag">
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </span>
+        ))}
+     </div>
+    </section>
+
     <!-- Post Previews -->
-    <section class="preview-list vertical-space">
+    <section class="preview-list">
 
       {
         sortedPosts.map((post: any) => (
           <BlogPreview
             title={post.data.title}
-            fileName={`/blog/posts/${post.id}/`}
+            fileName={`/blog/posts/${post.id}`}
             publishDate={post.data.publishDate} />
         ))
       }
@@ -48,26 +61,16 @@ const canonicalUrl = "https://jasongarvin.com/blog";
         </h2>
       </section>
     </section>
-
-    <!-- Tag List -->
-    <section class="vertical-space">
-      <h3 class="cta-header">Blog Post Tags</h3>
-      <p>Browse and filter by tag to find blog posts</p>
-
-      <div class="tags">
-        {uniqueTags.map((tag) => (
-          <span class="tag">
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </span>
-        ))}
-     </div>
-    </section>
   </main>
 </BaseLayout>
 
 <style>
+  .tag-container h3 {
+    margin-top: 0;
+  }
+
   .tags {
-    margin: 2rem 0 1rem;
+    margin: 0.5rem 0 0.25rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
