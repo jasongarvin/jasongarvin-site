@@ -1,4 +1,4 @@
-# Jason Garvin's website - v2.0.1
+# Jason Garvin's website - v2.1, the blog update
 
 [![pages-build-deployment](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment)
 
@@ -41,10 +41,14 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ## Changelog
 
+2.1 - make many updates to the blog, including an RSS feed for the first time ever. Also added tags and filtering so blog posts can be searched by topic, and cleaned up blog feed generation to use Astro collections to load and serve content rather than manually maintaining a blog post JSON index (can you believe I was doing that by hand? Insanity). Oh, and I also started adding tests to my codebase.
+
 2.0.1 - add a basic testing suite for core components and clean up build process.
 
 2.0 - introduce a huge number of redesigned elements and refactored code, meaning the website looks mostly the same but functions *entirely differently* under the hood.
 
 ### Upcoming Changes
 
-Before upgrading to v2.1, I'll be working back through all my JavaScript to ensure it functions smoothly. This includes making functions as simple as possible, and exploring the ability to add a test suite for JS files to avoid regression.
+In v2.2, I'll be making some under the hood changes, including exploring self-hosted icons or Lucide icons instead of using FontAwesome (to avoid unnecessary JavaScript on load).
+
+I'll also be launching my business card subpage [card.jasongarvin.com](card.jasongarvin.com) to host a digital version of my business card right on my website for easy sharing--if you click on it right now you'll get a 404 but it will be live in the future.
