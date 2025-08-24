@@ -31,7 +31,7 @@ const canonicalUrl = "https://jasongarvin.com/blog";
 
     <!-- Tag List -->
     <section class="vertical-space tag-container">
-      <h3>Browse and filter by tag</h3>
+      <h3>Filter by tag</h3>
 
       <div class="tags">
         {uniqueTags.map((tag) => (
@@ -65,6 +65,10 @@ const canonicalUrl = "https://jasongarvin.com/blog";
 </BaseLayout>
 
 <style>
+  .tag-container {
+    padding: 1rem 1.5rem;
+  }
+
   .tag-container h3 {
     margin-top: 0;
   }

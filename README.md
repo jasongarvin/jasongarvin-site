@@ -1,7 +1,5 @@
 # Jason Garvin's website - v2.1, the blog update
 
-[![pages-build-deployment](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jasongarvin/jasongarvin.github.io/actions/workflows/pages/pages-build-deployment)
-
 Hello and welcome to my website's source code!
 
 This is where my personal website is hosted, including information about me and my blog content.
