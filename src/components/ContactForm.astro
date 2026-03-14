@@ -1,10 +1,18 @@
 ---
 import '../styles/Normalize.astro';
 import '../styles/Style.astro';
+
+export interface Props {
+  formTitle: string;
+}
+
+const {
+  formTitle
+}: Props = Astro.props;
 ---
 
 <section class="vertical-space contact-form-container">
-  <h2 id="contact-title" class="centered form-lead">Send me an email</h2>
+  <h2 id="contact-title" class="centered form-lead">{formTitle}</h2>
 
   <form id="contact-me" class="contact-form" action="https://formspree.io/f/mjvqjygb" method="POST" autocomplete="on" aria-labelledby="contact-title">
     <ul class="form-list">
@@ -14,7 +22,7 @@ import '../styles/Style.astro';
 
           <li class="form-item">
             <label for="form_name">
-              Your Name <span aria-label="required">*</span>
+              Name<span aria-label="required">*</span>
             </label>
             <br>
             <input id="form_name" class="form-input" type="text" name="user_name" placeholder="First and Last" required
@@ -23,7 +31,7 @@ import '../styles/Style.astro';
 
           <li class="form-item">
             <label for="form_email">
-              Your Email <span aria-label="required">*</span>
+              Email Address<span aria-label="required">*</span>
             </label>
             <br>
             <input id="form_email" class="form-input" type="email" name="user_email" placeholder="mail@example.com"
@@ -33,7 +41,7 @@ import '../styles/Style.astro';
       </li>
 
       <li class="form-item">
-        <label for="form_body">Your Message</label>
+        <label for="form_body">Message</label>
         <br>
         <textarea id="form_body" class="form-textarea" name="user_message"></textarea>
       </li>

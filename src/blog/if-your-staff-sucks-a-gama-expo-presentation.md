@@ -233,3 +233,7 @@ There are a great many Gallup polls and reports indicating the importance of tak
 
 - "Employees who use their strengths are more engaged, perform better, are less likely to leave -- and boost your bottom line."
 - "By contrast, for the 37% who agreed that their supervisor focused on their strengths, active disengagement fell dramatically to 1%. What's more, nearly two-thirds (61%) of these employees were engaged, twice the average of U.S. workers who are engaged nationwide (30%). This suggests that if every company in America trained its managers to focus on employees' strengths, the U.S. could easily double the number of engaged employees in the workplace."
+
+---
+
+You can view the [original slide deck in Google Slides](https://docs.google.com/presentation/d/1U5oawSIroZDiN57N2XNGF8nsrCa2F__-T59I76Gn7VU/edit?usp=sharing).
