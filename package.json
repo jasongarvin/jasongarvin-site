@@ -19,7 +19,7 @@
     "stable": "^0.1.8"
   },
   "devDependencies": {
-    "happy-dom": "^20.8.4",
+    "happy-dom": "^20.9.0",
     "jsdom": "^26.1.0",
     "vitest": "^3.2.4",
     "wrangler": "^4.25.1"
