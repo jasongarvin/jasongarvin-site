@@ -1,86 +1,158 @@
 ---
-import '../../styles/Style.astro';
-import '../../styles/Normalize.astro';
+import "../../styles/Style.astro";
+import "../../styles/Normalize.astro";
 
 const socialLinks = [
-  {name: 'Email Me', href: 'mailto::jsongarvin@gmail.com', icon: 'fa-regular fa-envelope', class: ''},
-  {name: 'LinkedIn', href: 'https://www.linkedin.com/in/jasonagarvin/', icon: 'fa-brands fa-square-linkedin', class: ''},
-  {name: 'Total Escape Games', href: '', icon: '', class: 'section-title'},
-  {name: 'Our Website', href: 'https://totalescapegames.com/about/', icon: 'fa-solid fa-globe', class: ''},
-  {name: 'On Instagram', href: 'https://totalescapegames.com/about/', icon: 'fa-brands fa-square-instagram', class: ''},
-  {name: 'On Facebook', href: 'https://totalescapegames.com/about/', icon: 'fa-brands fa-square-facebook', class: ''},
-]
+  {
+    name: "Email Me",
+    href: "mailto::jsongarvin@gmail.com",
+    icon: "fa-regular fa-envelope",
+    class: "",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/jasonagarvin/",
+    icon: "fa-brands fa-square-linkedin",
+    class: "",
+  },
+  { name: "Total Escape Games", href: "", icon: "", class: "section-title" },
+  {
+    name: "Our Website",
+    href: "https://totalescapegames.com/about/",
+    icon: "fa-solid fa-globe",
+    class: "",
+  },
+  {
+    name: "On Instagram",
+    href: "https://totalescapegames.com/about/",
+    icon: "fa-brands fa-square-instagram",
+    class: "",
+  },
+  {
+    name: "On Facebook",
+    href: "https://totalescapegames.com/about/",
+    icon: "fa-brands fa-square-facebook",
+    class: "",
+  },
+];
 ---
 
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Jason Garvin - Business Card</title>
 
-<head>
-  <title>Jason Garvin - Business Card</title>
+    <script
+      src="https://kit.fontawesome.com/e3566c3fcf.js"
+      crossorigin="anonymous"></script>
+  </head>
 
-  <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <div class="return-link">
+      <span>
+        <i class="fa fa-arrow-left"></i>
+        <!-- TODO add tooltip that says "jasongarvin.com" -->
+        <a href="/">Back to website</a>
+      </span>
+    </div>
 
-<body>
-  <div class="wrapper">
-    <input id="flip" type="checkbox" name="flip-card">
+    <div class="wrapper">
+      <input id="flip" type="checkbox" name="flip-card" />
 
-    <label for="flip">
-      <div class="card">
+      <label for="flip">
+        <div class="card">
+          <div class="front">
+            <div class="front_bg">JG</div>
 
-        <div class="front">
-          <div class="front_bg">
-            JG
+            <div class="strip"></div>
+            <div class="left_side"></div>
+            <div class="right_side"></div>
+            <div class="name">
+              <span>JASON</span>GARVIN
+            </div>
+            <div class="profession">Chief Operating Officer</div>
           </div>
 
-          <div class="strip"></div>
-          <div class="left_side"></div>
-          <div class="right_side"></div>
-          <div class="name">
-            <span>JASON</span>GARVIN
-          </div>
-          <div class="profession">
-            Front End Web Developer
+          <div class="back link-container">
+            <div class="left_back"></div>
+
+            {
+              socialLinks.map((link) => (
+                <div class="item">
+                  {link.icon != "" && <i class={link.icon} />}
+                  <a class={link.class} href={link.href}>
+                    {link.name}
+                  </a>
+                </div>
+              ))
+            }
           </div>
         </div>
-
-        <div class="back link-container">
-          <!-- <div class="left_back"></div> -->
-
-          {socialLinks.map((link) => (
-              <div class="item">
-                {(link.icon != '') && (
-                  <i class={link.icon} />
-                )}
-                <a class={link.class} href={link.href}>{link.name}</a>
-              </div>
-            ))
-          }
-        </div>
-
-      </div>
-    </label>
-  </div>
-</body>
-
+      </label>
+    </div>
+  </body>
 </html>
 
 <style>
   body {
-    font-family: "Open Sans";
     line-height: 1.618em;
     color: #444;
     background-color: #2c2c2c;
-    background-image: repeating-radial-gradient(circle,
-        #3a3a3a, #3a3a3a 45%,
-        transparent 45%, transparent 60%,
-        #3a3a3a 60%, #3a3a3a 100%);
+    background-image: repeating-radial-gradient(
+      circle,
+      #3a3a3a,
+      #3a3a3a 45%,
+      transparent 45%,
+      transparent 60%,
+      #3a3a3a 60%,
+      #3a3a3a 100%
+    );
     background-size: 10px 10px;
+    font-family: "PT Serif",
+                 serif;
   }
 
   a {
     text-decoration: none;
+  }
+
+  i {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+  }
+
+  div.item {
+    text-transform: capitalize;
+  }
+
+  .return-link {
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    font-family: "Quicksand",
+                "Open Sans",
+                Helvetica,
+                Arial,
+                sans-serif;
+  }
+
+  .return-link a {
+    color: var(--background-shade, #fcfcfe);
+  }
+
+  .return-link a:hover {
+    color: var(--background-shade, #fcfcfe);
+  }
+
+  .link-container {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--brand-highlight, #3066be);
   }
 
   .wrapper {
@@ -107,12 +179,12 @@ const socialLinks = [
 
   /* --- Card Flip Logic --- */
 
-  #flip:not(:checked)+label>.card {
+  #flip:not(:checked) + label > .card {
     transform: rotateY(0deg);
     transition: transform 0.25s;
   }
 
-  #flip:checked+label>.card {
+  #flip:checked + label > .card {
     transform: rotateY(180deg);
     transition: transform 0.25s;
   }
@@ -123,22 +195,23 @@ const socialLinks = [
     position: absolute;
     width: 100%;
     height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 0 3rem 0,
-                rgba(0, 0, 0, 0.1) 0 0 1rem 0;
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 0 0 3rem 0,
+      rgba(0, 0, 0, 0.1) 0 0 1rem 0;
   }
 
   .front {
     transform: translateZ(2px);
-    background: #2d5077;
+    background: var(--brand-highlight, #3066be);
     border-radius: 2rem 0;
-    color: #cddbea;
+    color: #fcfcfe;
   }
 
   /* --- Flip Action Notice --- */
 
   .front:after {
-    content: 'CLICK TO FLIP';
-    background: #2d5077;
+    content: "CLICK TO FLIP";
+    background: var(--brand-primary, #2d5077);
     white-space: nowrap;
     position: absolute;
     top: 6rem;
@@ -171,7 +244,7 @@ const socialLinks = [
     font-size: 25rem;
     line-height: 20rem;
     letter-spacing: -0.09em;
-    color: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.6);
   }
 
   .name {
@@ -204,7 +277,7 @@ const socialLinks = [
     bottom: 6rem;
     left: 0;
     right: 0;
-    background: #2d5077;
+    background: var(--brand-primary, #2d5077);
   }
 
   .left_side,
@@ -213,7 +286,7 @@ const socialLinks = [
     top: 7rem;
     bottom: 7rem;
     width: 0.25rem;
-    background: #3a5c81;
+    background: var(--brand-primary, #2d5077);
   }
 
   .left_side {
@@ -229,13 +302,12 @@ const socialLinks = [
   .back {
     border-radius: 0 2rem;
     transform: translateZ(-2px) rotateY(180deg);
-    background: #fff;
-    border: 1px solid #2d5077;
-    padding-top: 1.7rem;
+    background: var(--brand-highlight, #3066be);
+    border: 1px solid var(--brand-primary, #2d5077);
   }
 
   .left_back {
-    background: #2d5077;
+    background: var(--brand-primary, #2d5077);
     position: absolute;
     top: 0;
     left: -1rem;
@@ -247,24 +319,24 @@ const socialLinks = [
     position: relative;
     margin-left: 3.5rem;
     text-align: left;
-    font-size: 1.65rem;
-    font-weight: 700;
-    line-height: 2em;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.618em;
     z-index: 1;
   }
 
   .item:hover a {
-    color: #cddbea;
+    color: var(--background-shade, #fcfcfe);
     transition: color 0.35s;
   }
 
   .item a {
-    color: #2d5077;
+    color: var(--background, #fcfcfe);
     transition: color 0.35s;
   }
 
   .item:hover .fa {
-    color: #fff;
+    color: var(--background-shade, #fcfcfe);
     transition: color 0.35s;
   }
 
@@ -272,20 +344,20 @@ const socialLinks = [
     width: 2em;
     text-align: center;
     margin-right: 2em;
-    color: #cddbea;
+    color: var(--background, #fcfcfe);
     transition: color 0.35s;
   }
 
   /* --- Selection Highlighter Logic --- */
 
   .item::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     bottom: 0;
-    background: #2d5077;
+    background: var(--brand-primary, #2d5077);
     z-index: -1;
     transition: width 0.35s;
   }
@@ -296,13 +368,13 @@ const socialLinks = [
   }
 
   .item::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     width: 0;
     right: 23.35rem;
     bottom: 0;
-    background: #34587f;
+    background: var(--brand-primary, #2d5077);
     z-index: -1;
     transition: width 0.35s;
   }
@@ -310,31 +382,5 @@ const socialLinks = [
   .item:hover::after {
     width: 9rem;
     transition: width 0.35s;
-  }
-
-  i {
-    margin-right: 0.5rem;
-    width: 1.5rem;
-  }
-
-  div.item {
-    text-transform: capitalize;
-  }
-
-  .link-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 1.618rem;
-  }
-
-  .link-container div {
-    max-height: 1.618rem;
-  }
-
-  .section-title {
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--brand-primary, #3066be);
   }
 </style>
