@@ -1,4 +1,4 @@
-# Jason Garvin's website - v2.1, the blog update
+# Jason Garvin's website - v2.2, the professional content update
 
 Hello and welcome to my website's source code!
 
@@ -39,6 +39,8 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ## Changelog
 
+2.2 - update the website copy to relate better to my current professional life, and add the business-card page which includes a simple business card I can link digitally for people when on the go via QR code (assuming I don't want to just link them to the website, itself).
+
 2.1 - make many updates to the blog, including an RSS feed for the first time ever. Also added tags and filtering so blog posts can be searched by topic, and cleaned up blog feed generation to use Astro collections to load and serve content rather than manually maintaining a blog post JSON index (can you believe I was doing that by hand? Insanity). Oh, and I also started adding tests to my codebase.
 
 2.0.1 - add a basic testing suite for core components and clean up build process.
@@ -47,6 +49,8 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ### Upcoming Changes
 
-In v2.2, I'll be making some under the hood changes, including exploring self-hosted icons or Lucide icons instead of using FontAwesome (to avoid unnecessary JavaScript on load).
+In v2.2.1, I'll be making minor updates and fixes to the website to ensure footer content is up to date and that all relevant resources are linked through the website.
 
-I'll also be launching my business card subpage [card.jasongarvin.com](card.jasongarvin.com) to host a digital version of my business card right on my website for easy sharing--if you click on it right now you'll get a 404 but it will be live in the future.
+In v2.3, I'll be working on configuring tests so that more of my website is protected against breaking changes. This enables me to start the Big Website Remake where I'll completely overhaul the visual identity and layout of the website. So, yeah. Get ready for that.
+
+In v3.0, I'll complete the redesign of the website.
