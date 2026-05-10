@@ -66,6 +66,10 @@ export default defineConfig({
       status: 301,
       destination: "/blog/posts/context-switching-destroys-your-effectiveness"
     },
+    "/blog/using-the-past-to-change-the-future": {
+      status: 301,
+      destination: "/blog/posts/learn-to-grow-by-exploring-your-past"
+    },
     "/blog/learn-to-grow-by-exploring-your-past": {
       status: 301,
       destination: "/blog/posts/learn-to-grow-by-exploring-your-past"
@@ -77,6 +81,10 @@ export default defineConfig({
     "/blog/the-price-of-ai-efficiency": {
       status: 301,
       destination: "/blog/posts/the-price-of-ai-efficiency"
+    },
+    "/blog/seo-vs-humans": {
+      status: 301,
+      destination: "/blog/posts/seo-versus-writing-for-humans"
     },
     "/blog/seo-versus-humans": {
       status: 301,
