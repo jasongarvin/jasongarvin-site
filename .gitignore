@@ -1,6 +1,5 @@
 # Custom directories to ignore during rewrite
 /src/assets/scripts/wip_scripts
-/assets/stylesheets/
 search-bar.js
 show-text-preview.js
 
