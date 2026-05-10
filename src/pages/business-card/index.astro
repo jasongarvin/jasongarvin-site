@@ -2,58 +2,93 @@
 import "../../styles/Style.astro";
 import "../../styles/Normalize.astro";
 
+const title = "Jason Garvin - Business Card";
+const description = "View Jason Garvin's online business card and find links to his socials as well as information about Total Escape Games, his tabletop game store.";
+const canonicalUrl = "card.jasongarvin.com";
+
 const socialLinks = [
   {
     name: "Email Me",
     href: "mailto::jsongarvin@gmail.com",
-    icon: "fa-regular fa-envelope",
+    icon: "fa-solid fa-envelope",
     class: "",
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/jasonagarvin/",
-    icon: "fa-brands fa-square-linkedin",
+    icon: "fa-brands fa-linkedin-in",
     class: "",
   },
   { name: "Total Escape Games", href: "", icon: "", class: "section-title" },
   {
-    name: "Our Website",
+    name: "Website",
     href: "https://totalescapegames.com/about/",
     icon: "fa-solid fa-globe",
     class: "",
   },
   {
-    name: "On Instagram",
+    name: "Facebook",
     href: "https://totalescapegames.com/about/",
-    icon: "fa-brands fa-square-instagram",
+    icon: "fa-brands fa-facebook",
     class: "",
   },
-  {
-    name: "On Facebook",
+    {
+    name: "Instagram",
     href: "https://totalescapegames.com/about/",
-    icon: "fa-brands fa-square-facebook",
+    icon: "fa-brands fa-instagram",
     class: "",
   },
 ];
 ---
 
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>Jason Garvin - Business Card</title>
 
-    <script
-      src="https://kit.fontawesome.com/e3566c3fcf.js"
-      crossorigin="anonymous"></script>
+<html lang="en" manifest="manifest.appcache">
+
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width", initial-scale="1" />
+    <meta name="author" content="Jason Garvin" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#3066be" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#696c9a" />
+
+    <!-- Open Graph Protocol - Social Sharing -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:image:src" content="https://jasongarvin.com/assets/img/jason_garvin_opengraph.png" />
+    <meta name="twitter:image:alt" content="The logo for Jason Garvin's website." />
+    <meta name="twitter:creator" content="@jasonagarvin" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="return-link">
-      <span>
+      <a href="/">
         <i class="fa fa-arrow-left"></i>
         <!-- TODO add tooltip that says "jasongarvin.com" -->
-        <a href="/">Back to website</a>
-      </span>
+        <span>Back to website</span>
+      </a>
     </div>
 
     <div class="wrapper">
@@ -70,7 +105,10 @@ const socialLinks = [
             <div class="name">
               <span>JASON</span>GARVIN
             </div>
-            <div class="profession">Chief Operating Officer</div>
+            <div class="profession">
+              Chief Operating Officer <br />
+              Total Escape Games
+            </div>
           </div>
 
           <div class="back link-container">
@@ -134,6 +172,11 @@ const socialLinks = [
                 Helvetica,
                 Arial,
                 sans-serif;
+  }
+
+  .fa-brands,
+  .fa-solid {
+    color: var(--background-shade, #fcfcfe);
   }
 
   .return-link a {
@@ -249,7 +292,7 @@ const socialLinks = [
 
   .name {
     position: absolute;
-    top: 8rem;
+    top: 7rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -263,7 +306,7 @@ const socialLinks = [
 
   .profession {
     position: absolute;
-    top: 11rem;
+    top: 10rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -273,11 +316,11 @@ const socialLinks = [
 
   .strip {
     position: absolute;
-    top: 6rem;
-    bottom: 6rem;
+    top: 5rem;
+    bottom: 5rem;
     left: 0;
     right: 0;
-    background: var(--brand-primary, #2d5077);
+    background: rgba(48, 102, 190, 0.85);
   }
 
   .left_side,
