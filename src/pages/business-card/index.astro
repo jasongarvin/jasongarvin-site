@@ -7,6 +7,7 @@ const description = "View Jason Garvin's online business card and find links to 
 const canonicalUrl = "jasongarvin.com/business-card";
 
 const socialLinks = [
+  { name: "Personal", href: "", icon: "", class: "section-title" },
   {
     name: "Email Me",
     href: "mailto::jsongarvin@gmail.com",
@@ -132,6 +133,8 @@ const socialLinks = [
 </html>
 
 <style>
+  /* --- General styles and modifications from base --- */
+
   body {
     line-height: 1.618em;
     color: #444;
@@ -159,24 +162,17 @@ const socialLinks = [
     width: 1.5rem;
   }
 
-  div.item {
-    text-transform: capitalize;
-  }
+  /* --- Return link --- */
 
   .return-link {
     position: absolute;
     top: 16px;
     left: 32px;
     font-family: "Quicksand",
-                "Open Sans",
-                Helvetica,
-                Arial,
-                sans-serif;
-  }
-
-  .fa-brands,
-  .fa-solid {
-    color: var(--background-shade, #fcfcfe);
+                 "Open Sans",
+                 Helvetica,
+                 Arial,
+                 sans-serif;
   }
 
   .return-link a {
@@ -187,16 +183,7 @@ const socialLinks = [
     color: var(--background-shade, #fcfcfe);
   }
 
-  .link-container {
-    padding-top: 6rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section-title {
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--brand-highlight, #3066be);
-  }
+  /* --- General card styles --- */
 
   .wrapper {
     max-width: 50rem;
@@ -205,8 +192,6 @@ const socialLinks = [
     text-align: center;
   }
 
-  /* --- General Card Styles --- */
-
   #flip {
     display: none;
   }
@@ -214,69 +199,14 @@ const socialLinks = [
   .card {
     padding: 0;
     display: block;
-    width: 32rem;
+    max-width: 32rem;
     height: 20rem;
+    width: 95vw;
     margin: 0 auto;
     transform-style: preserve-3d;
   }
 
-  /* --- Card Flip Logic --- */
-
-  #flip:not(:checked) + label > .card {
-    transform: rotateY(0deg);
-    transition: transform 0.25s;
-  }
-
-  #flip:checked + label > .card {
-    transform: rotateY(180deg);
-    transition: transform 0.25s;
-  }
-
-  .front,
-  .back {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow:
-      rgba(0, 0, 0, 0.2) 0 0 3rem 0,
-      rgba(0, 0, 0, 0.1) 0 0 1rem 0;
-  }
-
-  .front {
-    transform: translateZ(2px);
-    background: var(--brand-highlight, #3066be);
-    border-radius: 2rem 0;
-    color: #fcfcfe;
-  }
-
-  /* --- Flip Action Notice --- */
-
-  .front:after {
-    content: "CLICK TO FLIP";
-    background: var(--brand-primary, #2d5077);
-    white-space: nowrap;
-    position: absolute;
-    top: 6rem;
-    bottom: 6rem;
-    left: 5.5rem;
-    right: 5.5rem;
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 128px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.35s;
-  }
-
-  .front:hover:after {
-    visibility: visible;
-    opacity: 0.9;
-    transition: opacity 0.35s;
-  }
-
-  /* --- Front Side Design --- */
+    /* --- Front side design --- */
 
   .front_bg {
     position: absolute;
@@ -340,7 +270,11 @@ const socialLinks = [
     right: 4.5rem;
   }
 
-  /* --- Back Side Design --- */
+  /* --- Back side design --- */
+
+  div.item {
+    text-transform: capitalize;
+  }
 
   .back {
     border-radius: 0 2rem;
@@ -358,6 +292,16 @@ const socialLinks = [
     width: 9.5rem;
   }
 
+  .link-container {
+    padding-top: 2.382rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+  }
+
   .item {
     position: relative;
     margin-left: 3.5rem;
@@ -366,6 +310,10 @@ const socialLinks = [
     font-weight: 400;
     line-height: 1.618em;
     z-index: 1;
+  }
+
+  .item:has(.section-title) {
+    margin-top: 0.618rem;
   }
 
   .item:hover a {
@@ -391,7 +339,12 @@ const socialLinks = [
     transition: color 0.35s;
   }
 
-  /* --- Selection Highlighter Logic --- */
+  .fa-brands,
+  .fa-solid {
+    color: var(--background-shade, #fcfcfe);
+  }
+
+  /* --- Selection highlighter logic --- */
 
   .item::before {
     content: "";
@@ -422,8 +375,79 @@ const socialLinks = [
     transition: width 0.35s;
   }
 
+  .item:has(.section-title)::before,
+  .item:has(.section-title):hover::before,
+  .item:has(.section-title)::after {
+    width: 0;
+    right: 0;
+    background: none;
+    transition: none;
+  }
+
   .item:hover::after {
     width: 9rem;
     transition: width 0.35s;
+  }
+
+  /* --- Card flip logic --- */
+
+  #flip:not(:checked) + label > .card {
+    transform: rotateY(0deg);
+    transition: transform 0.25s;
+  }
+
+  #flip:checked + label > .card {
+    transform: rotateY(180deg);
+    transition: transform 0.25s;
+  }
+
+  .front,
+  .back {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 0 0 3rem 0,
+      rgba(0, 0, 0, 0.1) 0 0 1rem 0;
+  }
+
+  .front {
+    transform: translateZ(2px);
+    background: var(--brand-highlight, #3066be);
+    border-radius: 2rem 0;
+    color: #fcfcfe;
+  }
+
+  /* --- Flip action notice --- */
+
+  .front:after {
+    content: "CLICK TO FLIP";
+    background: var(--brand-primary, #2d5077);
+    white-space: nowrap;
+    position: absolute;
+    top: 6rem;
+    bottom: 6rem;
+    left: 5.5rem;
+    right: 5.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 128px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+
+  .front:hover:after {
+    visibility: visible;
+    opacity: 0.9;
+    transition: opacity 0.35s;
+  }
+
+  @media screen and (max-width: 370px) {
+    .name {
+      font-size: 2.5rem;
+    }
   }
 </style>
