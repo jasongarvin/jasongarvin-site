@@ -39,6 +39,8 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ## Changelog
 
+v2.2.1 - make minor updates to copy sitewide. Add business card link to the footer, and rearrange footer styles. Rerwite the Total Escape Games mission statement on the home page.
+
 2.2 - update the website copy to relate better to my current professional life, and add the business-card page which includes a simple business card I can link digitally for people when on the go via QR code (assuming I don't want to just link them to the website, itself).
 
 2.1 - make many updates to the blog, including an RSS feed for the first time ever. Also added tags and filtering so blog posts can be searched by topic, and cleaned up blog feed generation to use Astro collections to load and serve content rather than manually maintaining a blog post JSON index (can you believe I was doing that by hand? Insanity). Oh, and I also started adding tests to my codebase.
@@ -48,8 +50,6 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 2.0 - introduce a huge number of redesigned elements and refactored code, meaning the website looks mostly the same but functions *entirely differently* under the hood.
 
 ### Upcoming Changes
-
-In v2.2.1, I'll be making minor updates and fixes to the website to ensure footer content is up to date and that all relevant resources are linked through the website.
 
 In v2.3, I'll be working on configuring tests so that more of my website is protected against breaking changes. This enables me to start the Big Website Remake where I'll completely overhaul the visual identity and layout of the website. So, yeah. Get ready for that.
 
