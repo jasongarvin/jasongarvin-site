@@ -492,6 +492,10 @@
     margin-top: 10rem;
   }
 
+  .home-gap__small {
+    margin-top: 6rem;
+  }
+
   .home-grid {
     display: -ms-grid;
     display: grid;
@@ -505,17 +509,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin: 1rem auto;
+    padding: 1rem 0;
   }
 
   .brand-name {
-    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
   }
 
   #teg-logo,
@@ -1485,14 +1492,14 @@
       margin-top: 6.5rem;
     }
 
+    .home-gap__small {
+      margin-top: 3.25rem;
+    }
+
     .home-grid {
       -ms-grid-columns: 1fr 3rem 1fr;
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
-    }
-
-    .brand-name {
-      margin-left: 2.5rem;
     }
 
     .preview-grid {
@@ -1595,6 +1602,10 @@
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
+    }
+
+    .brand-container {
+      padding: 1rem 2rem;
     }
   }
 

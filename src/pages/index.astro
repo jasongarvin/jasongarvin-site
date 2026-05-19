@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import teg_logo from '../assets/img/teg-logo.webp';
+import broomfield_logo from '../assets/img/broomfield_co_masthead_logo.png'
+import gama_logo from '../assets/img/gama_tabletop_game_association_masthead_logo.png'
+import teg_logo from '../assets/img/total_escape_games_masthead_logo.png';
 
 const title = "Designing for Experience | Jason Garvin";
 const description = "The professional website for Jason Garvin, owner and Chief Operating Officer of Total Escape Games, web designer, and opinionated thinker.";
@@ -35,60 +37,6 @@ const canonicalUrl = "https://jasongarvin.com";
     </section>
 
     <!-- Below the cut -->
-    <section class="home-gap transparent-bg">
-      <h2>My Focus</h2>
-      <p>
-        We all work best when our tools and environment help support our needs,
-        so I bring that user-centric approach to business in order to cultivate
-        strong, resilient teams.
-      </p>
-    </section>
-
-    <aside>
-      <div class="home-grid vertical-space">
-        <section class="animate-slide">
-          <h3 class="subtitle">
-            <i class="fa-solid fa-sitemap"></i>
-            Operations
-          </h3>
-          <p>
-            I build custom, people-friendly procedures so businesses and
-            employees can work efficiently.
-          </p>
-        </section>
-        <section class="animate-slide">
-          <h3 class="subtitle">
-            <i class="fa-solid fa-chart-line"></i>
-            Business Growth
-          </h3>
-          <p>
-            I'm a business owner working to grow my own business, with a focus
-            on workplace culture, brand design, and operations.
-          </p>
-        </section>
-        <section class="animate-slide">
-          <h3 class="subtitle">
-            <i class="fa-solid fa-shield-halved"></i>
-            Governance
-          </h3>
-          <p>
-            I maintain a depth of knowledge in compliance, management, and HR,
-            and serve on non-profit boards.
-          </p>
-        </section>
-        <section class="animate-slide">
-          <h3 class="subtitle">
-            <i class="fa-solid fa-code"></i>
-            Web Dev
-          </h3>
-          <p>
-            I create websites and interfaces using popular front-end
-            frameworks to curate smooth digital experiences.
-          </p>
-        </section>
-      </div>
-    </aside>
-
     <section class="home-gap transparent-bg animate-drop">
       <h2>Thoughtful Blog Posts</h3>
       <p>
@@ -150,8 +98,8 @@ const canonicalUrl = "https://jasongarvin.com";
 
     <section class="home-block home-gap transparent-bg">
       <section class="brand-container animate-slide">
-        <img id="teg-logo" src={teg_logo.src} alt="The Total Escape Games logo" width="100" height="100" />
-        <h2 class="brand-name">Total Escape Games</h2>
+        <img id="teg-logo" src={teg_logo.src} alt="The Total Escape Games logo" height="80" alt="Total Escape Games" />
+        <h2 class="brand-name" hidden>Total Escape Games</h2>
       </section>
 
       <section class="animate-slide">
@@ -192,6 +140,140 @@ const canonicalUrl = "https://jasongarvin.com";
           </li>
         </ul>
       </aside>
+    </section>
+
+    <section class="home-block home-gap__small transparent-bg">
+      <section class="brand-container animate-slide">
+        <img id="teg-logo" src={gama_logo.src} alt="The Total Escape Games logo" height="80" alt="GAMA: The Tabletop Game Association" />
+        <h2 class="brand-name">Sustainability Committee</h2>
+      </section>
+
+      <section class="animate-slide">
+        <h3 class="subtitle">Improving Industry Sustainability</h3>
+        <p class="left-align">
+          I’ve been serving as a retail member of the GAMA Sustainability
+          Committee since 2025 to help like-minded retailers bring renewable
+          initiatives into their businesses. From highlighting sustainably-made
+          games to helping businesses find local recycling facilities for their
+          hard-to-recycle materials, we’re bringing sustainability to retailers.
+        </p>
+        <p>
+          We also advise publishers and manufacturers on best practices to
+          create renewable, recyclable, and environmentally-friendly board games.
+        </p>
+      </section>
+
+      <aside>
+        <ul class="list-emphasis">
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://www.gama.org/" target="_blank" rel="external">
+              GAMA Website
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://www.gama.org/page/get-involved" target="_blank" rel="external">
+              Get Involved
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="home-block home-gap__small transparent-bg">
+      <section class="brand-container animate-slide">
+        <img id="teg-logo" src={broomfield_logo.src} alt="The Total Escape Games logo" height="80" alt="The City and County of Broomfield, CO" />
+        <h2 class="brand-name">
+          Advisory Committee on Environmental Sustainability (ACES)
+        </h2>
+      </section>
+
+      <section class="animate-slide">
+        <h3 class="subtitle">Making Broomfield More Sustainable</h3>
+        <p class="left-align">
+          I’m a new member of the Broomfield ACES board effective 2026, working
+          to bring environmentally-conscious legislation and renewable practices
+          to the place where I live.
+        </p>
+        <p>
+          Affecting local change is difficult, but Broomfield is committed, and
+          on track, to to hit our Zero Waste goals by 2050, and are working to
+          improve our energy efficiency, too.
+        </p>
+      </section>
+
+      <aside>
+        <ul class="list-emphasis">
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://broomfield.org/3236/Sustainability" target="_blank" rel="external">
+              Broomfield Sustainability
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+          <li class="list-item-emphasis animate-drop">
+            <a href="https://www.broomfield.org/2855/Advisory-Committee-on-Environmental-Sust" target="_blank" rel="external">
+              Information on ACES
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="home-gap transparent-bg">
+      <h2>My Focus</h2>
+      <p>
+        We all work best when our tools and environment help support our needs,
+        so I bring that user-centric approach to business in order to cultivate
+        strong, resilient teams.
+      </p>
+    </section>
+
+    <aside>
+      <div class="home-grid vertical-space">
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-sitemap"></i>
+            Operations
+          </h3>
+          <p>
+            I build custom, people-friendly procedures so businesses and
+            employees can work efficiently.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-chart-line"></i>
+            Business Growth
+          </h3>
+          <p>
+            I'm a business owner working to grow my own business, with a focus
+            on workplace culture, brand design, and operations.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-shield-halved"></i>
+            Governance
+          </h3>
+          <p>
+            I maintain a depth of knowledge in compliance, management, and HR,
+            and serve on non-profit boards.
+          </p>
+        </section>
+        <section class="animate-slide">
+          <h3 class="subtitle">
+            <i class="fa-solid fa-code"></i>
+            Web Dev
+          </h3>
+          <p>
+            I create websites and interfaces using popular front-end
+            frameworks to curate smooth digital experiences.
+          </p>
+        </section>
+      </div>
+    </aside>
   </main>
 </BaseLayout>
 
