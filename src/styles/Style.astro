@@ -907,11 +907,20 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
   }
 
   .card-flex aside {
     border-radius: 10px;
+  }
+
+  .active-card,
+  .inactive-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
   }
 
   .active-card {
@@ -927,6 +936,14 @@
   .side-accent-1 {
     border-right: 0.75rem solid var(--brand-primary, #3066be);
     border-radius: 0;
+  }
+
+  .width-50 {
+    flex: 0 0 100%;
+  }
+
+  .width-100 {
+    flex: 0 0 100%;
   }
 
 
@@ -1606,6 +1623,16 @@
 
     .brand-container {
       padding: 1rem 2rem;
+    }
+
+    .width-50 {
+      flex: 0 0 47%;
+    }
+  }
+
+  @media screen and (min-width: 910px) {
+    .width-50 {
+      flex: 0 0 48%;
     }
   }
 
