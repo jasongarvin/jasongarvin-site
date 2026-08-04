@@ -10,12 +10,12 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@astrojs/prism": "^4.0.1",
-    "@astrojs/rss": "^4.0.18",
-    "@astrojs/sitemap": "^3.7.2",
-    "astro": "^6.1.5",
+    "@astrojs/prism": "^4.0.2",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.1.6",
     "latest": "^0.2.0",
-    "node": "^25.8.1",
+    "node": "^25.9.0",
     "stable": "^0.1.8"
   },
   "devDependencies": {
