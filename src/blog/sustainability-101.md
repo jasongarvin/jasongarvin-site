@@ -163,6 +163,7 @@ In putting together this post, I did a lot of research both within my industry a
 
 Here’s what I found:
 
+- [My resources page on sustainability](/projects/sustainability) - a list of resources I've compiled about sustainability, designed to be approachable and beginner-friendly.
 - [The Green Games Guide](https://greengamesguide.com/) - policy and business suggestions for the good of the tabletop games industry.
 - [The Colorado Green Business Network](https://cdphe.colorado.gov/dehs/sustainability/cgbn) - a free Colorado program that provides resources and support to businesses trying to be more sustainable.
 - [Sustainability in Broomfield](https://www.broomfieldvoice.com/hub-page/sustainability) - what CCOB is doing to be more renewable, our climate pledges, and long-term goals.

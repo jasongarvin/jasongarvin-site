@@ -23,5 +23,13 @@
     "jsdom": "^26.1.0",
     "vitest": "^3.2.4",
     "wrangler": "^4.25.1"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true,
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.4": true,
+    "node@25.9.0": true,
+    "fsevents@2.3.3": true,
+    "workerd@1.20260801.1": true
   }
 }
