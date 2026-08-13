@@ -16,6 +16,7 @@
     "astro": "^7.1.6",
     "latest": "^0.2.0",
     "node": "^25.9.0",
+    "npm": "^12.0.2",
     "stable": "^0.1.8"
   },
   "devDependencies": {
@@ -30,6 +31,6 @@
     "esbuild@0.25.4": true,
     "node@25.9.0": true,
     "fsevents@2.3.3": true,
-    "workerd@1.20260801.1": true
+    "workerd@1.20250906.0": true
   }
 }

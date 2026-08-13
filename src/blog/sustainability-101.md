@@ -3,22 +3,18 @@ title: "Sustainability 101: Intro to Sustainability"
 description: "If you've ever been curious to learn more, join me in exploring the basics of what it means to act sustainability, and what pieces combine to make the larger topic."
 canonicalUrl: "https://jasongarvin.com/blog/posts/sustainability-101"
 contentCategory: "Sustainability"
-publishDate: "2026-08-05"
+publishDate: "2026-08-12"
 editDate: ""
 tags: ["lifestyle", "sustainability"]
 ---
 
-I’ve realized that, in life, there’s only so much I can do and only so many topics I can learn about. The world is too vast, and there’s simply too much information.
+A lot of us have been hearing about, and as a consequence thinking about, sustainability. There’s been a push towards renewable energy in the last several years, including Electric Vehicles (EVs), but also everyday advancements like solar farms and wind turbines.
 
-Despite that, I’ve chosen sustainability as one of the topics I want to better understand.
-
-I think a lot of us have been hearing about, and as a consequence thinking about, sustainability. There’s been a push towards renewable energy in the last several years, including Electric Vehicles (EVs), but also everyday advancements like solar farms and wind turbines.
-
-I’ve also noticed that sustainability, especially as it pertains to recycling and renewable materials, can be convoluted at best and downright confusing at worst.
+But when trying to learn about sustainability, especially as it pertains to recycling and renewable materials, the resources online can be convoluted at best and downright confusing at worst.
 
 What’s even recyclable? Is that a recycling symbol on this package or just a representation of the type of plastic used in manufacturing? Why can’t I recycle these plastic components, but I can recycle other types of plastic, and why does it feel like nobody even wants to try?
 
-On account of how much I think about this topic, and my work with two non-profit sustainability boards, let’s talk about it. Because doing what’s right for the planet and being more mindful of what we consume shouldn’t take a PhD.
+On account of how much I think about this topic, and my work with two non-profit sustainability boards, let’s get into it. Because doing what’s right for the planet and being more mindful of what we consume shouldn’t take a PhD.
 
 ## Topics Included in Sustainability
 
@@ -26,7 +22,7 @@ One of the trickier areas of sustainability is how vast a category it is. A lot 
 
 However, when it comes to implementation, sustainability includes so much more, from resource management, residental and business use, and environmental factors.
 
-Here are a few examples of areas covered by the umbrella of sustainability.
+Here are a few examples of areas covered under the umbrella of sustainability.
 
 - **Water use and conservation**, ranging from individual to city, county, or statewide policy. Includes drought policy, reservoirs, dams, watering, landscaping, etc.
 - **Reuse**, including donations, repurposing old materials, thrift stores, etc.
@@ -43,9 +39,9 @@ It’s surprisingly hard to tell what’s sustainable and what isn’t. Is it re
 
 In truth, it’s all of that and more. It starts at manufacturing, spans the entire product journey, and starts over when the end consumer disposes of the product. That means it affects everyone from businesses to individuals, and can be influenced by every affected party along the way.
 
-In a similar cycle, it’s also the way energy is produced and consumed: the energy grid, spanning residential and commercial properties, which uses a whole lot of electricity. Because of its scale, every small adjustment in favor of savings has potentially massive downstream effects.
+In a similar cycle, it’s also the way energy is produced and consumed: the energy grid, spanning residential and commercial properties, and where the grid is retrieving energy from. Because of its scale, every small adjustment in favor of savings has potentially massive downstream effects, like installing enough solar panels to effectively cover your personal electrical usage, or ensuring municipal buildings draw from renewable sources instead of coal plants.
 
-And, it’s the responsible use of materials and the reduction of packaging and superfluous content (even though wasteful packaging often looks so pretty on a shelf) to reduce the amount of waste created in the first place, which has the extra benefit of reducing the responsibility on the consumer because each option to choose from is, by default, less egregious.
+And, it’s the responsible use of materials and the reduction of packaging and superfluous content (even though wasteful packaging often looks so pretty on a shelf) to reduce the amount of waste created in the first place. This has the extra benefit of reducing the responsibility on the consumer because each option to choose from is, by default, less wasteful.
 
 That still only scratches the surface. Let’s, instead, cover a few specifics.
 
@@ -57,7 +53,7 @@ Then, when the waste being generated has been minimized as much as possible, we 
 
 Diversion rates are the amount of waste diverted divided by how much waste is generated. In this case, diversion includes reuse, recycling, and prevention. This boils down to how much waste is avoided up front rather than collected, thus offsetting the amount of waste overall.
 
-The rest, meaning what’s put in the landfill or sent to recycling facilities, is the remainder of waste. Because even the most efficient recycling facilities can’t recycle everything they receive, we can’t reasonably consider everything sent there as being reused. Which is sad.
+The rest, meaning what’s put in the landfill or sent to recycling facilities, is the remainder of waste. Because even the most efficient recycling facilities can’t recycle everything they receive, we can’t reasonably consider everything sent there as being reused, either. Which is sad.
 
 Zero Waste is the dream outcome for many communities and local governments. It’s the indisputable mark of successful resource management.
 
@@ -81,33 +77,32 @@ Because of these factors and more, tracking waste emissions is an important part
 
 Recycling is tricky. To understand why, here’s a simple example from my store.
 
-**Our recycling bin keeps getting contaminated by non-recyclable materials**. It’s not malicious–customers are genuinely trying to recycle their waste and do a good thing.
+**Our recycling bin keeps getting contaminated by non-recyclable materials**. It’s not malicious&mdash;customers are genuinely trying to recycle their waste and do a good thing.
 
-But, when this happens, we’re forced to send the whole bag to the dumpster. Why? Because if I send that bag of materials downstream, the recycling facility has to toss it out because it’s contaminated, and they also fine us $200 each time that happens. The first month we tossed the recycling bin contents in the dumpster for collection, we spent nearly $1,200 in fines.
+But, when this happens, we’re forced to send the whole bag to the dumpster. Why? Because if I send that bag of materials downstream, the recycling facility has to toss it out because it’s contaminated, and they also fine us $200 each time that happens. The first month we tossed the recycling bin contents in the our new recycling bin for collection, we spent nearly $1,200 in fines.
 
 That’s frustrating, and eye-opening so, yeah, I made a sign to hang above our bin, detailing one type of recycling: single stream. It’s the most common kind, and what most recycling bins are designed to collect. Ours included.
 
-The problem? You have to understand what that means and which materials it includes, or you inadvertently include a non-recyclable material in the bin, even if it seems like it could be recycled. Did you know a lot of coated cardboard can’t be recycled, for example? Or that your greasy pizza box is garbage because the grease can’t be separated back out from the cardboard?
+There's a lot of nuance to single-stream recycling, but in brief it includes:
 
-But, even with the sign in place, contamination keeps happening. So now, I’m going to make a second sign called “What you definitely can’t recycle,” and include specific, common examples based on what I find in our recycling bin, in hopes I pre-empt people with knowledge before they accidentally contaminate our recycling.
+- Plastic bottles
+- Glass
+- Aluminum (especially cans)
+- Cardboard & paper products
 
-There’s more that goes into it, but that’s the basics from the consumer side. A lot of what gets put into a recycling bin gets sent to the landfill. Contamination ruins otherwise recyclable materials and, again, gets them diverted to the landfill, and only a small portion of recyclable materials actually get recycled. It’s an inefficient process with myriad points of failure, but it’s gotten a lot better since we started.
+The problem? You have to know that ahead of time, or you inadvertently include a non-recyclable material in the bin, even if it seems like it could be recycled. Did you know a lot of coated cardboard can’t be recycled, for example? Or that your greasy pizza box is garbage because the grease can’t be separated back out from the cardboard?
 
-## Why is Sustainability so Confusing?
+Even though the items that can be recycled, like paper, seem intuitive, there are so many different types of paper out there that some can't be recycled, and without knowing that, you risk contamination.
 
-By virtue of how many aspects of life it involves, sustainability is inherently complicated. There are a lot of different ways to conserve energy, or reuse materials, and there are a million different types of materials (not to mention combinations) we have to find ways to recycle. The world is vast, and it’s not always clear what the best path forward will be until we’re there.
+All of that being said, recycling facilities are sophisticated, and sorting materials is what they're designed to do. We've come a long way since recycling began, and I'm hopeful that with the right education and the right tools, we can both prevent recycle contamination and create better sorting systems that protect against accidentally-discarded items.
 
-Sustainability is composed of many interconnected, intricate systems built on top of one another, and the collection point often acts as a bottle-neck (pun a little bit intended) where the most error creeps into the process.
-
-We all have to educate ourselves on how recycling works, at least a little bit, before we feel confident in chucking everyday items in the bin to make a difference. And honestly, that’s miserable. Because it’s bad user experience, and people often take the path of least resistance.
-
-Though utility companies like Xcel Energy might email you and call you about “action days,” “peak hours,” and means of conserving power, it’s difficult to know what that means or what you can realistically do to contribute. Sometimes it’s as simple as using your air conditioning less, or remembering to turn off the lights, but there’s so much more beyond that–you can weather-proof your windows, get energy-efficient appliances, or install a heat pump, for instance.
-
-There should be a better way, and a lot of incredibly smart people are working on it, but for now it’s up to us to learn the right way to be sustainable, how to recycle, and how to teach/encourage the people around us to do the same.
+If you're looking for something small you can do in your everyday life to help, get yourself used to separating out different recyclable materials from your trash. Focus on aluminum (by far the most recyclable everyday material), paper, and glass.
 
 ## Who Matters in Sustainability
 
-The short answer is everyone, but that’s disproportionate depending on your footprint. If you’re mindful of what you consume, it’s unlikely you’re going to have a huge impact on sustainability overall. You’re already doing your part, and that’s amazing.
+The example on recycling is a testatement to how everyone, on every side of the equation, matters to make the world more sustainable. The consumer must be careful to know what to throw away, what to recycle, and how to do so properly. The business must make those options available and safeguard them from contamination. The supply chain must take those materials and properly repurpose them.
+
+To expand that to the greater sustainability ecosystem: everyone matters, but that’s disproportionate depending on your footprint. If you’re mindful of what you consume, it’s unlikely you’re going to have a huge impact on sustainability overall. You’re already doing your part, and that’s amazing.
 
 In contrast, if you own a company, participate in shipping on a daily basis, and/or contribute to a lot of waste or energy consumption, then you have a much larger role and responsibility in the whole process.
 
@@ -123,39 +118,39 @@ Take [this Hank Green video comparing the Blue Origin rocket explosion to the al
 
 ## My Sustainability Journey
 
-It’s easy to feel overwhelmed by options. My solution was to start where I already know the landscape: my business, my industry, and my city & county.
+Two years ago, I knew very little about sustainability. I'd recycle what I could, turned off lights, and avoided over-relying on air conditioning in the summer to save on energy.
 
-For example, Total Escape Games met with a representative of the [Colorado Green Business Network (CGBN)](https://cdphe.colorado.gov/dehs/sustainability/cgbn) to learn how to better track our sustainability journey, set actionable goals, and make improvements.
+Most of what I've learned happened since getting involved with the GAMA Sustainability Committee, and learning from the incredible people working within the industry to craete change.
+
+Now, I'm doing my part. Total Escape Games met with a representative of the [Colorado Green Business Network (CGBN)](https://cdphe.colorado.gov/dehs/sustainability/cgbn) to learn how to better track our sustainability journey, set actionable goals, and make improvements.
 
 During that walkthrough, we made plans to:
 
 - Replace our thermostats with energy-efficient smart thermostats which will help us better control the temperature of the store and reduce energy waste
-- Learn to track our energy usage and waste levels through tools like the EnergyStar Project Manager software and other spreadsheet-like tools
+- Learn to track our energy usage and waste levels through programs like the EnergyStar Project Manager software and other spreadsheet-like tools
 - Continue to build out our recycling-friendly infrastructure and find a place to send hard-to-recycle materials like Polystyrene (PS) and High-Impact Polystyrene (HIPS)
 - Write a sustainability pledge and go over it with our team
 - Put together a “green team” or give ways for our team to get involved in our sustainability initiatives
 
-Since then, I’m thrilled to announce we were accepted into the CGBN as a bronze member! This is the first tier, and represents the work we still have to accomplish in order to be better, but it’s a huge milestone in our journey.
+I’m thrilled to announce that, since that initial meeting, we've been accepted into the CGBN as a bronze member! This is the first tier, and represents the work still to come, but it’s a huge milestone in the store's, and my, journey.
 
-I’m also working with The Tabletop Game Association’s (GAMA) Sustainability Committee to move the industry towards a more renewable approach to gaming. We're piloting a study to determine whether displaying games in a “Sustainable & Award-Winning Games” section helps sell those titles better than stocking them alongside the rest of the game library.
+I’m also working with The Tabletop Game Association’s (GAMA) Sustainability Committee to move the industry towards a more renewable approach to gaming. We're piloting a study to determine whether displaying games in a “Sustainable & Award-Winning Games” section helps sell those titles better than stocking them alongside the rest of the game library, and creating posters on recyclable game components for stores around the country to hang up.
 
-Finally, I’ve recently taken a seat on the CCOB Advisory Committee on Environmental Sustainability (ACES). I’ve only attended a couple of meetings, so I won’t profess to be an expert–mostly I’ve been sitting quietly and learning from people much smarter than I am. But it’s been fascinating to learn how municipal governments think about sustainability, and what’s being done on a local scale.
+Finally, I’m sitting on the CCOB Advisory Committee on Environmental Sustainability (ACES). I’ve only attended a couple of meetings so far, meaning I won’t profess to be an expert&mdash;mostly I’ve been sitting quietly and learning from people much smarter than I am. But it’s been fascinating to learn how municipal governments think about sustainability, and what’s being done on a local scale.
 
 ## Take Small Actions to Get Started
 
 Sustainability is a huge topic, and it’s clear to me we all need more education and resources to understand our roles in it and how we can best contribute to renewable practices in our communities and industries.
 
-It would’ve been incredible if school had taught me about it growing up, but it didn’t. Or if we received mandatory city- or state-wide training as adults, but we don’t.
+It would’ve been great if school had taught me about it growing up, but it didn’t. Or if we received mandatory city- or state-wide training as adults, but we don’t.
 
 Instead, we have to educate ourselves, and find the pieces of the bigger picture that feel achievable for us each to do. By taking personal, local action, we end up making a difference even without being able to reach the national or global level. Even without knowing all the different aspects of sustainability we’ll eventually have to grasp.
 
 Feel encouraged in knowing there are steps you can take to be more sustainable! Get involved in your community, or city, or county, or even by paying closer attention to what you throw away and how it might’ve been reused or better disposed of.
 
-Two years ago, I barely understood any of this. I recycled what I could, and turned my lights off, and that’s about it. Then I joined the GAMA sustainability committee and started to learn from people much further along than I was.
+Next time you're at the grocery store, try this: look at the packaging of several different options for something you need to buy, and try to understand which package is the most sustainable. That can be because of material use, a smaller shelf footprint, or other factors we've discussed today. I love looking at pasta packaging, especially, because there are so many different ways to store noodles in a container and sell them, and some companies get really creative when trying to be more renewable.
 
-Now I’m here writing this post. You can do it, too, if you try. Start small, learn what you can, and find ways to fit it into your life in a repeatable way that won't make you crazy.
-
-That’s the journey in the end. Small, repeatable steps we can each take to make a big difference when all our efforts are combined.
+That’s the journey in the end. Small, repeatable steps we can each take to make a big difference when all our efforts are combined. Even when the first step is picking out a pasta brand at your local supermarket.
 
 ## References
 
