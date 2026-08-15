@@ -54,16 +54,13 @@ const navigationLinks = [
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-bottom: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 1;
     background-color: var(--background, #fff);
-    -webkit-box-shadow: 0 1px 2px var(--header-shadow, rgba(0, 0, 0, 0.4));
-            box-shadow: 0 1px 2px var(--header-shadow, rgba(0, 0, 0, 0.4));
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    -webkit-box-shadow: 0 5px 25px var(--header-shadow, rgba(0, 0, 0, 0.4));
+            box-shadow: 0 5px 25px var(--header-shadow, rgba(0, 0, 0, 0.4));
 
     -webkit-transition: top 0.2s ease-in-out;
     transition: top 0.2s ease-in-out;
@@ -76,6 +73,7 @@ const navigationLinks = [
     width: -moz-fit-content;
     width: fit-content;
     margin: 1.5rem 0 0;
+    padding: 0 0 1rem 1rem;
     text-align: left;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -86,8 +84,8 @@ const navigationLinks = [
   }
 
   .site-logo {
-    min-width: 3.2rem;
-    max-width: 6rem;
+    min-width: 3rem;
+    max-width: 4rem;
   }
 
   /* Targetting parts of the SVG */
@@ -109,15 +107,15 @@ const navigationLinks = [
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    font-family: "PT Serif", serif;
-    font-size: calc(2rem + 0.5vw);
-    font-weight: 700;
+    align-items: center;
   }
 
   .site-title span {
     max-width: 10rem;
-    line-height: 1.4;
+    font-family: "PT Serif", serif;
+    font-size: 1.8rem;
+    line-height: 0.9;
+    font-weight: 700;
   }
 
   .site-title:hover,
@@ -157,8 +155,11 @@ const navigationLinks = [
   .menu-item {
     display: block;
     position: relative;
-    padding: 2rem 2rem 1.5rem;
-    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    font-family: "PT Serif", serif;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    font-weight: 700;
     color: var(--core-monotone, #00171f);
   }
 
@@ -203,7 +204,7 @@ const navigationLinks = [
   .hamb {
     position: relative;
     cursor: pointer;
-    padding: 30px 1.5rem 30px;
+    padding: 45px 1.5rem 45px;
     margin-top: 1rem;
     z-index: 10;
   }
@@ -213,7 +214,7 @@ const navigationLinks = [
     display: block;
     height: 3px;
     position: relative;
-    width: 30px;
+    width: 45px;
     z-index: 10;
   }
 
@@ -230,11 +231,11 @@ const navigationLinks = [
   }
 
   .hamb-line::before {
-    top: 8px;
+    top: 11px;
   }
 
   .hamb-line::after {
-    top: -8px;
+    top: -11px;
   }
 
   .side-menu:checked ~ #main-nav {
@@ -295,19 +296,18 @@ const navigationLinks = [
       left: 0;
       right: 0;
       top: 0;
-      width: 96%;
-      max-width: 900px;
-      margin: 2rem auto 0;
+      width: 97%;
+      max-width: 1240px;
+      margin: 1rem auto 0;
       padding-bottom: 0;
       border-radius: 50px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
     }
 
     .logo-container {
-      margin: 0.5rem 0 0 2rem;
-    }
-
-    .site-title {
-      font-size: 1.5rem;
+      padding: 0.2rem 0 0.7rem 0;
+      margin: 0.5rem 1rem 0 1.5rem;
     }
 
     .site-title span {
@@ -320,12 +320,12 @@ const navigationLinks = [
 
     #main-nav {
       position: relative;
-      top: 0;
+      top: 2;
       max-height: none;
       width: -webkit-fit-content;
       width: -moz-fit-content;
       width: fit-content;
-      margin: auto 3rem auto auto;
+      margin: 0 1rem 0 0;
       background-color: transparent;
     }
 
@@ -350,6 +350,7 @@ const navigationLinks = [
     .menu-item {
       padding: 0.25rem 1rem;
       font-size: calc(1.2rem + 0.2vw);
+      font-weight: 400;
     }
 
     .active-page::after,
