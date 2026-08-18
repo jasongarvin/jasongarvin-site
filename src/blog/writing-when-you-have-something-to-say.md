@@ -12,7 +12,7 @@ Last year I blogged every single month. It was a satisfying accomplishment, and 
 
 That said, I don’t think it’s the right approach. At least, not for me, and not right now.
 
-[In my review of a year of blogging last year](/blog/pages/2024-in-review), I talked about wanting to write more thoughtful, interesting pieces that dig deep into the topics that excite me. What I’ve realized is because of my current work schedule and diverging interests, it’s no longer reasonable to expect that kind of quality in a monthly cadence.
+[In my review of a year of blogging last year](/blog/posts/2024-annual-review), I talked about wanting to write more thoughtful, interesting pieces that dig deep into the topics that excite me. What I’ve realized is because of my current work schedule and diverging interests, it’s no longer reasonable to expect that kind of quality in a monthly cadence.
 
 If I’m being really honest with myself, I don’t think writing monthly has ever let me squeeze the kind of quality I know I’m capable of into some of my existing posts.
 

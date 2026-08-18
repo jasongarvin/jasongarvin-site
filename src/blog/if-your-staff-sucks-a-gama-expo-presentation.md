@@ -1,7 +1,7 @@
 ---
 title: "If Your Staff Sucks... (GAMA Presentation)"
 description: "Let's explore how to create a thriving work culture, keep turnover low, and build institutional knowledge by becoming a better leader and empowering your team."
-canonicalUrl: "https://jasongarvin.com/blog/posts/if-your-staff-sucks-a-gama-expo-presentation.md"
+canonicalUrl: "https://jasongarvin.com/blog/posts/if-your-staff-sucks-a-gama-expo-presentation"
 contentCategory: "Business"
 publishDate: "2026-03-07"
 editDate: ""
@@ -12,7 +12,7 @@ Welcome to a long-winded discussion on all things staffing, specifically how to 
 
 This post is an adjusted version of a seminar by the same name I presented at [GAMA Expo 2026](https://www.gama.org/page/gama-expo) just a few days ago. In it, I’ll be focusing on retailers and, more specifically, the tabletop game industry. Please feel free to continue reading even if you’re not in the industry, or in retail at all, but be warned some examples might not connect. That’s okay, nothing’s perfect.
 
-Also, if you're in the industry but aren't a member of GAMA yet, I'd encourage you to join, and I recommend checking out [my writeup from last year on why GAMA Expo is an incredible experience](/blog/industry-togetherness-at-gama-expo).
+Also, if you're in the industry but aren't a member of GAMA yet, I'd encourage you to join, and I recommend checking out [my writeup from last year on why GAMA Expo is an incredible experience](/blog/posts/industry-togetherness-at-gama-expo).
 
 Before we get into this brutally honest and self-reflective discussion, I want to address a few things you won’t be seeing.
 

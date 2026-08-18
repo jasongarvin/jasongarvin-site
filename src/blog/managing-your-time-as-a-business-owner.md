@@ -14,7 +14,7 @@ Gone are the days of saying yes to every meeting that crosses my desk. Now I wei
 
 Before owning a business, I felt good about my time blocking skills. I’d been using a planner for years and have [Trello boards](https://trello.com/) for every occasion. There’s a reason I lead our operations.
 
-When I [reviewed my year at the end of 2023](/blog/posts/2023-in-review), I thought I was pretty good at time management. I am, don't get me wrong, but wow is it a lot harder owning a business.
+When I [reviewed my year at the end of 2023](/blog/posts/2023-annual-review), I thought I was pretty good at time management. I am, don't get me wrong, but wow is it a lot harder owning a business.
 
 Navigating the crunch of this new life while stubbornly holding onto my hobbies and social life has taught me hard lessons about managing my time and what I can accomplish in a day.
 

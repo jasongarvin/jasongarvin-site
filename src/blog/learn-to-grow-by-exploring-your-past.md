@@ -44,7 +44,7 @@ There’s a cause and effect between what we used to do and what we do now. We c
 
 Which is why I was editing my old blog posts and reminiscing with Threads comments like old friends.
 
-As I read through old content, I revised parts of my posts for SEO consistency and added better internal links. I bit the bullet and [revised myself in favor of search engines](/blog/posts/seo-versus-humans) with well-structured titles, less forced creativity, and by being more direct.
+As I read through old content, I revised parts of my posts for SEO consistency and added better internal links. I bit the bullet and [revised myself in favor of search engines](/blog/posts/seo-versus-writing-for-humans) with well-structured titles, less forced creativity, and by being more direct.
 
 The reviews from my small group of trusted readers since then imply my personality came across better after the edits. Wait, what? I made algorithm-friendly changes but somehow came across more natural?
 
@@ -112,7 +112,7 @@ Neither of those is the for-sure right answer, but it’s helpful to know how to
 
 This is a good reminder to slow down and relax. I’m bad at both of those things.
 
-From reviewing this I realized [I need to make time in my life](/blog/posts/navigating-time-as-a-business-owner) to take it easy. Apparently, for me, the best approach to producing good content (and making good things in general) is to step away sometimes and let go.
+From reviewing this I realized [I need to make time in my life](/blog/posts/managing-your-time-as-a-business-owner) to take it easy. Apparently, for me, the best approach to producing good content (and making good things in general) is to step away sometimes and let go.
 
 **Seeking feedback is hard but I need to do it more.**
 

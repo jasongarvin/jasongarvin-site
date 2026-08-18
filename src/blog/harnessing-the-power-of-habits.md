@@ -42,12 +42,12 @@ Then it escalated to twice a week with the same rules. Then twice a week with th
 
 Now, three months later, I consistently write 3 to 5 times per week without even thinking about it, and I am training myself to focus that more towards blog posts.
 
-Don't take my word for it, either. You can read [my review of 2023](https://jasongarvin.com/blog/2023-in-review.html) for a deeper exploration of what worked (and didn't) in my life last year.
+Don't take my word for it, either. You can read [my review of 2023](/blog/posts/2023-annual-review) for a deeper exploration of what worked (and didn't) in my life last year.
 
 To generalize my approach, let's break down building a new habit into the following steps:
 
 - Set a modest, achievable, and measurable goal. This should be easy to accomplish. It’s about confidence building.
-- Pick a time and place each day where you’ll work towards the goal. (If you need help with this, you can [read more about managing your time](https://jasongarvin.com/blog/navigating-time-as-a-business-owner.html) to become more effective at prioritizing new tasks).
+- Pick a time and place each day where you’ll work towards the goal. (If you need help with this, you can [read more about managing your time](/blog/posts/managing-your-time-as-a-business-owner) to become more effective at prioritizing new tasks).
 - Continue to achieve that goal for a few weeks. Notice how good it feels to achieve your goal. Live in that excitement and compliment your dedication.
 - Increase the scope of the goal. Add another day each week of that activity, or increase the intensity. Keep it achievable and small, but larger than it used to be.
 - Once again reinforce your success, and address roadblocks if you slip. Keep trying until you consistently achieve this goal for 3-5 weeks.

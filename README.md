@@ -39,6 +39,8 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ## Changelog
 
+v2.2.2 - add sustainability section to projects page, including resources to get started in sustainability and to better understand the topic. This pairs with the new sustainability-focused blog post published this patch. Also cleans up header and footer for consistency and modernity.
+
 v2.2.1 - make minor updates to copy sitewide. Add business card link to the footer, and rearrange footer styles. Rerwite the Total Escape Games mission statement on the home page.
 
 2.2 - update the website copy to relate better to my current professional life, and add the business-card page which includes a simple business card I can link digitally for people when on the go via QR code (assuming I don't want to just link them to the website, itself).

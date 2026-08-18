@@ -131,9 +131,9 @@ Save your energy for that. Plan ahead so that when shit hits the fan, you’re p
 
 As a new owner, you owe it to the company not to get burnt out. When you burn out, you can't come through as well. So take it in small, methodical steps where possible, and conserve energy.
 
-I've went through it myself. I sprinted through 2023 to get to this point, and suffered from burnout this year as a result. You can read more about my preparation to purchase the business in my [2023 year-end review](/blog/posts/2023-in-review).
+I've went through it myself. I sprinted through 2023 to get to this point, and suffered from burnout this year as a result. You can read more about my preparation to purchase the business in my [2023 year-end review](/blog/posts/2023-annual-review).
 
-Your mental health is important. [Learn to manage your time better](/blog/posts/navigating-time-as-a-business-owner) and make room for activities that recharge you. Treat it like a marathon.
+Your mental health is important. [Learn to manage your time better](/blog/posts/managing-your-time-as-a-business-owner) and make room for activities that recharge you. Treat it like a marathon.
 
 Chip off pieces of your checklists when you can, and prioritize getting the most important services and forms filed away first and you’ll be just fine. You’ve got this!
 

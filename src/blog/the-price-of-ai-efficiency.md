@@ -104,7 +104,7 @@ There’s been a lot of talk recently about the “loneliness epidemic.” I’v
 
 Ai makes analyzing huge swaths of personal data using much easier, which is worrying in the hands of large companies. It makes data analysis all but a solved field, and gives power to those with enough data for AI to make strong judgments.
 
-These uses for AI lean into existing issues we've already been seeing. [I recently wrote about my dislike for SEO](/blog/posts/seo-versus-humans), which is made worse by LLMs' ability to generate SEO-friendly content, lower the barrier to creating adequate content, and flood the market with mediocre writing.
+These uses for AI lean into existing issues we've already been seeing. [I recently wrote about my dislike for SEO](/blog/posts/seo-versus-writing-for-humans), which is made worse by LLMs' ability to generate SEO-friendly content, lower the barrier to creating adequate content, and flood the market with mediocre writing.
 
 Alternatively, AI risks usurping SEO entirely by making search into an answer engine instead. [Google announced the launch of AI-generated search results](https://torchbox.com/blog/what-do-google-ai-overviews-mean-for-seo/) at I/O 2024, creating a lot of concern about the future of SEO and web searches in general.
 

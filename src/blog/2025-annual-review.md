@@ -28,7 +28,7 @@ Yet, I was still trying to be active on BlueSky and Instagram, the pressure of w
 
 I quit trying to post in either place pretty fast.
 
-Around the same time, I went to GAMA Expo, and had an incredible time amongst peers in my industry. [There’s a blog post about the show and what it means to me](https://jasongarvin.com/blog/posts/industry-togetherness-at-gama-expo), if you’re interested. It reminded me of the importance of community and connection, helped me dispel some of my lingering imposter syndrome, and reassured me that life was enough without searching for validation online. It also helped me realize I care a great deal about sustainability in the industry, and led to me joining the Sustainability Committee as a retail representative.
+Around the same time, I went to GAMA Expo, and had an incredible time amongst peers in my industry. [There’s a blog post about the show and what it means to me](/blog/posts/industry-togetherness-at-gama-expo), if you’re interested. It reminded me of the importance of community and connection, helped me dispel some of my lingering imposter syndrome, and reassured me that life was enough without searching for validation online. It also helped me realize I care a great deal about sustainability in the industry, and led to me joining the Sustainability Committee as a retail representative.
 
 Notably, I stopped posting here about halfway through the year once I realized I had major uncertainty about my priorities and intentions. It was also around this time I joined my local Chamber of Commerce and got more involved in volunteer work.
 
@@ -108,10 +108,9 @@ I have a habit of journaling at the end of each day. I’m not perfect about it,
 
 From that journal, I’ve picked out a couple of particularly relevant-feeling quotes I’d like to share. I hope they inspire you the same way they inspired me as I read through my old thoughts during the past few weeks.
 
-*“I do believe that we create the world we hold inside ourselves. So I need to be more careful and deliberate about what I'm carrying around.”*
-
-*“There's no rush. Life is meant to be enjoyed, and to be taken one day at a time. No more passing each day waiting for the next in an endless cycle of playing ‘what if.’”*
+- *“I do believe that we create the world we hold inside ourselves. So I need to be more careful and deliberate about what I'm carrying around.”*
+- *“There's no rush. Life is meant to be enjoyed, and to be taken one day at a time. No more passing each day waiting for the next in an endless cycle of playing ‘what if.’”*
 
 And on the sillier side, as I was getting back into creative fiction,
 
-*“I'm back to using dozens of commas, which is fun. There's nothing like a labyrinth of semi-arbitrary punctuation to drag a reader into the tumbling waters of literary fiction.”*
+- *“I'm back to using dozens of commas, which is fun. There's nothing like a labyrinth of semi-arbitrary punctuation to drag a reader into the tumbling waters of literary fiction.”*

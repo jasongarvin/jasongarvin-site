@@ -97,7 +97,7 @@ That’s how I’ve come to understand the future. I make goals and set ambition
 
 The future can be anything. That’s neither good or bad, it simply is.
 
-So, rather than worrying about the future, [I’m learning to prune my decision-making](/blog/pages/overcoming-decision-fatigue-strategies-for-business-owners) such that I can make quick decisions when necessary without exhausting all options and chasing all outcomes, and I can also pull back to give myself ample time to consider the consequences when the time is right.
+So, rather than worrying about the future, [I’m learning to prune my decision-making](/blog/posts/overcoming-decision-fatigue-strategies-for-business-owners) such that I can make quick decisions when necessary without exhausting all options and chasing all outcomes, and I can also pull back to give myself ample time to consider the consequences when the time is right.
 
 I’ve learned a new kind of flexibility when considering an unknown horizon that offers strength both in business leadership and in navigating my own life.
 

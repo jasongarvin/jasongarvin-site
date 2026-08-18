@@ -126,7 +126,7 @@ It's been hard balancing my ambitions against being in his life often enough for
 
 At the same time, as this post is published, I am officially one of three owners of Total Escape Games, joined by two long-time business partners and dear friends of mine! It feels like a new chapter of my life has just begun, like this is a moment I’ll remember deep into my later years.
 
-You can learn more about [what I learned throughout the process of buying a business](/blog/posts/buying-a-business) in a more recent post of mine.
+You can learn more about [what I learned throughout the process of buying a business](/blog/posts/tips-for-buying-a-business) in a more recent post of mine.
 
 I feel a great sense of purpose and accomplishment in the work I’ve done for the store, both in building a great experience for customers and in learning to become a good, ethical manager who takes care of his team. Getting to finally own the business is a huge breath of fresh air, and has revitalized my excitement to keep running the store.
 

@@ -128,7 +128,7 @@ Trimming down your tasks is a great way to become more efficient and organized o
 
 That’s why it’s worthwhile to examine your workflow, your tasks, and your responsibilities for a given day, week, or even longer.
 
-In fact, I feel so strongly about time and task management that [I wrote an entire article on managing your time better](/blog/posts/navigating-time-as-a-business-owner).
+In fact, I feel so strongly about time and task management that [I wrote an entire article on managing your time better](/blog/posts/managing-your-time-as-a-business-owner).
 
 Oftentimes, you’ll learn that there are huge chunks of work that are inefficient at best, or an absolute nightmare at worst. Sometimes it’s because you find yourself spending most of your time on a single task each day. Worse is when you don’t need to do that task yourself but have been anyway, causing it to eat away at your productivity.
 

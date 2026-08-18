@@ -1,7 +1,7 @@
 ---
 title: "SEO vs. Writing for Humans"
 description: "Writing to be seen by the algorithm is not the same as writing good content for your audience, and I think it's important to talk about that difference."
-canonicalUrl: "https://jasongarvin.com/blog/posts/seo-vs-writing-for-humans"
+canonicalUrl: "https://jasongarvin.com/blog/posts/seo-versus-writing-for-humans"
 contentCategory: "Technology"
 publishDate: "2024-02-29"
 editDate: "2024-08-14"
@@ -36,7 +36,7 @@ Sometimes they're not. Sometimes we even get into situations where local restaur
 
 Most likely, though, you’ll see “easy chicken curry” or “easy chicken curry recipe” or “quick curry recipe,” and, ignoring the focus on chicken that I didn’t include in my search, this is largely useful. It helps me find the info I want quickly, and all of the links I click from there will, admittedly, help me make some (chicken) curry.
 
-This is the beauty, and the power, of keywords. Google takes my search, stuffs it into a magical algorithm box, and spits out results it thinks I’ll like based on its [space wizardry and web crawling](https://jasongarvin.com/blog/seo-versus-humans#google-documentation).
+This is the beauty, and the power, of keywords. Google takes my search, stuffs it into a magical algorithm box, and spits out results it thinks I’ll like based on its [space wizardry and web crawling](#resources).
 
 When looking for a recipe, this is almost always a good thing. I get quick and easy results accurate to what I need, and I can move on to making tasty curry. All of which is pretty cool.
 
@@ -68,7 +68,7 @@ So we know now that to get onto that coveted first page of Google, I need keywor
 
 If I succeed, people will click on my thing. My silly little strategy worked, and they’re here. Great. Now they can read the content! The reason I bothered with SEO!
 
-Except my god, how boring is my writing if I do that. My last blog was a small example of this homogenization. ["6 Things To Know When Buying a Business."](https://jasongarvin.com/blog/buying-a-business.html) It’s effective and honest, sure, but there is exactly no personality to it.
+Except my god, how boring is my writing if I do that. My last blog was a small example of this homogenization. ["6 Things To Know When Buying a Business."](/blog/posts/tips-for-buying-a-business) It’s effective and honest, sure, but there is exactly no personality to it.
 
 That’s not to say it’s a bad post&mdash;in fact, I highly recommend it (watch out, I’m biased). But it is to say it’s not how I’d like to write that title, or the headings, because I’d rather make it more fun for you without balancing for discoverability.
 

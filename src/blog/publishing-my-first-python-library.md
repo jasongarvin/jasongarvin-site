@@ -8,6 +8,8 @@ editDate: "2024-08-14"
 tags: ["technology", "coding"]
 ---
 
+*You can get a quick summary of my Pokewrap library through [the projects page](/projects/pokewrap/).*
+
 After using Python for a few months, I had a spontaneous thought: I’d been consuming 3rd party libraries this whole time but had no idea what they were.
 
 Sure, I understood it was Python code I could import that gave me access to new tools. Okay, cool. But how that process worked, how someone bundled up their code and sent it across the internet to be dispersed into other people’s projects was basically sorcery.
@@ -238,7 +240,7 @@ That’s the journey. It was a whole lot of work, especially for what was intend
 
 While I can’t recommend the import issues or the problems I encountered deploying the library, I do highly recommend building a wrapper class (or trying to publish a library) to anyone who wants to learn more about Python and its surrounding ecosystem.
 
-You can read more about creating pokewrap, learning to code, and generally just working my butt off throughout 2023 in [my year-end review](https://jasongarvin.com/blog/2023-in-review.html).
+You can read more about creating pokewrap, learning to code, and generally just working my butt off throughout 2023 in [my year-end review](/blog/posts/2023-annual-review).
 
 ## References
 
