@@ -3,7 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import broomfield_logo from '../assets/img/broomfield_co_masthead_logo.png'
 import gama_logo from '../assets/img/gama_tabletop_game_association_masthead_logo.png'
 import teg_logo from '../assets/img/total_escape_games_masthead_logo.png';
-import teg_website from '../assets/img/teg_website_2026.jpg';
+import teg_website from '../assets/img/teg_website_2026.webp';
+import teg_storefront from '../assets/img/teg_store_doors.webp';
+import teg_shelves from '../assets/img/teg_shopping_area.webp';
+import teg_event from '../assets/img/teg_event_mtg_rcq.webp';
 
 const title = "Designing for Experience | Jason Garvin";
 const description = "The professional website for Jason Garvin, owner and Chief Operating Officer of Total Escape Games, web designer, and opinionated thinker.";
@@ -129,6 +132,9 @@ const canonicalUrl = "https://jasongarvin.com";
 
         <div class="image-gallery">
           <img id="tegSite" class="modal-image" src={teg_website.src} alt="the new Total Escape Games website home page" />
+          <img id="tegStorefront" class="modal-image" src={teg_storefront.src} alt="a view of Total Escape Games from the parking lot" />
+          <img id="tegShelves" class="modal-image" src={teg_shelves.src} alt="looking into Total Escape Games from the entrance" />
+          <img id="tegEvent" class="modal-image" src={teg_event.src} alt="what an event looks like at Total Escape Games" />
         </div>
       </section>
 
@@ -295,9 +301,17 @@ const canonicalUrl = "https://jasongarvin.com";
 <script src="../assets/scripts/image-modal.js"></script>
 
 <style>
+  .image-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
   .modal-image {
     margin-top: 0.8rem;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
@@ -372,6 +386,17 @@ const canonicalUrl = "https://jasongarvin.com";
   @media screen and (min-width: 768px){
     .modal-content {
       width: 80%;
+    }
+
+    .modal-image {
+      width: 100%;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1rem;
     }
   }
 </style>
