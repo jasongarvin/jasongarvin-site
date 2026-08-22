@@ -17,7 +17,8 @@ const imageArray = [
   {id: "img02", name: "tegShelves", caption: "looking into Total Escape Games from the entrance", src: teg_shelves},
   {id: "img03", name: "tegEvent", caption: "what an event looks like at Total Escape Games", src: teg_event},
   {id: "img04", name: "tegProducts", caption: "a product shot of our favorite RPGs", src: teg_products}
-]
+];
+
 
 // Local page metadata
 const title = "Designing for Experience | Jason Garvin";
@@ -306,106 +307,3 @@ const canonicalUrl = "https://jasongarvin.com";
 
 <script src="../assets/scripts/on-scroll-animate.js"></script>
 <script src="../assets/scripts/image-modal.js"></script>
-
-<style>
-  .image-gallery {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    overflow: auto;
-    white-space: nowrap;
-  }
-
-  .modal-image {
-    margin-top: 0.8rem;
-    width: 80%;
-    height: auto;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s;
-  }
-
-  .modal-image:hover {
-    opacity: 0.7;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.9);
-  }
-
-  .modal-content {
-    display: block;
-    margin: auto;
-    width: 96%;
-    max-width: 1000px;
-    height: auto;
-    border-radius: 25px;
-  }
-
-  .modal-caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    text-align: center;
-    color: #f8f8f8;
-    padding: 1rem 0;
-    height: 10rem;
-  }
-
-  /* --- Close Button & Effects --- */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f8f8f8;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* --- Animation Effects --- */
-  .modal-content,
-  .modal-caption {
-    animation-name: zoom;
-    animation-duration: 0.3s;
-  }
-
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-
-  /* --- Media Queries --- */
-  @media screen and (min-width: 768px){
-    .modal-content {
-      width: 80%;
-    }
-
-    .modal-image {
-      width: 100%;
-    }
-
-    .image-gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      column-gap: 1rem;
-    }
-  }
-</style>
