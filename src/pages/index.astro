@@ -3,10 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import broomfield_logo from '../assets/img/broomfield_co_masthead_logo.png'
 import gama_logo from '../assets/img/gama_tabletop_game_association_masthead_logo.png'
 import teg_logo from '../assets/img/total_escape_games_masthead_logo.png';
-import teg_website from '../assets/img/teg_website_2026.webp';
-import teg_storefront from '../assets/img/teg_store_doors.webp';
+import teg_website from '../assets/img/teg_landing_page_2026.webp';
+import teg_products from '../assets/img/teg_products_rpgs.webp';
 import teg_shelves from '../assets/img/teg_shopping_area.webp';
-import teg_event from '../assets/img/teg_event_mtg_rcq.webp';
+import teg_event from '../assets/img/teg_event_magic_rcq.webp';
 
 const title = "Designing for Experience | Jason Garvin";
 const description = "The professional website for Jason Garvin, owner and Chief Operating Officer of Total Escape Games, web designer, and opinionated thinker.";
@@ -21,7 +21,10 @@ const canonicalUrl = "https://jasongarvin.com";
   <div class="modal-window">
     <div id="imageModal" class="modal">
       <span class="close">&times;</span>
-      <img id="img01" class="modal-content">
+      <img id="img01" class="modal-content" />
+      <img id="img02" class="modal-content" />
+      <img id="img03" class="modal-content" />
+      <img id="img04" class="modal-content" />
       <div id="modalCaption" class="modal-caption"></div>
     </div>
   </div>
@@ -132,9 +135,9 @@ const canonicalUrl = "https://jasongarvin.com";
 
         <div class="image-gallery">
           <img id="tegSite" class="modal-image" src={teg_website.src} alt="the new Total Escape Games website home page" />
-          <img id="tegStorefront" class="modal-image" src={teg_storefront.src} alt="a view of Total Escape Games from the parking lot" />
           <img id="tegShelves" class="modal-image" src={teg_shelves.src} alt="looking into Total Escape Games from the entrance" />
           <img id="tegEvent" class="modal-image" src={teg_event.src} alt="what an event looks like at Total Escape Games" />
+          <img id="tegStorefront" class="modal-image" src={teg_products.src} alt="a product shot of our favorite RPGs" />
         </div>
       </section>
 
