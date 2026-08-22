@@ -1226,12 +1226,11 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    gap: 1rem;
+    justify-content: left;
+      -ms-flex-pack: left;
     padding: 0;
-    margin: 1.5rem 0 0;
+    margin-top: 2rem;
+    gap: 1rem;
 
     list-style-type: none;
   }
@@ -1244,17 +1243,13 @@
     width: -moz-fit-content;
     width: fit-content;
     background-color: var(--background, #fff);
-    border-radius: 10px;
-  }
-
-  .list-item-emphasis a {
-    font-size: calc(1.1rem + 0.5vw);
+    border-radius: 25px;
   }
 
   .list-item-emphasis .fa-solid {
     position: relative;
-    bottom: 0.1rem;
-    font-size: 1rem;
+    bottom: 0.05rem;
+    font-size: 0.8rem;
   }
 
   .list-spaced li {
@@ -1562,24 +1557,16 @@
       margin: 1rem 0 1rem auto;
     }
 
-    .list-emphasis {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding: 0 2rem;
-      margin: 1rem 0;
-    }
-
-    .list-item-emphasis {
-      margin: 1rem 0;
-    }
-
     .link-list li {
       margin-top: 0.5rem;
+    }
+
+    .list-emphasis {
+      margin-top: 0;
+    }
+
+    .list-emphasis .list-item-emphasis:first-of-type {
+      padding-left: 0;
     }
 
     .form-flex {
