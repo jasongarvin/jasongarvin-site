@@ -1,13 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+// Logos for brands
 import broomfield_logo from '../assets/img/broomfield_co_masthead_logo.png'
 import gama_logo from '../assets/img/gama_tabletop_game_association_masthead_logo.png'
 import teg_logo from '../assets/img/total_escape_games_masthead_logo.png';
+// Images for galleries
 import teg_website from '../assets/img/teg_landing_page_2026.webp';
 import teg_products from '../assets/img/teg_products_rpgs.webp';
 import teg_shelves from '../assets/img/teg_shopping_area.webp';
 import teg_event from '../assets/img/teg_event_magic_rcq.webp';
 
+// Image properties for modal
+const imageArray = [
+  {id: "img01", name: "tegSite", caption: "the new Total Escape Games website home page", src: teg_website},
+  {id: "img02", name: "tegShelves", caption: "looking into Total Escape Games from the entrance", src: teg_shelves},
+  {id: "img03", name: "tegEvent", caption: "what an event looks like at Total Escape Games", src: teg_event},
+  {id: "img04", name: "tegProducts", caption: "a product shot of our favorite RPGs", src: teg_products}
+]
+
+// Local page metadata
 const title = "Designing for Experience | Jason Garvin";
 const description = "The professional website for Jason Garvin, owner and Chief Operating Officer of Total Escape Games, web designer, and opinionated thinker.";
 const canonicalUrl = "https://jasongarvin.com";
@@ -18,15 +30,14 @@ const canonicalUrl = "https://jasongarvin.com";
   title={title}
   canonicalUrl={canonicalUrl}>
 
-  <div class="modal-window">
-    <div id="imageModal" class="modal">
-      <span class="close">&times;</span>
-      <img id="img01" class="modal-content" />
-      <img id="img02" class="modal-content" />
-      <img id="img03" class="modal-content" />
-      <img id="img04" class="modal-content" />
-      <div id="modalCaption" class="modal-caption"></div>
-    </div>
+  <div id="pageModal" class="modal-window">
+    {imageArray.map((image) => (
+      <div class="modal">
+        <span class="close">&times;</span>
+        <Image id={image.id} class="modal-content" src={image.src} alt={image.caption} />
+        <span class="modal-caption">{image.caption}</span>
+      </div>
+    ))}
   </div>
 
   <main id="main-content">
@@ -133,11 +144,10 @@ const canonicalUrl = "https://jasongarvin.com";
           new audiences to bring our brand of gaming and community to the web!
         </p>
 
-        <div class="image-gallery">
-          <img id="tegSite" class="modal-image" src={teg_website.src} alt="the new Total Escape Games website home page" />
-          <img id="tegShelves" class="modal-image" src={teg_shelves.src} alt="looking into Total Escape Games from the entrance" />
-          <img id="tegEvent" class="modal-image" src={teg_event.src} alt="what an event looks like at Total Escape Games" />
-          <img id="tegStorefront" class="modal-image" src={teg_products.src} alt="a product shot of our favorite RPGs" />
+        <div id="tegGallery" class="image-gallery">
+          {imageArray.map((image) => (
+          <Image id={image.name} class="modal-image" src={image.src} alt={image.caption} />
+          ))}
         </div>
       </section>
 
@@ -315,6 +325,7 @@ const canonicalUrl = "https://jasongarvin.com";
   .modal-image {
     margin-top: 0.8rem;
     width: 80%;
+    height: auto;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
@@ -341,7 +352,8 @@ const canonicalUrl = "https://jasongarvin.com";
     display: block;
     margin: auto;
     width: 96%;
-    max-width: 1200px;
+    max-width: 1000px;
+    height: auto;
     border-radius: 25px;
   }
 

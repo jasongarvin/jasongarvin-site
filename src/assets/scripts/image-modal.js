@@ -1,27 +1,28 @@
 'use strict';
 
-const modal = document.getElementById("imageModal");
-const img = document.getElementById("tegSite");
-const modalImage = document.getElementById("img01");
-const captionText = document.getElementById("modalCaption");
+const modalElements = document.querySelectorAll('.modal');
+const galleryImages = document.querySelectorAll('.modal-image');
 
 
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImage.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+modalElements.forEach((element, index) => {
+  const sourceImg = galleryImages[index];
+  const modalImg = element.querySelector('.modal-content');
+  const caption = element.querySelector('.modal-caption');
+  const close = element.querySelector('.close');
 
 
-// Handle closing the modal using the span element
-const span = document.getElementsByClassName("close")[0];
-span.onclick = function () {
-  modal.style.display = "none";
-}
+  close.onclick = function () {
+    element.style.display = "none";
+  }
 
-// Handle closing the modal when clicking outside image
-modal.addEventListener('click', function (event) {
-  if (event.target !== modalImage) {
-    modal.style.display = 'none';
+  element.addEventListener('click', function (event) {
+    if (event.target !== modalImg) {
+      element.style.display = 'none';
+    }
+  });
+
+  sourceImg.onclick = function () {
+    element.style.display = "block";
+    caption.style.display = "block";
   }
 });
