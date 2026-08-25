@@ -1,4 +1,4 @@
-# Jason Garvin's website - v2.2, the professional content update
+# Jason Garvin's website - v2.2.3, the professional content update
 
 Hello and welcome to my website's source code!
 
@@ -39,6 +39,8 @@ All 3rd party tools are free (or I'm only using the free plan) and have been hug
 
 ## Changelog
 
+v2.2.3 - refine home page to include image gallery, and redesign how social links are included for each section to make them less invasive and more subtle while retaining all functionality. Create modal view for images on home page to allow user to expand images into a larger resolution for easier viewing on both mobile and desktop.
+
 v2.2.2 - add sustainability section to projects page, including resources to get started in sustainability and to better understand the topic. This pairs with the new sustainability-focused blog post published this patch. Also cleans up header and footer for consistency and modernity.
 
 v2.2.1 - make minor updates to copy sitewide. Add business card link to the footer, and rearrange footer styles. Rerwite the Total Escape Games mission statement on the home page.
@@ -53,6 +55,6 @@ v2.2.1 - make minor updates to copy sitewide. Add business card link to the foot
 
 ### Upcoming Changes
 
-In v2.3, I'll be working on configuring tests so that more of my website is protected against breaking changes. This enables me to start the Big Website Remake where I'll completely overhaul the visual identity and layout of the website. So, yeah. Get ready for that.
+In v2.3, I'll be adding more tests to the test suite to ensure functionality is optimized, not to mention checking my own work to ensure I don't break anything during the coming redesign.
 
 In v3.0, I'll complete the redesign of the website.

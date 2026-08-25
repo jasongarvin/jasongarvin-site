@@ -37,10 +37,20 @@ const navigationLinks = [
     <ul class="main-menu">
       {navigationLinks.map((link) => (
         <li>
-          <a class="menu-item" href={link.href}><span>{link.name}</span></a>
+          <a class="menu-item featured" href={link.href}><span>{link.name}</span></a>
         </li>
         ))
       }
+      <li class="vertical-space">
+        <a class="submenu-item secondary" href="/business-card">
+          Business Card
+        </a>
+      </li>
+      <li>
+        <a class="submenu-item secondary" href="mailto:jsongarvin@gmail.com" target="_blank">
+          Email
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -152,22 +162,21 @@ const navigationLinks = [
     width: 75%;
   }
 
-  .menu-item {
+  .menu-item,
+  .submenu-item {
     display: block;
     position: relative;
     padding: 1rem 2rem;
-    font-family: "PT Serif", serif;
-    font-size: 4.2rem;
-    line-height: 4rem;
-    font-weight: 700;
     color: var(--core-monotone, #00171f);
   }
 
-  a.menu-item:visited {
+  a.menu-item:visited,
+  a.submenu-item:visited {
     color: var(--core-monotone, #00171f);
   }
 
-  a.menu-item:hover {
+  a.menu-item:hover,
+  a.submenu-item:hover {
     color: var(--core-monotone, #00171f);
   }
 
@@ -189,6 +198,22 @@ const navigationLinks = [
     background-size: 100% 1px;
     -webkit-transition: background 0.2s ease-out;
     transition: background 0.2s ease-out;
+  }
+
+  .featured {
+    font-family: "PT Serif", serif;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+  }
+
+  .secondary {
+    display: block;
+    padding: 0 2rem;
+    font-family: "PT Serif", serif;
+    font-size: 2.16rem;
+    line-height: 4rem;
+    font-weight: 400;
   }
 
   .active-page span {
@@ -347,17 +372,21 @@ const navigationLinks = [
       margin: 0.25rem;
     }
 
-    .menu-item {
-      padding: 0.25rem 1rem;
-      font-size: calc(1.2rem + 0.2vw);
-      font-weight: 400;
-    }
-
     .active-page::after,
     .main-menu li:hover .menu-item::after {
       left: 0.35rem;
       bottom: 0.1rem;
       height: 2.6rem;
+    }
+
+    .submenu-item {
+      display: none;
+    }
+
+    .featured {
+      padding: 0.25rem 1rem;
+      font-size: calc(1.2rem + 0.2vw);
+      font-weight: 400;
     }
 
     .theme-button .fa {
