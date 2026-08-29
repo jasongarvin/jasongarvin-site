@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection("blog");
 const uniqueTags = [...new Set(allBlogPosts.map((post) => post.data.tags).flat())];
 
-const description = "Browse a list of tags included in my blog posts to filter for your favorite subjects.";
+const description = "I write on a variety of topics. Browse a list of tags included in my blog posts and filter my posts by your favorite subjects.";
 const title = "Tags and Topics - Blog | Jason Garvin";
 const canonicalUrl = "https://jasongarvin.com/tags/";
 ---

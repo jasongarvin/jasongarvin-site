@@ -4,7 +4,7 @@ import "../../styles/Normalize.astro";
 
 const title = "Jason Garvin - Business Card";
 const description = "View Jason Garvin's online business card and find links to his socials as well as information about Total Escape Games, his tabletop game store.";
-const canonicalUrl = "jasongarvin.com/business-card/";
+const canonicalUrl = "jasongarvin.com/business-card";
 
 const socialLinks = [
   { name: "Personal", href: "", icon: "", class: "section-title" },
@@ -23,19 +23,19 @@ const socialLinks = [
   { name: "Total Escape Games", href: "", icon: "", class: "section-title" },
   {
     name: "Website",
-    href: "https://totalescapegames.com/about/",
+    href: "https://totalescapegames.com/pages/about",
     icon: "fa-solid fa-globe",
     class: "",
   },
   {
     name: "Facebook",
-    href: "https://totalescapegames.com/about/",
+    href: "https://facebook.com/totalescapegames",
     icon: "fa-brands fa-facebook",
     class: "",
   },
     {
     name: "Instagram",
-    href: "https://totalescapegames.com/about/",
+    href: "https://instagram.com/totalescapegames",
     icon: "fa-brands fa-instagram",
     class: "",
   },
@@ -103,8 +103,8 @@ const socialLinks = [
             <div class="strip"></div>
             <div class="left_side"></div>
             <div class="right_side"></div>
-            <div class="name">
-              <span>JASON</span>GARVIN
+            <div class="name-container">
+              <h1 class="name"><span>JASON</span>GARVIN</h1>
             </div>
             <div class="profession">
               Chief Operating Officer <br />
@@ -220,11 +220,14 @@ const socialLinks = [
     color: rgba(255, 255, 255, 0.6);
   }
 
-  .name {
+  .name-container {
     position: absolute;
-    top: 7rem;
+    top: 4.1rem;
     left: 0;
     right: 0;
+  }
+
+  .name {
     text-align: center;
     font-size: 3rem;
     font-weight: 300;

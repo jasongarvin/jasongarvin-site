@@ -76,7 +76,7 @@ When the lunch vouchers turned lunch into a labyrinth of enormous lines and traf
 
 When the women and non-binary industry breakfast got scheduled on top of the Committee Open House, the president of GAMA found out and immediately got to work to make sure it didn’t happen again next year.
 
-At the board meeting that took place at Expo, there were questions about the Site Selection Committee and how they’ve been working to decide the next location for Expo. The questions were answered by members of the committee, in great detail, and even led to my [business partner creating a blog post](https://www.johnmstephens.com/the-site-selection-committee/), in excruciating detail, about the criteria all sites had to pass.
+At the board meeting that took place at Expo, there were questions about the Site Selection Committee and how they’ve been working to decide the next location for Expo. The questions were answered by members of the committee, in great detail, about the criteria all sites had to pass.
 
 There's a welcomeness to the industry that's hard to describe, and at the same time it feels like everyone’s eyes are on the future. There’s a lot of work getting done.
 
