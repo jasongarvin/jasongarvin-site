@@ -8,7 +8,7 @@ editDate: "2024-08-14"
 tags: ["technology", "coding"]
 ---
 
-*You can get a quick summary of my Pokewrap library through [the projects page](/projects/pokewrap/).*
+*You can get a quick summary of my Pokewrap library through [the projects page](/projects/pokewrap).*
 
 After using Python for a few months, I had a spontaneous thought: I’d been consuming 3rd party libraries this whole time but had no idea what they were.
 
