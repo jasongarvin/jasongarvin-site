@@ -86,7 +86,7 @@ const { headings } = Astro.props;
         <!-- Front Matter -->
         <section class="vertical-space blog-title transparent-bg">
           <h1 class="blog-header" itemprop="name">{frontmatter.title}</h1>
-          <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <div class="blog-info transparent-bg">
             <div>
               <span id="post-read-time">7 min read</span> &mdash;
               published on
@@ -105,7 +105,9 @@ const { headings } = Astro.props;
               ))}
             </div>
 
-            <span itemprop="name">by Jason Garvin</span>
+            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">by Jason Garvin</span>
+            </div>
             <button id="copy-link" class="copy-link">
               copy link
               <i class="fa-solid fa-link"></i>
