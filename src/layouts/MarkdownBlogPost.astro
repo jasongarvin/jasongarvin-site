@@ -95,7 +95,7 @@ const { headings } = Astro.props;
               {
                 (frontmatter.editDate.length > 0 && frontmatter.editDate != "") &&
                 <span>, last updated</span>
-                <time itemprop="dateUpdated" datetime={frontmatter.editDate}>{frontmatter.editDate}</time>
+                <time itemprop="dateModified" datetime={frontmatter.editDate}>{frontmatter.editDate}</time>
               }
             </div>
 
