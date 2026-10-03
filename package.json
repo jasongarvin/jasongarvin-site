@@ -12,8 +12,8 @@
   "dependencies": {
     "@astrojs/prism": "^4.0.2",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.2.4",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5",
     "latest": "^0.2.0",
     "node": "^25.9.0",
     "npm": "^12.0.2",

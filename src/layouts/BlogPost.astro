@@ -104,7 +104,8 @@ const {
         <!-- Front Matter -->
         <section class="vertical-space blog-title transparent-bg">
           <h1 class="blog-header" itemprop="name">{title}</h1>
-          <div class="blog-info transparent-bg" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <div class="blog-info transparent-bg">
+            <span itemprop="author" itemtype="https://schema.org/Person">by Jason Garvin</span>
             <div>
               <span id="post-read-time">7 min read</span> &mdash;
               published on
@@ -112,7 +113,6 @@ const {
               last updated
               <time itemprop="dateUpdated" datetime={editDate}>{editDate}</time>
             </div>
-            <span itemprop="name">by Jason Garvin</span>
             <button id="copy-link" class="copy-link">
               copy link
               <i class="fa-solid fa-link"></i>
