@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = "Projects | Jason Garvin";
 const description = "Explore Jason Garvin's personal and professional projects, view the documentation, and check out the source code where applicable.";
-const canonicalUrl = "https://jasongarvin.com/projects/";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout
@@ -54,7 +54,7 @@ const canonicalUrl = "https://jasongarvin.com/projects/";
           </p>
         </div>
 
-        <a class="default-button bottom-space" href="/projects/sustainability">
+        <a class="default-button bottom-space" href="/projects/sustainability/">
           Learn More
         </a>
       </section>
@@ -80,7 +80,7 @@ const canonicalUrl = "https://jasongarvin.com/projects/";
           </p>
         </div>
 
-        <a class="default-button bottom-space" href="/projects/pokewrap">
+        <a class="default-button bottom-space" href="/projects/pokewrap/">
           Explore the Docs
         </a>
       </section>

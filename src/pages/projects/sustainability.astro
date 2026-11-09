@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = "Getting Started with Sustainability | Jason Garvin";
 const description = "Sustainability can be a complicated and difficult topic to jump into, so I've compiled resources to help you get started.";
-const canonicalUrl = "https://jasongarvin.com/projects/sustainability";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout

@@ -7,8 +7,9 @@ export default defineConfig({
   // Config options
   site: 'https://jasongarvin.com',
     integrations: [sitemap()],
+  trailingSlash: 'always',
   build: {
-    format: 'preserve',
+    format: 'directory',
     inlineStylesheets: 'never',
   },
   compressHTML: false,

@@ -1,7 +1,7 @@
 ---
 title: "2024 Annual Review: The Old Gives Way for the New"
 description: "In reflecting upon 2024, I explore my endless drive towards productivity, the progress I've made towards my goals, and what I've learned as a business owner."
-canonicalUrl: "https://jasongarvin.com/blog/posts/2024-annual-review"
+canonicalUrl: "https://jasongarvin.com/blog/posts/2024-annual-review/"
 contentCategory: "Business"
 publishDate: "2025-01-02"
 editDate: "2025-01-31"

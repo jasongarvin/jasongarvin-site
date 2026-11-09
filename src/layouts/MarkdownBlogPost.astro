@@ -48,6 +48,8 @@ const { headings } = Astro.props;
 
     <!-- Canonical URL -->
     <link rel="canonical" href={frontmatter.canonicalUrl} />
+    <!-- Sitemap -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>
@@ -101,7 +103,7 @@ const { headings } = Astro.props;
 
             <div class="in-post-tags">
               {frontmatter.tags.map((tag: string) => (
-                <p><a href={`/tags/${tag}`}>{tag}</a></p>
+                <p><a href={`/tags/${tag}/`}>{tag}</a></p>
               ))}
             </div>
 

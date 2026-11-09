@@ -1,7 +1,7 @@
 ---
 title: "Remaking my Website With Astro"
 description: "My website is just about two years old, and it was time for an upgrade. I used Astro to recreate how my website is built and published."
-canonicalUrl: "https://jasongarvin.com/blog/posts/remaking-my-website-with-astro"
+canonicalUrl: "https://jasongarvin.com/blog/posts/remaking-my-website-with-astro/"
 contentCategory: "Technology"
 publishDate: "2025-11-02"
 editDate: ""

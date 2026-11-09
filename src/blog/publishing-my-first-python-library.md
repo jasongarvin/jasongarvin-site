@@ -1,7 +1,7 @@
 ---
 title: "Publishing My First Python Library"
 description: "Learn about my experience publishing a Python library, save yourself trips to StackOverflow, and avoid unnecessary code when you write your own!"
-canonicalUrl: "https://jasongarvin.com/blog/posts/publishing-my-first-python-library"
+canonicalUrl: "https://jasongarvin.com/blog/posts/publishing-my-first-python-library/"
 contentCategory: "Technology"
 publishDate: "2023-11-07"
 editDate: "2024-08-14"

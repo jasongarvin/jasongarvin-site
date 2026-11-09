@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = "Pokewrap - A PokeAPI Python Wrapper | Jason Garvin";
 const description = "So, I wrote a Wrapper Library in Python. From here you can view my source code, learn about the project, and get started writing your own!";
-const canonicalUrl = "https://jasongarvin.com/projects/pokewrap";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout

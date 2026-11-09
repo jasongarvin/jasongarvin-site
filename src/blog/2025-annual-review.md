@@ -1,7 +1,7 @@
 ---
 title: "Reviewing 2025: A Return to the Real World"
 description: "Join me in exploring the goals I achieved in 2025, how the world's changed, and how that's influenced my decisions (and maybe yours, too)."
-canonicalUrl: "https://jasongarvin.com/blog/posts/2025-annual-review"
+canonicalUrl: "https://jasongarvin.com/blog/posts/2025-annual-review/"
 contentCategory: "Productivity"
 publishDate: "2026-01-17"
 editDate: ""

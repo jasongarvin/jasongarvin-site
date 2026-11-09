@@ -12,7 +12,7 @@ const uniqueTags = [...new Set(allBlogPosts.map((post) => post.data.tags).flat()
 // Local page metadata
 const title = "Blog | Jason Garvin";
 const description = "Visit my blog, covering topics such as productivity, business, web development, and design. Expect a focus on UX and experience-driven design.";
-const canonicalUrl = "https://jasongarvin.com/blog/";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout
@@ -38,7 +38,7 @@ const canonicalUrl = "https://jasongarvin.com/blog/";
       <div class="tags">
         {uniqueTags.map((tag) => (
           <span class="tag">
-            <a href={`/tags/${tag}`}>{tag}</a>
+            <a href={`/tags/${tag}/`}>{tag}</a>
           </span>
         ))}
      </div>
@@ -51,7 +51,7 @@ const canonicalUrl = "https://jasongarvin.com/blog/";
         sortedPosts.map((post: any) => (
           <BlogPreview
             title={post.data.title}
-            fileName={`/blog/posts/${post.id}`}
+            fileName={`/blog/posts/${post.id}/`}
             publishDate={post.data.publishDate} />
         ))
       }

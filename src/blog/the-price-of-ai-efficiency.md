@@ -1,7 +1,7 @@
 ---
 title: "The Price of AI Efficiency"
 description: "Artificial Intelligence may be the greatest tool of our lifetime, but it also poses enormous risks. Let's talk about it."
-canonicalUrl: "https://jasongarvin.com/blog/posts/the-price-of-ai-efficiency"
+canonicalUrl: "https://jasongarvin.com/blog/posts/the-price-of-ai-efficiency/"
 contentCategory: "Productivity"
 publishDate: "2024-03-31"
 editDate: "2024-08-14"

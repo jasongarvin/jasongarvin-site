@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm.astro';
 
 const title = "Contact Me | Jason Garvin";
 const description = "Contact Jason Garvin about Total Escape Games and the tabletop gaming industry, business overall, and web development. Professional inquiries welcome.";
-const canonicalUrl = "https://jasongarvin.com/contact";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
 const formTitle = "Send me an email"
 ---

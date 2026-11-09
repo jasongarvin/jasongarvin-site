@@ -1,7 +1,7 @@
 ---
 title: "If Your Staff Sucks... (GAMA Presentation)"
 description: "Let's explore how to create a thriving work culture, keep turnover low, and build institutional knowledge by becoming a better leader and empowering your team."
-canonicalUrl: "https://jasongarvin.com/blog/posts/if-your-staff-sucks-a-gama-expo-presentation"
+canonicalUrl: "https://jasongarvin.com/blog/posts/if-your-staff-sucks-a-gama-expo-presentation/"
 contentCategory: "Business"
 publishDate: "2026-03-07"
 editDate: ""

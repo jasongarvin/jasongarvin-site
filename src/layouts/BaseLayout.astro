@@ -5,11 +5,12 @@ import '../styles/Style.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SubscribeBox from '../components/SubscribeBox.astro';
+import type { Url } from 'url';
 
 export interface Props {
   title: string;
   description: string;
-  canonicalUrl: string;
+  canonicalUrl: URL;
 }
 
 const {
@@ -56,6 +57,8 @@ const {
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />
+    <!-- Sitemap -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/e3566c3fcf.js" crossorigin="anonymous"></script>

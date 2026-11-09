@@ -1,7 +1,7 @@
 ---
 title: "Making the Most of your Time as a Business Owner"
 description: "Owning a business is tough and there's never enough time. Learn about managing your schedule to get the most out of your day--and maybe even have time to relax!"
-canonicalUrl: "https://jasongarvin.com/blog/posts/managing-your-time-as-a-business-owner"
+canonicalUrl: "https://jasongarvin.com/blog/posts/managing-your-time-as-a-business-owner/"
 contentCategory: "Productivity"
 publishDate: "2024-04-30"
 editDate: "2024-08-14"

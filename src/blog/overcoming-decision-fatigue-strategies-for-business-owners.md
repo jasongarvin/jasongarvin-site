@@ -1,7 +1,7 @@
 ---
 title: "Overcoming Decision Fatigue: Strategies for Business Owners"
 description: "Decisions are exhausting when you make a ton of them. Let's talk about keeping your mind sharp, running your business effectively, and making better choices."
-canonicalUrl: "https://jasongarvin.com/blog/posts/overcoming-decision-fatigue-strategies-for-business-owners"
+canonicalUrl: "https://jasongarvin.com/blog/posts/overcoming-decision-fatigue-strategies-for-business-owners/"
 contentCategory: "Business"
 publishDate: "2024-07-31"
 editDate: "2024-08-14"

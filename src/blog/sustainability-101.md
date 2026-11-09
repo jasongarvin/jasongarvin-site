@@ -1,7 +1,7 @@
 ---
 title: "Sustainability 101: Intro to Sustainability"
 description: "If you're curious to learn more about sustainability, join me in exploring the basics the the topic, what it includes, and how to implement it in your life."
-canonicalUrl: "https://jasongarvin.com/blog/posts/sustainability-101"
+canonicalUrl: "https://jasongarvin.com/blog/posts/sustainability-101/"
 contentCategory: "Sustainability"
 publishDate: "2026-08-12"
 editDate: ""

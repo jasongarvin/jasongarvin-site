@@ -25,7 +25,7 @@ const { posts } = Astro.props;
 
 const description = "Browse all of my blog posts tagged as " + tag + " to explore all relevant content on my website about the topic in more detail.";
 const title = "Posts tagged as " + tag + " - Blog | Jason Garvin";
-const canonicalUrl = "https://jasongarvin.com/tags/" + tag;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout
@@ -69,7 +69,7 @@ const canonicalUrl = "https://jasongarvin.com/tags/" + tag;
         posts.map((post: any) => (
           <BlogPreview
             title={post.data.title}
-            fileName={`/blog/posts/${post.id}`}
+            fileName={`/blog/posts/${post.id}/`}
             publishDate={post.data.publishDate} />
         ))
       }

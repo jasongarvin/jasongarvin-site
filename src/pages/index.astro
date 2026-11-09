@@ -23,7 +23,7 @@ const imageArray = [
 // Local page metadata
 const title = "Designing for Experience | Jason Garvin";
 const description = "The professional website for Jason Garvin, owner and Chief Operating Officer of Total Escape Games, web designer, and opinionated thinker.";
-const canonicalUrl = "https://jasongarvin.com";
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <BaseLayout

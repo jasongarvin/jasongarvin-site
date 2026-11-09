@@ -1,7 +1,7 @@
 ---
 title: "The Value of Keeping a Library"
 description: "Owning books has value besides just reading them. Let's talk about the importance of keeping a library around you, even if you don't get to all of it."
-canonicalUrl: "https://jasongarvin.com/blog/posts/the-value-of-keeping-a-library"
+canonicalUrl: "https://jasongarvin.com/blog/posts/the-value-of-keeping-a-library/"
 contentCategory: "Productivity"
 publishDate: "2024-11-30"
 editDate: ""
