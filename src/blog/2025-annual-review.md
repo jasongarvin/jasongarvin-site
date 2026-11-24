@@ -28,7 +28,7 @@ Yet, I was still trying to be active on BlueSky and Instagram, the pressure of w
 
 I quit trying to post in either place pretty fast.
 
-Around the same time, I went to GAMA Expo, and had an incredible time amongst peers in my industry. [There’s a blog post about the show and what it means to me](/blog/posts/industry-togetherness-at-gama-expo), if you’re interested. It reminded me of the importance of community and connection, helped me dispel some of my lingering imposter syndrome, and reassured me that life was enough without searching for validation online. It also helped me realize I care a great deal about sustainability in the industry, and led to me joining the Sustainability Committee as a retail representative.
+Around the same time, I went to GAMA Expo, and had an incredible time amongst peers in my industry. [There’s a blog post about the show and what it means to me](/blog/posts/industry-togetherness-at-gama-expo/), if you’re interested. It reminded me of the importance of community and connection, helped me dispel some of my lingering imposter syndrome, and reassured me that life was enough without searching for validation online. It also helped me realize I care a great deal about sustainability in the industry, and led to me joining the Sustainability Committee as a retail representative.
 
 Notably, I stopped posting here about halfway through the year once I realized I had major uncertainty about my priorities and intentions. It was also around this time I joined my local Chamber of Commerce and got more involved in volunteer work.
 

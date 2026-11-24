@@ -14,7 +14,7 @@ Gone are the days of saying yes to every meeting that crosses my desk. Now I wei
 
 Before owning a business, I felt good about my time blocking skills. I’d been using a planner for years and have [Trello boards](https://trello.com/) for every occasion. There’s a reason I lead our operations.
 
-When I [reviewed my year at the end of 2023](/blog/posts/2023-annual-review), I thought I was pretty good at time management. I am, don't get me wrong, but wow is it a lot harder owning a business.
+When I [reviewed my year at the end of 2023](/blog/posts/2023-annual-review/), I thought I was pretty good at time management. I am, don't get me wrong, but wow is it a lot harder owning a business.
 
 Navigating the crunch of this new life while stubbornly holding onto my hobbies and social life has taught me hard lessons about managing my time and what I can accomplish in a day.
 
@@ -32,7 +32,7 @@ For me, I block time so I can see friends, go for long walks to clear my head, d
 
 I do it because they matter to me. Having time with my loved ones brings me joy and makes my life better. It also gives me the chance to indulge in great conversations which inspire me when I get back to work. Making time for my hobbies recharges me and lets me see the world from different angles than usual.
 
-In order to maintain those hobbies, I deliberately [learned to build habits](/blog/posts/harnessing-the-power-of-habits) around them to make them semi-permanent parts of my life.
+In order to maintain those hobbies, I deliberately [learned to build habits](/blog/posts/harnessing-the-power-of-habits/) around them to make them semi-permanent parts of my life.
 
 If I were to strip those from my routine, I would be less as a person. Less happy. Less fulfilled. Less creative. And those are key pieces of myself I want to encourage.
 

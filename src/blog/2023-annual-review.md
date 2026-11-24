@@ -84,7 +84,7 @@ I don’t think navigating the end of our relationship is a transferable skill, 
 
 In the end, I (mostly) came through! I have a stronger sense of purpose, and have begun to notice which parts of my life make me happy and which ones make me crazy.
 
-In particular, I did a great job cultivating new habits. I followed my own advice from [my first-ever blog post about building habits](/blog/posts/harnessing-the-power-of-habits) and finished the year feeling confident in my new routine(s).
+In particular, I did a great job cultivating new habits. I followed my own advice from [my first-ever blog post about building habits](/blog/posts/harnessing-the-power-of-habits/) and finished the year feeling confident in my new routine(s).
 
 Throughout the year, I:
 
@@ -126,7 +126,7 @@ It's been hard balancing my ambitions against being in his life often enough for
 
 At the same time, as this post is published, I am officially one of three owners of Total Escape Games, joined by two long-time business partners and dear friends of mine! It feels like a new chapter of my life has just begun, like this is a moment I’ll remember deep into my later years.
 
-You can learn more about [what I learned throughout the process of buying a business](/blog/posts/tips-for-buying-a-business) in a more recent post of mine.
+You can learn more about [what I learned throughout the process of buying a business](/blog/posts/tips-for-buying-a-business/) in a more recent post of mine.
 
 I feel a great sense of purpose and accomplishment in the work I’ve done for the store, both in building a great experience for customers and in learning to become a good, ethical manager who takes care of his team. Getting to finally own the business is a huge breath of fresh air, and has revitalized my excitement to keep running the store.
 

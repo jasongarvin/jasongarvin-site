@@ -68,7 +68,7 @@ So we know now that to get onto that coveted first page of Google, I need keywor
 
 If I succeed, people will click on my thing. My silly little strategy worked, and they’re here. Great. Now they can read the content! The reason I bothered with SEO!
 
-Except my god, how boring is my writing if I do that. My last blog was a small example of this homogenization. ["6 Things To Know When Buying a Business."](/blog/posts/tips-for-buying-a-business) It’s effective and honest, sure, but there is exactly no personality to it.
+Except my god, how boring is my writing if I do that. My last blog was a small example of this homogenization. ["6 Things To Know When Buying a Business."](/blog/posts/tips-for-buying-a-business/) It’s effective and honest, sure, but there is exactly no personality to it.
 
 That’s not to say it’s a bad post&mdash;in fact, I highly recommend it (watch out, I’m biased). But it is to say it’s not how I’d like to write that title, or the headings, because I’d rather make it more fun for you without balancing for discoverability.
 

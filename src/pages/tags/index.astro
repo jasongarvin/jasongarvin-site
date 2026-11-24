@@ -31,7 +31,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       <div class="tags">
         {uniqueTags.map((tag) => (
           <span class="tag">
-            <a href={`/tags/${tag}`}>{tag}</a>
+            <a href={`/tags/${tag}/`}>{tag}</a>
           </span>
         ))}
      </div>
